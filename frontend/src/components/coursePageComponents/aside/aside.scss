@@ -1,0 +1,94 @@
+.contents-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 82px;
+
+    .content-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #203864;
+        color: white;
+        font-size: 1.45rem;
+        font-weight: 500;
+        padding: 4px 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        
+        .btn-wrapper {
+            display: flex;
+            width: 36px;
+            height: 36px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #203864;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #295098;
+            }
+
+            img {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .rotate-down {
+                transform: rotate(180deg);
+            }
+
+            .rotate-up {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .links-grid-wrapper {
+        display: grid;
+        grid-template-rows: 1fr;
+        // transition: ease-in-out 0.5s;
+
+        &.open {
+            grid-template-rows: 1fr;
+            opacity: 1;
+        }
+
+        &.closed {
+            grid-template-rows: 0fr;
+            opacity: 0;
+        }
+
+        .content-links {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 8px;
+            box-sizing: border-box;
+
+            div {
+                border: 1px solid white;
+                border-radius: 0 4px 4px 0 / 0 4px 4px 0;
+                border-left: 2.5px solid #203864;
+                padding: 4px 8px;
+                box-sizing: border-box;
+
+                &:hover {
+                    background-color: #1550a83c;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

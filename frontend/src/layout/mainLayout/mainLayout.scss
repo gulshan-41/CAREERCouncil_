@@ -1,0 +1,36 @@
+.mainlayout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: var(--nav-height, 78px);
+    scroll-margin-top: var(--nav-height, 78px);
+}
+
+.AI-parent-container {
+    position: fixed;
+    bottom: 40px;
+    right: 64px;
+    z-index: 999;
+
+    .arrowAI {
+        position: fixed;
+        bottom: 40px;
+        right: 64px;
+        z-index: 999;
+    }
+}
+
+.utility-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.utility-section {
+    width: 100%;
+    padding: 2rem 1.25rem;
+    box-sizing: border-box;
+}

@@ -1,0 +1,68 @@
+@media (max-width: 1536px) {
+    .utility-container {
+        max-width: 1312px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .intro-wrapper {
+        // max-width: 910px;
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 50px 80px;
+        box-sizing: border-box;
+        background-color: #203864;
+        border: none;
+        border-radius: 12px;
+        color: #fff;
+
+        h1 {
+            font-size: 5rem;
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        .to-courses {
+            border: 1px solid #203864;
+            border-radius: 4px;
+            padding: 8px 12px;
+            box-sizing: border-box;
+            color: #203864;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .tutorial-container {
+        max-width: 392px;
+        width: 100%;
+        height: 446.4px;
+        border: 1px solid #a5a5a5;
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+}
+
+// @media (max-width: 1312px) {
+//     .hero-section {
+//         width: 100%;
+//         padding: 2rem 2rem;
+//         box-sizing: border-box;
+//     }
+//     .utility-container {
+//         max-width: 1088px;
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }

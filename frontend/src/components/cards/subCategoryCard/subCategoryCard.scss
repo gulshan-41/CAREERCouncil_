@@ -1,0 +1,12 @@
+.sub-cat-list {
+    li {
+        padding: 2px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #a5a5a5;
+        cursor: pointer;
+    }
+}

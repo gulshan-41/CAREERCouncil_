@@ -1,0 +1,55 @@
+@mixin h3-utility-class {
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: #1550a83c;
+    border-left: 5px solid #203864;
+    padding: 4px 8px;
+    border-radius: 0 5px 5px 0 / 0 5px 5px 0;
+}
+
+@mixin section-utility-class {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.job-opportunities {
+    @include section-utility-class;
+
+    h3 {
+        @include h3-utility-class;
+    }
+
+    details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2px 0;
+
+        summary {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            list-style: none;
+
+            img {
+                margin-right: 4px;
+            }
+
+            h4 {
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-left: 28px;
+            margin-top: 4px;
+        }
+    }
+}

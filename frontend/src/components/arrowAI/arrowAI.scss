@@ -1,0 +1,159 @@
+.AI-parent-container {
+    width: 72px;
+    height: 32px;
+
+    .arrowAI {
+        width: 72px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #203864;
+        color: white;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .arrow-window {
+        width: 360px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        border: 1px solid #a5a5a5;
+        border-radius: 8px 8px 0 8px / 8px 8px 0 8px;
+        position: absolute;
+        top: -477px;
+        left: -326px;
+    
+        .arrow-head {
+            width: 100%;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 10px 14px;
+            box-sizing: border-box;
+            background-color: #203864;
+            color: white;
+            border: none;
+            border-radius: 8px 8px 0 0 / 8px 8px 0 0;
+        }
+    
+        .convo-plain {
+            height: 310px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 0.95rem;
+            line-height: 14px !important;
+            padding: 0 4px;
+            box-sizing: border-box;
+    
+            .arrow-description {
+                background-color: white;
+                padding: 4px 8px;
+                box-sizing: border-box;
+                margin-top: 2px;
+                border: 1px solid #a5a5a5;
+                border-radius: 7px;
+            }
+    
+            .me {
+                background-color: white;
+                max-width: 240px;
+                width: fit-content;
+                border: 1px solid #a5a5a5;
+                border-radius: 5px;
+                align-self: flex-end;
+                text-align: end;
+                padding: 2px 4px;
+            }
+    
+            .arrow {
+                background-color: white;
+                max-width: 240px;
+                width: fit-content;
+                border: 1px solid #a5a5a5;
+                border-radius: 5px;
+                align-self: flex-start;
+                text-align: start;
+                padding: 4px 4px;
+    
+                .options {
+                    margin-top: 4px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 4px;
+    
+                    span {
+                        color: #2F5597;
+                        border: 1px solid #203864;
+                        border-radius: 50px;
+                        padding: 2px 8px;
+                        box-sizing: border-box;
+                        cursor: pointer;
+    
+                        &:hover {
+                            background-color: #1550a83c;
+                            border: 1px dashed #203864;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .input-send {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            padding: 4px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+    
+            input {
+                flex-grow: 1;
+                height: 32px;
+                border: 1px solid #a5a5a5;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 0 12px;
+                box-sizing: border-box;
+            }
+    
+            .send {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border: 1px solid #a5a5a5;
+                box-sizing: border-box;
+                border-radius: 5px;
+                background-color: #ffffff;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .cutout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #7b0e0e;
+    
+        position: absolute;
+        top: -42px;
+        right: 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,36 @@
+@use "src/pages/globalStyles/globalFontsSize.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Suisse, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#page-wrapper {
+    max-width: 1536px;
+
+    .limiter {
+        display: none;
+    }
+
+    @media (max-width: 1600px) {
+        #page-wrapper {
+            border-left: 1px solid #A5A5A5;
+            border-right: 1px solid #A5A5A5;
+            padding-left: 8px;
+            padding-right: 8px;
+            position: relative;
+
+            .limiter {
+                display: block;
+                padding: 4px 8px;
+                box-sizing: border-box;
+                border: 1px solid #000;
+                border-radius: 4px 0 0 4px / 4px 0 0 4px;
+                position: absolute;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "introduction": [
+      {
+        "type": "heading",
+        "content": "Engineering"
+      },
+      {
+        "type": "paragraph",
+        "content": "Engineering is the process of designing, building, and maintaining things like machines, structures, or systems by using science and math to solve practical problems."
+      },
+      {
+        "type": "paragraph",
+        "content": "Popular types of engineering include:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Mechanical Engineering: Focuses on machines, engines, and moving parts.",
+          "Civil Engineering: Deals with building infrastructure like roads, bridges, and buildings.",
+          "Electrical Engineering: Works with electricity, circuits, and power systems.",
+          "Chemical Engineering: Involves chemicals and processes to make products like fuels or medicines.",
+          "Software Engineering: Centers on designing and creating computer programs and apps."
+        ]
+      }
+    ],
+
+    "relatedCourses": [
+        {
+            "type": "heading",
+            "content": "Related courses"
+        }
+    ],
+
+    "subCategories": [
+        { "name": "Aerospace Engineering" },
+        { "name": "Biomedical Engineering" },
+        { "name": "Chemical Engineering" },
+        { "name": "Mechanical Engineering" },
+        { "name": "Civil Engineering" },
+        { "name": "Electrical Engineering" },
+        { "name": "Software Engineering" }
+    ]
+  }

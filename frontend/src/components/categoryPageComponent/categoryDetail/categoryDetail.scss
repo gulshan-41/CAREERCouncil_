@@ -1,0 +1,155 @@
+.loading-section {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 50px;
+    margin: 8px 12px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    .loading-line {
+        position: absolute;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        border: none;
+        border-radius: 50px;
+        background-color: #203864;
+        animation: loadAnimation 2s infinite ease-in-out;
+    }
+
+    @keyframes loadAnimation {
+        0% {
+            width: 0%;
+        }
+        50% {
+            left: 100%;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+}
+
+@media (max-width: 1536px){
+    .cat-info-section {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #a5a5a5;
+        border-radius: 12px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        margin: 8px 0;
+        position: relative;
+    }
+
+    .each-cat-intro {
+        margin-bottom: 16px;
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            border-bottom: 1px solid #203864;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .cut-cat {
+        width: 28px;
+        height: 28px;
+        border: 1px solid #a5a5a5;
+        border-radius: 4px;
+        position: absolute;
+        right: 12px;
+        top: 8px;
+        cursor: pointer;
+    }
+    
+    .cat-related-courses {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .sub-cat-grid {
+        width: 100%;
+        display: grid;
+        justify-items: start;
+        grid-template-columns: repeat(auto-fit, 160px);
+        gap: 4px;
+
+        .sub-cat-card {
+            // width: 100%;
+            width: 160px;
+            height: 100%;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #a5a5a5;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media (max-width: 1312px) {
+    .each-cat-intro {
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            li {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+// @media (max-width: 1088px) { }
+
+// @media (max-width: 864px) { }
+
+@media (max-width: 640px) {
+    .each-cat-intro {
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            li {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+$company-text: 2.2rem;
+$company-text-weight: 800;
+
+.nav-utility-section {
+    padding: 0 7rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1536px) {
+    .sticky-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .company-container {
+        background-color: #203864;
+    }
+
+    .company-categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        cursor: pointer;
+
+        #career {
+            font-size: $company-text;
+            font-weight: $company-text-weight;
+        }
+
+        #council {
+            font-size: $company-text;
+        }
+    }
+
+    .nav-bar {
+        background-color: #2f5597;
+    }
+}
+
+@media (max-width: 1312px) { 
+    .nav-utility-section {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 1088px) {
+    .nav-utility-section {
+        padding: 0 2.65rem;
+    }
+
+    .logo {
+        #career,
+        #council {
+            font-size: calc($company-text * 0.85);
+        }
+    }
+}
+
+@media (max-width: 864px) {
+    .nav-utility-section {
+        padding: 0 2.5rem;
+    }
+
+    .logo {
+        #career,
+        #council {
+            font-size: calc($company-text * 0.7);
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-utility-section {
+        padding: 0 1rem;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        padding: 4px 4px 4px 0;
+        box-sizing: border-box;
+        margin-bottom: 2px;
+
+        #career {
+            font-size: calc($company-text * 0.5);
+        }
+
+        #council {
+            font-size: calc($company-text * 0.4);
+            letter-spacing: 5.5px;
+            margin-top: -5px;
+        }
+    }
+}

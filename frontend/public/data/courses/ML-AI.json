@@ -1,0 +1,48 @@
+{
+    "courseId": "ML-AI",
+    "name": "Artificial Intelligence (AI) and Machine Learning (ML)",
+    "introduction": {
+        "text": [
+            {
+                "type": "heading",
+                "content": "Artificial Intelligence (AI)"
+            },
+            {
+                "type": "paragraph",
+                "content": "AI is a branch of computer science that enables machines to perform tasks that typically require human intelligence. These tasks include problem-solving, decision-making, language understanding, and image recognition. AI systems are designed to learn from data, adapt to new inputs, and improve their performance over time."
+            },
+            {
+                "type": "heading",
+                "content": "Machine Learning (ML)"
+            },
+            {
+                "type": "paragraph",
+                "content": "ML is a subset of AI that focuses on teaching computers to learn patterns from data without being explicitly programmed. Instead of following predefined rules, ML models analyze large datasets and make predictions or decisions based on patterns they find."
+            }
+        ]
+    },
+    "about": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This course introduces the fundamentals of Artificial Intelligence (AI) and Machine Learning (ML), covering how machines learn, think, and make decisions using data. You'll explore types of AI, including Narrow and General AI, and learn machine learning techniques like supervised and unsupervised learning. Key topics include deep learning, neural networks, natural language processing (NLP), and computer vision, helping AI analyze text, images, and videos. You'll also discover real-world applications in healthcare, finance, and automation, work on hands-on projects using Python and ML libraries like TensorFlow, and discuss the ethics and future of AI in society. This course is perfect for beginners looking to understand AI and gain practical skills."
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "type": "list",
+                "items": [
+                    "Mathematics: Concepts like linear algebra, probability, statistics, and calculus are crucial for understanding ML algorithms.",
+                    "Programming: Proficiency in languages like Python (preferred for ML), R, or Java is important for coding AI models.",
+                    "Data structures & algorithms: Helps in optimizing AI solutions and understanding computational efficiency.",
+                    "Databases & SQL: Knowledge of how data is stored, retrieved, and managed is useful for AI applications.",
+                    "Machine learning basics: Understanding supervised, unsupervised, and reinforcement learning concepts.",
+                    "Neural network & deep learning: Essential for advanced AI models like image and speech recognition.",
+                    "Computer science fundamentals: Includes basic operating system concepts, networking, and problem-solving skills."
+                ] 
+            }
+        ]
+    }
+}

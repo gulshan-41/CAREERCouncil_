@@ -1,0 +1,154 @@
+@media (max-width: 1536px) {
+    .cat-card-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            .trackball {
+                background-color: #2F5597;
+                transform: scale(12);
+            }
+
+            .toggle-sub {
+                background-color: #fff;
+
+                .add-icon {
+                    fill: #203864;
+                }
+
+                .minus-icon {
+                    fill: #203864;
+                }
+            }
+        }
+
+        &.active {
+            .toggle-sub {
+                background-color: #fff;
+
+                .add-icon {
+                    fill: #203864;
+                }
+
+                .minus-icon {
+                    fill: #203864;
+                }
+            }
+        }
+    }
+
+    .categories-card-container {
+        container-type: inline-size;
+        width: 100%;
+        // min-width: 120px;
+        min-height: 34px;
+        background-color: #203864;
+        border: none;
+        border-radius: 5px;
+        padding: 4px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .category-text-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+        color: white;
+        z-index: 2;
+    }
+
+    .link-to {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .toggle-sub {
+        width: 26px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 50%;
+        z-index: 2;
+
+        &:hover {
+            background-color: #fff;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .add-icon {
+            fill: #fff;
+
+            &:hover {
+                fill: #203864;
+            }
+        }
+
+        .minus-icon {
+            fill: #fff;
+
+            &:hover {
+                fill: #203864;
+            }
+        }
+    }
+
+    .trackball {
+        width: 12px;
+        height: 12px;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 4px;
+        right: 20%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .sub-cat-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        width: 100%;
+
+        &.open {
+            padding: 2px 4px;
+            box-sizing: border-box;
+            grid-template-rows: 1fr;
+            opacity: 1;
+        }
+
+        &.close {
+            grid-template-rows: 0fr;
+            opacity: 0;
+        }
+    }
+}
+
+@media (max-width: 1312px) {
+    .cat-card-wrapper {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
