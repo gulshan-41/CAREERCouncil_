@@ -23,10 +23,10 @@ function ArrowAI() {
                     <div className="arrow-description">
                         Welcome to <strong>Arrow AI</strong>! Your personal career guide! Ask questions, get insights, and explore career paths with expert advice.
                     </div>
-                    <div className="me">
+                    <div className="me"> {/* me is the user input or query */}
                         Best companies for freshers in India?
                     </div>
-                    <div className="arrow">
+                    <div className="arrow">  {/* for now I have made a dummy reply myself */}
                         <div className="question">
                             Different companies excel in different fields. Could you specify your field of interest?
                         </div>

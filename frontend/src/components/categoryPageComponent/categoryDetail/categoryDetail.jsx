@@ -1,6 +1,6 @@
 import "./categoryDetail.scss";
 import React, { useState, useEffect, forwardRef } from "react";
-import { useCategoriesContext } from "/src/pages/mainPages/categoriesPage/categoriesPage"; // Adjust path
+import { useCategoriesContext } from "/src/pages/mainPages/categoriesPage/categoriesPage";
 
 const CategoryDetails = forwardRef(({ catID }, ref) => {
     const { closeCategory } = useCategoriesContext();
