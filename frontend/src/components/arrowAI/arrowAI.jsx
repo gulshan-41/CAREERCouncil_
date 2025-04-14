@@ -1,9 +1,25 @@
 import "./arrowAI.scss";
-import { useState } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import Cross from "/src/assets/icons/cross.svg";
 import SendBtn from "/src/assets/icons/send.svg";
 
 function ArrowAI() {
+    const [query, setQuery] = useState('');
+    const [response, setResponse] = useState('');
+
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+        if (!query) return; // Skip empty queries
+
+            try {
+                const res = await axios.post('http://localhost:5000/api/chat', { query });
+                setResponse(res.data.response); // Show mock response
+            } catch (error) {
+                setResponse('Error: Could not reach backend');
+            }       
+    };
+
     const [isAIOpen, setAIToOpen] = useState(false);
     
     const toggleAI = () => {
@@ -39,18 +55,25 @@ function ArrowAI() {
                             <span>Healthcare & Pharma</span>
                         </div>
                     </div>
+
+                    {response && <p>Response: {response}</p>}
                 </div>
-                <div className="input-send">
-                    <input type="text" placeholder="Anything..."/>
-                    <div className="send">
-                        <img Src={SendBtn} alt="send-btn" />
-                    </div>
-                </div>
+                <form className="input-send" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                        placeholder="Anything..."
+                    />
+                    <button type="submit" className="send">
+                        <img src={SendBtn} alt="send-btn" />
+                    </button>   
+                </form>
             </div>
             )}
             {isAIOpen && (
             <div className="cutout" onClick={toggleAI}>
-                <img Src={Cross} alt="cross-btn" />
+                <img src={Cross} alt="cross-btn" />
             </div>
             )}
         </div>

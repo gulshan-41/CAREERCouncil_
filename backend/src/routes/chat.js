@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const { getXaiResponse } = require('../services/xAIServices');
 
-// POST /api/chat
 router.post('/chat', (req, res) => {
-  const { query } = req.body; // Get query from ArrowAI
+  const { query } = req.body;
   if (!query) {
     return res.status(400).json({ error: 'Query is required' });
   }
-  // Mock response (no xAI key yet)
-  res.json({ response: `Mock AI answer for: ${query}` });
+  getXaiResponse(query)
+    .then((response) => res.json(response))
+    .catch((error) => res.status(500).json({ error: 'Server error' }));
 });
 
 module.exports = router;
