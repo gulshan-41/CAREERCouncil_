@@ -1,13 +1,13 @@
 import "./subCategoryGrid.scss";
 import SubCategoryCard from "../cards/subCategoryCard/subCategoryCard";
 
-function SubCategoryGrid({ subCategories }) {
+function SubCategoryGrid({ relatedCourses }) {
     return (
         <div className="sub-cat-container">
             <ul className="sub-cat-list">
-                {subCategories.length > 0 ? (
-                    subCategories.map((subCat) => (
-                        <SubCategoryCard name={subCat.name}/>
+                {relatedCourses.length > 0 ? (
+                    relatedCourses.map((catCourse) => (
+                        <SubCategoryCard name={catCourse.name}/>
                     ))
                 ) : (
                     <div>-</div>

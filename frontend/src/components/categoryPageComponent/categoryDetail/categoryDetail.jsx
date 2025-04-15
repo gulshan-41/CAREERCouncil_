@@ -81,9 +81,6 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                     <div className="sub-cat-card"></div>
                 </div>
             </div>
-            <div className="sub-cat-plain">
-                {/* Subcategory components can appear here if needed */}
-            </div>
             <button className="cut-cat" onClick={() => closeCategory(catID)}></button>
         </section>
     );

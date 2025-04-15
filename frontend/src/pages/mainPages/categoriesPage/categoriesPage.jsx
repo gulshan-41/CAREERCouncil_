@@ -9,7 +9,7 @@ const CategoriesContext = createContext();
 function CategoriesPage() {
     const [toggledCategories, setToggledCategories] = useState([]);
     const [activeCategory, setActiveCategory] = useState(null);
-    const [subCategories, setSubCategories] = useState([]); // Kept for CategoriesCard
+    const [relatedCourses, setRelatedCourses] = useState([]); // Kept for CategoriesCard
     const categoryRefs = useRef({});
     const { catID } = useParams();
 
@@ -25,7 +25,7 @@ function CategoriesPage() {
     useEffect(() => {
         const fetchSubCategories = async () => {
             if (!activeCategory) {
-                setSubCategories([]);
+                setRelatedCourses([]);
                 return;
             }
             try {
@@ -34,10 +34,10 @@ function CategoriesPage() {
                     throw new Error(`Failed to fetch data for ${activeCategory}`);
                 }
                 const data = await response.json();
-                setSubCategories(data.subCategories || []);
+                setRelatedCourses(data.relatedCourses || []);
             } catch (err) {
                 console.error("Error fetching subcategories:", err);
-                setSubCategories([]);
+                setRelatedCourses([]);
             }
         };
 
@@ -75,7 +75,7 @@ function CategoriesPage() {
     const contextValue = {
         activeCategory,
         setActiveCategory,
-        subCategories, // Still provided for CategoriesCard
+        relatedCourses,
         toggledCategories,
         toggleCategory,
         closeCategory,
@@ -88,7 +88,6 @@ function CategoriesPage() {
                     <section className="categories-aside">
                         <div className="aside-categories-style">
                             <CategoriesGrid />
-                            {/* Removed .sub-cat-wrapper and SubCategoryGrid */}
                         </div>
                     </section>
                     <section className="categories-main-section">

@@ -11,8 +11,12 @@ function CategoriesCard({
     isDropdownActive,
     isActive,
     isNavigationOnly = false,
-}) {
-    const { subCategories } = useCategoriesContext() || { subCategories: [] }; // Fallback for SearchBar/SearchDiv
+    }) 
+    
+    {
+    
+    const context = useCategoriesContext();
+    const relatedCourses = context?.relatedCourses || [];
 
     return (
         <div className={`cat-card-wrapper ${isActive ? "active" : ""}`} onClick={onClick}>
@@ -59,8 +63,8 @@ function CategoriesCard({
             </div>
             {!isNavigationOnly && (
                 <div className={`sub-cat-wrapper off-view ${isDropdownActive ? "open" : "close"}`}>
-                    {isDropdownActive && subCategories.length > 0 && (
-                        <SubCategoryGrid subCategories={subCategories} />
+                    {isDropdownActive && relatedCourses.length > 0 && (
+                        <SubCategoryGrid relatedCourses={relatedCourses} />
                     )}
                 </div>
             )}
