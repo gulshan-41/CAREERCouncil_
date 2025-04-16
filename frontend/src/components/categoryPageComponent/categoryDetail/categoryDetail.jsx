@@ -1,35 +1,11 @@
 import "./categoryDetail.scss";
-import React, { useState, useEffect, forwardRef } from "react";
+import React, { forwardRef } from "react";
 import { useCategoriesContext } from "/src/pages/mainPages/categoriesPage/categoriesPage";
 
 const CategoryDetails = forwardRef(({ catID }, ref) => {
-    const { closeCategory } = useCategoriesContext();
-    const [categoryData, setCategoryData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchCategoryData = async () => {
-            try {
-                setLoading(true);
-                setError(null);
-                const response = await fetch(`/data/categoriesData/${catID}.json`);
-                if (!response.ok) {
-                    throw new Error(`Failed to fetch data for ${catID}`);
-                }
-                const data = await response.json();
-                setCategoryData(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        if (catID) {
-            fetchCategoryData();
-        }
-    }, [catID]);
+    const { closeCategory, relatedCourses, categoryDetailsData, loading, error } = useCategoriesContext();
+    // Use fallback for initial render before fetch
+    const categoryData = categoryDetailsData[catID] || { introduction: [] };
 
     if (!catID) {
         return null;
@@ -74,11 +50,20 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                 })}
             </div>
             <div className="cat-related-courses">
+                <h2>Related Courses</h2>
                 <div className="sub-cat-grid">
-                    <div className="sub-cat-card"></div>
-                    <div className="sub-cat-card"></div>
-                    <div className="sub-cat-card"></div>
-                    <div className="sub-cat-card"></div>
+                    {relatedCourses.map((course, index) => (
+                        <div key={index} className="sub-cat-card">
+                            <h3 className="sub-cat-card__title">{course.name}</h3>
+                            <p className="sub-cat-card__specialization">{course.specialization}</p>
+                            <button
+                                className="sub-cat-card__button"
+                                onClick={() => console.log(`View course: ${course.name}`)}
+                            >
+                                View Course
+                            </button>
+                        </div>
+                    ))}
                 </div>
             </div>
             <button className="cut-cat" onClick={() => closeCategory(catID)}></button>

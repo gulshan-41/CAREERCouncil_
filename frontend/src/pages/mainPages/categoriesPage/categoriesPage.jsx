@@ -10,6 +10,11 @@ function CategoriesPage() {
     const [toggledCategories, setToggledCategories] = useState([]);
     const [activeCategory, setActiveCategory] = useState(null);
     const [relatedCourses, setRelatedCourses] = useState([]); // Kept for CategoriesCard
+    // Added to store introduction for CategoryDetails, avoiding duplicate fetch
+    const [categoryDetailsData, setCategoryDetailsData] = useState({}); // Store { catID: { introduction } }
+    // Added loading and error states for fetch status
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
     const categoryRefs = useRef({});
     const { catID } = useParams();
 
@@ -22,26 +27,37 @@ function CategoriesPage() {
     }, [catID]);
 
     // Fetch subcategories when activeCategory changes (for CategoriesCard)
+    // Updated to fetch full JSON, storing relatedCourses and introduction
     useEffect(() => {
-        const fetchSubCategories = async () => {
-            if (!activeCategory) {
-                setRelatedCourses([]);
-                return;
+        const fetchCategoryData = async () => {
+            if (!activeCategory || categoryDetailsData[activeCategory]) {
+                return; // Skip if already fetched
             }
             try {
+                setLoading(true);
+                setError(null);
                 const response = await fetch(`/data/categoriesData/${activeCategory}.json`);
                 if (!response.ok) {
                     throw new Error(`Failed to fetch data for ${activeCategory}`);
                 }
                 const data = await response.json();
                 setRelatedCourses(data.relatedCourses || []);
+                setCategoryDetailsData((prev) => ({
+                    ...prev,
+                    [activeCategory]: {
+                        introduction: data.introduction || [],
+                    },
+                }));
             } catch (err) {
                 console.error("Error fetching subcategories:", err);
                 setRelatedCourses([]);
+                setError(err.message);
+            } finally {
+                setLoading(false);
             }
         };
 
-        fetchSubCategories();
+        fetchCategoryData();
     }, [activeCategory]);
 
     // Scroll to latest CategoryDetails
@@ -72,13 +88,17 @@ function CategoriesPage() {
         }
     };
 
+    // Updated context to include categoryDetailsData, loading, error
     const contextValue = {
         activeCategory,
         setActiveCategory,
         relatedCourses,
+        categoryDetailsData,
         toggledCategories,
         toggleCategory,
         closeCategory,
+        loading,
+        error,
     };
 
     return (
@@ -97,6 +117,8 @@ function CategoriesPage() {
                                 The Categories section simplifies the navigation by organizing diverse range of courses into broader fields like Engineering, Medical, Law, Aviation, Civil Services, and Armed Forces, etc. Displayed conveniently in this column, these categories allow you to quickly explore areas of interest, discover relevant courses, and find the perfect path to achieve your career goals with ease.
                             </p>
                         </section>
+                        {/* Added error UI above CategoryDetails */}
+                        {error && <div className="error-section">Error: {error}</div>}
                         {toggledCategories.map((catID) => (
                             <CategoryDetails
                                 key={catID}
