@@ -83,29 +83,86 @@
         cursor: pointer;
     }
     
-    .cat-related-courses {
+    .cat-courses {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         margin-bottom: 16px;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
     }
 
-    .sub-cat-grid {
+    .cat-courses-grid {
         width: 100%;
         display: grid;
         justify-items: start;
-        grid-template-columns: repeat(auto-fit, 160px);
-        gap: 4px;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 8px;
+    }
 
-        .sub-cat-card {
-            // width: 100%;
-            width: 160px;
+    .cat-course-card {
+        width: 100%;
+        min-width: 100px;
+        height: 100%;
+        min-height: 140px;
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
+        gap: 8px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        border: 1px solid #a5a5a5;
+        border-radius: 8px 0 8px 8px / 8px 0 8px 8px;
+        position: relative;
+    }
+
+    .compare-toggle {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+        background-color: #D4E4FD;
+        border: none;
+        border-radius: 0 0 0 4px / 0 0 0 4px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .course-full-name {
+        margin-top: 20px;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .cat-course-vr-ruler {
+        height: 2px;
+        background-color: #000;
+        transform: scaleY(0.5);
+        transform-origin: top;
+        height: 1px;
+    }
+
+    .course-field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .field-box {
+            font-size: 0.7rem;
+        }
+
+        button {
             height: 100%;
-            min-height: 180px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 1px solid #a5a5a5;
-            border-radius: 8px;
+            padding: 0 12px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 4px;
+            background-color: #203864;
+            color: #fff;
+            cursor: pointer;
         }
     }
 }

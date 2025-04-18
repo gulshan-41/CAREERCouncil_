@@ -49,19 +49,23 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                     }
                 })}
             </div>
-            <div className="cat-related-courses">
-                <h2>Related Courses</h2>
-                <div className="sub-cat-grid">
+            <div className="cat-courses">
+                <h3>Related Courses</h3>
+                <div className="cat-courses-grid">
                     {relatedCourses.map((course, index) => (
-                        <div key={index} className="sub-cat-card">
-                            <h3 className="sub-cat-card__title">{course.name}</h3>
-                            <p className="sub-cat-card__specialization">{course.specialization}</p>
-                            <button
-                                className="sub-cat-card__button"
-                                onClick={() => console.log(`View course: ${course.name}`)}
-                            >
-                                View Course
-                            </button>
+                        <div key={index} className="cat-course-card">
+                            <div className="compare-toggle">Compare</div>
+                            <div className="course-full-name">
+                                <p>{course.name}</p>
+                            </div>
+                            <div className="cat-course-vr-ruler"></div>
+                            <div className="course-field">
+                                <div className="field-box">
+                                    <p>Field: </p>
+                                    <p>{course.specialization}</p>
+                                </div>
+                                <button>&gt;</button>
+                            </div>
                         </div>
                     ))}
                 </div>
