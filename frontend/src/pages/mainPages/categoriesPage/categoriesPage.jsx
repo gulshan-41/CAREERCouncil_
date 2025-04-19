@@ -60,22 +60,16 @@ function CategoriesPage() {
         fetchCategoryData();
     }, [activeCategory]);
 
-    // Scroll to latest CategoryDetails
-    useEffect(() => {
-        const latestCatID = toggledCategories[toggledCategories.length - 1];
-        if (latestCatID && categoryRefs.current[latestCatID]) {
-            categoryRefs.current[latestCatID].scrollIntoView({ behavior: "smooth" });
-        }
-    }, [toggledCategories]);
-
     const toggleCategory = (catID) => {
         const isAlreadyToggled = toggledCategories.includes(catID);
         if (isAlreadyToggled) {
+            // Scroll to the already toggled category
             const categoryRef = categoryRefs.current[catID];
             if (categoryRef) {
                 categoryRef.scrollIntoView({ behavior: "smooth" });
             }
         } else {
+            // Add new category without scrolling
             setToggledCategories((prev) => [...prev, catID]);
         }
         setActiveCategory(catID);
