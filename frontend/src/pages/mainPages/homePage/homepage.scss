@@ -1,21 +1,20 @@
 @media (max-width: 1536px) {
-    .utility-container {
-        max-width: 1312px;
+    .hero-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         gap: 10px;
+        align-items: center;
     }
-    
-    .intro-wrapper {
+
+    .intro-div {
         // max-width: 910px;
         // width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
-        padding: 50px 80px;
+        padding: 50px 70px;
         box-sizing: border-box;
         background-color: #203864;
         border: none;
@@ -26,6 +25,8 @@
             font-size: 5rem;
             line-height: 1;
             letter-spacing: -2px;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 32px;
         }
 
         p {
@@ -51,18 +52,50 @@
         border-radius: 12px;
         box-sizing: border-box;
     }
-}
 
-// @media (max-width: 1312px) {
-//     .hero-section {
-//         width: 100%;
-//         padding: 2rem 2rem;
-//         box-sizing: border-box;
-//     }
-//     .utility-container {
-//         max-width: 1088px;
-//         width: 100%;
-//         display: flex;
-//         flex-direction: column;
-//     }
-// }
+    .explore-cat {
+        h2 {
+            font-size: 2rem;
+            font-weight: lighter;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000;
+        }
+    }
+
+    .hero-cat-grid {
+        max-width: 846px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem 0;
+
+        .categories-grid {
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 8px;
+
+            .cat-card-wrapper {
+                .categories-card-container {
+                    padding: 12px 14px;
+
+                    .category-text-wrapper {
+                        p {
+                            font-size: 1.12rem;
+                        }
+                    }
+
+                    .link-to {
+                        svg {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+
+                    .toggle-sub {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

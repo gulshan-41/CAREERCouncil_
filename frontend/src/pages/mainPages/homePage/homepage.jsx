@@ -1,6 +1,7 @@
 import React from "react";
 import "./homepage.scss";
 import { useNavigate } from "react-router-dom";
+import CategoriesGrid from "../../../components/categoriesGrid/categoriesGrid";
 
 function Homepage() {
     const navigate = useNavigate();
@@ -8,8 +9,8 @@ function Homepage() {
     return (
         <>
             <section className="hero-section utility-section">
-                <div className="utility-container">
-                    <div className="intro-wrapper">
+                <div className="hero-wrapper utility-container">
+                    <div className="intro-div">
                         <h1>FIND YOUR PATH, THRIVE WITH CAREER Council_</h1>
                         <p>
                             Explore courses that match your interests, best suited based on your strength points, compare options, and get AI-powered recommendations to build the career of your dreams. Let's get started!
@@ -22,6 +23,15 @@ function Homepage() {
                         <div className="tutorial-wrapper">
                             
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="explore-cat utility-section">
+                <div className="utility-container">
+                    <h2>Explore career categories</h2>
+                    <div className="hero-cat-grid">
+                        <CategoriesGrid />
                     </div>
                 </div>
             </section>

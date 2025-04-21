@@ -1,11 +1,6 @@
 $company-text: 2.2rem;
 $company-text-weight: 800;
 
-.nav-utility-section {
-    padding: 0 7rem;
-    box-sizing: border-box;
-}
-
 @media (max-width: 1536px) {
     .sticky-header {
         width: 100%;
@@ -36,7 +31,10 @@ $company-text-weight: 800;
         }
 
         #council {
-            font-size: $company-text;
+            font-family: Calibri, 'sans serif';
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 2rem;
         }
     }
 
@@ -45,17 +43,9 @@ $company-text-weight: 800;
     }
 }
 
-@media (max-width: 1312px) { 
-    .nav-utility-section {
-        padding: 0 3rem;
-    }
-}
+// @media (max-width: 1312px) { }
 
 @media (max-width: 1088px) {
-    .nav-utility-section {
-        padding: 0 2.65rem;
-    }
-
     .logo {
         #career,
         #council {
@@ -65,10 +55,6 @@ $company-text-weight: 800;
 }
 
 @media (max-width: 864px) {
-    .nav-utility-section {
-        padding: 0 2.5rem;
-    }
-
     .logo {
         #career,
         #council {
@@ -78,9 +64,6 @@ $company-text-weight: 800;
 }
 
 @media (max-width: 640px) {
-    .nav-utility-section {
-        padding: 0 1rem;
-    }
     .logo {
         display: flex;
         flex-direction: column;

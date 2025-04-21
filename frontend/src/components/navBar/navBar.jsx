@@ -24,16 +24,16 @@ function NavBar() {
     return(
         <header>
             <div className="sticky-header" ref={navRef}>
-                <div className="company-container nav-utility-section">
-                    <div className="company-categories nav-utility-container">
+                <div className="company-container utility-section">
+                    <div className="company-categories">
                         <div className="logo">
                             <span id="career">CAREER </span><span id="council">Council_</span>
                         </div>
                         <SearchBar />
                     </div>
                 </div>
-                <div className="nav-bar nav-utility-section">
-                    <nav className="breadcrum-nav nav-utility-container">
+                <div className="nav-bar utility-section">
+                    <nav className="breadcrum-nav">
                         <Breadcrum />
                     </nav>
                 </div>

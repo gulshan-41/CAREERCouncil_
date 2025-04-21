@@ -98,7 +98,7 @@ function CategoriesPage() {
     return (
         <CategoriesContext.Provider value={contextValue}>
             <div className="categories-page cat-utility-section">
-                <div className="categories-page-wrapper cat-utility-container">
+                <div className="categories-page-wrapper">
                     <section className="categories-aside">
                         <div className="aside-categories-style">
                             <CategoriesGrid />

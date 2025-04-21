@@ -13,7 +13,7 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
 
     if (loading) {
         return (
-            <div className="loading-section cat-utility-section">
+            <div className="loading-section utility-section">
                 <div className="loading-line"></div>
             </div>
         );

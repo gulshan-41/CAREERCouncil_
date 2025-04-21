@@ -6,15 +6,12 @@
         align-items: center;
 
         &:hover {
-            .trackball {
-                background-color: #2F5597;
-                transform: scale(12);
-            }
-
-            .toggle-sub {
+            .toggle-sub,
+            .link-to {
                 background-color: #fff;
 
-                .add-icon {
+                .add-icon,
+                #angle-right {
                     fill: #203864;
                 }
 
@@ -73,7 +70,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 2;
+        border: none;
+        border-radius: 50%;
     }
 
     .toggle-sub {
@@ -84,7 +82,6 @@
         align-items: center;
         border: none;
         border-radius: 50%;
-        z-index: 2;
 
         &:hover {
             background-color: #fff;
@@ -115,17 +112,6 @@
         }
     }
 
-    .trackball {
-        width: 12px;
-        height: 12px;
-        border: none;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 4px;
-        right: 20%;
-        transition: all 0.2s ease-in-out;
-    }
-
     .sub-cat-wrapper {
         display: grid;
         grid-template-rows: 0fr;
@@ -147,10 +133,10 @@
     }
 }
 
-@media (max-width: 1312px) {
-    .cat-card-wrapper {
-        p {
-            font-size: 0.9rem;
-        }
-    }
-}
+// @media (max-width: 1312px) {
+//     .cat-card-wrapper {
+//         p {
+//             font-size: 0.9rem;
+//         }
+//     }
+// }
