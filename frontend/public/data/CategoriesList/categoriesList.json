@@ -1,0 +1,82 @@
+[
+    { 
+        "catID": "Engineering",
+        "text": "Engineering", 
+        "description": "Explore careers in various engineering disciplines."
+    },
+    {
+        "catID": "Medical",
+        "text": "Medical",
+        "description": "Discover opportunities in healthcare and medicine."
+    },
+    {
+        "catID": "Management",
+        "text": "Management",
+        "description": "Learn about leadership and business management roles."
+    },
+    {
+        "catID": "CivilServices",
+        "text": "Civil Services",
+        "description": "Prepare for government and administrative roles."
+    },
+    {
+        "catID": "Media",
+        "text": "Media",
+        "description": "Dive into journalism, file, and digital media careers."
+    },
+    {
+        "catID": "ArmedForces",
+        "text": "Armed Forces",
+        "description": "Serve the nation through military careers."
+    },
+    {
+        "catID": "Jee",
+        "text": "JEE",
+        "description": "Prepare for engineering entrance exams."
+    },
+    {
+        "catID": "Neet",
+        "text": "NEET",
+        "description": "Gear up for medical entrance exams." 
+    },
+    {
+        "catID": "It",
+        "text": "IT",
+        "description": "Explore careers in information technology."
+    },
+    {
+        "catID": "Cse",
+        "text": "CSE",
+        "description": "Dive into computer science and engineering."
+    },
+    {
+        "catID": "Aviation",
+        "text": "Aviation",
+        "description": "Soar high with careers in aviation."
+    },
+    {
+        "catID": "Hospitality",
+        "text": "Hospitality",
+        "description": "Thrive in tourism and hospitality industries."
+    },
+    {
+        "catID": "Teaching",
+        "text": "Teaching",
+        "description": "Shape the future through education."
+    },
+    {
+        "catID": "Animated",
+        "text": "Animation",
+        "description": "Create magic with animation and VFX."
+    },
+    {
+        "catID": "Phe",
+        "text": "Physical Edu.",
+        "description": "Promote fitness and sports education."
+    },
+    {
+        "catID": "Law",
+        "text": "Law",
+        "description": "Pursue justice with a career in law."
+    }
+]
