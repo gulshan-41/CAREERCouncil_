@@ -13,8 +13,10 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
 
     if (loading) {
         return (
-            <div className="loading-section utility-section">
-                <div className="loading-line"></div>
+            <div className="cat-into-hero">
+                <div className="loading-section">
+                    <div className="loading-line"></div>
+                </div>
             </div>
         );
     }
@@ -23,7 +25,7 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
         return <div className="error-section">Error: {error}</div>;
     }
 
-    return (
+    return (   
         <section ref={ref} className="cat-info-section">
             <div className="each-cat-intro">
                 {categoryData.introduction.map((block, index) => {

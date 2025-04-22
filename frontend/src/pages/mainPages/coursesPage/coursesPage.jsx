@@ -48,8 +48,10 @@ function CoursesPage () {
     // Render loading state
     if (loading) {
         return (
-            <div class="loading-section">
-                <div class="loading-line"></div>
+            <div className="cat-utility-section">
+                <div className="loading-section">
+                    <div className="loading-line"></div>
+                </div>
             </div>
         );
     }
