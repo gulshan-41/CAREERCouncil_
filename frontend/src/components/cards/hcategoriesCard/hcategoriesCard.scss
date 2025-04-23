@@ -1,0 +1,66 @@
+.hcat-card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 16px;
+    background-color: #203864;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        border: 1px solid #a5a5a5;
+
+        h3 {
+            color: #000;
+        }
+
+        .btn-cover {
+            background-color: #203864;
+
+            svg {
+                fill: #fff;
+            }
+        }
+
+        .hcat-description {
+            color: #000;
+        }
+    }
+}
+
+.cat-head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        font-size: 1.75rem;
+        color: #fff;
+    }
+
+    .btn-cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+    }
+}
+
+.hcat-description {
+    display: flex;
+    color: #fff;
+
+    p {
+        padding-right: 50px;
+    }
+}

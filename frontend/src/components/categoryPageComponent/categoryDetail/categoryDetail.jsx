@@ -67,13 +67,51 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                                         <p>Field: </p>
                                         <p>{course.specialization}</p>
                                     </div>
-                                    <button>&gt;</button>
+                                    <div className="course-navi">
+                                        <svg
+                                            id="angle-right"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            height="24px"
+                                            width="24px"
+                                            fill="#fff"
+                                        >
+                                                <path d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         ))}
                     </div>
             </div>
-            <button className="cut-cat" onClick={() => closeCategory(catID)}></button>
+            <button className="cut-cat" onClick={() => closeCategory(catID)}>
+                {/* <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    height="20px"
+                    width="20px"
+                    fill="#000"
+                    stroke="#000"
+                    stroke-width="5"
+                    viewBox="0 0 101 101"
+                    id="cross"
+                >
+                        <path d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z"></path>
+                </svg> */}
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlSpace="preserve"
+                    viewBox="0 0 101 101"
+                    id="Cross"
+                    width="21px"
+                    height="21px"
+                    fill="#8724DB"
+                    stroke="#8724DB"
+                    strokeWidth="8"
+                >
+                        <path d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z"  class="color000000 svgShape"></path>
+                </svg>
+            </button>
         </section>
     );
 });

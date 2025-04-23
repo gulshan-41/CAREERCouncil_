@@ -1,7 +1,7 @@
 import React from "react";
 import "./homepage.scss";
 import { useNavigate } from "react-router-dom";
-import CategoriesGrid from "../../../components/categoriesGrid/categoriesGrid";
+import HcategoriesGrid from "/src/components/hcategoriesGrid/hcategoriesGrid";
 
 function Homepage() {
     const navigate = useNavigate();
@@ -31,7 +31,7 @@ function Homepage() {
                 <div className="utility-container">
                     <h2>Explore career categories</h2>
                     <div className="hero-cat-grid">
-                        <CategoriesGrid />
+                        <HcategoriesGrid />
                     </div>
                 </div>
             </section>
@@ -40,5 +40,3 @@ function Homepage() {
 }
 
 export default Homepage;
-
-// /courses/ML-AI

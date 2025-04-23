@@ -76,7 +76,10 @@
             box-sizing: border-box;
         }
     
-        button {
+        .close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 27px;
             height: 27px;
             border: none;
