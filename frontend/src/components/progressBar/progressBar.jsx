@@ -10,8 +10,7 @@ function ProgressBar() {
     const steps = [
         { label1: "1", label2: "Basic details", url: "/signup/basic-details" },
         { label1: "2", label2: "Strengths?", url: "/signup/strengths" },
-        { label1: "3", label2: "Interest?", url: "/signup/interest" },
-        { label1: "4", label2: "Sign-up/ login", url: "/signup/modal" }
+        { label1: "3", label2: "Interest?", url: "/signup/interest" }
     ];
 
     // Sub-page arrays for each step

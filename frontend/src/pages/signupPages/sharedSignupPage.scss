@@ -87,25 +87,34 @@
         box-sizing: border-box;
         border-radius: 5px;
         padding: 4.4px 16px;
-        background-color: #fff;
+        background-color: #D4E4FD;
         color: #203864;
         font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
+
+        &:hover {
+            background-color: #fff;
+        }
     }
 
     .next-btn {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: none;
+        border: 2px solid #203864;
         border-radius: 5px;
-        padding: 6px 16px;
+        padding: 4.4px 16px;
         box-sizing: border-box;
         background-color: #203864;
         color: white;
         font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
+
+        &:hover {
+            background-color: #fff;
+            color: #203864;
+        }
     }
 }

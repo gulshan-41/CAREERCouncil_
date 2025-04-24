@@ -50,8 +50,8 @@ function App() {
           <Route path="fields" element={<SignupPage3C />}/>
         </Route>
 
-        <Route path="modal" element={<SignupModal />}/>
       </Route>
+        <Route path="signup-login-modal" element={<SignupModal />}/>
     </Routes>
     </Router>
   );

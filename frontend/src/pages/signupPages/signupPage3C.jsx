@@ -28,7 +28,7 @@ function SignupPage3C () {
                 <button className="pre-btn" onClick={() => navigate("/signup/interest/history")}>
                     Previous
                 </button>
-                <button className="next-btn" onClick={() => navigate("/signup/modal")}>
+                <button className="next-btn" onClick={() => navigate("/signup-login-modal")}>
                     Next
                 </button>
             </div>

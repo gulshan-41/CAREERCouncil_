@@ -11,7 +11,7 @@ function MainLayout() {
             <NavBar />
             <SearchDiv />
             <SideBar />
-            <main>
+            <main className="mainLayout-main-section">
               <Outlet />
             </main>
             <ArrowAI />
