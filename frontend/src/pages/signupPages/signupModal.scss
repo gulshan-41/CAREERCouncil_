@@ -11,7 +11,7 @@
 .signup-main-container {
     width: 60%;
     height: 100%;
-    padding: 40px 70px;
+    padding: 40px 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -54,118 +54,120 @@
 
     .signup-head,
     .login-head {
-        margin-bottom: 20px;
-
         h1 {
-            font-size: 2.4rem;
+            font-size: 1.95rem;
         }
     }
+}
 
-    .user-signup-inputs,
-    .user-login-inputs {
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            margin: 10px 0;
-
-            label[for="username"],
-            label[for="pass"] {
-                font-size: 1.2rem;
-            }
-
-            input[type="text"],
-            input[type="password"] {
-                width: 100%;
-                height: 32px;
-                font-size: 1.2rem;
-                padding-left: 10px;
-                box-sizing: border-box;
-                border: 1px solid #a5a5a5;
-                border-radius: 4px;
-            }
-
-            .agree-personal-data {
-                display: flex;
-                flex-direction: row;
-                gap: 4px;
-            }
-
-            .remember-forgot {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-
-                .remember-wrapper {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    gap: 4px;
-                }
-
-                .forgot-pass-shift {
-                    font-weight: bold;
-                    color: #203864;
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
-            }
-
-            input[type="submit"] {
-                font-size: 1.2rem;
-                color: #fff;
-                padding: 5.5px;
-                margin: 10px 0;
-                box-sizing: border-box;
-                background-color: #203864;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: #203864e4;
-                }
-            }
-        }
-    }
-
-    .other-methods-separator {
+.user-signup-inputs,
+.user-login-inputs {
+    form {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10px;
-
-        .separator {
-            width: 100%;
-            height: 1px;
-            background-color: #000;
-        }
-
-        .signup-with,
-        .login-with {
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    .google-x-apple-way {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         gap: 2px;
-        margin: 20px 0;
+        margin: 10px 0;
 
-        button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2px 16px;
-            box-sizing: border-box;
-            cursor: pointer;
+        label[for="username"],
+        label[for="pass"] {
+            font-size: 1rem;
         }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            height: 32px;
+            font-size: 1rem;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border: 1px solid #a5a5a5;
+            border-radius: 4px;
+        }
+
+        .agree-personal-data {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.85rem;
+        }
+    }
+}
+
+.remember-forgot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .remember-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.85rem;
+    }
+
+    .forgot-pass-shift {
+        color: #203864;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 0.85rem;
+    }
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    color: #fff;
+    padding: 5.5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #203864;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #203864e4;
+    }
+}
+
+.other-methods-separator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+
+    .separator {
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+    }
+
+    .signup-with,
+    .login-with {
+        width: 100%;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+}
+
+.google-x-apple-way {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin: 20px 0;
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 16px;
+        box-sizing: border-box;
+        cursor: pointer;
     }
 }
 
@@ -186,31 +188,32 @@
     &.shift-right {
         transform: translateX(-150%);
     }
-    
-    .overlay-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 8px;
-        background-color: #203864;
-        padding: 30px 40px;
-        box-sizing: border-box;
+}
 
-        .shift-login {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+.overlay-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #203864;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
 
-            p {
-                color: #fff;
+.shift-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-                span {
-                    text-decoration: underline 1px solid #fff;
-                    cursor: pointer;
-                }
-            }
+    p {
+        color: #fff;
+        font-size: 0.85rem;
+
+        span {
+            text-decoration: underline 1px solid #fff;
+            cursor: pointer;
         }
     }
 }

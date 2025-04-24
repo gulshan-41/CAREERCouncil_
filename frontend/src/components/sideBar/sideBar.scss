@@ -1,9 +1,9 @@
 @mixin hr-ruler {
-    width: 100%;
-    height: 1px !important;
-    background-color: black;
-    border: none;
-    border-radius: 2px;
+    height: 2px;
+    background-color: #000;
+    transform: scaleY(0.5);
+    transform-origin: top;
+    height: 1px;
     margin: 10px 0;
     display: block;
 }

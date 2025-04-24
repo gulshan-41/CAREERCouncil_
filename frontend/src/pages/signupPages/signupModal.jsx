@@ -85,7 +85,7 @@ function SignupModal() {
 
                 <div className="other-methods-separator">
                     <div className="separator"></div>
-                    <div className="login-with">login with</div>
+                    <div className="login-with">Login with</div>
                     <div className="separator"></div>
                 </div>
 

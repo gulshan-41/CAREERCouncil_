@@ -9,10 +9,10 @@ function HcategoriesCard({ catID, text, description }) {
     };
 
     return (
-        <div className="hcat-card-wrapper">
+        <div className="hcat-card-wrapper" onClick={handleNavigate}>
             <div className="cat-head">
                 <h3>{text}</h3>
-                <div className="btn-cover" onClick={handleNavigate}>
+                <div className="btn-cover">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         enableBackground="new 0 0 24 24"
