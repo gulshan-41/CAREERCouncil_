@@ -8,6 +8,7 @@ function Aside() {
     const toggleContent = () => {
         setTableToOpen((prev) => !prev);
     };
+    
     return (
         <aside className="contents-table">
             <div className="content-head">

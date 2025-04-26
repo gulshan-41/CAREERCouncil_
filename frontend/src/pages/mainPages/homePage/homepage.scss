@@ -68,34 +68,6 @@
         margin-left: auto;
         margin-right: auto;
         padding: 2rem 0;
-
-        .categories-grid {
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 8px;
-
-            .cat-card-wrapper {
-                .categories-card-container {
-                    padding: 12px 14px;
-
-                    .category-text-wrapper {
-                        p {
-                            font-size: 1.12rem;
-                        }
-                    }
-
-                    .link-to {
-                        svg {
-                            width: 36px;
-                            height: 36px;
-                        }
-                    }
-
-                    .toggle-sub {
-                        display: none;
-                    }
-                }
-            }
-        }
     }
 
 }
