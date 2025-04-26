@@ -12,7 +12,7 @@
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: nowrap;
-        gap: 4px;
+        gap: 20px;
         justify-content: space-between;
     }
 
@@ -54,7 +54,7 @@
         width: 100%;
     
         .cat-into-hero {
-            padding: 8px 12px;
+            padding: 8px 20px;
             box-sizing: border-box;
             
             h1 {
@@ -81,9 +81,6 @@
 
     .categories-main-section {
         .cat-into-hero {
-            padding: 8px 12px;
-            box-sizing: border-box;
-            
             h1 {
                 font-size: 1.8rem;
                 font-weight: 400;

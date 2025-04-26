@@ -7,7 +7,7 @@ import { useCategories } from "../../../context/CategoriesProvider/CategoriesPro
 
 function CategoriesPage() {
     const [toggledCategories, setToggledCategories] = useState([]);
-    const [activeCategory, setActiveCategory] = useState(null);
+    const [openDropdowns, setOpenDropdowns] = useState([]); // Track open dropdowns
     const categoryRefs = useRef({});
     const { catID } = useParams();
     const { categoryDetails, detailsLoading, detailsError, fetchCategoryDetails } = useCategories();
@@ -16,16 +16,25 @@ function CategoriesPage() {
     useEffect(() => {
         if (catID && !toggledCategories.includes(catID)) {
             setToggledCategories([catID]);
-            setActiveCategory(catID);
+            setOpenDropdowns([catID]); // Open dropdown for URL param
+            fetchCategoryDetails(catID); // Fetch details for URL param
         }
     }, [catID]);
 
-    // Fetch category details when activeCategory changes
+    // Fetch category details for all open dropdowns
     useEffect(() => {
-        if (activeCategory) {
-            fetchCategoryDetails(activeCategory);
+        openDropdowns.forEach((catID) => {
+            fetchCategoryDetails(catID);
+        });
+    }, [openDropdowns, fetchCategoryDetails]);
+
+    // Scroll to the latest toggled category
+    useEffect(() => {
+        const latestCatID = toggledCategories[toggledCategories.length - 1];
+        if (latestCatID && categoryRefs.current[latestCatID]) {
+            categoryRefs.current[latestCatID].scrollIntoView({ behavior: "smooth" });
         }
-    }, [activeCategory, fetchCategoryDetails]);
+    }, [toggledCategories]);
 
     const toggleCategory = (catID) => {
         const isAlreadyToggled = toggledCategories.includes(catID);
@@ -36,26 +45,32 @@ function CategoriesPage() {
             }
         } else {
             setToggledCategories((prev) => [...prev, catID]);
+            setOpenDropdowns((prev) => [...prev, catID]); // Open dropdown for new category
         }
-            setActiveCategory(catID);
     };
 
     const closeCategory = (catID) => {
         setToggledCategories((prev) => prev.filter((id) => id !== catID));
-        if (activeCategory === catID) {
-            setActiveCategory(null);
-        }
+        setOpenDropdowns((prev) => prev.filter((id) => id !== catID)); // Close dropdown
+    };
+
+    const toggleDropdown = (catID) => {
+        setOpenDropdowns((prev) =>
+            prev.includes(catID)
+                ? prev.filter((id) => id !== catID) // Close dropdown
+                : [...prev, catID] // Open dropdown
+        );
     };
 
     const contextValue = {
-        activeCategory,
-        setActiveCategory,
+        openDropdowns,
         toggledCategories,
         toggleCategory,
         closeCategory,
+        toggleDropdown,
     };
 
-  return (
+    return (
         <CategoriesContext.Provider value={contextValue}>
             <div className="categories-page cat-utility-section">
                 <div className="categories-page-wrapper">
@@ -71,8 +86,13 @@ function CategoriesPage() {
                                 The Categories section simplifies navigation by organizing a diverse range of courses into broader fields like Engineering, Medical, Law, Aviation, Civil Services, and Armed Forces, etc. Displayed conveniently in this column, these categories allow you to quickly explore areas of interest, discover relevant courses, and find the perfect path to achieve your career goals with ease.
                             </p>
                         </section>
-                        {detailsError[activeCategory] && (
-                            <div className="error-section">Error: {detailsError[activeCategory]}</div>
+                        {openDropdowns.map(
+                            (catID) =>
+                                detailsError[catID] && (
+                                    <div key={catID} className="error-section">
+                                        Error: {detailsError[catID]}
+                                    </div>
+                                )
                         )}
                         {toggledCategories.map((catID) => (
                             <CategoryDetails
@@ -90,6 +110,5 @@ function CategoriesPage() {
 
 export default CategoriesPage;
 
-// Keep existing context for CategoriesPage-specific state
 export const CategoriesContext = React.createContext();
 export const useCategoriesContext = () => useContext(CategoriesContext);

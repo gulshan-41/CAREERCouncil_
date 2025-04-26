@@ -6,8 +6,11 @@
 
 .mainLayout-main-section {
     flex-grow: 1;
-    padding-top: var(--nav-height, 78px);
-    scroll-margin-top: var(--nav-height, 78px);
+    padding-top: calc(var(--nav-height, 78px) + 4px);
+}
+
+.mainLayout-main-section section {
+    scroll-margin-top: calc(var(--nav-height, 78px) + 8px);
 }
 
 .AI-parent-container {

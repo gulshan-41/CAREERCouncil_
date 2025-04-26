@@ -82,36 +82,19 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div>   
             </div>
-            <button className="cut-cat" onClick={() => closeCategory(catID)}>
-                {/* <svg
+            <div className="cut-cat" onClick={() => closeCategory(catID)}>
+                <svg
+                    id="hcat-toggle-icon"
                     xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    height="20px"
-                    width="20px"
-                    fill="#000"
-                    stroke="#000"
-                    stroke-width="5"
-                    viewBox="0 0 101 101"
-                    id="cross"
-                >
-                        <path d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z"></path>
-                </svg> */}
-                <svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlSpace="preserve"
-                    viewBox="0 0 101 101"
-                    id="Cross"
-                    width="21px"
-                    height="21px"
-                    fill="#8724DB"
-                    stroke="#8724DB"
-                    strokeWidth="8"
-                >
-                        <path d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z"  class="color000000 svgShape"></path>
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#8724DB">
+                    <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                 </svg>
-            </button>
+            </div>
         </section>
     );
 });

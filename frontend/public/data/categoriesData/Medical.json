@@ -1,0 +1,59 @@
+{
+    "introduction": [
+        {
+            "type": "heading",
+            "content": "Medical Courses"
+        },
+        {
+            "type": "paragraph",
+            "content": "Medical courses train individuals in healthcare and medicine, equipping them with skills to diagnose, treat, and care for patients. These programs range from undergraduate degrees like MBBS to postgraduate diplomas, fellowships, and certificate courses, catering to diverse career paths in clinical practice, research, and healthcare management."
+        },
+        {
+            "type": "paragraph",
+            "content": "In India, the healthcare sector is growing rapidly, with high demand for professionals in hospitals, clinics, and administrative roles. Courses for working professionals, such as online PG Diplomas, Fellowships, and Executive MBAs in Healthcare Management, offer flexible learning to enhance skills without disrupting careers."
+        },
+        {
+            "type": "list",
+            "items": [
+            "MBBS: A comprehensive medical degree for aspiring doctors.",
+            "PG Diploma in Clinical Research: Short-term program for professionals in research.",
+            "Executive MBA in Healthcare Management: Designed for working professionals in hospital administration.",
+            "Fellowship in Pulmonology: Specialized training for medical professionals.",
+            "B.Sc Nursing: Prepares nurses for patient care, with options for advanced certifications."
+            ]
+        }
+    ],
+
+    "relatedCourses": [
+        { "name": "MBBS", "specialization": "Medicine" },
+        { "name": "BDS", "specialization": "Dentistry" },
+        { "name": "BAMS", "specialization": "Ayurvedic Medicine" },
+        { "name": "BHMS", "specialization": "Homeopathic Medicine" },
+        { "name": "BUMS", "specialization": "Unani Medicine" },
+        { "name": "B.Sc Nursing", "specialization": "Nursing" },
+        { "name": "BPT", "specialization": "Physiotherapy" },
+        { "name": "BOT", "specialization": "Occupational Therapy" },
+        { "name": "B.Optom", "specialization": "Optometry" },
+        { "name": "B.Pharm", "specialization": "Pharmacy" },
+        { "name": "BMLT", "specialization": "Medical Laboratory Technology" },
+        { "name": "B.Sc Medical Imaging Technology", "specialization": "Diagnostic Imaging" },
+        { "name": "B.Sc Biotechnology", "specialization": "Biotechnology" },
+        { "name": "B.Sc Nutrition and Dietetics", "specialization": "Nutrition" },
+        { "name": "MD (Doctor of Medicine)", "specialization": "Specialized Medicine" },
+        { "name": "MS (Master of Surgery)", "specialization": "Surgical Training" },
+        { "name": "M.Sc Assisted Reproduction Technology", "specialization": "Embryology" },
+        { "name": "M.Sc Paramedical Technology", "specialization": "Paramedical Sciences" },
+        { "name": "Diploma in Medical Laboratory Technology", "specialization": "Lab Technology" },
+        { "name": "Diploma in Dialysis Technology", "specialization": "Renal Care" },
+        { "name": "Diploma in Anaesthesia Technology", "specialization": "Anaesthesia" },
+        { "name": "PG Diploma in Clinical Research", "specialization": "Clinical Trials" },
+        { "name": "Fellowship in Pulmonology", "specialization": "Pulmonary Care" },
+        { "name": "Fellowship in Gastroenterology", "specialization": "Gastrointestinal Disorders" },
+        { "name": "Fellowship in Clinical Oncology", "specialization": "Cancer Management" },
+        { "name": "Certificate in Healthcare Management", "specialization": "Hospital Administration" },
+        { "name": "PG Diploma in Health Informatics", "specialization": "Healthcare IT" },
+        { "name": "Executive MBA in Healthcare Management", "specialization": "Hospital Management" },
+        { "name": "PG Diploma in Hospital Management", "specialization": "Healthcare Administration" },
+        { "name": "Certificate in Medical Writing", "specialization": "Medical Communication" }
+    ]
+}

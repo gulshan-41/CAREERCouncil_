@@ -6,7 +6,7 @@ import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvide
 function CategoriesGrid({ isNavigationOnly = false, onCategoryClick }) {
     const { categories, categoriesLoading, categoriesError } = useCategories();
     const context = useCategoriesContext();
-    const { activeCategory, setActiveCategory, toggleCategory } = context || {};
+    const { openDropdowns, toggledCategories, toggleCategory, toggleDropdown } = context || {};
 
     const handleCardClick = (catID) => {
         console.log("Category card clicked in CategoriesGrid:", catID);
@@ -18,9 +18,9 @@ function CategoriesGrid({ isNavigationOnly = false, onCategoryClick }) {
     };
 
     const handleIconClick = (catID) => {
-        if (!isNavigationOnly && setActiveCategory) {
+        if (!isNavigationOnly && toggleDropdown) {
             console.log("Icon clicked for category:", catID);
-            setActiveCategory((prev) => (prev === catID ? null : catID));
+            toggleDropdown(catID); // Toggle dropdown for this category
         }
     };
 
@@ -31,14 +31,14 @@ function CategoriesGrid({ isNavigationOnly = false, onCategoryClick }) {
         <div className="categories-grid">
             {categories.map((category) => (
                 <CategoriesCard
-                key={category.catID}
-                catID={category.catID}
-                text={category.text}
-                onClick={() => handleCardClick(category.catID)}
-                onIconClick={() => handleIconClick(category.catID)}
-                isDropdownActive={!isNavigationOnly && activeCategory === category.catID}
-                isActive={!isNavigationOnly && activeCategory === category.catID}
-                isNavigationOnly={isNavigationOnly}
+                    key={category.catID}
+                    catID={category.catID}
+                    text={category.text}
+                    onClick={() => handleCardClick(category.catID)}
+                    onIconClick={() => handleIconClick(category.catID)}
+                    isDropdownActive={!isNavigationOnly && openDropdowns.includes(category.catID)}
+                    isActive={!isNavigationOnly && toggledCategories.includes(category.catID)}
+                    isNavigationOnly={isNavigationOnly}
                 />
             ))}
         </div>

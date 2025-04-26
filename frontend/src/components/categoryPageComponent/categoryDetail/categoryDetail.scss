@@ -45,19 +45,22 @@
         flex-direction: column;
         border: 1px solid #a5a5a5;
         border-radius: 8px;
-        padding: 8px 12px;
+        padding: 8px 20px;
+        margin-bottom: 20px;
         box-sizing: border-box;
-        margin: 8px 0;
         position: relative;
     }
 
     .each-cat-intro {
         margin-bottom: 16px;
+
         h2 {
             font-size: 1.8rem;
             font-weight: 500;
-            border-bottom: 1px solid #203864;
+            border-bottom: 1px solid #000;
             margin-bottom: 4px;
+            padding-bottom: 4px;
+            box-sizing: border-box;
         }
 
         p {
@@ -76,14 +79,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 28px;
-        height: 28px;
-        border: 1px solid #a5a5a5;
         border-radius: 4px;
-        background-color: #fff;
         position: absolute;
-        right: 12px;
-        top: 8px;
+        right: -8px;
+        top: -8px;
         cursor: pointer;
     }
     

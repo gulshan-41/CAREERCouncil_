@@ -1,59 +1,59 @@
 {
-  "introduction": [
-    {
-      "type": "heading",
-      "content": "Engineering"
-    },
-    {
-      "type": "paragraph",
-      "content": "Engineering is the process of designing, building, and maintaining things like machines, structures, or systems by using science and math to solve practical problems."
-    },
-    {
-      "type": "paragraph",
-      "content": "Popular types of engineering include:"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Mechanical Engineering: Focuses on machines, engines, and moving parts.",
-        "Civil Engineering: Deals with building infrastructure like roads, bridges, and buildings.",
-        "Electrical Engineering: Works with electricity, circuits, and power systems.",
-        "Chemical Engineering: Involves chemicals and processes to make products like fuels or medicines.",
-        "Software Engineering: Centers on designing and creating computer programs and apps."
-      ]
-    }
-  ],
+    "introduction": [
+      {
+        "type": "heading",
+        "content": "Engineering"
+      },
+      {
+          "type": "paragraph",
+          "content": "Engineering is the process of designing, building, and maintaining things like machines, structures, or systems by using science and math to solve practical problems."
+      },
+      {
+          "type": "paragraph",
+          "content": "Popular types of engineering include:"
+      },
+      {
+          "type": "list",
+          "items": [
+                "Mechanical Engineering: Focuses on machines, engines, and moving parts.",
+                "Civil Engineering: Deals with building infrastructure like roads, bridges, and buildings.",
+                "Electrical Engineering: Works with electricity, circuits, and power systems.",
+                "Chemical Engineering: Involves chemicals and processes to make products like fuels or medicines.",
+                "Software Engineering: Centers on designing and creating computer programs and apps."
+            ]
+        }
+    ],
   
-  "relatedCourses": [
-    { "name": "Aeronautical Engineering", "specialization": "Aeronautics" },
-    { "name": "Industrial Engineering", "specialization": "Manufacturing" },
-    { "name": "Aerospace Engineering", "specialization": "Space Technology" },
-    { "name": "Marine Engineering", "specialization": "Marine Technology" },
-    { "name": "Automobile Engineering", "specialization": "Automotive Design" },
-    { "name": "Mechanical Engineering", "specialization": "Mechanics" },
-    { "name": "Biomedical Engineering", "specialization": "Medical Technology" },
-    { "name": "Mechatronics Engineering", "specialization": "Automation" },
-    { "name": "Biotechnology Engineering", "specialization": "Biotechnology" },
-    { "name": "Metallurgical Engineering", "specialization": "Materials Science" },
-    { "name": "Ceramic Engineering", "specialization": "Ceramics" },
-    { "name": "Mining Engineering", "specialization": "Mining Technology" },
-    { "name": "Chemical Engineering", "specialization": "Chemical Processes" },
-    { "name": "Petroleum Engineering", "specialization": "Petroleum Extraction" },
-    { "name": "Civil Engineering", "specialization": "Infrastructure" },
-    { "name": "Power Engineering", "specialization": "Power Systems" },
-    { "name": "Communications Engineering", "specialization": "Telecommunications" },
-    { "name": "Production Engineering", "specialization": "Manufacturing" },
-    { "name": "Computer Science Engineering", "specialization": "Computing" },
-    { "name": "Robotics Engineering", "specialization": "Robotics" },
-    { "name": "Construction Engineering", "specialization": "Construction Management" },
-    { "name": "Structural Engineering", "specialization": "Structural Design" },
-    { "name": "Electrical Engineering", "specialization": "Electronics" },
-    { "name": "Telecom. Engineering", "specialization": "Telecom Systems" },
-    { "name": "Electronics & Communication", "specialization": "Communication Systems" },
-    { "name": "Textile Engineering", "specialization": "Textile Technology" },
-    { "name": "Electronics Engineering", "specialization": "Electronic Circuits" },
-    { "name": "Tool Engineering", "specialization": "Tool Design" },
-    { "name": "Environmental Engineering", "specialization": "Environmental Management" },
-    { "name": "Transportation Engineering", "specialization": "Transport Systems" }
-  ]
-}
+    "relatedCourses": [
+        { "name": "Aeronautical Engineering", "specialization": "Aeronautics" },
+        { "name": "Industrial Engineering", "specialization": "Manufacturing" },
+        { "name": "Aerospace Engineering", "specialization": "Space Technology" },
+        { "name": "Marine Engineering", "specialization": "Marine Technology" },
+        { "name": "Automobile Engineering", "specialization": "Automotive Design" },
+        { "name": "Mechanical Engineering", "specialization": "Mechanics" },
+        { "name": "Biomedical Engineering", "specialization": "Medical Technology" },
+        { "name": "Mechatronics Engineering", "specialization": "Automation" },
+        { "name": "Biotechnology Engineering", "specialization": "Biotechnology" },
+        { "name": "Metallurgical Engineering", "specialization": "Materials Science" },
+        { "name": "Ceramic Engineering", "specialization": "Ceramics" },
+        { "name": "Mining Engineering", "specialization": "Mining Technology" },
+        { "name": "Chemical Engineering", "specialization": "Chemical Processes" },
+        { "name": "Petroleum Engineering", "specialization": "Petroleum Extraction" },
+        { "name": "Civil Engineering", "specialization": "Infrastructure" },
+        { "name": "Power Engineering", "specialization": "Power Systems" },
+        { "name": "Communications Engineering", "specialization": "Telecommunications" },
+        { "name": "Production Engineering", "specialization": "Manufacturing" },
+        { "name": "Computer Science Engineering", "specialization": "Computing" },
+        { "name": "Robotics Engineering", "specialization": "Robotics" },
+        { "name": "Construction Engineering", "specialization": "Construction Management" },
+        { "name": "Structural Engineering", "specialization": "Structural Design" },
+        { "name": "Electrical Engineering", "specialization": "Electronics" },
+        { "name": "Telecom. Engineering", "specialization": "Telecom Systems" },
+        { "name": "Electronics & Communication", "specialization": "Communication Systems" },
+        { "name": "Textile Engineering", "specialization": "Textile Technology" },
+        { "name": "Electronics Engineering", "specialization": "Electronic Circuits" },
+        { "name": "Tool Engineering", "specialization": "Tool Design" },
+        { "name": "Environmental Engineering", "specialization": "Environmental Management" },
+        { "name": "Transportation Engineering", "specialization": "Transport Systems" }
+    ]
+  }
