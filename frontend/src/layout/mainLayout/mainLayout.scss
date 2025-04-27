@@ -6,11 +6,11 @@
 
 .mainLayout-main-section {
     flex-grow: 1;
-    padding-top: calc(var(--nav-height, 78px) + 4px);
+    padding-top: var(--nav-height, 78px);
 }
 
 .mainLayout-main-section section {
-    scroll-margin-top: calc(var(--nav-height, 78px) + 8px);
+    scroll-margin-top: calc(var(--nav-height, 78px) + 4px);
 }
 
 .AI-parent-container {
@@ -38,19 +38,19 @@
 
 // @media (max-width: 1536px) { }
 
-@media (max-width: 1312px) {
+@media (max-width: 1280px) {
     .utility-section {
         padding: 0 3rem;
     }
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1024px) {
     .utility-section {
         padding: 0 2.65rem;
     }
 }
 
-@media (max-width: 864px) {
+@media (max-width: 768px) {
     .utility-section {
         padding: 0 2.5rem;
     }
@@ -61,3 +61,5 @@
         padding: 0 1rem;
     }
 }
+
+// @media (max-width: 475px) { }

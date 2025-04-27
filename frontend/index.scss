@@ -7,27 +7,32 @@
 
 #page-wrapper {
     max-width: 1536px;
+    margin: 0 auto;
 
     .limiter {
         display: none;
     }
 
-    @media (max-width: 1600px) {
+    @media (min-width: 1600px) {
         #page-wrapper {
-            border-left: 1px solid #A5A5A5;
-            border-right: 1px solid #A5A5A5;
-            padding-left: 8px;
-            padding-right: 8px;
+            border-left: 0.8px solid #A5A5A5;
+            border-right: 0.8px solid #A5A5A5;
+            padding: 0 10px;
+            box-sizing: border-box;
             position: relative;
 
             .limiter {
                 display: block;
-                padding: 4px 8px;
+                rotate: -90deg;
+                border: 1px solid #a5a5a5;
+                border-bottom: none;
+                border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+                padding: 4px 10px;
                 box-sizing: border-box;
-                border: 1px solid #000;
-                border-radius: 4px 0 0 4px / 4px 0 0 4px;
-                position: absolute;
-
+                position: fixed;
+                left: 140px;
+                top: 140px;
+                cursor: pointer;
             }
         }
     }

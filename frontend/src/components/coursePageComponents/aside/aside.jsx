@@ -3,7 +3,7 @@ import { useState } from "react";
 import downBtn from "/src/assets/icons/downArrow.svg";
 
 function Aside() {
-    const [isTableOpen, setTableToOpen] = useState(true);
+    const [isTableOpen, setTableToOpen] = useState(false);
 
     const toggleContent = () => {
         setTableToOpen((prev) => !prev);
@@ -11,25 +11,32 @@ function Aside() {
     
     return (
         <aside className="contents-table">
-            <div className="content-head">
-                <div className="heading">In this article</div>
-                <div className="btn-wrapper" onClick={toggleContent}>
-                    <img 
-                        src={downBtn} 
-                        alt="down-arrow" 
-                        className={isTableOpen ? "rotate-down" : "rotate-up"} />
+            <div className="content-head" onClick={toggleContent}>
+                <div className="heading-btn">
+                    <div className="btn-wrapper">
+                        <svg
+                            className={isTableOpen ? "rotate-down" : "rotate-up"}
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="22px"
+                            width="22px"
+                            fill="#000"
+                            viewBox="0 -960 960 960">
+                                <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                        </svg>
+                    </div>
+                    <h2>In this article</h2>
                 </div>
             </div>
-            <div className={`links-grid-wrapper ${isTableOpen ? "open" : "closed"}`}>
-                <div className="content-links">
-                    <div><a href="#course-introduction">Introduction</a></div>
-                    <div><a href="#about-course">About the course</a></div>
-                    <div><a href="#subjects">Subjects</a></div>
-                    <div><a href="#syllabus">Syllabus</a></div>
-                    <div><a href="#job-opportunities">Job opportunities</a></div>
-                    <div><a href="colleges">Recommended colleges</a></div>
-                </div>
-            </div>
+            <nav className={`links-grid-wrapper ${isTableOpen ? "open" : "closed"}`}>
+                <ul className="content-links">
+                    <li><a href="#course-introduction">Introduction</a></li>
+                    <li><a href="#about-course">About the course</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#syllabus">Syllabus</a></li>
+                    <li><a href="#job-opportunities">Job opportunities</a></li>
+                    <li><a href="colleges">Recommended colleges</a></li>
+                </ul>
+            </nav>
         </aside>
     );
 }

@@ -48,7 +48,7 @@ function CoursesPage () {
     // Render loading state
     if (loading) {
         return (
-            <div className="cat-utility-section">
+            <div className="">
                 <div className="loading-section">
                     <div className="loading-line"></div>
                 </div>
@@ -68,20 +68,19 @@ function CoursesPage () {
     }
 
     return (
-        <div className="course">
-            <div className="course-wrapper">
-            <section className="main-section">
-                <h1>{courseData.name}</h1>
-                <Introduction data={courseData.introduction}/>
-                <AboutCourse data={courseData.about}/>
-                <Subjects data={courseData.subjects}/>
-                <Syllabus />
-                <Opportunities />
-                <Recommendation />
-            </section>
-            <section className="aside-section">
-                <Aside />
-            </section>
+        <div className="coursespage courses-utility-section">
+            <div className="courses-limiters">Limiters</div>
+            <div className="coursespage-wrapper">
+                <section className="courses-main-section">
+                    <h1>{courseData.name}</h1>
+                    <Aside />
+                    <Introduction data={courseData.introduction}/>
+                    <AboutCourse data={courseData.about}/>
+                    <Subjects data={courseData.subjects}/>
+                    <Syllabus />
+                    <Opportunities />
+                    <Recommendation />
+                </section>
             </div>
         </div>
     );

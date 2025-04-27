@@ -7,8 +7,8 @@ function Homepage() {
     const navigate = useNavigate();
 
     return (
-        <>
-            <section className="hero-section utility-section">
+        <div className="homepage-wrapper utility-section">
+            <section className="hero-section">
                 <div className="hero-wrapper utility-container">
                     <div className="intro-div">
                         <h1>FIND YOUR PATH, THRIVE WITH CAREER Council_</h1>
@@ -27,7 +27,7 @@ function Homepage() {
                 </div>
             </section>
 
-            <section className="explore-cat utility-section">
+            <section className="explore-cat">
                 <div className="utility-container">
                     <h2>Explore career categories</h2>
                     <div className="hero-cat-grid">
@@ -35,7 +35,7 @@ function Homepage() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 }
 

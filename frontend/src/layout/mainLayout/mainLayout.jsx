@@ -12,7 +12,7 @@ function MainLayout() {
             <SearchDiv />
             <SideBar />
             <main className="mainLayout-main-section">
-              <Outlet />
+                <Outlet />
             </main>
             <ArrowAI />
         </div>

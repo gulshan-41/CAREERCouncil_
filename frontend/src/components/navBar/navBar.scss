@@ -43,9 +43,9 @@ $company-text-weight: 800;
     }
 }
 
-// @media (max-width: 1312px) { }
+// @media (max-width: 1280px) { }
 
-@media (max-width: 1088px) {
+@media (max-width: 1024px) {
     .logo {
         #career,
         #council {
@@ -54,7 +54,7 @@ $company-text-weight: 800;
     }
 }
 
-@media (max-width: 864px) {
+@media (max-width: 768px) {
     .logo {
         #career,
         #council {
@@ -84,3 +84,5 @@ $company-text-weight: 800;
         }
     }
 }
+
+// @media (max-width: 475px) { }
