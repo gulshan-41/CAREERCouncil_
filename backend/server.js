@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const chatRouter = require('./src/routes/chat');
+const dotenv = require('dotenv/config');
+const {dbConnect} = require('./src/cofig/dbConnect.js')
 
 const app = express();
 const PORT = 5000;
@@ -13,6 +15,12 @@ app.get('/', (req, res) => {
   res.send('CareerCouncil backend running!');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+
+dbConnect().then(() => {
+
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`)
+  });
+
+})
+
