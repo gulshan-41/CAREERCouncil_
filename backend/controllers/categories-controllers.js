@@ -1,14 +1,17 @@
 import CategoriesListModel from "../models/CategoriesList-Model.js";
+import NodeCache from 'node-cache';
 
+//making api 10x fast cheat-code
+const nodeCache = new NodeCache();
 
 //adding categories list from postman later we will make admin panel for career council 
 export const addCategoriesList = async (req, res, next) => {
     try {
 
         const createCategoriesList = await CategoriesListModel.create(req.body);
+        nodeCache.del('categoriesList');
 
         res.status(201).json({ success: true, categoriesList: createCategoriesList });
-
 
     } catch (err) {
 
@@ -27,10 +30,17 @@ export const getCategoriesList = async (req, res, next) => {
 
     try {
 
-        const categoriesList = await CategoriesListModel.find({});
+        let categoriesList;
+
+        if (nodeCache.has('categoriesList')) {
+            categoriesList = JSON.parse(nodeCache.get('categoriesList'));
+        }
+        else {
+            categoriesList = await CategoriesListModel.find({});
+            nodeCache.set('categoriesList', JSON.stringify(categoriesList));
+        }
 
         const data = categoriesList[0].categoriesList
-        
 
         res.status(201).json({ success: true, categoriesList: data });
 
