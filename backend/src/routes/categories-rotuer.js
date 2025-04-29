@@ -2,8 +2,6 @@ import express from 'express';
 import { addCategoriesList, getCategoriesList } from '../controllers/categories-controllers.js';
 
 const CategoriesRouter = express.Router();
-
-
 //route for adding categories list
 CategoriesRouter.post('/addcategorieslist', addCategoriesList);
 

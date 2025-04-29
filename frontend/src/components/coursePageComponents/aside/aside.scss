@@ -2,10 +2,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1.4px solid #203864;
+    border: 1px solid #a5a5a5;
+    background-color: #fff;
     border-radius: 8px;
     box-sizing: border-box;
-    margin-bottom: 16px;
+    // position: sticky;
+    // top: var(--nav-height, 78px);
 }
 
 .content-head {
@@ -63,7 +65,7 @@
     &.open {
         grid-template-rows: 1fr;
         opacity: 1;
-        border-top: 1px solid #203864;
+        border-top: 1px solid #a5a5a5;
     }
 
     &.closed {
@@ -76,17 +78,26 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding: 8px 20px;
+    padding: 8px 40px;
     box-sizing: border-box;
 
     li {
-        list-style: none;
+        list-style: circle;
 
         a {
+            display: block;
+            width: fit-content;
             text-decoration: none;
             color: black;
             font-size: 1.125rem;
+            padding: 2px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-decoration: underline solid #203864 1px;
+                color: #203864;
+                background-color: #D4E4FD;
+            }
         }
     }
 }

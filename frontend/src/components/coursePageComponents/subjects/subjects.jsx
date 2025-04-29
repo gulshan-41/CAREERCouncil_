@@ -15,6 +15,7 @@ function Subjects({ data }) {
     return ( 
         <section className="prerequisite-subjects" id="subjects">
             <h2>Prerequisites</h2>
+            <div className="content-box">
             {/* Map over the text array to render each block */}
             {data.text.map((block, index) => {
                 switch (block.type) {            
@@ -37,6 +38,7 @@ function Subjects({ data }) {
                         ); // Fallback for unknown types
                 }
             })}
+            </div>
         </section>
     );
 }

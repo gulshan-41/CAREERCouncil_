@@ -15,6 +15,7 @@ function Introduction({ data }) {
     return (
         <section className="introduction" id="course-introduction">
             <h2>Introduction</h2>
+            <div className="content-box">
             {/* Map over the text array to render each block */}
             {data.text.map((block, index) => {
                 switch (block.type) {
@@ -38,6 +39,7 @@ function Introduction({ data }) {
                         ); // Fallback for unknown types
                   }
             })}
+            </div>
         </section>
     );
 }

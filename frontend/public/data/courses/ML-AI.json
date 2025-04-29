@@ -9,7 +9,7 @@
             },
             {
                 "type": "paragraph",
-                "content": "AI is a branch of computer science that enables machines to perform tasks that typically require human intelligence. These tasks include problem-solving, decision-making, language understanding, and image recognition. AI systems are designed to learn from data, adapt to new inputs, and improve their performance over time."
+                "content": "AI is a branch of computer science that enables machines (software program) to perform tasks that typically require human intelligence. These tasks include problem-solving, decision-making, language understanding, and image recognition. AI systems are designed to learn from data, adapt to new inputs, and improve their performance over time."
             },
             {
                 "type": "heading",
@@ -31,6 +31,10 @@
     },
     "subjects": {
         "text": [
+            {
+                "type": "paragraph",
+                "content": ""
+            },
             {
                 "type": "list",
                 "items": [
