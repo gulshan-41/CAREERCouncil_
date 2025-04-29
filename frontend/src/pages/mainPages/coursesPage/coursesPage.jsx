@@ -34,6 +34,7 @@ function CoursesPage () {
             }
             // Parse the JSON data
             const data = await response.json();
+            
             setCourseData(data); // Store the fetched data in state
             } catch (err) {
                 setError(err.message); // Set error message if fetch fails

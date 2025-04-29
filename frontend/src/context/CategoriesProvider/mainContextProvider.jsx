@@ -53,6 +53,8 @@ export function CategoriesProvider({ children }) {
             const response = await fetch(`/api/categories/${catID}`);
             if (!response.ok) throw new Error(`Failed to fetch category ${catID}`);
             const data = await response.json();
+            console.log(data);
+            
             setCategoryDetails((prev) => ({ ...prev, [catID]: data }));
             setDetailsError((prev) => ({ ...prev, [catID]: null }));
         } catch (error) {

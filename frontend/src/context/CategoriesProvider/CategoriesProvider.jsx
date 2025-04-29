@@ -22,6 +22,8 @@ export function CategoriesProvider({ children }) {
           throw new Error("Failed to fetch categories");
         }
         const data = await response.json();
+        console.log('categoriesList = ',data);
+        
         setCategories(data);
         setCategoriesLoading(false);
       } catch (err) {
@@ -47,6 +49,9 @@ export function CategoriesProvider({ children }) {
         throw new Error(`Failed to fetch data for ${catID}`);
       }
       const data = await response.json();
+      
+      console.log("CategoriesData = " ,catID, data);
+      
       setCategoryDetails((prev) => ({
         ...prev,
         [catID]: {

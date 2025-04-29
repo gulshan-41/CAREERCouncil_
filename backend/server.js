@@ -3,9 +3,10 @@ import cors from 'cors';
 import 'dotenv/config'
 import { errorMiddleware } from './middlewares/error-middleware.js';
 import { dbConnect } from './config/dbConnect.js';
+import CategoriesRouter from './routes/categories-rotuer.js';
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 8800;
 
 //cors for connecting frontend
 app.use(cors({
@@ -21,12 +22,8 @@ app.use(express.json());
 //error-middleware
 app.use(errorMiddleware);
 
-
-//api
-app.get('/', (req, res) => {
-    res.send('CareerCouncil backend running!');
-});
-
+//categories data and list api endpoint
+app.use('/api/categories', CategoriesRouter)
 
 
 //first DB will connect and then app server will run.
