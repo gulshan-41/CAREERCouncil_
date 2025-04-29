@@ -17,7 +17,7 @@ export function CategoriesProvider({ children }) {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        
+
         const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
           method: 'GET',
           headers: {
@@ -28,7 +28,6 @@ export function CategoriesProvider({ children }) {
         if (!response.success) {
           throw new Error("Failed to fetch categories");
         }
-        console.log('categoriesList = ', response.categoriesList);
 
         setCategories(response.categoriesList);
         setCategoriesLoading(false);
@@ -50,13 +49,19 @@ export function CategoriesProvider({ children }) {
     setDetailsError((prev) => ({ ...prev, [catID]: null }));
 
     try {
-      const response = await fetch(`/data/categoriesData/${catID}.json`);
-      if (!response.ok) {
+      const response = await fetch(`http://localhost:8800/api/categories/getcategoriesdata/${catID}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then((data) => data.json());
+
+      console.log(response.getCategoriesData);
+
+      if (!response.success) {
         throw new Error(`Failed to fetch data for ${catID}`);
       }
-      const data = await response.json();
-
-      console.log("CategoriesData = ", catID, data);
+      const data = response.getCategoriesData;
 
       setCategoryDetails((prev) => ({
         ...prev,
