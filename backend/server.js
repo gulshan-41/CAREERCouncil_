@@ -1,4 +1,5 @@
 import express from 'express';
+import morgan from 'morgan';
 import cors from 'cors';
 import 'dotenv/config'
 import { errorMiddleware } from './middlewares/error-middleware.js';
@@ -18,13 +19,15 @@ app.use(cors({
 
 //middlewares
 app.use(express.json());
+app.use(morgan('tiny'));
 
-//error-middleware
-app.use(errorMiddleware);
+
 
 //categories data and list api endpoint
 app.use('/api/categories', CategoriesRouter)
 
+//error-middleware
+app.use(errorMiddleware);
 
 //first DB will connect and then app server will run.
 dbConnect().then(() => {

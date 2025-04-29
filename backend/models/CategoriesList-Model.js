@@ -9,6 +9,6 @@ const CategoriesListSchema = new mongoose.Schema({
 
 });
 
-const CategoriesListModel = mongoose.model.CategoriesList || mongoose.models('CategoriesList', CategoriesListSchema);
+const CategoriesListModel = mongoose.models.CategoriesList || mongoose.model('CategoriesList', CategoriesListSchema);
 
 export default CategoriesListModel;
