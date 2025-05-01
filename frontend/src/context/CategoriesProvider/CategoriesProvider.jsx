@@ -18,20 +18,22 @@ export function CategoriesProvider({ children }) {
     const [courseLoading, setCourseLoading] = useState(false);
     const [courseError, setCourseError] = useState({}); // { courseId: error }
 
-    // Fetch categories.json once on mount
-    useEffect(() => {
-        const fetchCategories = async () => {
-            try {
-                const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
-                    method: 'GET',
-                    headers: { 'Content-Type': 'application/json' }
-                }).then((data) => data.json());
-
-            if (!response.success) {
-                throw new Error("Failed to fetch categories");
-            }
+  // Fetch categories.json once on mount
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
         
-            // console.log('categoriesList = ', response.categoriesList);
+        const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }).then((data) => data.json());
+
+        if (!response.success) {
+          throw new Error("Failed to fetch categories");
+        }
+        console.log('categoriesList = ', response.categoriesList);
 
             setCategories(response.categoriesList);
             setCategoriesLoading(false);

@@ -1,21 +1,21 @@
 {
-    
+    "catID": "Engineering",
     "introduction": [
-      {
-        "type": "heading",
-        "content": "Engineering"
-      },
-      {
-          "type": "paragraph",
-          "content": "Engineering is the process of designing, building, and maintaining things like machines, structures, or systems by using science and math to solve practical problems."
-      },
-      {
-          "type": "paragraph",
-          "content": "Popular types of engineering include:"
-      },
-      {
-          "type": "list",
-          "items": [
+        {
+            "type": "heading",
+            "content": "Engineering"
+        },
+        {
+            "type": "paragraph",
+            "content": "Engineering is the process of designing, building, and maintaining things like machines, structures, or systems by using science and math to solve practical problems."
+        },
+        {
+            "type": "paragraph",
+            "content": "Popular types of engineering include:"
+        },
+        {
+            "type": "list",
+            "items": [
                 "Mechanical Engineering: Focuses on machines, engines, and moving parts.",
                 "Civil Engineering: Deals with building infrastructure like roads, bridges, and buildings.",
                 "Electrical Engineering: Works with electricity, circuits, and power systems.",
@@ -24,7 +24,6 @@
             ]
         }
     ],
-  
     "relatedCourses": [
         { "CO-ID": "ML-AI", "name": "Aeronautical Engineering", "specialization": "Aeronautics" },
         { "CO-ID": "null", "name": "Industrial Engineering", "specialization": "Manufacturing" },
@@ -56,5 +55,5 @@
         { "CO-ID": "null", "name": "Tool Engineering", "specialization": "Tool Design" },
         { "CO-ID": "null", "name": "Environmental Engineering", "specialization": "Environmental Management" },
         { "CO-ID": "null", "name": "Transportation Engineering", "specialization": "Transport Systems" }
-    ]
-  }
+    ]    
+}
