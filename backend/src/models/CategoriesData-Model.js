@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 const CategoriesDataSchema = new mongoose.Schema({
-
     catID: {
         type: String,
         required: true,

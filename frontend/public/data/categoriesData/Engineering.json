@@ -25,125 +25,35 @@
         }
     ],
     "relatedCourses": [
-        {
-            "name": "Aeronautical Engineering",
-            "specialization": "Aeronautics"
-        },
-        {
-            "name": "Industrial Engineering",
-            "specialization": "Manufacturing"
-        },
-        {
-            "name": "Aerospace Engineering",
-            "specialization": "Space Technology"
-        },
-        {
-            "name": "Marine Engineering",
-            "specialization": "Marine Technology"
-        },
-        {
-            "name": "Automobile Engineering",
-            "specialization": "Automotive Design"
-        },
-        {
-            "name": "Mechanical Engineering",
-            "specialization": "Mechanics"
-        },
-        {
-            "name": "Biomedical Engineering",
-            "specialization": "Medical Technology"
-        },
-        {
-            "name": "Mechatronics Engineering",
-            "specialization": "Automation"
-        },
-        {
-            "name": "Biotechnology Engineering",
-            "specialization": "Biotechnology"
-        },
-        {
-            "name": "Metallurgical Engineering",
-            "specialization": "Materials Science"
-        },
-        {
-            "name": "Ceramic Engineering",
-            "specialization": "Ceramics"
-        },
-        {
-            "name": "Mining Engineering",
-            "specialization": "Mining Technology"
-        },
-        {
-            "name": "Chemical Engineering",
-            "specialization": "Chemical Processes"
-        },
-        {
-            "name": "Petroleum Engineering",
-            "specialization": "Petroleum Extraction"
-        },
-        {
-            "name": "Civil Engineering",
-            "specialization": "Infrastructure"
-        },
-        {
-            "name": "Power Engineering",
-            "specialization": "Power Systems"
-        },
-        {
-            "name": "Communications Engineering",
-            "specialization": "Telecommunications"
-        },
-        {
-            "name": "Production Engineering",
-            "specialization": "Manufacturing"
-        },
-        {
-            "name": "Computer Science Engineering",
-            "specialization": "Computing"
-        },
-        {
-            "name": "Robotics Engineering",
-            "specialization": "Robotics"
-        },
-        {
-            "name": "Construction Engineering",
-            "specialization": "Construction Management"
-        },
-        {
-            "name": "Structural Engineering",
-            "specialization": "Structural Design"
-        },
-        {
-            "name": "Electrical Engineering",
-            "specialization": "Electronics"
-        },
-        {
-            "name": "Telecom. Engineering",
-            "specialization": "Telecom Systems"
-        },
-        {
-            "name": "Electronics & Communication",
-            "specialization": "Communication Systems"
-        },
-        {
-            "name": "Textile Engineering",
-            "specialization": "Textile Technology"
-        },
-        {
-            "name": "Electronics Engineering",
-            "specialization": "Electronic Circuits"
-        },
-        {
-            "name": "Tool Engineering",
-            "specialization": "Tool Design"
-        },
-        {
-            "name": "Environmental Engineering",
-            "specialization": "Environmental Management"
-        },
-        {
-            "name": "Transportation Engineering",
-            "specialization": "Transport Systems"
-        }
-    ]
+        { "CO-ID": "ML-AI", "name": "Aeronautical Engineering", "specialization": "Aeronautics" },
+        { "CO-ID": "null", "name": "Industrial Engineering", "specialization": "Manufacturing" },
+        { "CO-ID": "null", "name": "Aerospace Engineering", "specialization": "Space Technology" },
+        { "CO-ID": "null", "name": "Marine Engineering", "specialization": "Marine Technology" },
+        { "CO-ID": "null", "name": "Automobile Engineering", "specialization": "Automotive Design" },
+        { "CO-ID": "null", "name": "Mechanical Engineering", "specialization": "Mechanics" },
+        { "CO-ID": "null", "name": "Biomedical Engineering", "specialization": "Medical Technology" },
+        { "CO-ID": "null", "name": "Mechatronics Engineering", "specialization": "Automation" },
+        { "CO-ID": "null", "name": "Biotechnology Engineering", "specialization": "Biotechnology" },
+        { "CO-ID": "null", "name": "Metallurgical Engineering", "specialization": "Materials Science" },
+        { "CO-ID": "null", "name": "Ceramic Engineering", "specialization": "Ceramics" },
+        { "CO-ID": "null", "name": "Mining Engineering", "specialization": "Mining Technology" },
+        { "CO-ID": "null", "name": "Chemical Engineering", "specialization": "Chemical Processes" },
+        { "CO-ID": "null", "name": "Petroleum Engineering", "specialization": "Petroleum Extraction" },
+        { "CO-ID": "null", "name": "Civil Engineering", "specialization": "Infrastructure" },
+        { "CO-ID": "null", "name": "Power Engineering", "specialization": "Power Systems" },
+        { "CO-ID": "null", "name": "Communications Engineering", "specialization": "Telecommunications" },
+        { "CO-ID": "null", "name": "Production Engineering", "specialization": "Manufacturing" },
+        { "CO-ID": "null", "name": "Computer Science Engineering", "specialization": "Computing" },
+        { "CO-ID": "null", "name": "Robotics Engineering", "specialization": "Robotics" },
+        { "CO-ID": "null", "name": "Construction Engineering", "specialization": "Construction Management" },
+        { "CO-ID": "null", "name": "Structural Engineering", "specialization": "Structural Design" },
+        { "CO-ID": "null", "name": "Electrical Engineering", "specialization": "Electronics" },
+        { "CO-ID": "null", "name": "Telecom. Engineering", "specialization": "Telecom Systems" },
+        { "CO-ID": "null", "name": "Electronics & Communication", "specialization": "Communication Systems" },
+        { "CO-ID": "null", "name": "Textile Engineering", "specialization": "Textile Technology" },
+        { "CO-ID": "null", "name": "Electronics Engineering", "specialization": "Electronic Circuits" },
+        { "CO-ID": "null", "name": "Tool Engineering", "specialization": "Tool Design" },
+        { "CO-ID": "null", "name": "Environmental Engineering", "specialization": "Environmental Management" },
+        { "CO-ID": "null", "name": "Transportation Engineering", "specialization": "Transport Systems" }
+    ]    
 }

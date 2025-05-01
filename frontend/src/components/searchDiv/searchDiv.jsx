@@ -1,6 +1,6 @@
 import "./searchDiv.scss";
 import { useNavigate } from "react-router-dom";
-import CategoriesGrid from "/src/components/categoriesGrid/categoriesGrid";
+import CategoriesGrid from "/src/components/cardsGrid/categoriesGrid/categoriesGrid";
 import upperLeftArrow from "/src/assets/icons/upper-left-arrow.svg";
 
 function SearchDiv({ isOpen, toggleSearch }) {

@@ -1,4 +1,3 @@
-import "./aboutCourse.scss";
 import React from "react";
 
 function AboutCourse({ data }) {
@@ -14,7 +13,7 @@ function AboutCourse({ data }) {
     }
 
     return ( 
-        <section className="about-course" id="about-course">
+        <section className="about-course courses-sub-section" id="about-course">
             <h2>About this course</h2>
             <div className="content-box">
             {/* Map over the text array to render each block */}

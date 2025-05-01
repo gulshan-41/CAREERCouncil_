@@ -1,6 +1,5 @@
 import "./aside.scss";
 import { useState } from "react";
-import downBtn from "/src/assets/icons/downArrow.svg";
 
 function Aside() {
     const [isTableOpen, setTableToOpen] = useState(false);

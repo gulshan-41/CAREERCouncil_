@@ -1,7 +1,7 @@
 import React from "react";
 import "./homepage.scss";
 import { useNavigate } from "react-router-dom";
-import HcategoriesGrid from "/src/components/hcategoriesGrid/hcategoriesGrid";
+import HcategoriesGrid from "/src/components/cardsGrid/hcategoriesGrid/hcategoriesGrid";
 
 function Homepage() {
     const navigate = useNavigate();

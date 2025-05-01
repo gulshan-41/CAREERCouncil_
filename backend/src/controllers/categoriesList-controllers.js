@@ -7,13 +7,10 @@ const nodeCache = new NodeCache();
 //adding categories list from postman later we will make admin panel for career council 
 export const addCategoriesList = async (req, res, next) => {
     try {
-
         const createCategoriesList = await CategoriesListModel.create(req.body);
-
         if (nodeCache.has('categoriesList')) {
             nodeCache.del('categoriesList');
         }
-
         res.status(201).json({ success: true, categoriesList: createCategoriesList });
     } catch (err) {
         const error = {
@@ -28,7 +25,6 @@ export const addCategoriesList = async (req, res, next) => {
 export const getCategoriesList = async (req, res, next) => {
     try {
         let categoriesList;
-
         if (nodeCache.has('categoriesList')) {
             categoriesList = JSON.parse(nodeCache.get('categoriesList'));
         }
@@ -36,10 +32,8 @@ export const getCategoriesList = async (req, res, next) => {
             categoriesList = await CategoriesListModel.find({});
             nodeCache.set('categoriesList', JSON.stringify(categoriesList));
         }
-
         const data = categoriesList[0].categoriesList
         res.status(200).json({ success: true, categoriesList: data });
-
     } catch (err) {
         const error = {
             status: 404,

@@ -2,7 +2,9 @@
     list-style: none;
     
     li {
-        padding: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 8px;
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
@@ -10,6 +12,12 @@
         align-items: center;
         border-bottom: 1px solid #a5a5a5;
         cursor: pointer;
+
+        &:hover {
+            text-decoration: underline solid #203864 1px;
+            color: #203864;
+            background-color: #D4E4FD;
+        }
 
         p {
             overflow: hidden;

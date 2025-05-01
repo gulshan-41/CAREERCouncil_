@@ -1,0 +1,7 @@
+.cat-courses-grid {
+    width: 100%;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 8px;
+}

@@ -2,7 +2,7 @@ import "./searchBar.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import searchIcon from "/src/assets/icons/searchBtn1.svg";
-import CategoriesGrid from "/src/components/categoriesGrid/categoriesGrid";
+import CategoriesGrid from "/src/components/cardsGrid/categoriesGrid/categoriesGrid";
 import SearchDiv from "/src/components/searchDiv/searchDiv";
 import downArrow from "/src/assets/icons/downArrow.svg";
 

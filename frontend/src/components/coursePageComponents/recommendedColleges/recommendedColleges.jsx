@@ -2,7 +2,7 @@ import "./recommendedColleges.scss";
 
 function Recommendation() {
     return (
-        <section className="recommended-colleges" id="colleges">
+        <section className="recommended-colleges courses-sub-section" id="colleges">
             <h3>Recommended colleges</h3>
             <div className="colleges-container">
                 <div className="college-card">

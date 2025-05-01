@@ -1,5 +1,5 @@
 import "./categoriesGrid.scss";
-import CategoriesCard from "../cards/categoriesCard/categoriesCard";
+import CategoriesCard from "../../cards/categoriesCard/categoriesCard";
 import { useCategoriesContext } from "/src/pages/mainPages/categoriesPage/categoriesPage";
 import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvider";
 

@@ -16,5 +16,4 @@ CategoriesRouter.post('/addcategoriesdata', addCategoriesData);
 //route for geting categories Data
 CategoriesRouter.get('/getcategoriesdata/:catID', getCategoriesData);
 
-
 export default CategoriesRouter;
