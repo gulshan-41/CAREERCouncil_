@@ -1,7 +1,7 @@
 import "./coursesPage.scss";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider"; // Import the context hook
 import Introduction from "../../../components/coursePageComponents/courseIntroduction/courseIntroduction";
 import AboutCourse from "../../../components/coursePageComponents/aboutCourse/aboutCourse";
 import Subjects from "../../../components/coursePageComponents/subjects/subjects";
@@ -10,44 +10,19 @@ import Opportunities from "../../../components/coursePageComponents/jobOpportuni
 import Recommendation from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
 import Aside from "../../../components/coursePageComponents/aside/aside";
 
-function CoursesPage () {
-    // State to store the fetched course data.
-    const [courseData, setCourseData] = useState(null);
-    // State to handle loading.
-    const [loading, setLoading] = useState(true);
-    // State to handle errors.
-    const [error, setError] = useState(null);
+function CoursesPage() {
     // Get the courseId from the URL (e.g., /courses/AI-ML)
     const { courseId } = useParams();
+    // Access context
+    const { fetchCourseDetails, courseDetails, courseLoading, courseError } = useCategories();
 
-    // Fetch the JSON data when the component mounts or courseId changes.
+    // Fetch course data when courseId changes
     useEffect(() => {
-    const fetchCourseData = async () => {
-        try {
-            setLoading(true); // Set loading to true while fetching
-            setError(null); // Reset error state
-            // Construct the URL to the JSON file (e.g., /data/courses/AI-ML.json)
-            const response = await fetch(`/data/courses/${courseId}.json`);
-            // Check if the response is ok
-            if (!response.ok) {
-                throw new Error("Course not found");
-            }
-            // Parse the JSON data
-            const data = await response.json();
-            
-            setCourseData(data); // Store the fetched data in state
-            } catch (err) {
-                setError(err.message); // Set error message if fetch fails
-            } finally {
-                setLoading(false); // Set loading to false after fetch completes
-            }
-        };
-
-        fetchCourseData(); // Call the fetch function
-    }, [courseId]); // Re-run the effect if courseId changes
+        fetchCourseDetails(courseId);
+    }, [courseId, fetchCourseDetails]);
 
     // Render loading state
-    if (loading) {
+    if (courseLoading) {
         return (
             <div className="">
                 <div className="loading-section">
@@ -58,33 +33,47 @@ function CoursesPage () {
     }
 
     // Render error state
-    if (error) {
+    if (courseError[courseId]) {
         return (
             <div className="course">
                 <div className="course-wrapper">
-                    <p>Error: {error}</p>
+                    <p>Error: {courseError[courseId]}</p>
                 </div>
             </div>
         );
     }
 
-    return (
-        <div className="coursespage courses-utility-section">
-            <div className="courses-limiters">Limiters</div>
-            <div className="coursespage-wrapper">
-                <section className="courses-main-section">
-                    <h1>{courseData.name}</h1>
-                    <Aside />
-                    <Introduction data={courseData.introduction}/>
-                    <AboutCourse data={courseData.about}/>
-                    <Subjects data={courseData.subjects}/>
-                    <Syllabus />
-                    <Opportunities />
-                    <Recommendation />
-                </section>
+    // Get course data from context
+    const courseData = courseDetails[courseId];
+
+    // Render if no course data (optional safeguard)
+    if (!courseData) {
+        return (
+            <div className="course">
+                <div className="course-wrapper">
+                    <p>No course data available</p>
+                </div>
             </div>
+        );
+    }
+
+  return (
+    <div className="coursespage courses-utility-section">
+        <div className="courses-limiters">Limiters</div>
+        <div className="coursespage-wrapper">
+            <section className="courses-main-section">
+                <h1>{courseData.name}</h1>
+                <Aside />
+                <Introduction data={courseData.introduction} />
+                <AboutCourse data={courseData.about} />
+                <Subjects data={courseData.subjects} />
+                <Syllabus data={courseData.syllabus} />
+                <Opportunities />
+                <Recommendation />
+            </section>
         </div>
-    );
+    </div>
+  );
 }
 
 export default CoursesPage;

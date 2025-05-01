@@ -33,7 +33,7 @@
         "text": [
             {
                 "type": "paragraph",
-                "content": ""
+                "content": "*NOTE: To get an upper hand in this course you must foucus on these subjects."
             },
             {
                 "type": "list",
@@ -45,7 +45,188 @@
                     "Machine learning basics: Understanding supervised, unsupervised, and reinforcement learning concepts.",
                     "Neural network & deep learning: Essential for advanced AI models like image and speech recognition.",
                     "Computer science fundamentals: Includes basic operating system concepts, networking, and problem-solving skills."
-                ] 
+                ]
+            }
+        ]
+    },
+    "syllabus": {
+        "text": [
+            {
+                "type": "heading",
+                "content": "Program Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "This syllabus is designed for a 4-year (8-semester) BTech in Artificial Intelligence and Machine Learning, reflecting an average curriculum from global and Indian universities. It covers foundational computer science, mathematics, core AI/ML concepts, advanced topics, and practical applications, with hands-on projects and ethical considerations."
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 1: Foundations of Computing and Mathematics",
+                    "objective": "Objective: Build a strong foundation in programming and mathematical concepts essential for AI/ML.",
+                    "items": [
+                        "Mathematics 1st: Calculus (limits, derivatives, integrals), linear algebra (matrices, vectors, eigenvalues), probability basics.",
+                        "Programming Fundamentals: Introduction to programming with Python, data types, loops, functions, and basic algorithms.",
+                        "Computer Science Basics: Introduction to computer organization, operating systems, and logic design.",
+                        "Physics for Computing: Mechanics, electromagnetism, and their relevance to computing hardware.",
+                        "Communication Skills: Technical writing, presentations, and collaborative skills for project work.",
+                        "Lab: Python programming lab (basic scripts, data handling)."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 2: Data Structures and Advanced Mathematics",
+                    "objective": "Objective: Develop skills in data organization, storage, and advanced mathematical tools.",
+                    "items": [
+                        "Mathematics 2nd: Multivariate calculus, differential equations, statistics (mean, variance, distributions).",
+                        "Data Structures: Arrays, linked lists, stacks, queues, trees, graphs, and their implementation in Python.",
+                        "Introduction to Databases: Relational databases, SQL, data modeling, and basic queries.",
+                        "Digital Systems: Boolean algebra, logic gates, and circuit design.",
+                        "Environmental Science: Sustainability and technology’s role in environmental solutions.",
+                        "Lab: Data structures lab (implementing algorithms in Python) and SQL lab."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 3: Algorithms and AI Foundations",
+                    "objective": "Objective: Introduce core AI concepts and algorithmic thinking for problem-solving.",
+                    "items": [
+                        "Design and Analysis of Algorithms: Sorting, searching, greedy algorithms, dynamic programming, and complexity analysis.",
+                        "Discrete Mathematics: Set theory, graph theory, combinatorics, and logic for AI reasoning.",
+                        "Introduction to Artificial Intelligence: History of AI, search algorithms (BFS, DFS, A*), knowledge representation.",
+                        "Object-Oriented Programming: Concepts using Python/Java, classes, inheritance, and polymorphism.",
+                        "Lab: AI basics lab (implementing search algorithms) and OOP lab.",
+                        "Mini Project: Simple AI application (e.g., tic-tac-toe with minimax algorithm)."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 4: Machine Learning Basics and Systems",
+                    "objective": "Objective: Lay the groundwork for ML algorithms and system-level understanding.",
+                    "items": [
+                        "Probability and Statistics for ML: Random variables, hypothesis testing, Bayesian inference, and distributions.",
+                        "Machine Learning Fundamentals: Supervised learning (linear regression, logistic regression), unsupervised learning (k-means clustering), evaluation metrics.",
+                        "Operating Systems: Process management, memory management, and file systems.",
+                        "Computer Networks: Basics of networking, TCP/IP, and data transmission protocols.",
+                        "Elective 1st: Choose from topics like data visualization or IoT fundamentals.",
+                        "Lab: ML lab (using scikit-learn for regression and clustering) and OS/networks lab."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 5: Advanced ML and Neural Networks",
+                    "objective": "Objective: Deepen ML knowledge and introduce neural networks for complex tasks.",
+                    "items": [
+                        "Advanced Machine Learning: Decision trees, SVM, ensemble methods (random forests, boosting), feature engineering.",
+                        "Introduction to Neural Networks: Perceptrons, backpropagation, activation functions, and gradient descent.",
+                        "Database Systems: Advanced SQL, NoSQL databases, and data warehousing.",
+                        "Software Engineering: SDLC, agile methodologies, and version control (Git).",
+                        "Lab: Neural networks lab (using TensorFlow/PyTorch for basic models) and database lab.",
+                        "Mini Project: ML-based project (e.g., predicting house prices using regression)."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 6: Deep Learning and Applications",
+                    "objective": "Objective: Explore advanced AI applications in text, images, and sequential data.",
+                    "items": [
+                        "Deep Learning: Convolutional neural networks (CNNs), recurrent neural networks (RNNs), transfer learning.",
+                        "Natural Language Processing (NLP): Text preprocessing, sentiment analysis, word embeddings (Word2Vec, BERT).",
+                        "Computer Vision: Image processing, object detection, and facial recognition.",
+                        "Elective 2nd: Choose from robotics, reinforcement learning, or big data analytics.",
+                        "Lab: Deep learning lab (building CNNs/RNNs) and NLP/CV lab.",
+                        "Mini Project: NLP or CV project (e.g., chatbot or image classifier)."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 7: Specialized Topics and Ethics",
+                    "objective": "Objective: Address specialized AI topics, ethical issues, and begin a significant project.",
+                    "items": [
+                        "Reinforcement Learning: Markov decision processes, Q-learning, policy gradients.",
+                        "AI Ethics and Societal Impact: Bias in AI, privacy, fairness, and regulatory considerations.",
+                        "Cloud Computing for AI: Deploying AI models on AWS/Azure, scalability, and APIs.",
+                        "Elective 3rd: Quantum AI, cognitive computing, or human-computer interaction.",
+                        "Lab: RL lab (implementing Q-learning) and cloud deployment lab.",
+                        "Capstone Project (Part 1st): Proposal and initial development of a real-world AI/ML application."
+                    ]
+                }
+            },
+            {
+                "type": "topics-covered",
+                "content": {
+                    "heading": "Semester 8: Capstone and Emerging Trends",
+                    "objective": "Objective: Culminate learning with a major project, explore cutting-edge AI, and prepare for industry/research.",
+                    "items": [
+                        "Emerging Trends in AI: Generative AI (GANs, diffusion models), AI in healthcare, and autonomous systems.",
+                        "Big Data Technologies: Hadoop, Spark, and handling large-scale datasets for AI.",
+                        "Elective IV: Advanced computer vision, audio processing, or AI for cybersecurity.",
+                        "Capstone Project (Part 2nd): Complete and present a comprehensive AI/ML project (e.g., medical diagnosis system or autonomous navigation).",
+                        "Internship/Seminar: Industry internship or research seminar on AI trends."
+                    ]
+                }
+            },
+            {
+                "type": "paragraph",
+                "content": "*NOTE: This syllabus ensures graduates are well-equipped for roles like AI engineer, data scientist, or ML researcher, with a balance of theory, practice, and ethical awareness."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Practical Focus: Each semester includes labs and projects to ensure hands-on experience with tools like Python, TensorFlow, PyTorch, and scikit-learn.",
+                    "Electives: Allow specialization in areas like robotics, quantum AI, or NLP, reflecting diverse university offerings.",
+                    "Ethics and Applications: Emphasis on real-world applications (healthcare, finance, automation) and ethical considerations aligns with global trends.",
+                    "Alignment with Universities: Based on curricula from IIT Hyderabad, BITS Pilani, Sharda University, Reva University, and global standards (e.g., MIT, Stanford).",
+                    "Assessment: Combination of exams, assignments, lab work, and project evaluations, with capstone projects carrying significant weight in the final year."
+                ]
+            }
+        ]
+    },
+    "colleges": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "By location :"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Chennai, Tamil Nadu",
+                    "New Delhi",
+                    "Mumbai, Maharashtra",
+                    "Hydrabad, Telengana",
+                    "Coimbatore, Tamil Nadu",
+                    "Vellore, Tamil Nadu",
+                    "Phagwara, Punjab",
+                    "Pilani, Rajasthan",
+                    "Cambridge, Massachusetts, USA",
+                    "Stanford, California, USA",
+                    "Singapore",
+                    "Beijing, China"
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "By ownership :"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Private",
+                    "Government"
+                ]
             }
         ]
     }

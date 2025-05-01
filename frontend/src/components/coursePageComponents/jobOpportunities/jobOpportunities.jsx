@@ -3,7 +3,7 @@ import AddBtn from "/src/assets/icons/addIcon.svg";
 
 function Opportunities() {
     return (
-        <section className="job-opportunities" id="job-opportunities">
+        <section className="job-opportunities courses-sub-section" id="job-opportunities">
             <h3>Job opportunities afterwards</h3>
             <details>
                 <summary>

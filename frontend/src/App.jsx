@@ -24,7 +24,7 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Homepage />} />
         <Route path="categories/:catID?" element={<CategoriesPage />} />
-        <Route path="courses/:courseId" element={<CoursesPage />} />
+        <Route path="courses/:courseId?" element={<CoursesPage />} />
       </Route>
 
       <Route path="signup" element={<SignupLayout />}>

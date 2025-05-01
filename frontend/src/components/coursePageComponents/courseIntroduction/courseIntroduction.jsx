@@ -1,5 +1,4 @@
 import React from "react";
-import "./courseIntroduction.scss";
 
 function Introduction({ data }) {
     // Fallback if data is not provided
@@ -13,7 +12,7 @@ function Introduction({ data }) {
     }
 
     return (
-        <section className="introduction" id="course-introduction">
+        <section className="introduction courses-sub-section" id="course-introduction">
             <h2>Introduction</h2>
             <div className="content-box">
             {/* Map over the text array to render each block */}

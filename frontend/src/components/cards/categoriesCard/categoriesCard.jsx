@@ -1,5 +1,5 @@
 import "./categoriesCard.scss";
-import SubCategoryGrid from "/src/components/subCategoryGrid/subCategoryGrid";
+import SubCategoryGrid from "/src/components/cardsGrid/subCategoryGrid/subCategoryGrid";
 import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvider";
 
 function CategoriesCard({

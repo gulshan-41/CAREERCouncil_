@@ -1,5 +1,4 @@
 import React from "react";
-import "./subjects.scss";
 
 function Subjects({ data }) {
     // Fallback if data is not provided
@@ -13,7 +12,7 @@ function Subjects({ data }) {
     }
 
     return ( 
-        <section className="prerequisite-subjects" id="subjects">
+        <section className="prerequisite-subjects courses-sub-section" id="subjects">
             <h2>Prerequisites</h2>
             <div className="content-box">
             {/* Map over the text array to render each block */}
@@ -27,7 +26,7 @@ function Subjects({ data }) {
                         return (                    
                             <ul key={index}>
                                 {block.items.map((item, itemIndex) => (
-                                <li><p key={itemIndex}>{item}</p></li> ))}        
+                                <li key={itemIndex}><p>{item}</p></li> ))}        
                             </ul>
                         );
                     default:
