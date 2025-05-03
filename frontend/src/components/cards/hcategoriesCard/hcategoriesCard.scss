@@ -9,10 +9,13 @@
     border: none;
     border-radius: 16px;
     background-color: #203864;
+    overflow: hidden;
+    position: relative;
     cursor: pointer;
+    transition: all 0.5s;
 
     &:hover {
-        background-color: white;
+        background-color: #fff;
         border: 1px solid #a5a5a5;
 
         h3 {
@@ -20,10 +23,17 @@
         }
 
         .btn-cover {
-            background-color: #203864;
+            .hcards-trackball {
+                transform: scale(1.125);
+                background-color: #203864;
+            }
 
-            svg {
-                fill: #fff;
+            .right-arrow {
+                transform: translate(90%, -90%);
+            }
+
+            .right-arrow-top {
+                transform: translate(90%, -90%);
             }
         }
 
@@ -39,6 +49,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 
     h3 {
         font-size: 1.75rem;
@@ -53,12 +64,39 @@
         background-color: #fff;
         border: none;
         border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+
+        .hcards-trackball {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: all 0.5s;
+            position: absolute;
+            inset: 0;
+            transform: scale(0);
+        }
+
+        .right-arrow {
+            z-index: 4;
+            transition: all 0.4s;
+        }
+
+        .right-arrow-top {
+            position: absolute;
+            left: -20px;
+            bottom: -20px;
+            transform: translate(0);
+            z-index: 5;
+            transition: all 0.4s;
+        }
     }
 }
 
 .hcat-description {
     display: flex;
     color: #fff;
+    z-index: 2;
 
     p {
         padding-right: 50px;

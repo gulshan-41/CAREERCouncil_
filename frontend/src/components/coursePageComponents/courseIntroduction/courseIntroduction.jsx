@@ -20,16 +20,28 @@ function Introduction({ data }) {
                 switch (block.type) {
                     case "heading":
                         return <h3 key={index}>{block.content}</h3>;
-                    case "paragraph":
+                    case "intro":
                         return <p key={index}>{block.content}</p>;
-                    case "list":
+                    case "main-focus":
                         return (
-                            <ul key={index}>
-                                {block.items.map((item, itemIndex) => (
-                                    <li key={itemIndex}>{item}</li>
-                                ))}
-                            </ul>
+                            <div key={index} className="main-focus">
+                                <h3>{block.content.heading}</h3>
+                                <ul>
+                                    {block.content.items.map((item, itemIndex) => (
+                                        <li key={itemIndex}><p>{item}</p></li>
+                                    ))}
+                                </ul>
+                            </div>
                         );
+                    case "overview":
+                        return (
+                            <div key={index} className="overview">
+                                <h3>{block.content.heading}</h3>
+                                <p>{block.content.paragraph}</p>
+                            </div>
+                        );
+                    case "standard-duration":
+                        return <p key={index}>{block.content}</p>
                     default:
                         return (
                             <p key={index} className="unsupported">

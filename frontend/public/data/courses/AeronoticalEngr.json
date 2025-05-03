@@ -1,0 +1,40 @@
+{
+    "courseID": "AeronauticalEngr",
+    "name": "Aeronautical Engineering",
+    "introduction": {
+        "text": [
+            {
+                "type": "heading",
+                "content": "Aeronautical Engineering"
+            },
+            {
+                "type": "intro",
+                "content": "A four years UG program, Aeronautical Engineering is an exciting undergraduate course that explores the science and technology of designing, building, and maintaining aircraft. This program equips students with the skills to innovate and create flying machines like airplanes, helicopters, and drones, ensuring they are safe, efficient, and capable of navigating Earth's atmosphere. Combining theoretical knowledge with hands-on practical training, it's perfect for those passionate about aviation and engineering."
+            },
+            {
+                "type": "main-focus",
+                "content": {
+                    "heading": "What this course mainly focuses on?",
+                    "items": [
+                        "Aircraft Design and Aerodynamics: Learning to create efficient aircraft shapes and understand airflow for smooth flights.",
+                        "Propulsion Systems: Studying engines and power systems that propel aircraft.",
+                        "Materials and Structures: Exploring lightweight, strong materials to build durable aircraft components.",
+                        "Avionics and Navigation: Mastering electronic systems for communication, control, and navigation in aircraft.",
+                        "Maintenance and Safety: Ensuring aircraft meet strict safety standards through testing and quality checks."
+                    ]
+                }
+            },
+            {
+                "type": "overview",
+                "content": {
+                    "heading": "Overview",
+                    "paragraph": "Aeronautical Engineering is a specialized branch of engineering focused on the design, development, testing, and maintenance of aircraft that operate within Earth's atmosphere. This undergraduate program is highly sought after by students passionate about aviation and aerospace, offering a blend of theoretical learning and practical training to prepare graduates for careers in industries like aviation, defense, and research organizations such as ISRO and NASA."
+                }
+            },
+            {
+                "type": "standard-duration",
+                "content": "Standard duration: In India, the undergraduate program in Aeronautical Engineering, typically offered as a Bachelor of Technology (B.Tech) or Bachelor of Engineering (B.E.), is a four-year program. This duration is structured to include eight semesters, with a combination of academic coursework and practical training."
+            }
+        ]
+    }
+}

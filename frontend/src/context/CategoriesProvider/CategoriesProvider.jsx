@@ -14,9 +14,9 @@ export function CategoriesProvider({ children }) {
     const [detailsError, setDetailsError] = useState({}); // { catID: string }
 
     // State for courses (specific course details)
-    const [courseDetails, setCourseDetails] = useState({}); // { courseId: content }
+    const [courseDetails, setCourseDetails] = useState({}); // { courseID: content }
     const [courseLoading, setCourseLoading] = useState(false);
-    const [courseError, setCourseError] = useState({}); // { courseId: error }
+    const [courseError, setCourseError] = useState({}); // { courseID: error }
 
   // Fetch categories.json once on mount
   useEffect(() => {
@@ -77,21 +77,21 @@ export function CategoriesProvider({ children }) {
         }
     }, [categoryDetails]);
 
-    // Fetch course details by courseId (courses)
-    const fetchCourseDetails = async (courseId) => {
-        if (courseDetails[courseId]) return; // Skip if already fetched
+    // Fetch course details by courseID (courses)
+    const fetchCourseDetails = async (courseID) => {
+        if (courseDetails[courseID]) return; // Skip if already fetched
             setCourseLoading(true);
         try {
-            const response = await fetch(`/data/courses/${courseId}.json`);
+            const response = await fetch(`/data/courses/${courseID}.json`);
             if (!response.ok) {
-                throw new Error(`Failed to fetch course ${courseId}`);
+                throw new Error(`Failed to fetch course ${courseID}`);
             }
             const data = await response.json();
         
-            setCourseDetails((prev) => ({ ...prev, [courseId]: data }));
-            setCourseError((prev) => ({ ...prev, [courseId]: null }));
+            setCourseDetails((prev) => ({ ...prev, [courseID]: data }));
+            setCourseError((prev) => ({ ...prev, [courseID]: null }));
         } catch (error) {
-            setCourseError((prev) => ({ ...prev, [courseId]: error.message }));
+            setCourseError((prev) => ({ ...prev, [courseID]: error.message }));
         } finally {
             setCourseLoading(false);
         }
@@ -105,10 +105,10 @@ export function CategoriesProvider({ children }) {
         detailsLoading,
         detailsError,
         fetchCategoryDetails,
-        courseDetails, // { courseId: { introduction, about, subjects } }
+        courseDetails, // { courseID: { introduction, about, subjects } }
         courseLoading,
         courseError,
-        fetchCourseDetails, // Function to fetch course by courseId
+        fetchCourseDetails, // Function to fetch course by courseID
     };
 
     return (

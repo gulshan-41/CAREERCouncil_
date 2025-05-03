@@ -33,7 +33,7 @@ function Aside() {
                     <li><a href="#subjects">Subjects</a></li>
                     <li><a href="#syllabus">Syllabus</a></li>
                     <li><a href="#job-opportunities">Job opportunities</a></li>
-                    <li><a href="colleges">Recommended colleges</a></li>
+                    <li><a href="#recommended-colleges">Recommended colleges</a></li>
                 </ul>
             </nav>
         </aside>

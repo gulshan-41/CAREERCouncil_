@@ -33,45 +33,46 @@ function CategoriesCard({
                     </svg>
                 </div>
                 {!isNavigationOnly && (
-                    <div className="toggle-sub">
-                        <svg
-                            id="add-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="21px"
-                            viewBox="0 -960 960 960"
-                            width="21px"
-                            className={`add-icon ${isDropdownActive ? "hidden" : "show"}`}
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                onIconClick();
-                            }}
-                        >
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-                        </svg>
-                        <svg
-                            id="minus-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="21px"
-                            viewBox="0 -960 960 960"
-                            width="21px"
-                            className={`minus-icon ${isDropdownActive ? "show" : "hidden"}`}
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                onIconClick();
-                            }}
-                        >
-                            <path d="M200-440v-80h560v80H200Z" />
-                        </svg>
-                    </div>
+                <div className="toggle-sub">
+                    <svg
+                        id="add-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="21px"
+                        viewBox="0 -960 960 960"
+                        width="21px"
+                        className={`add-icon ${isDropdownActive ? "hidden" : "show"}`}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            onIconClick();
+                        }}
+                    >
+                        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+                    </svg>
+                    <svg
+                        id="minus-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="21px"
+                        viewBox="0 -960 960 960"
+                        width="21px"
+                        className={`minus-icon ${isDropdownActive ? "show" : "hidden"}`}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            onIconClick();
+                        }}
+                    >
+                        <path d="M200-440v-80h560v80H200Z" />
+                    </svg>
+                </div>
                 )}
+                <div className="trackball"></div>
             </div>
 
             {!isNavigationOnly && (
-                <div className={`sub-cat-wrapper off-view ${isDropdownActive ? "open" : "close"}`}>
-                    {isDropdownActive && relatedCourses.length > 0 && (
-                        <SubCategoryGrid relatedCourses={relatedCourses} />
-                    )}
-                </div>
+            <div className={`sub-cat-wrapper off-view ${isDropdownActive ? "open" : "close"}`}>
+                {isDropdownActive && relatedCourses.length > 0 && (
+                    <SubCategoryGrid relatedCourses={relatedCourses} />
+                )}
+            </div>
             )}
         </div>
     );

@@ -1,7 +1,7 @@
 import "./coursesPage.scss";
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider"; // Import the context hook
+import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import Introduction from "../../../components/coursePageComponents/courseIntroduction/courseIntroduction";
 import AboutCourse from "../../../components/coursePageComponents/aboutCourse/aboutCourse";
 import Subjects from "../../../components/coursePageComponents/subjects/subjects";
@@ -11,15 +11,15 @@ import Recommendation from "../../../components/coursePageComponents/recommended
 import Aside from "../../../components/coursePageComponents/aside/aside";
 
 function CoursesPage() {
-    // Get the courseId from the URL (e.g., /courses/AI-ML)
-    const { courseId } = useParams();
+    // Get the courseID from the URL (e.g., /courses/AI-ML)
+    const { courseID } = useParams();
     // Access context
     const { fetchCourseDetails, courseDetails, courseLoading, courseError } = useCategories();
 
-    // Fetch course data when courseId changes
+    // Fetch course data when courseID changes
     useEffect(() => {
-        fetchCourseDetails(courseId);
-    }, [courseId, fetchCourseDetails]);
+        fetchCourseDetails(courseID);
+    }, [courseID, fetchCourseDetails]);
 
     // Render loading state
     if (courseLoading) {
@@ -33,18 +33,18 @@ function CoursesPage() {
     }
 
     // Render error state
-    if (courseError[courseId]) {
+    if (courseError[courseID]) {
         return (
             <div className="course">
                 <div className="course-wrapper">
-                    <p>Error: {courseError[courseId]}</p>
+                    <p>Error: {courseError[courseID]}</p>
                 </div>
             </div>
         );
     }
 
     // Get course data from context
-    const courseData = courseDetails[courseId];
+    const courseData = courseDetails[courseID];
 
     // Render if no course data (optional safeguard)
     if (!courseData) {
@@ -63,13 +63,13 @@ function CoursesPage() {
         <div className="coursespage-wrapper">
             <section className="courses-main-section">
                 <h1>{courseData.name}</h1>
-                <Aside />
+                {/* <Aside /> */}
                 <Introduction data={courseData.introduction} />
-                <AboutCourse data={courseData.about} />
+                {/* <AboutCourse data={courseData.about} />
                 <Subjects data={courseData.subjects} />
                 <Syllabus data={courseData.syllabus} />
                 <Opportunities />
-                <Recommendation />
+                <Recommendation data={courseData.colleges} /> */}
             </section>
         </div>
     </div>

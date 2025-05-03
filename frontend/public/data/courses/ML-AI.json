@@ -1,5 +1,5 @@
 {
-    "courseId": "ML-AI",
+    "courseID": "ML-AI",
     "name": "Artificial Intelligence & Machine Learning",
     "introduction": {
         "text": [
@@ -84,7 +84,7 @@
                         "Data Structures: Arrays, linked lists, stacks, queues, trees, graphs, and their implementation in Python.",
                         "Introduction to Databases: Relational databases, SQL, data modeling, and basic queries.",
                         "Digital Systems: Boolean algebra, logic gates, and circuit design.",
-                        "Environmental Science: Sustainability and technology’s role in environmental solutions.",
+                        "Environmental Science: Sustainability and technology's role in environmental solutions.",
                         "Lab: Data structures lab (implementing algorithms in Python) and SQL lab."
                     ]
                 }
@@ -195,38 +195,162 @@
         ]
     },
     "colleges": {
-        "text": [
+        "data": [
             {
-                "type": "paragraph",
-                "content": "By location :"
+                "id": 1,
+                "name": "IIT Madras - Indian Institute of Technology",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://www.iitm.ac.in/academics/departments/artificial-intelligence",
+                "total charges": "2L-5L"
             },
             {
-                "type": "list",
-                "items": [
-                    "Chennai, Tamil Nadu",
-                    "New Delhi",
-                    "Mumbai, Maharashtra",
-                    "Hydrabad, Telengana",
-                    "Coimbatore, Tamil Nadu",
-                    "Vellore, Tamil Nadu",
-                    "Phagwara, Punjab",
-                    "Pilani, Rajasthan",
-                    "Cambridge, Massachusetts, USA",
-                    "Stanford, California, USA",
-                    "Singapore",
-                    "Beijing, China"
-                ]
+                "id": 2,
+                "name": "IIT Delhi - Indian Institute of Technology",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "2",
+                "visit link": "https://scai.iitd.ac.in/",
+                    "total charges": "2L-5L"
             },
             {
-                "type": "paragraph",
-                "content": "By ownership :"
+                "id": 3,
+                "name": "IIT Bombay - Indian Institute of Technology",
+                "location": {
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.cse.iitb.ac.in/",
+                "total charges": "2L-5L"
             },
             {
-                "type": "list",
-                "items": [
-                    "Private",
-                    "Government"
-                ]
+                "id": 4,
+                "name": "IIT Hyderabad - Indian Institute of Technology",
+                "location": {
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "8",
+                "visit link": "https://ai.iith.ac.in/",
+                "total charges": "2L-5L"
+            },
+            {
+                "id": 5,
+                "name": "Amrita Vishwa Vidyapeetham",
+                "location": {
+                    "city": "Coimbatore",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "23",
+                "visit link": "https://www.amrita.edu/program/artificial-intelligence/",
+                "total charges": "8L-12L"
+            },
+            {
+                "id": 6,
+                "name": "Vellore Institute of Technology (VIT)",
+                "location": {
+                    "city": "Vellore",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "11",
+                "visit link": "https://vit.ac.in/schools/scope/programmes-offered",
+                "total charges": "7L-10L"
+            },
+            {
+                "id": 7,
+                "name": "Lovely Professional University (LPU)",
+                "location": {
+                    "city": "Phagwara",
+                    "state": "Punjab",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "50",
+                "visit link": "https://www.lpu.in/programmes/engineering/b-tech-artificial-intelligence",
+                "total charges": "6L-9L"
+            },
+            {
+                "id": 8,
+                "name": "BITS Pilani - Birla Institute of Technology and Science",
+                "location": {
+                    "city": "Pilani",
+                    "state": "Rajasthan",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "25",
+                "visit link": "https://www.bits-pilani.ac.in/pilani/computerscience/overview",
+                "total charges": "15L-20L"
+            },
+            {
+                "id": 9,
+                "name": "MIT - Massachusetts Institute of Technology",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "1",
+                "visit link": "https://www.eecs.mit.edu/research/artificial-intelligence/",
+                "total charges": "$60K-$80K"
+            },
+            {
+                "id": 10,
+                "name": "Stanford University (USA)",
+                "location": {
+                    "city": "Stanford",
+                    "state": "California",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "2",
+                "visit link": "https://ai.stanford.edu/",
+                "total charges": "$60K-$80K"
+            },
+            {
+                "id": 11,
+                "name": "Nanyang Technological University",
+                "location": {
+                    "city": "Singapore",
+                    "state": "Singapore",
+                    "country": "Singapore"
+                },
+                "ownership": "Govt.",
+                "Ranking": "15",
+                "visit link": "https://www.ntu.edu.sg/scse/programmes/undergraduate-programmes/artificial-intelligence",
+                "total charges": "$30K-$40K"
+            },
+            {
+                "id": 12,
+                "name": "Tsinghua University (Beijing, China)",
+                "location": {
+                    "city": "Beijing",
+                    "state": "Beijing",
+                    "country": "China"
+                },
+                "ownership": "Govt.",
+                "Ranking": "22",
+                "visit link": "http://www.cs.tsinghua.edu.cn/",
+                "total charges": "$5K-$10K"
             }
         ]
     }
