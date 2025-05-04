@@ -42,7 +42,7 @@ function RelatedCoursesCardsGrid({ catID }) {
             {relatedCourses.map((course) => (
                 <RelatedCoursesCard
                     key={course["CO-ID"] || course.name} // Use CO-ID or name as fallback
-                    courseId={course["CO-ID"]}
+                    courseID={course["CO-ID"]}
                     name={course.name}
                     specialization={course.specialization}
                 />
