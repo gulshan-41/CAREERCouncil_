@@ -5,6 +5,7 @@ import 'dotenv/config'
 import { errorMiddleware } from './src/middlewares/error-middleware.js';
 import { dbConnect } from './src/config/dbConnect.js';
 import CategoriesRouter from './src/routes/categories-router.js';
+import CoursesRouter from './src/routes/courses-router.js';
 
 const app = express();
 const PORT = 8800;
@@ -20,8 +21,11 @@ app.use(cors({
 app.use(express.json());
 app.use(morgan('tiny'));
 
-//categories data and list api endpoint
+//categories data and list api startpoint
 app.use('/api/categories', CategoriesRouter)
+
+//courses api startpoint
+app.use('/api/course', CoursesRouter);
 
 //error-middleware
 app.use(errorMiddleware);
