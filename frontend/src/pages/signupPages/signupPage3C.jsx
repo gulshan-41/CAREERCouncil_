@@ -17,9 +17,12 @@ function SignupPage3C() {
         updateSurveyData("interests", { fields: updatedFields });
     };
 
+    console.log("Survey data: ", surveyData);
+
     const handleNext = () => {
         if (surveyData.interests.fields.length > 0) {
-            navigate("/signup/signup-login-modal");
+            console.log("Navigating to /signup-login-modal");
+            navigate("/signup-login-modal");
         } else {
             alert("Please select at least one career field.");
         }

@@ -17,17 +17,30 @@ function SignupModal() {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-        if (!surveyData.signupDetails.username || !surveyData.signupDetails.password) {
+        const { username, password, agreeToDataProcessing } = surveyData.signupDetails;
+
+        if (!username || !password) {
             alert("Please fill in all fields.");
             return;
         }
-        if (!surveyData.signupDetails.agreeToDataProcessing) {
+        if (!agreeToDataProcessing) {
             alert("You must agree to the processing of personal data.");
             return;
+        }
+
+        try {
+            // Mock successful signup (remove when backend is ready)
+            console.log("Mock signup:", surveyData);
+            resetSurveyData();
+            navigate("/"); // Redirect to dashboard or home
+        } catch (error) {
+            console.error("Signup error:", error);
+            alert("An error occurred during signup.");
         }
     };
 
     return (
+        <div className="signup-login-wrapper">
         <div className="signup-login-container">
             <div className={`signup-main-container ${isLoginMode ? "hidden" : "visible"}`}>
                 <div className="signup-head">
@@ -40,7 +53,7 @@ function SignupModal() {
                             type="text"
                             id="username"
                             placeholder="Name"
-                            value={surveyData.signupDetails.username}
+                            value={surveyData.signupDetails.username || ""}
                             onChange={(e) =>
                                 updateSurveyData("signupDetails", { username: e.target.value })
                             }
@@ -50,7 +63,7 @@ function SignupModal() {
                         <input
                             type="password"
                             placeholder="Password"
-                            value={surveyData.signupDetails.password}
+                            value={surveyData.signupDetails.password || ""}
                             onChange={(e) =>
                                 updateSurveyData("signupDetails", { password: e.target.value })
                             }
@@ -61,7 +74,7 @@ function SignupModal() {
                                 type="checkbox"
                                 name="personal-data"
                                 id="personalData"
-                                checked={surveyData.signupDetails.agreeToDataProcessing}
+                                checked={surveyData.signupDetails.agreeToDataProcessing || false}
                                 onChange={(e) =>
                                     updateSurveyData("signupDetails", {
                                         agreeToDataProcessing: e.target.checked,
@@ -141,6 +154,7 @@ function SignupModal() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

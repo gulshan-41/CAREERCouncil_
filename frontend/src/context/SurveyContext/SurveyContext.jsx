@@ -21,6 +21,8 @@ export function SurveyProvider({ children }) {
             email: "",
             password: "",
             phoneNumber: "",
+            username: "", // Add username
+            agreeToDataProcessing: false, // Add agreeToDataProcessing
         },
     });
 
@@ -42,8 +44,33 @@ export function SurveyProvider({ children }) {
         });
     };
 
+    const resetSurveyData = () => {
+        setSurveyData({
+            name: "",
+            age: "",
+            occupation: "",
+            strengths: {
+                mathematics: null,
+                management: null,
+                sports: [],
+            },
+            interests: {
+                science: null,
+                history: null,
+                fields: [],
+            },
+            signupDetails: {
+                email: "",
+                password: "",
+                phoneNumber: "",
+                username: "",
+                agreeToDataProcessing: false,
+            },
+        });
+    };
+
     return (
-        <SurveyContext.Provider value={{ surveyData, updateSurveyData }}>
+        <SurveyContext.Provider value={{ surveyData, updateSurveyData, resetSurveyData }}>
             {children}
         </SurveyContext.Provider>
     );
