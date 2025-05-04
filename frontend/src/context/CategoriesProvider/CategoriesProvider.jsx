@@ -155,8 +155,8 @@ export function CategoriesProvider({ children }) {
                     }
                 }
 
-                trendingCourses.sort((a, b) => a.trendID.localeCompare(b.trendID));
-                console.log("All Trending Courses:", trendingCourses);
+                // trendingCourses.sort((a, b) => a.trendID.localeCompare(b.trendID));
+                // console.log("All Trending Courses:", trendingCourses);
 
                 if (trendingCourses.length === 0) {
                     console.warn("No trending courses found. Check JSON files or isTrending fields.");
