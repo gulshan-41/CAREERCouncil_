@@ -4,9 +4,7 @@ import App from "./App.jsx";
 import { CategoriesProvider } from "./context/CategoriesProvider/CategoriesProvider.jsx";
 
 ReactDOM.createRoot(document.getElementById('page-wrapper')).render(
-  <React.StrictMode>
-    <CategoriesProvider>
-      <App />
-    </CategoriesProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );

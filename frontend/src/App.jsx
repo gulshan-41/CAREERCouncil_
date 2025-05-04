@@ -16,45 +16,47 @@ import SignupPage3A from "/src/pages/signupPages/signupPage3A";
 import SignupPage3B from "/src/pages/signupPages/signupPage3B";
 import SignupPage3C from "/src/pages/signupPages/signupPage3C";
 import SignupModal from "./pages/signupPages/signupModal";
+import { SurveyProvider } from "./context/SurveyContext/SurveyContext";
+import { CategoriesProvider } from "./context/CategoriesProvider/CategoriesProvider";
 
 function App() {
-  return (
-    <Router>
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Homepage />} />
-        <Route path="categories/:catID?" element={<CategoriesPage />} />
-        <Route path="courses/:courseID?" element={<CoursesPage />} />
-      </Route>
+    return (
+        <CategoriesProvider>
+            <SurveyProvider>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<MainLayout />}>
+                            <Route index element={<Homepage />} />
+                            <Route path="categories/:catID?" element={<CategoriesPage />} />
+                            <Route path="courses/:courseID?" element={<CoursesPage />} />
+                        </Route>
 
-      <Route path="signup" element={<SignupLayout />}>
-        <Route index element={<Navigate to="basic-details/name" replace />} />
-
-        <Route path="basic-details">
-          <Route path="name" element={<SignupPage1A />} />
-          <Route path="age" element={<SignupPage1B />} />
-          <Route path="occupation" element={<SignupPage1C />} />
-        </Route>
-
-        <Route path="strengths">
-          <Route index element={<Navigate to="maths" replace />} />
-          <Route path="maths" element={<SignupPage2A />} />
-          <Route path="management" element={<SignupPage2B />} />
-          <Route path="sports" element={<SignupPage2C />} />
-        </Route>
-
-        <Route path="interest">
-          <Route index element={<Navigate to="science" replace/>}/>
-          <Route path="science" element={<SignupPage3A />}/>
-          <Route path="history" element={<SignupPage3B />}/>
-          <Route path="fields" element={<SignupPage3C />}/>
-        </Route>
-
-      </Route>
-        <Route path="signup-login-modal" element={<SignupModal />}/>
-    </Routes>
-    </Router>
-  );
+                        <Route path="signup" element={<SignupLayout />}>
+                            <Route index element={<Navigate to="basic-details/name" replace />} />
+                            <Route path="basic-details">
+                                <Route path="name" element={<SignupPage1A />} />
+                                <Route path="age" element={<SignupPage1B />} />
+                                <Route path="occupation" element={<SignupPage1C />} />
+                            </Route>
+                            <Route path="strengths">
+                                <Route index element={<Navigate to="maths" replace />} />
+                                <Route path="maths" element={<SignupPage2A />} />
+                                <Route path="management" element={<SignupPage2B />} />
+                                <Route path="sports" element={<SignupPage2C />} />
+                            </Route>
+                            <Route path="interest">
+                                <Route index element={<Navigate to="science" replace />} />
+                                <Route path="science" element={<SignupPage3A />} />
+                                <Route path="history" element={<SignupPage3B />} />
+                                <Route path="fields" element={<SignupPage3C />} />
+                            </Route>
+                            <Route path="signup-login-modal" element={<SignupModal />} />
+                        </Route>
+                    </Routes>
+                </Router>
+            </SurveyProvider>
+        </CategoriesProvider>
+    );
 }
 
 export default App;

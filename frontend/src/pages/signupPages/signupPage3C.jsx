@@ -1,34 +1,69 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
+import { useSurvey } from "../../context/SurveyContext/SurveyContext";
 
-function SignupPage3C () {
+function SignupPage3C() {
     const navigate = useNavigate();
-    
+    const { surveyData, updateSurveyData } = useSurvey();
+
+    const handleFieldToggle = (field) => {
+        if (!updateSurveyData) {
+            console.error("updateSurveyData is undefined. Check SurveyContext setup.");
+            return;
+        }
+        const updatedFields = surveyData.interests.fields.includes(field)
+            ? surveyData.interests.fields.filter((f) => f !== field)
+            : [...surveyData.interests.fields, field];
+        updateSurveyData("interests", { fields: updatedFields });
+    };
+
+    const handleNext = () => {
+        if (surveyData.interests.fields.length > 0) {
+            navigate("/signup/signup-login-modal");
+        } else {
+            alert("Please select at least one career field.");
+        }
+    };
+
+    const careerFields = [
+        "Engineering",
+        "Medical",
+        "Management",
+        "Civil Services",
+        "Media",
+        "Armed Forces",
+        "IT",
+        "Aviation",
+        "Animation",
+        "Teaching",
+        "Hospitality",
+        "More",
+    ];
+
     return (
         <div className="child-container">
             <div className="question-heading">
-                <p className="main-question">What's the career field your are interested in?</p>
-                <p className="sub-question">Yes you can select multiple options.</p>
+                <p className="main-question">{surveyData.name || "User"}, what's the career field you're interested in?</p>
+                <p className="sub-question">Yes, you can select multiple options.</p>
             </div>
             <div className="span-inputs">
-                <span>Engineering</span>
-                <span>Medical</span>
-                <span>Management</span>
-                <span>Civil Services</span>
-                <span>Media</span>                    
-                <span>Armed Forces</span>               
-                <span>IT</span>
-                <span>Aviation</span>
-                <span>Animation</span>
-                <span>Teaching</span>
-                <span>Hospitality</span>
-                <span>More</span>
+                {careerFields.map((field) => (
+                    <label key={field} className="checkbox-label">
+                        <input
+                            type="checkbox"
+                            value={field}
+                            checked={surveyData.interests.fields.includes(field)}
+                            onChange={() => handleFieldToggle(field)}
+                        />
+                        <span className="checkbox-text">{field}</span>
+                    </label>
+                ))}
             </div>
             <div className="navi-buttons">
                 <button className="pre-btn" onClick={() => navigate("/signup/interest/history")}>
                     Previous
                 </button>
-                <button className="next-btn" onClick={() => navigate("/signup-login-modal")}>
+                <button className="next-btn" onClick={handleNext}>
                     Next
                 </button>
             </div>

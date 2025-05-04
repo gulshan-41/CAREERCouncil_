@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import Introduction from "../../../components/coursePageComponents/courseIntroduction/courseIntroduction";
-import Prerequsities from "../../../components/coursePageComponents/prerequsities/prerequsities";
+import Prerequsities from "../../../components/coursePageComponents/prerequsities/prerequisites";
 import CoreSubjects from "../../../components/coursePageComponents/coreSubjects/coreSubjects";
 import RecommendedColleges from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
 import JobRoles from "../../../components/coursePageComponents/jobRoles/jobRoles";

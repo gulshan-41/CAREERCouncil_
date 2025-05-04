@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const SurveyContext = createContext();
 
@@ -8,57 +8,51 @@ export function SurveyProvider({ children }) {
         age: "",
         occupation: "",
         strengths: {
-            mathematics: null, // true/false
-            management: null, // true/false
-            sports: [], // array of selected sports
+            mathematics: null,
+            management: null,
+            sports: [],
         },
         interests: {
-            science: null, // true/false
-            history: null, // true/false
-            fields: [], // array of selected career fields
+            science: null,
+            history: null,
+            fields: [],
         },
         signupDetails: {
-            username: "",
+            email: "",
             password: "",
-            agreeToDataProcessing: false,
+            phoneNumber: "",
         },
     });
 
-    const updateSurveyData = (section, data) => {
-        setSurveyData((prev) => ({
-            ...prev,
-            [section]: { ...prev[section], ...data },
-        }));
-    };
-
-    const resetSurveyData = () => {
-        setSurveyData({
-            name: "",
-            age: "",
-            occupation: "",
-            strengths: {
-                mathematics: null,
-                management: null,
-                sports: [],
-            },
-            interests: {
-                science: null,
-                history: null,
-                fields: [],
-            },
-            signupDetails: {
-                username: "",
-                password: "",
-                agreeToDataProcessing: false,
-            },
+    const updateSurveyData = (key, value) => {
+        setSurveyData((prev) => {
+            if (typeof value === "object" && (key === "strengths" || key === "interests" || key === "signupDetails")) {
+                return {
+                    ...prev,
+                    [key]: {
+                        ...prev[key],
+                        ...value,
+                    },
+                };
+            }
+            return {
+                ...prev,
+                ...(typeof value === "object" ? value : { [key]: value }),
+            };
         });
     };
 
     return (
-        <SurveyContext.Provider value={{ surveyData, updateSurveyData, resetSurveyData }}>
+        <SurveyContext.Provider value={{ surveyData, updateSurveyData }}>
             {children}
         </SurveyContext.Provider>
     );
 }
 
-export const useSurvey = () => useContext(SurveyContext);
+export function useSurvey() {
+    const context = useContext(SurveyContext);
+    if (!context) {
+        throw new Error("useSurvey must be used within a SurveyProvider");
+    }
+    return context;
+}

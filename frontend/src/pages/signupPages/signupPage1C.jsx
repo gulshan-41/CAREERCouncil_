@@ -1,8 +1,18 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
+import { useSurvey } from "../../context/SurveyContext/SurveyContext";
 
 function SignupPage1C() {
     const navigate = useNavigate();
+    const { surveyData, updateSurveyData } = useSurvey();
+
+    const handleNext = () => {
+        if (surveyData.occupation) {
+            navigate("/signup/strengths/maths");
+        } else {
+            alert("Please select an occupation.");
+        }
+    };
 
     return (
         <div className="child-container">
@@ -11,15 +21,24 @@ function SignupPage1C() {
                 <p className="sub-question">Working Professional? or a Parent?</p>
             </div>
             <div className="span-inputs">
-                <span id="student">Student</span>
-                <span id="teacher">Working Professional</span>
-                <span id="parent">Parent</span>
+                {["Student", "Working Professional", "Parent"].map((option) => (
+                    <label key={option}>
+                        <input
+                            type="radio"
+                            name="occupation"
+                            value={option}
+                            checked={surveyData.occupation === option}
+                            onChange={() => updateSurveyData("", { occupation: option })}
+                        />
+                        {option}
+                    </label>
+                ))}
             </div>
             <div className="navi-buttons">
                 <button className="pre-btn" onClick={() => navigate("/signup/basic-details/age")}>
                     Previous
                 </button>
-                <button className="next-btn" onClick={() => navigate("/signup/strengths/maths")}>
+                <button className="next-btn" onClick={handleNext}>
                     Next
                 </button>
             </div>

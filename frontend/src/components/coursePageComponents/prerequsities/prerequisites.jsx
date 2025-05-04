@@ -20,7 +20,7 @@ function Subjects({ data }) {
             {data.text.map((block, index) => {
                 switch (block.type) {
                     case "section-intro": 
-                        return <p key={index}>{block.content.paragraph}</p>
+                        return <p key={index}>{block.content}</p>
                     case "tips":
                         return (
                             <div key={index} className="tips">

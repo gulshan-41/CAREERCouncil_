@@ -29,10 +29,7 @@ function CoreSubjects({ data }) {
                     switch(block.type) {
                         case "section-intro":
                             return (
-                                <div key={index} className="section-subjects">
-                                    <h3>{block.content.heading}</h3>
-                                    <p>{block.content.paragraph}</p>
-                                </div>
+                                <p key={index}>{block.content}</p>
                             );
                         case "core-subjects": 
                             return (
@@ -43,14 +40,6 @@ function CoreSubjects({ data }) {
                             );
                         case "topics-list": 
                             return (
-                                // <div key={index} className="topics">
-                                //     <h3>{block.content.data}</h3>
-                                //     <ul>
-                                //         {block.content.data.map((item, itemIndex) => (
-                                //             <li key={itemIndex}><p>{item}</p></li>
-                                //         ))}
-                                //     </ul>
-                                // </div>
                                 <div key={index} className="core-topics">
                                     {block.content.data.filter(subject => subject.heading && (subject.items)) // Filter out invalid/empty objects
                                         .map((subject, subjectIndex) => (
