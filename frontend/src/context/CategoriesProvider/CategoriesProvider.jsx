@@ -38,7 +38,6 @@ export function CategoriesProvider({ children }) {
                     throw new Error("Failed to fetch categories");
                 }
 
-
                 setCategories(response.categoriesList);
                 setCategoriesLoading(false);
             } catch (err) {
@@ -101,8 +100,7 @@ export function CategoriesProvider({ children }) {
             if (!response.success) {
                 throw new Error(`Failed to fetch course ${courseID}`);
             }
-            console.log(response.getCourseData);
-            
+
             const data = response.getCourseData;
 
             setCourseDetails((prev) => ({ ...prev, [courseID]: data }));
@@ -136,14 +134,19 @@ export function CategoriesProvider({ children }) {
                 const trendingCourses = [];
                 for (const category of filteredCategories) {
                     try {
-                        const response = await fetch(`/data/categoriesData/${category.catID}.json`);
-                        if (!response.ok) {
+                        const response = await fetch(`http://localhost:8800/api/categories/getcategoriesdata/${category.catID}`, {
+                            method: 'GET',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                        }).then((data) => data.json());
+                        if (!response.success) {
                             console.warn(`Failed to fetch data for ${category.catID}: ${response.status}`);
                             continue;
                         }
                         let data;
                         try {
-                            data = await response.json();
+                            data = response.getCategoriesData;
                         } catch (jsonErr) {
                             const responseText = await response.text();
                             console.error(
