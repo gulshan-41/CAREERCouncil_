@@ -23,31 +23,29 @@ export function CategoriesProvider({ children }) {
     const [trendingLoading, setTrendingLoading] = useState(true);
     const [trendingError, setTrendingError] = useState(null);
 
-  // Fetch categories.json once on mount
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        }).then((data) => data.json());
+    // Fetch categories.json once on mount
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then((data) => data.json());
 
-        if (!response.success) {
-          throw new Error("Failed to fetch categories");
-        }
-
-        // console.log('categoriesList = ', response.categoriesList);
-
-            setCategories(response.categoriesList);
-            setCategoriesLoading(false);
-            } catch (err) {
-                  setCategoriesError(err.message);
-                  setCategoriesLoading(false);
+                if (!response.success) {
+                    throw new Error("Failed to fetch categories");
                 }
-            };
-            fetchCategories();
+
+                setCategories(response.categoriesList);
+                setCategoriesLoading(false);
+            } catch (err) {
+                setCategoriesError(err.message);
+                setCategoriesLoading(false);
+            }
+        };
+        fetchCategories();
     }, []);
 
     // Function to fetch category details (cached)
@@ -60,13 +58,18 @@ export function CategoriesProvider({ children }) {
         setDetailsError((prev) => ({ ...prev, [catID]: null }));
 
         try {
-            const response = await fetch(`/data/categoriesData/${catID}.json`);
-            if (!response.ok) {
+            const response = await fetch(`http://localhost:8800/api/categories/getcategoriesdata/${catID}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            }).then((data) => data.json());
+
+            if (!response.success) {
                 throw new Error(`Failed to fetch data for ${catID}`);
             }
-            const data = await response.json();
 
-            // console.log("CategoriesData = ", catID, data);
+            const data = response.getCategoriesData;
 
             setCategoryDetails((prev) => ({
                 ...prev,
@@ -85,14 +88,21 @@ export function CategoriesProvider({ children }) {
     // Fetch course details by courseID (courses)
     const fetchCourseDetails = async (courseID) => {
         if (courseDetails[courseID]) return; // Skip if already fetched
-            setCourseLoading(true);
+        setCourseLoading(true);
         try {
-            const response = await fetch(`/data/courses/${courseID}.json`);
-            if (!response.ok) {
+            const response = await fetch(`http://localhost:8800/api/course/getcourse/${courseID}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            }).then((data) => data.json());
+
+            if (!response.success) {
                 throw new Error(`Failed to fetch course ${courseID}`);
             }
-            const data = await response.json();
-        
+
+            const data = response.getCourseData;
+
             setCourseDetails((prev) => ({ ...prev, [courseID]: data }));
             setCourseError((prev) => ({ ...prev, [courseID]: null }));
         } catch (error) {
@@ -124,14 +134,19 @@ export function CategoriesProvider({ children }) {
                 const trendingCourses = [];
                 for (const category of filteredCategories) {
                     try {
-                        const response = await fetch(`/data/categoriesData/${category.catID}.json`);
-                        if (!response.ok) {
+                        const response = await fetch(`http://localhost:8800/api/categories/getcategoriesdata/${category.catID}`, {
+                            method: 'GET',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                        }).then((data) => data.json());
+                        if (!response.success) {
                             console.warn(`Failed to fetch data for ${category.catID}: ${response.status}`);
                             continue;
                         }
                         let data;
                         try {
-                            data = await response.json();
+                            data = response.getCategoriesData;
                         } catch (jsonErr) {
                             const responseText = await response.text();
                             console.error(
