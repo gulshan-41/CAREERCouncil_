@@ -1,17 +1,15 @@
-import "./relatedCoursesCard.scss";
+import "./trendingCoursesCard.scss";
 import { useNavigate } from "react-router-dom";
 
-function RelatedCoursesCard({ courseID, name, specialization }) {
+function TrendingCoursesCard({ courseID, name, specialization }) {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-        if (courseID && courseID !== "null") {
-            navigate(`/courses/${courseID}`);
-        }
+        navigate(`/courses/${courseID}`);
     };
 
     return (
-        <div className="cat-course-card" onClick={handleNavigate}>
+        <div className="trending-course-card-wrapper" onClick={handleNavigate}>
             <div className="compare-toggle">Compare</div>
             <div className="course-full-name">
                 <p>{name}</p>
@@ -39,4 +37,4 @@ function RelatedCoursesCard({ courseID, name, specialization }) {
     );
 }
 
-export default RelatedCoursesCard;
+export default TrendingCoursesCard;
