@@ -18,11 +18,15 @@ export function CategoriesProvider({ children }) {
     const [courseLoading, setCourseLoading] = useState(false);
     const [courseError, setCourseError] = useState({}); // { courseID: error }
 
+    // State for trending courses
+    const [trendingCourses, setTrendingCourses] = useState([]);
+    const [trendingLoading, setTrendingLoading] = useState(true);
+    const [trendingError, setTrendingError] = useState(null);
+
   // Fetch categories.json once on mount
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        
         const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
           method: 'GET',
           headers: {
@@ -33,7 +37,8 @@ export function CategoriesProvider({ children }) {
         if (!response.success) {
           throw new Error("Failed to fetch categories");
         }
-        console.log('categoriesList = ', response.categoriesList);
+
+        // console.log('categoriesList = ', response.categoriesList);
 
             setCategories(response.categoriesList);
             setCategoriesLoading(false);
@@ -97,6 +102,59 @@ export function CategoriesProvider({ children }) {
         }
     };
 
+    // Fetch trending courses on mount
+    useEffect(() => {
+        const fetchTrendingCourses = async () => {
+            try {
+                // Fetch categoriesList to get all catIDs
+                const categoriesResponse = await fetch("/data/categoriesList.json");
+                if (!categoriesResponse.ok) {
+                    throw new Error("Failed to fetch categories list");
+                }
+                const categoriesList = await categoriesResponse.json();
+
+                // Fetch each category's JSON file and collect trending courses
+                const trendingCourses = [];
+                for (const category of categoriesList) {
+                    try {
+                        const response = await fetch(`/data/categoriesData/${category.catID}.json`);
+                        if (!response.ok) {
+                            console.warn(`Failed to fetch data for ${category.catID}`);
+                            continue;
+                        }
+                        const data = await response.json();
+                        // Filter trending courses and add categoryId
+                        const trending = data.relatedCourses
+                            .filter((course) => course.isTrending === "true")
+                            .map((course) => ({
+                                trendID: course.trendID,
+                                courseId: course["CO-ID"],
+                                name: course.name,
+                                specialization: course.specialization,
+                                categoryId: category.catID,
+                            }));
+                        trendingCourses.push(...trending);
+                    } catch (err) {
+                        console.warn(`Error fetching ${category.catID}: ${err.message}`);
+                    }
+                }
+
+                // Sort by trendID for consistency
+                trendingCourses.sort((a, b) => a.trendID.localeCompare(b.trendID));
+
+                console.log("All Trending Courses:", trendingCourses);
+
+                setTrendingCourses(trendingCourses);
+                setTrendingError(null);
+            } catch (err) {
+                setTrendingError(err.message);
+            } finally {
+                setTrendingLoading(false);
+            }
+        };
+        fetchTrendingCourses();
+    }, []);
+
     const contextValue = {
         categories,
         categoriesLoading,
@@ -109,6 +167,9 @@ export function CategoriesProvider({ children }) {
         courseLoading,
         courseError,
         fetchCourseDetails, // Function to fetch course by courseID
+        trendingCourses, // Array of { trendID, courseId, name, specialization, categoryId }
+        trendingLoading,
+        trendingError,
     };
 
     return (

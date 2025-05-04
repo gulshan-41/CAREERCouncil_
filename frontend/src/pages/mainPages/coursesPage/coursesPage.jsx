@@ -3,11 +3,12 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import Introduction from "../../../components/coursePageComponents/courseIntroduction/courseIntroduction";
+import Prerequsities from "../../../components/coursePageComponents/prerequsities/prerequsities";
+import CoreSubjects from "../../../components/coursePageComponents/coreSubjects/coreSubjects";
+import RecommendedColleges from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
+import JobRoles from "../../../components/coursePageComponents/jobRoles/jobRoles";
 import AboutCourse from "../../../components/coursePageComponents/aboutCourse/aboutCourse";
-import Subjects from "../../../components/coursePageComponents/subjects/subjects";
 import Syllabus from "../../../components/coursePageComponents/syllabus/syllabus";
-import Opportunities from "../../../components/coursePageComponents/jobOpportunities/jobOpportunities";
-import Recommendation from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
 import Aside from "../../../components/coursePageComponents/aside/aside";
 
 function CoursesPage() {
@@ -65,11 +66,12 @@ function CoursesPage() {
                 <h1>{courseData.name}</h1>
                 {/* <Aside /> */}
                 <Introduction data={courseData.introduction} />
-                {/* <AboutCourse data={courseData.about} />
-                <Subjects data={courseData.subjects} />
-                <Syllabus data={courseData.syllabus} />
-                <Opportunities />
-                <Recommendation data={courseData.colleges} /> */}
+                <Prerequsities data={courseData.prerequisites} />
+                <CoreSubjects data={courseData.subjects}/>
+                <RecommendedColleges data={courseData.recommendedColleges} />
+                <JobRoles data={courseData.jobRoles}/>
+                {/* <AboutCourse data={courseData.about} /> */}
+                {/* <Syllabus data={courseData.syllabus} /> */}
             </section>
         </div>
     </div>

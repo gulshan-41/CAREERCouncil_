@@ -1,0 +1,10 @@
+.content-box {
+    .job-roles,
+    .key-organizations,
+    .key-skills,
+    .sub-topics-intro {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

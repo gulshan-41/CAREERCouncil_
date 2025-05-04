@@ -1,8 +1,7 @@
 .cat-course-card {
     width: 100%;
-    min-width: 100px;
-    height: 100%;
-    min-height: 140px;
+    // min-width: 100px;
+    // min-height: 140px;
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
@@ -10,9 +9,16 @@
     padding: 8px 12px;
     box-sizing: border-box;
     border: 1px solid #a5a5a5;
-    border-radius: 8px 0 8px 8px / 8px 0 8px 8px;
+    border-radius: 8px;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        .compare-toggle {
+            transform: translateY(25px);
+        }
+    }
 }
 
 .compare-toggle {
@@ -20,15 +26,17 @@
     padding: 4px 8px;
     background-color: #D4E4FD;
     border: none;
-    border-radius: 0 0 0 4px / 0 0 0 4px;
+    border-radius: 0 8px 0 4px / 0 8px 0 4px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -25px;
+    right: -1px;
+    transform: translateY(0);
+    transition: all 0.4s;
     cursor: pointer;
 }
 
 .course-full-name {
-    margin-top: 20px;
+    margin-top: 16px;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -39,6 +47,7 @@
     transform: scaleY(0.5);
     transform-origin: top;
     height: 1px;
+    margin-top: 20px;
 }
 
 .course-field {

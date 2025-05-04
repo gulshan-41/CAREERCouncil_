@@ -26,151 +26,189 @@
     ],
     "relatedCourses": [
         {
-            "CO-ID": "AeronauticalEngr",
+            "isTrending": "true",
+            "trendID": "Aeronautical-TID",
+            "CO-ID": "Aeronautical-Engineering",
             "name": "Aeronautical Engineering",
             "specialization": "Aeronautics"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Industrial-Engineering",
             "name": "Industrial Engineering",
             "specialization": "Manufacturing"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Aerospace-TID",
+            "CO-ID": "Aerospace-Engineering",
             "name": "Aerospace Engineering",
             "specialization": "Space Technology"
         },   
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Marine-Engineering",
             "name": "Marine Engineering",
             "specialization": "Marine Technology"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Automobile-Engineering",
             "name": "Automobile Engineering",
             "specialization": "Automotive Design"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Mechanical-TID",
+            "CO-ID": "Mechanical-Engineering",
             "name": "Mechanical Engineering",
             "specialization": "Mechanics"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Biomedical-Engineering",
             "name": "Biomedical Engineering",
             "specialization": "Medical Technology"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Mechatronics-Engineering",
             "name": "Mechatronics Engineering",
             "specialization": "Automation"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Biotechnology-TID",
+            "CO-ID": "Biotechnology-Engineering",
             "name": "Biotechnology Engineering",
             "specialization": "Biotechnology"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Metallurgical-TID",
+            "CO-ID": "Metallurgical-Engineering",
             "name": "Metallurgical Engineering",
             "specialization": "Materials Science"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Ceramic-Engineering",
             "name": "Ceramic Engineering",
             "specialization": "Ceramics"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Mining-Engineering",
             "name": "Mining Engineering",
             "specialization": "Mining Technology"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Chemical-TID",
+            "CO-ID": "Chemical-Engineering",
             "name": "Chemical Engineering",
             "specialization": "Chemical Processes"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Petroleum-Engineering",
             "name": "Petroleum Engineering",
             "specialization": "Petroleum Extraction"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Civil-TID",
+            "CO-ID": "Civil-Engineering",
             "name": "Civil Engineering",
             "specialization": "Infrastructure"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "true",
+            "trendID": "Power-TID",
+            "CO-ID": "Power-Engineering",
             "name": "Power Engineering",
             "specialization": "Power Systems"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Communications-Engineering",
             "name": "Communications Engineering",
             "specialization": "Telecommunications"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Production-Engineering",
             "name": "Production Engineering",
             "specialization": "Manufacturing"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Computer-Science-Engineering",
             "name": "Computer Science Engineering",
             "specialization": "Computing"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Robotics-Engineering",
             "name": "Robotics Engineering",
             "specialization": "Robotics"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Construction-Engineering",
             "name": "Construction Engineering",
             "specialization": "Construction Management"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Structural-Engineering",
             "name": "Structural Engineering",
             "specialization": "Structural Design"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Electrical-Engineering",
             "name": "Electrical Engineering",
             "specialization": "Electronics"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Telecom-Engineering",
             "name": "Telecom. Engineering",
             "specialization": "Telecom Systems"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Electronics-Communication",
             "name": "Electronics & Communication",
             "specialization": "Communication Systems"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Textile-Engineering",
             "name": "Textile Engineering",
             "specialization": "Textile Technology"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Electronics-Engineering",
             "name": "Electronics Engineering",
             "specialization": "Electronic Circuits"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Tool-Engineering",
             "name": "Tool Engineering",
             "specialization": "Tool Design" },
-        {
-            "CO-ID": "null",
+            {
+            "isTrending": "false",
+            "CO-ID": "Environmental-Engineering",
             "name": "Environmental Engineering",
             "specialization": "Environmental Management"
         },
         {
-            "CO-ID": "null",
+            "isTrending": "false",
+            "CO-ID": "Transportation-Engineering",
             "name": "Transportation Engineering",
             "specialization": "Transport Systems"
         }

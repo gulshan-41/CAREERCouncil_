@@ -1,6 +1,5 @@
 import "./collegeCardsGrid.scss";
 import React from "react";
-import PropTypes from "prop-types";
 import CollegeCard from "../../cards/collegeCards/collegeCards";
 
 function CollegeCardsGrid({ colleges }) {
@@ -30,23 +29,5 @@ function CollegeCardsGrid({ colleges }) {
         </div>
     );
 }
-
-CollegeCardsGrid.propTypes = {
-    colleges: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            name: PropTypes.string.isRequired,
-            location: PropTypes.shape({
-                city: PropTypes.string.isRequired,
-                state: PropTypes.string.isRequired,
-                country: PropTypes.string.isRequired,
-            }).isRequired,
-            ownership: PropTypes.string.isRequired,
-            Ranking: PropTypes.string.isRequired,
-            "total charges": PropTypes.string.isRequired,
-            "visit link": PropTypes.string.isRequired,
-        })
-    ).isRequired,
-};
 
 export default CollegeCardsGrid;

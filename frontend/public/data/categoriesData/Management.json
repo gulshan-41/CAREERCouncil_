@@ -1,0 +1,205 @@
+{
+    "catID": "Management",
+    "introduction": [
+        {
+            "type": "heading",
+            "content": "Management"
+        },
+        {
+            "type": "paragraph",
+            "content": "Management courses are designed to develop skills in business administration, leadership, and organizational management. These courses cover a wide range of specializations to cater to different industry needs."
+        },
+        {
+            "type": "paragraph",
+            "content": "Popular types of management include:"
+        },
+        {
+            "type": "list",
+            "items": [
+                "General Management: For overall business leadership.",
+                "Finance: For financial planning and investment.",
+                "Marketing: For promoting products and services.",
+                "Human Resources: For managing workforce and organizational culture.",
+                "Operations: For efficient production and service delivery.",
+                "Information Technology: For managing technology in business.",
+                "Healthcare: For managing healthcare services.",
+                "Retail: For managing retail businesses.",
+                "Hospitality: For managing hotels and tourism.",
+                "Entrepreneurship: For starting and growing businesses."
+            ]
+        }
+    ],
+    "relatedCourses": [
+        {
+            "isTrending": "true",
+            "trendID": "MBA-TID",
+            "CO-ID": "MBA-General",
+            "name": "MBA",
+            "specialization": "General Management"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "PGDM-TID",
+            "CO-ID": "PGDM-General",
+            "name": "PGDM",
+            "specialization": "General Management"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "BBA-TID",
+            "CO-ID": "BBA",
+            "name": "BBA",
+            "specialization": "Business Administration"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "Executive-MBA-TID",
+            "CO-ID": "Executive-MBA",
+            "name": "Executive MBA",
+            "specialization": "Executive Management"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MMS",
+            "name": "MMS",
+            "specialization": "Management Studies"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "BMS",
+            "name": "BMS",
+            "specialization": "Management Studies"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "DBM",
+            "name": "DBM",
+            "specialization": "Business Management"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Finance",
+            "name": "MBA in Finance",
+            "specialization": "Finance"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Marketing",
+            "name": "MBA in Marketing",
+            "specialization": "Marketing"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-HRM",
+            "name": "MBA in Human Resource Management",
+            "specialization": "Human Resources"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-IB",
+            "name": "MBA in International Business",
+            "specialization": "International Business"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Operations",
+            "name": "MBA in Operations Management",
+            "specialization": "Operations"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-IT",
+            "name": "MBA in Information Technology",
+            "specialization": "IT Management"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "MBA-Healthcare-TID",
+            "CO-ID": "MBA-Healthcare",
+            "name": "MBA in Healthcare Management",
+            "specialization": "Healthcare"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Retail",
+            "name": "MBA in Retail Management",
+            "specialization": "Retail"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Hospitality",
+            "name": "MBA in Hospitality Management",
+            "specialization": "Hospitality"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "MBA-Entrepreneurship-TID",
+            "CO-ID": "MBA-Entrepreneurship",
+            "name": "MBA in Entrepreneurship",
+            "specialization": "Entrepreneurship"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "MBA-SCM-TID",
+            "CO-ID": "MBA-SCM",
+            "name": "MBA in Supply Chain Management",
+            "specialization": "Supply Chain"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "MBA-BA-TID",
+            "CO-ID": "MBA-BA",
+            "name": "MBA in Business Analytics",
+            "specialization": "Business Analytics"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "MBA-Digital-Marketing-TID",
+            "CO-ID": "MBA-Digital-Marketing",
+            "name": "MBA in Digital Marketing",
+            "specialization": "Digital Marketing"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Project-Management",
+            "name": "MBA in Project Management",
+            "specialization": "Project Management"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Public-Policy",
+            "name": "MBA in Public Policy",
+            "specialization": "Public Policy"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "MBA-Sports",
+            "name": "MBA in Sports Management",
+            "specialization": "Sports Management"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "PGDM-Finance",
+            "name": "PGDM in Finance",
+            "specialization": "Finance"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "PGDM-Marketing",
+            "name": "PGDM in Marketing",
+            "specialization": "Marketing"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "PGDM-HR",
+            "name": "PGDM in Human Resources",
+            "specialization": "Human Resources"
+        },
+        {
+            "isTrending": "false",
+            "CO-ID": "PGDM-IB",
+            "name": "PGDM in International Business",
+            "specialization": "International Business"
+        }
+    ]
+}

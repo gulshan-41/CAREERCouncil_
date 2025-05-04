@@ -1,3 +1,4 @@
+import "./courseIntroduction.scss";
 import React from "react";
 
 function Introduction({ data }) {
@@ -18,13 +19,11 @@ function Introduction({ data }) {
             {/* Map over the text array to render each block */}
             {data.text.map((block, index) => {
                 switch (block.type) {
-                    case "heading":
-                        return <h3 key={index}>{block.content}</h3>;
-                    case "intro":
-                        return <p key={index}>{block.content}</p>;
+                    case "section-intro":
+                        return <p className="sub-section" key={index}>{block.content}</p>;
                     case "main-focus":
                         return (
-                            <div key={index} className="main-focus">
+                            <div key={index} className="main-focus sub-section">
                                 <h3>{block.content.heading}</h3>
                                 <ul>
                                     {block.content.items.map((item, itemIndex) => (
@@ -35,13 +34,13 @@ function Introduction({ data }) {
                         );
                     case "overview":
                         return (
-                            <div key={index} className="overview">
+                            <div key={index} className="overview sub-section">
                                 <h3>{block.content.heading}</h3>
                                 <p>{block.content.paragraph}</p>
                             </div>
                         );
                     case "standard-duration":
-                        return <p key={index}>{block.content}</p>
+                        return <p className="sub-section" key={index}>{block.content}</p>
                     default:
                         return (
                             <p key={index} className="unsupported">

@@ -1,0 +1,502 @@
+{
+    "courseID": "Aeronautical-Engineering",
+    "name": "Aeronautical Engineering",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "section-intro",
+                "content": "A four years UG program, Aeronautical Engineering is an exciting undergraduate course that explores the science and technology of designing, building, and maintaining aircraft. This program equips students with the skills to innovate and create flying machines like airplanes, helicopters, and drones, ensuring they are safe, efficient, and capable of navigating Earth's atmosphere. Combining theoretical knowledge with hands-on practical training, it's perfect for those passionate about aviation and engineering."
+            },
+            {
+                "type": "main-focus",
+                "content": {
+                    "heading": "What this course mainly focuses on?",
+                    "items": [
+                        "Aircraft Design and Aerodynamics: Learning to create efficient aircraft shapes and understand airflow for smooth flights.",
+                        "Propulsion Systems: Studying engines and power systems that propel aircraft.",
+                        "Materials and Structures: Exploring lightweight, strong materials to build durable aircraft components.",
+                        "Avionics and Navigation: Mastering electronic systems for communication, control, and navigation in aircraft.",
+                        "Maintenance and Safety: Ensuring aircraft meet strict safety standards through testing and quality checks."
+                    ]
+                }
+            },
+            {
+                "type": "overview",
+                "content": {
+                    "heading": "Overview",
+                    "paragraph": "Aeronautical Engineering is a specialized branch of engineering focused on the design, development, testing, and maintenance of aircraft that operate within Earth's atmosphere. This undergraduate program is highly sought after by students passionate about aviation and aerospace, offering a blend of theoretical learning and practical training to prepare graduates for careers in industries like aviation, defense, and research organizations such as ISRO and NASA."
+                }
+            },
+            {
+                "type": "standard-duration",
+                "content": "Standard duration: In India, the undergraduate program in Aeronautical Engineering, typically offered as a Bachelor of Technology (B.Tech) or Bachelor of Engineering (B.E.), is a four-year program. This duration is structured to include eight semesters, with a combination of academic coursework and practical training."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "section-intro",
+                "content": "This comprehensive guide outlines the prerequisites for pursuing Aeronautical Engineering. It covers the required 10-12th subjects, tips for gaining an advantage before enrolling, and admission requirements in India, to help students make informed career decisions."
+            },
+            {
+                "type": "requirements",
+                "content": {
+                    "heading": "Required 10th & 12th subjects",
+                    "paragraph": "",
+                    "items": [
+                        "10th Standard: Students must have studied Science (including Physics and Chemistry) and Mathematics as compulsory subjects to build a foundational understanding for engineering studies.",
+                        "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, and Mathematics (PCM) as core subjects. Some institutions may accept Physics, Chemistry, and Biology (PCB), but PCM is the standard for engineering programs like Aeronautical Engineering.",
+                        "Minimum Marks: A minimum aggregate score of 50-60% in PCM is typically required, though top colleges like IITs may demand higher percentages or competitive exam ranks.",
+                        "Visit for more insights: Aeronautical Engineering Eligibility Requirements - AME CET India"
+                    ]
+                }
+            },
+            {
+                "type": "tips",
+                "content": {
+                    "heading": "*TIPS to get an upper hand before enrolling in the course",
+                    "paragraph": "For school students interested in Aeronautical Engineering, excelling in core subjects and exploring additional skills can provide a competitive edge before enrolling. These tips are designed to help students prepare early and function smoothly througout the course." 
+                }
+            },
+            {
+                "type": "requirements",
+                "content": {
+                    "heading": "Basic subjects to master (schooling)",
+                    "paragraph": "",
+                    "items": [
+                        "Physics: Focus on mechanics, thermodynamics, and electromagnetism, as these are critical for understanding aerodynamics, propulsion, and aircraft structures.",
+                        "Mathematics: Build proficiency in calculus, trigonometry, and algebra, which are essential for calculations in aerodynamics and structural analysis.",
+                        "Chemistry: Gain knowledge of materials science and chemical properties of fuels, which are relevant for aircraft materials and propulsion systems."
+                    ]
+                }
+            },
+            {
+                "type": "requirements",
+                "content": {
+                    "heading": "Additional Subjects and Skills",
+                    "paragraph": "",
+                    "items": [
+                        "Computer Science: Learn basic programming (e.g., Python or C++) to prepare for simulations and design software used in aeronautical engineering.",
+                        "Engineering Drawing: Familiarity with technical drawing or Computer-Aided Design (CAD) tools can help with visualizing and designing aircraft components.",
+                        "Aerodynamics: Self-study basic aerodynamics concepts (e.g., lift, drag, thrust) through online resources or books to get a head start on core course topics.",
+                        "Extracurricular Activities: Join aerospace or aviation clubs, participate in science fairs with flight-related projects, or attend workshops to gain practical insights.",
+                        "Summary: Mastering PCM is crucial, but learning programming, engineering drawing, and aerodynamics, along with engaging in aviation-related activities, can set you apart."
+                    ]
+                }
+            },
+            {   
+                "key": "diff-point",
+                "type": "requirements",
+                "content": {
+                    "heading": "Eligibility criterias",
+                    "paragraph": "Eligibility criterias are based on stream and total percentage aggregated in class 12th. Completion of Class 12 with PCM, achieving a minimum of 50-60% marks, depending on the institution. Alternatively, a 3-year engineering diploma in any stream may be accepted by some colleges.",
+                    "items": []
+                }
+            },
+            {   "key": "diff-point",
+                "type": "requirements",
+                "content": {
+                    "heading": "Admission requirments",
+                    "paragraph": "Entrance Exams: Admission to top colleges is primarily through national or state-level entrance exams, such as: JEE Main, JEE Advanced, AME CET.",
+                    "items": [
+                        "JEE Main: For NITs, IIITs, and other centrally funded institutions.",
+                        "JEE Advanced: For IITs, requiring qualification through JEE Main.",
+                        "AME CET: For specific aeronautical engineering colleges.",
+                        "Other exams include MET, KCET, COMEDK UGET, or university-specific tests.",
+                        "Merit-Based Admissions: Some private colleges offer admission based on Class 12 marks, often followed by interviews or group discussions."
+                    ]    
+                }
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "section-intro",
+                "content": "Core subjects in Aeronautical Engineering program covers, Engineering Mathematics, Aerodynamics, Aircraft structures, Propulsion Systems, Avionics."
+            },
+            {
+                "type": "core-subjects",
+                "content": {
+                    "heading": "Core Subjects in Aeronautical Engineering",
+                    "paragraph": "This section outlines the core subjects and topics studied in undergraduate Aeronautical Engineering programs in India, such as at the Indian Institutes of Technology (IITs), and at well-known universities abroad, such as MIT and the University of Michigan. These subjects are mandatory to provide students with the essential knowledge and skills for designing, building, and maintaining aircraft."
+                }
+            },
+            {
+                "type": "core-subjects",
+                "content": {
+                    "heading": "Core Subjects and Subtopics",
+                    "paragraph": "The following subjects are consistently identified as core components of Aeronautical Engineering curricula across reputable institutions. They form the foundation of the discipline, covering critical aspects of aircraft design, operation, and maintenance."
+                }
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Engineering Mathematics",
+                            "items": [
+                                "Calculus: Differential and integral calculus for modeling physical systems.",
+                                "Differential Equations: Solving equations for dynamic systems like aircraft motion.",
+                                "Linear Algebra: Matrix operations for structural and control system analysis.",
+                                "Complex Variables: Analyzing oscillatory systems in aerodynamics.",
+                                "Probability and Statistics: Risk assessment and reliability in aircraft design."
+                            ]
+                        },
+                        {
+                            "heading": "Engineering Mechanics",
+                            "items": [
+                                "Statics: Forces and moments for structural equilibrium.",
+                                "Dynamics: Kinematics and kinetics of aircraft motion.",
+                                "Mechanics of Materials: Stress, strain, and deformation in aircraft components."
+                            ]
+                        },
+                        {
+                           "heading": "Thermodynamics",
+                           "items": [
+                                "Laws of Thermodynamics: Energy conservation in propulsion systems.",
+                                "Heat Transfer: Managing heat in engines and aircraft surfaces.",
+                                "Energy Conversion: Efficiency in power generation for flight."
+                           ]
+                        },
+                        {
+                            "heading": "Fluid Mechanics",
+                            "items": [
+                                "Fluid Properties: Viscosity and density affecting airflow.",
+                                "Fluid Statics: Pressure distribution in stationary fluids.",
+                                "Fluid Dynamics: Bernoulli's equation and Navier-Stokes for airflow analysis.",
+                                "Dimensional Analysis: Scaling models for wind tunnel testing."
+                            ]
+                        },
+                        {
+                            "heading": "Aerodynamics",
+                            "items": [
+                                "Subsonic to Hypersonic Flows: Airflow behavior at different speeds.",
+                                "Lift, Drag, Thrust: Forces affecting aircraft performance.",
+                                "Boundary Layer Theory: Managing drag on aircraft surfaces.",
+                                "Wind Tunnel Testing: Experimental validation of aerodynamic designs."
+                            ]
+                        },
+                        {
+                            "heading": "Aircraft Structures",
+                            "items": [
+                                "Stress Analysis: Ensuring structural integrity under loads.",
+                                "Structural Dynamics: Vibration and fatigue analysis.",
+                                "Fatigue and Fracture Mechanics: Predicting component lifespan.",
+                                "Composite Materials: Lightweight materials for modern aircraft."
+                            ]
+                        },
+                        {
+                            "heading": "Aircraft Materials",
+                            "items": [
+                                "Metals and Alloys: Aluminum and titanium for structural strength.",
+                                "Polymers and Composites: Carbon fiber for weight reduction.",
+                                "Ceramics and Glasses: Heat-resistant materials for engines.",
+                                "Material Selection and Testing: Choosing materials for specific applications."
+                            ]
+                        },
+                        {
+                            "heading": "Aircraft Design",
+                            "items": [
+                                "Conceptual Design: Initial aircraft layout and specifications.",
+                                "Preliminary Design: Refining aerodynamics and structures.",
+                                "Detailed Design: Finalizing components and systems.",
+                                "Design Optimization: Balancing performance, cost, and safety."
+                            ]
+                        },
+                        {
+                            "heading": "Flight Mechanics",
+                            "items": [
+                                "Equations of Motion: Modeling aircraft trajectories.",
+                                "Performance Analysis: Range, endurance, climb, and turn capabilities.",
+                                "Stability and Control Derivatives: Ensuring predictable flight behavior."
+                            ]
+                        },
+                        {
+                            "heading": "Propulsion Systems",
+                            "items": [
+                                "Gas Turbine Engines: Turbojets, turbofans, and turboprops for thrust.",
+                                "Rocket Propulsion: Chemical rockets for high-speed applications.",
+                                "Electric Propulsion: Emerging technologies for sustainable aviation."
+                            ]
+                        },
+                        {
+                            "heading": "Avionics",
+                            "items": [
+                                "Navigation Systems: GPS and inertial navigation for accurate positioning.",
+                                "Communication Systems: Radio and satellite links for coordination.",
+                                "Flight Control Systems: Autopilots and fly-by-wire for precise control."
+                            ]
+                        },
+                        {
+                            "heading": "Aircraft Performance",
+                            "items": [
+                                "Takeoff and Landing Performance: Runway requirements and safety margins.",
+                                "Cruise Performance: Fuel efficiency at cruising altitude.",
+                                "Maneuver Performance: Agility for turns and climbs."
+                            ]
+                        },
+                        {
+                            "heading": "Aircraft Stability and Control",
+                            "items": [
+                                "Static Stability: Inherent balance in flight.",
+                                "Dynamic Stability: Response to disturbances over time.",
+                                "Control Surface Design: Ailerons, rudders, and elevators for maneuverability."
+                            ]
+                        },
+                        {
+                            "heading": "Aircraft Maintenance",
+                            "items": [
+                                "Preventive Maintenance: Scheduled checks to ensure airworthiness.",
+                                "Troubleshooting and Repair: Diagnosing and fixing issues.",
+                                "Airworthiness Regulations: Compliance with safety standards."
+                            ]
+                        },
+                        {
+                            "heading": "Flight Testing",
+                            "items": [
+                                "Flight Test Planning: Designing experiments to validate performance.",
+                                "Data Acquisition and Analysis: Collecting and interpreting flight data.",
+                                "Certification Testing: Meeting regulatory requirements for operation."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "section-intro",
+                "content": "Aeronautical Engineering graduates are equipped to take on diverse roles across multiple sectors, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
+            },
+            {
+                "type": "job-roles",
+                "content": {
+                    "heading": "Indian Air Force and Related Defense Sectors",
+                    "paragraph": "The Indian Air Force and associated defense organizations provide opportunities for aeronautical engineers to contribute to national security through advanced aviation technologies. While direct roles within the Indian Air Force may be limited, the skills acquired are highly applicable in defense research and development. Key job roles include:",
+                    "items": [
+                        "Military Aircraft Maintenance Engineer: Ensures military aircraft are operational by performing maintenance, repairs, and inspections to meet stringent defense standards.",
+                        "Missile Systems Engineer: Designs, develops, and tests missile systems, focusing on aerodynamics and propulsion for defense applications.",
+                        "UAV (Unmanned Aerial Vehicle) Engineer: Specializes in the design, development, and operation of drones used for surveillance and combat."
+                    ]
+                }
+            },
+            {
+                "type": "key-organizations",
+                "content": {
+                    "heading": "Key organizations",
+                    "items": [
+                        "Military Aircraft Maintenance Engineer: Ensures military aircraft are operational by performing maintenance, repairs, and inspections to meet stringent defense standards.",
+                        "Missile Systems Engineer: Designs, develops, and tests missile systems, focusing on aerodynamics and propulsion for defense applications.",
+                        "UAV (Unmanned Aerial Vehicle) Engineer: Specializes in the design, development, and operation of drones used for surveillance and combat."
+                    ]
+                }     
+            },
+            {
+                "type": "salary-range",
+                "content": "Salary Range: Salaries in the defense sector typically range from INR 12 LPA to INR 15 LPA, reflecting the specialized nature of these roles."
+            },
+            {
+                "type": "job-roles",
+                "content": {
+                    "heading": "Private Organizations (e.g., Indigo)",
+                    "paragraph": "Private aviation companies, particularly airlines and maintenance organizations, offer roles focused on ensuring aircraft safety and operational efficiency. For an airline like Indigo, aeronautical engineers play a critical role in maintenance and technical support. Key job roles include:",
+                    "items": [
+                        "Airline Maintenance Engineer: Oversees maintenance, repair, and overhaul (MRO) of aircraft to ensure compliance with safety and performance standards.",
+                        "Airline Systems Engineer: Integrates and maintains aircraft systems, such as avionics and navigation, to support smooth operations.",
+                        "Airline Operations Engineer: Optimizes aircraft operations, including scheduling, fuel efficiency, and safety protocols, often at an entry-level capacity."
+                    ]
+                }
+            },
+            {
+                "type": "key-organizations",
+                "content": {
+                    "heading": "Key organizations",
+                    "items": [
+                        "Indigo, Air India, SpiceJet, GoAir: Major airlines with engineering departments for MRO and operations (Indigo Careers).",
+                        "MRO Organizations: Companies like Boeing and Airbus have established MRO facilities in India, creating numerous job opportunities (Boeing India)."
+                    ]
+                }     
+            },
+            {
+                "type": "salary-range",
+                "content": "Salary Range: Salaries vary widely, from INR 4 LPA for entry-level roles like Airline Operations Engineer to INR 14.4 LPA for specialized positions like Airline Systems Engineer."
+            },
+            {
+                "type": "sub-topics-intro",
+                "content": {
+                    "heading": "How a Student Might See Themselves After Completing the Course",
+                    "paragraph": "Completing an Aeronautical Engineering degree equips students with technical expertise, practical skills, and a mindset geared toward innovation and problem-solving. Graduates are likely to envision themselves as professionals making significant contributions to aviation, defense, or space exploration."
+                }
+            },
+            {
+                "type": "key-skills",
+                "content": {
+                    "heading": "Knowledge and expertise",
+                    "paragraph": "Graduates will have a comprehensive understanding of the following key areas:",
+                    "items": [
+                        "Aircraft Design: Knowledge of conceptualizing and designing aircraft for optimal performance and safety.",
+                        "Aerodynamics: Understanding how air flows around aircraft to enhance efficiency and stability.",
+                        "Propulsion Systems: Expertise in engines and power systems that drive aircraft.",
+                        "Materials Science: Familiarity with lightweight, durable materials used in aircraft construction.",
+                        "Avionics: Proficiency in electronic systems for communication, navigation, and control.",
+                        "Flight Mechanics: Insight into the principles governing aircraft movement and stability."
+                    ]
+                }     
+            },
+            {
+                "type": "key-skills",
+                "content": {
+                    "heading": "Skills",
+                    "paragraph": "Aeronautical Engineering graduates develop a robust skill set, including:",
+                    "items": [
+                        "Engineering Software Proficiency: Expertise in tools like CAD (Computer-Aided Design) for designing and simulating aircraft components.",
+                        "Problem-Solving: Ability to address complex technical challenges, such as improving fuel efficiency or ensuring structural integrity.",
+                        "Project Management: Skills to coordinate multidisciplinary teams on large-scale aerospace projects.",
+                        "Critical Thinking: Capability to analyze systems and propose innovative solutions."
+                    ]
+                }     
+            },
+            {
+                "type": "key-skills",
+                "content": {
+                    "heading": "Mental capabilities",
+                    "paragraph": "The rigorous training in Aeronautical Engineering fosters mental attributes essential for success:",
+                    "items": [
+                        "Analytical Mindset: Graduates can break down complex systems into manageable components, identifying solutions with precision.",
+                        "Attention to Detail: Ensuring accuracy in design and maintenance, critical for safety in aviation.",
+                        "Innovation: A drive to develop new technologies, such as more efficient engines or autonomous flight systems.",
+                        "Resilience: The ability to work under pressure, particularly in roles involving safety-critical systems or tight project deadlines.",
+                        "Adaptability: Readiness to embrace new technologies and industry trends, such as sustainable aviation solutions."
+                    ]
+                }     
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Indian Institute of Technology (IIT) Bombay",
+                "location": {
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://www.aero.iitb.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 2,
+                "name": "Indian Institute of Technology (IIT) Madras",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "2",
+                "visit link": "https://ae.iitm.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 3,
+                "name": "Indian Institute of Technology (IIT) Kanpur",
+                "location": {
+                    "city": "Kanpur",
+                    "state": "Uttar Pradesh",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.iitk.ac.in/aero/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 4,
+                "name": "Indian Institute of Technology (IIT) Kharagpur",
+                "location": {
+                    "city": "Kharagpur",
+                    "state": "West Bengal",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "4",
+                "visit link": "http://www.ae.iitkgp.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 5,
+                "name": "Amity University, Noida",
+                "location": {
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "5",
+                "visit link": "https://www.amity.edu/noida/",
+                "total charges": "3L per year"
+            },
+            {
+                "id": 6,
+                "name": "SASTRA University, Thanjavur",
+                "location": {
+                    "city": "Thanjavur",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "6",
+                "visit link": "https://www.sastra.edu/",
+                "total charges": "1.5L per year"
+            },
+            {
+                "id": 7,
+                "name": "Massachusetts Institute of Technology (MIT)",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "1",
+                "visit link": "https://www.mit.edu/",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 8,
+                "name": "Stanford University",
+                "location": {
+                    "city": "Stanford",
+                    "state": "California",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "2",
+                "visit link": "https://www.stanford.edu/",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 9,
+                "name": "University of Cambridge",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "",
+                    "country": "UK"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.cam.ac.uk/",
+                "total charges": "£39K per year"
+            }
+        ]
+    }
+}

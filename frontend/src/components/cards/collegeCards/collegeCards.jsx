@@ -1,6 +1,5 @@
 import "./collegeCards.scss";
 import React from "react";
-import PropTypes from "prop-types";
 
 function CollegeCard({ name, location, ownership, ranking, totalCharges, visitLink }) {
     // Combine city, state, and country for display
@@ -51,18 +50,5 @@ function CollegeCard({ name, location, ownership, ranking, totalCharges, visitLi
         </div>
     );
 }
-
-CollegeCard.propTypes = {
-    name: PropTypes.string.isRequired,
-    location: PropTypes.shape({
-        city: PropTypes.string.isRequired,
-        state: PropTypes.string.isRequired,
-        country: PropTypes.string.isRequired,
-    }).isRequired,
-    ownership: PropTypes.string.isRequired,
-    ranking: PropTypes.string.isRequired,
-    totalCharges: PropTypes.string.isRequired,
-    visitLink: PropTypes.string.isRequired,
-};
 
 export default CollegeCard;

@@ -26,124 +26,178 @@
     ],
     "relatedCourses": [
         {
+            "isTrending": "true",
+            "trendID": "MBBS-TID",
+            "CO-ID": "MBBS",
             "name": "MBBS",
             "specialization": "Medicine"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BDS",
             "name": "BDS",
             "specialization": "Dentistry"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BAMS",
             "name": "BAMS",
             "specialization": "Ayurvedic Medicine"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BHMS",
             "name": "BHMS",
             "specialization": "Homeopathic Medicine"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BUMS",
             "name": "BUMS",
             "specialization": "Unani Medicine"
         },
         {
+            "isTrending": "true",
+            "trendID": "BSCNursing-TID",
+            "CO-ID": "B.sc-Nursing",
             "name": "B.Sc Nursing",
             "specialization": "Nursing"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BPT",
             "name": "BPT",
             "specialization": "Physiotherapy"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BOT",
             "name": "BOT",
             "specialization": "Occupational Therapy"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Optometry",
             "name": "B.Optom",
             "specialization": "Optometry"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "B.Pharm",
             "name": "B.Pharm",
             "specialization": "Pharmacy"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "BMLT",
             "name": "BMLT",
             "specialization": "Medical Laboratory Technology"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "B.Sc-Medical-Imaging-Technology",
             "name": "B.Sc Medical Imaging Technology",
             "specialization": "Diagnostic Imaging"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Biotechnology",
             "name": "B.Sc Biotechnology",
             "specialization": "Biotechnology"
         },
         {
+            "isTrending": "true",
+            "trendID": "Nutrition-TID",
+            "CO-ID": "Nutrition-Dietetics",
             "name": "B.Sc Nutrition and Dietetics",
             "specialization": "Nutrition"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "MD",
             "name": "MD (Doctor of Medicine)",
             "specialization": "Specialized Medicine"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "MS",
             "name": "MS (Master of Surgery)",
             "specialization": "Surgical Training"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Preproduction-Technology",
             "name": "M.Sc Assisted Reproduction Technology",
             "specialization": "Embryology"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Pharamedical-Technology",
             "name": "M.Sc Paramedical Technology",
             "specialization": "Paramedical Sciences"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Laboratory-Technology",
             "name": "Diploma in Medical Laboratory Technology",
             "specialization": "Lab Technology"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Dialysis-Technology",
             "name": "Diploma in Dialysis Technology",
             "specialization": "Renal Care"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Anaesthesia-Technology",
             "name": "Diploma in Anaesthesia Technology",
             "specialization": "Anaesthesia"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Clinical-Research",
             "name": "PG Diploma in Clinical Research",
             "specialization": "Clinical Trials"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Pulmonology",
             "name": "Fellowship in Pulmonology",
             "specialization": "Pulmonary Care"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Gastroenterology",
             "name": "Fellowship in Gastroenterology",
             "specialization": "Gastrointestinal Disorders"
         },
         {
+            "isTrending": "false",
+            "CO-ID": "Clinical-Oncology",
             "name": "Fellowship in Clinical Oncology",
             "specialization": "Cancer Management"
         },
         {
-            "name": "Certificate in Healthcare Management",
-            "specialization": "Hospital Administration"
-        },
-        {
+            "isTrending": "true",
+            "trendID": "HealthInformatics-TID",
+            "CO-ID": "Health-Informatics",
             "name": "PG Diploma in Health Informatics",
             "specialization": "Healthcare IT"
         },
         {
+            "isTrending": "true",
+            "trendID": "HealthcareManagement-TID",
+            "CO-ID": "Healthcare-Management",
             "name": "Executive MBA in Healthcare Management",
             "specialization": "Hospital Management"
         },
         {
+            "isTrending": "true",
+            "trendID": "HospitalManagement-TID",
+            "CO-ID": "Hospital-Management",
             "name": "PG Diploma in Hospital Management",
             "specialization": "Healthcare Administration"
-        },
-        {
-            "name": "Certificate in Medical Writing",
-            "specialization": "Medical Communication"
         }
     ]
 }
