@@ -1,6 +1,7 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
 
 function SignupPage3A() {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ function SignupPage3A() {
         if (surveyData.interests.science !== null) {
             navigate("/signup/interest/history");
         } else {
-            alert("Please select an option.");
+            toast.error("Please select an option.");
         }
     };
 

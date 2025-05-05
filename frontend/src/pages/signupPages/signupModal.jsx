@@ -3,29 +3,78 @@ import "./signupModal.scss";
 import Google from "/src/assets/images/google.svg";
 import X from "/src/assets/images/x.svg";
 import Apple from "/src/assets/images/apple.svg";
-import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
+import {useNavigate} from 'react-router-dom'
 
 function SignupModal() {
-    const navigate = useNavigate();
-    const { surveyData, updateSurveyData, resetSurveyData } = useSurvey();
+    const { surveyData, updateSurveyData, loginData, updateLoginData, fetchUser } = useSurvey();
     const [isLoginMode, setIsLoginMode] = useState(false);
+    const navigate = useNavigate();
 
     const handleToggle = () => {
         setIsLoginMode((prev) => !prev);
     };
 
-    const handleSignup = async (e) => {
+    //login
+    const handleLogin = async (e) => {
         e.preventDefault();
-        if (!surveyData.signupDetails.username || !surveyData.signupDetails.password) {
-            alert("Please fill in all fields.");
-            return;
+        const response = await fetch('http://localhost:8800/api/user/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+            body: JSON.stringify(loginData),
+        }).then((data) => data.json());
+
+        console.log(response.success);
+
+
+        if (response.success) {
+            toast.success(response.msg);
+            fetchUser();
+            navigate('/')
+            
         }
-        if (!surveyData.signupDetails.agreeToDataProcessing) {
-            alert("You must agree to the processing of personal data.");
-            return;
+        else {
+            toast.error(response.msg);
         }
+
     };
+
+     //SignIn
+        const handleSignup = async (e) => {
+            e.preventDefault();
+            // if (!surveyData.signupDetails.email || !surveyData.signupDetails.password) {
+            //     alert("Please fill in all fields.");
+            //     return;
+            // }
+            // if (!surveyData.signupDetails.agreeToDataProcessing) {
+            //     alert("You must agree to the processing of personal data.");
+            //     return;
+            // }
+    
+            const response = await fetch('http://localhost:8800/api/user/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include',
+                body: JSON.stringify(surveyData),
+            }).then((data) => data.json());
+    
+    
+            if (response.success) {
+                toast.success(response.msg)
+                fetchUser();
+                navigate('/')
+            }
+            else {
+                toast.error(response.msg);
+            }
+    
+        };
 
     return (
         <div className="signup-login-container">
@@ -35,14 +84,14 @@ function SignupModal() {
                 </div>
                 <div className="user-signup-inputs">
                     <form onSubmit={handleSignup}>
-                        <label htmlFor="username">Name</label>
+                        <label htmlFor="email">Email</label>
                         <input
-                            type="text"
-                            id="username"
-                            placeholder="Name"
-                            value={surveyData.signupDetails.username}
+                            type="email"
+                            id="email"
+                            placeholder="Email"
+                            value={surveyData.email}
                             onChange={(e) =>
-                                updateSurveyData("signupDetails", { username: e.target.value })
+                                updateSurveyData("signupDetails", { email: e.target.value })
                             }
                             required
                         />
@@ -50,7 +99,7 @@ function SignupModal() {
                         <input
                             type="password"
                             placeholder="Password"
-                            value={surveyData.signupDetails.password}
+                            value={surveyData.password}
                             onChange={(e) =>
                                 updateSurveyData("signupDetails", { password: e.target.value })
                             }
@@ -61,7 +110,7 @@ function SignupModal() {
                                 type="checkbox"
                                 name="personal-data"
                                 id="personalData"
-                                checked={surveyData.signupDetails.agreeToDataProcessing}
+                                checked={surveyData.agreeToDataProcessing}
                                 onChange={(e) =>
                                     updateSurveyData("signupDetails", {
                                         agreeToDataProcessing: e.target.checked,
@@ -97,14 +146,14 @@ function SignupModal() {
                     <h1>Welcome back</h1>
                 </div>
                 <div className="user-login-inputs">
-                    <form>
-                        <label htmlFor="username">Name</label>
-                        <input type="text" id="username" placeholder="Name" required />
+                    <form onSubmit={handleLogin}>
+                        <label htmlFor="email">Email</label>
+                        <input name="email" value={loginData.email} onChange={updateLoginData} type="email" id="email1" placeholder="Email" required />
                         <label htmlFor="pass">Password</label>
-                        <input type="password" placeholder="Password" required />
+                        <input name="password" value={loginData.password} onChange={updateLoginData} type="password" placeholder="Password" required />
                         <div className="remember-forgot">
                             <div className="remember-wrapper">
-                                <input type="checkbox" name="remember" id="personalData" />
+                                <input type="checkbox" name="remember" id="personalData1" />
                                 <label htmlFor="remember">Remember me</label>
                             </div>
                             <span className="forgot-pass-shift">Forgot password?</span>

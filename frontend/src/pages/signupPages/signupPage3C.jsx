@@ -1,6 +1,7 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
 
 function SignupPage3C() {
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ function SignupPage3C() {
         if (surveyData.interests.fields.length > 0) {
             navigate("/signup/signup-login-modal");
         } else {
-            alert("Please select at least one career field.");
+            toast.error("Please select at least one career field.");
         }
     };
 

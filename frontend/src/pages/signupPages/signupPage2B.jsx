@@ -1,6 +1,7 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
 
 function SignupPage2B() {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ function SignupPage2B() {
         if (surveyData.strengths.management !== null) {
             navigate("/signup/strengths/sports");
         } else {
-            alert("Please select an option.");
+            toast.error("Please select an option.");
         }
     };
 
