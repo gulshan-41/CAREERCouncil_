@@ -1,4 +1,5 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 const SurveyContext = createContext();
 
@@ -7,6 +8,8 @@ export function SurveyProvider({ children }) {
         name: "",
         age: "",
         occupation: "",
+        email: "",
+        password: "",
         strengths: {
             mathematics: null,
             management: null,
@@ -17,18 +20,18 @@ export function SurveyProvider({ children }) {
             history: null,
             fields: [],
         },
-        signupDetails: {
-            email: "",
-            password: "",
-            phoneNumber: "",
-            username: "", // Add username
-            agreeToDataProcessing: false, // Add agreeToDataProcessing
-        },
+    });
+
+    const [user, setUser] = useState([]);
+
+    const [loginData, setloginData] = useState({
+        email: "",
+        password: ""
     });
 
     const updateSurveyData = (key, value) => {
         setSurveyData((prev) => {
-            if (typeof value === "object" && (key === "strengths" || key === "interests" || key === "signupDetails")) {
+            if (typeof value === "object" && (key === "strengths" || key === "interests")) {
                 return {
                     ...prev,
                     [key]: {
@@ -44,33 +47,100 @@ export function SurveyProvider({ children }) {
         });
     };
 
-    const resetSurveyData = () => {
-        setSurveyData({
-            name: "",
-            age: "",
-            occupation: "",
-            strengths: {
-                mathematics: null,
-                management: null,
-                sports: [],
-            },
-            interests: {
-                science: null,
-                history: null,
-                fields: [],
-            },
-            signupDetails: {
-                email: "",
-                password: "",
-                phoneNumber: "",
-                username: "",
-                agreeToDataProcessing: false,
-            },
-        });
+    const updateLoginData = (e) => {
+        setloginData({ ...loginData, [e.target.name]: e.target.value });
+    }
+
+    //fetchUser
+    const fetchUser = async () => {
+
+        try {
+
+            const response = await fetch('http://localhost:8800/api/user/getuser', {
+                method: "GET",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include',
+            }).then((data) => data.json());
+
+            console.log(response);
+
+
+            if (response.success) {
+                localStorage.setItem("token", JSON.stringify(response.data));
+                setUser(response.data);
+            }
+            else {
+                localStorage.removeItem('token');
+                setUser("");
+            }
+
+        } catch (error) {
+            console.log(error);
+
+        }
+
     };
 
+
+    //Logout
+    const handleLogOut = async () => {
+        try {
+
+            const resp = await fetch('http://localhost:8800/api/user/logout', {
+                method: "POST",
+                headers: {
+                    "Content-Type": 'applicatioin/json'
+                },
+                credentials: 'include'
+            }).then((data) => data.json());
+
+            if (resp.success) {
+
+                toast.success(resp.msg);
+                setUser("");
+                setSurveyData({
+                    name: "",
+                    age: "",
+                    occupation: "",
+                    email: "",
+                    password: "",
+                    strengths: {
+                        mathematics: null,
+                        management: null,
+                        sports: [],
+                    },
+                    interests: {
+                        science: null,
+                        history: null,
+                        fields: [],
+                    },
+                })
+                setloginData({
+                    email: "",
+                    password: ""
+                })
+                localStorage.removeItem("token");
+            }
+            else {
+                toast.error(resp.msg);
+            }
+
+        } catch (error) {
+
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        if (fetchUser()) {
+            setUser(JSON.parse(localStorage.getItem('token')));
+        }
+    }, [])
+
     return (
-        <SurveyContext.Provider value={{ surveyData, updateSurveyData, resetSurveyData }}>
+        <SurveyContext.Provider value={{ surveyData, updateSurveyData, loginData, setloginData, updateLoginData, user, handleLogOut, fetchUser }}>
             {children}
         </SurveyContext.Provider>
     );

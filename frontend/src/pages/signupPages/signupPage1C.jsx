@@ -1,6 +1,7 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
 
 function SignupPage1C() {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ function SignupPage1C() {
         if (surveyData.occupation) {
             navigate("/signup/strengths/maths");
         } else {
-            alert("Please select an occupation.");
+            toast.error("Please select an occupation.");
         }
     };
 

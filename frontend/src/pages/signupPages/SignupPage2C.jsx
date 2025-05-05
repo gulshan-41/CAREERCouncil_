@@ -1,6 +1,7 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
 
 function SignupPage2C() {
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ function SignupPage2C() {
         if (surveyData.strengths.sports.length > 0) {
             navigate("/signup/interest/science");
         } else {
-            alert("Please select at least one sport.");
+            toast.error("Please select at least one sport.");
         }
     };
 

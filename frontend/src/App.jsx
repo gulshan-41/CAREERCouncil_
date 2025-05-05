@@ -18,6 +18,8 @@ import SignupPage3C from "/src/pages/signupPages/signupPage3C";
 import SignupModal from "./pages/signupPages/signupModal";
 import { SurveyProvider } from "./context/SurveyContext/SurveyContext";
 import { CategoriesProvider } from "./context/CategoriesProvider/CategoriesProvider";
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
@@ -54,6 +56,20 @@ function App() {
                             <Route path="signup-login-modal" element={<SignupModal />} />
                     </Routes>
                 </Router>
+
+                <ToastContainer
+                    position='top-right'
+                    autoClose={3000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme='colored'
+                    style={{ fontSize: '1rem' }}
+                />
+
             </SurveyProvider>
         </CategoriesProvider>
     );

@@ -6,6 +6,8 @@ import { errorMiddleware } from './src/middlewares/error-middleware.js';
 import { dbConnect } from './src/config/dbConnect.js';
 import CategoriesRouter from './src/routes/categories-router.js';
 import CoursesRouter from './src/routes/courses-router.js';
+import UserRouter from './src/routes/userauth-router.js';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 const PORT = 8800;
@@ -20,12 +22,16 @@ app.use(cors({
 //middlewares
 app.use(express.json());
 app.use(morgan('tiny'));
+app.use(cookieParser());
 
 //categories data and list api startpoint
 app.use('/api/categories', CategoriesRouter)
 
 //courses api startpoint
 app.use('/api/course', CoursesRouter);
+
+//user api startpoint
+app.use('/api/user', UserRouter);
 
 //error-middleware
 app.use(errorMiddleware);

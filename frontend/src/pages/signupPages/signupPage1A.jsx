@@ -1,6 +1,7 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
+import { toast } from "react-toastify";
 
 function SignupPage1A() {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ function SignupPage1A() {
         if (surveyData.name) {
             navigate("/signup/basic-details/age");
         } else {
-            alert("Please enter your name.");
+            toast.error("Please enter your name.");
         }
     };
 
@@ -29,6 +30,9 @@ function SignupPage1A() {
                 />
             </div>
             <div className="navi-buttons">
+                <button className="pre-btn" onClick={() => {navigate('/')}}>
+                    Back to Homepage 
+                </button>
                 <button className="next-btn" onClick={handleNext}>
                     Next
                 </button>
