@@ -31,7 +31,7 @@ function SideBar() {
                             </button>
                             <button onClick={() => {
                                 setSideBarToOpen(false);
-                                navigate("/signup/signup-login-modal");
+                                navigate("/signup-login-modal");
                             }} className="side-btns">Log-in</button>
                         </div>
                         <div className="remember">

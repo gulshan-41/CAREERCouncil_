@@ -77,6 +77,7 @@ function SignupModal() {
         };
 
     return (
+        <div className="signup-login-wrapper">
         <div className="signup-login-container">
             <div className={`signup-main-container ${isLoginMode ? "hidden" : "visible"}`}>
                 <div className="signup-head">
@@ -86,7 +87,7 @@ function SignupModal() {
                     <form onSubmit={handleSignup}>
                         <label htmlFor="email">Email</label>
                         <input
-                            type="email"
+                            type="text"
                             id="email"
                             placeholder="Email"
                             value={surveyData.email}
@@ -190,6 +191,7 @@ function SignupModal() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

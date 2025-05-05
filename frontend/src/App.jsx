@@ -52,8 +52,8 @@ function App() {
                                 <Route path="history" element={<SignupPage3B />} />
                                 <Route path="fields" element={<SignupPage3C />} />
                             </Route>
-                            <Route path="signup-login-modal" element={<SignupModal />} />
                         </Route>
+                            <Route path="signup-login-modal" element={<SignupModal />} />
                     </Routes>
                 </Router>
 

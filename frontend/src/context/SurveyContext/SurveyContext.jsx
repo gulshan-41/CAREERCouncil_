@@ -64,6 +64,9 @@ export function SurveyProvider({ children }) {
                 credentials: 'include',
             }).then((data) => data.json());
 
+            console.log(response);
+
+
             if (response.success) {
                 localStorage.setItem("token", JSON.stringify(response.data));
                 setUser(response.data);
