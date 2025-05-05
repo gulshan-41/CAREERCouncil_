@@ -24,6 +24,12 @@ function SignupPage2A() {
         updateSurveyData("strengths", { mathematics: isYes });
     };
 
+    const selectOptions = () => {
+        if (!isSelected) {
+            setOption(true);
+        }
+    }; 
+
     return (
         <div className="child-container">
             <div className="question-heading">
@@ -31,7 +37,7 @@ function SignupPage2A() {
             </div>
             <div className="span-inputs">
                 {["Yes", "Not really"].map((option) => (
-                    <label key={option} className="radio-label">
+                    <label key={option} className="radio-label selected-option">
                         <input
                             type="radio"
                             name="mathematics"

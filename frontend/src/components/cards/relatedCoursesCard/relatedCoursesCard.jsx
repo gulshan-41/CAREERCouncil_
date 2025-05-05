@@ -1,18 +1,42 @@
 import "./relatedCoursesCard.scss";
 import { useNavigate } from "react-router-dom";
+import { useCompare } from "/src/context/CompareContext/CompareContext";
 
-function RelatedCoursesCard({ courseID, name, specialization }) {
+function RelatedCoursesCard({ courseID, name, specialization, courseData }) {
     const navigate = useNavigate();
+    const { isCompareMode, toggleCompareMode, selectedCourses, toggleCourseSelection } = useCompare();
 
-    const handleNavigate = () => {
+    const handleNavigate = (e) => {
+        // Prevent navigation when in compare mode or clicking compare-toggle
+        // if (isCompareMode || e.target.classList.contains("compare-toggle")) {
+        //     return;
+        // }
         if (courseID && courseID !== "null") {
             navigate(`/courses/${courseID}`);
         }
     };
 
+    const handleSelectForCompare = (e) => {
+        e.stopPropagation(); // Prevent triggering card navigation
+        if (!isCompareMode) {
+            toggleCompareMode(); // Enter compare mode if not already active
+        }
+        toggleCourseSelection(courseID, { name, specialization });
+    };
+
+    const isSelected = selectedCourses.some((course) => course.courseID === courseID);
+
     return (
-        <div className="cat-course-card" onClick={handleNavigate}>
-            <div className="compare-toggle">Compare</div>
+        <div
+            className={`cat-course-card ${isCompareMode ? "compare-mode" : ""}`}
+            onClick={handleNavigate}
+        >
+            <div
+                className={`compare-toggle ${isSelected ? "selected" : ""}`}
+                onClick={handleSelectForCompare}
+            >
+                {isSelected ? "Selected" : "Compare"}
+            </div>
             <div className="course-full-name">
                 <p>{name}</p>
             </div>

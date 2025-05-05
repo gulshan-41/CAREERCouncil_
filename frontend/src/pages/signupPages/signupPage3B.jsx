@@ -35,7 +35,7 @@ function SignupPage3B() {
                             checked={surveyData.interests.history === (option === "Yes! I'm")}
                             onChange={() => updateSurveyData("interests", { history: option === "Yes! I'm" })}
                         />
-                        {option}
+                        <span className="yes-no">{option}</span>
                     </label>
                 ))}
             </div>

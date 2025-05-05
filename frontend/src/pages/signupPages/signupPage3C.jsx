@@ -18,7 +18,7 @@ function SignupPage3C() {
         updateSurveyData("interests", { fields: updatedFields });
     };
 
-    console.log("Survey data: ", surveyData);
+    // console.log("Survey data: ", surveyData);
 
     const handleNext = () => {
         if (surveyData.interests.fields.length > 0) {

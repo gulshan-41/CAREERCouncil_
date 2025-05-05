@@ -5,8 +5,6 @@ import RelatedCoursesCard from "../../cards/relatedCoursesCard/relatedCoursesCar
 function RelatedCoursesCardsGrid({ catID }) {
     const { categoryDetails, detailsLoading, detailsError } = useCategories();
 
-    // No need to call fetchCategoryDetails here, as CategoriesPage already fetches it
-
     // Handle loading state
     if (detailsLoading[catID]) {
         return (
@@ -45,6 +43,7 @@ function RelatedCoursesCardsGrid({ catID }) {
                     courseID={course["CO-ID"]}
                     name={course.name}
                     specialization={course.specialization}
+                    courseData={course}
                 />
             ))}
         </div>

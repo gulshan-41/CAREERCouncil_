@@ -36,7 +36,7 @@ function SignupPage2C() {
                             checked={surveyData.strengths.sports.includes(sport)}
                             onChange={() => handleSportToggle(sport)}
                         />
-                        {sport}
+                        <span className="checkbox-input">{sport}</span>
                     </label>
                 ))}
             </div>

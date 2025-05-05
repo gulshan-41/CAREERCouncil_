@@ -64,12 +64,12 @@ function CoursesPage() {
         <div className="coursespage-wrapper">
             <section className="courses-main-section">
                 <h1>{courseData.name}</h1>
-                {/* <Aside /> */}
-                <Introduction data={courseData.introduction} />
-                <Prerequsities data={courseData.prerequisites} />
-                <CoreSubjects data={courseData.subjects}/>
-                <RecommendedColleges data={courseData.recommendedColleges} />
-                <JobRoles data={courseData.jobRoles}/>
+                <Aside />
+                <Introduction data={courseData.introduction[0]} />
+                <Prerequsities data={courseData.prerequisites[0]} />
+                <CoreSubjects data={courseData.subjects[0]}/>
+                <RecommendedColleges data={courseData.recommendedColleges[0]} />
+                <JobRoles data={courseData.jobRoles[0]}/>
                 {/* <AboutCourse data={courseData.about} /> */}
                 {/* <Syllabus data={courseData.syllabus} /> */}
             </section>

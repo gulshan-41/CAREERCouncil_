@@ -40,22 +40,22 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                             return (
                                 <ul key={index}>
                                     {block.items.map((item, itemIndex) => (
-                                    <li key={itemIndex}><p>{item}</p></li>
+                                        <li key={itemIndex}><p>{item}</p></li>
                                     ))}
                                 </ul>
-                        );
+                            );
                         default:
                             return (
                                 <p key={index} className="unsupported">
                                     [Unsupported content type: {block.type}]
                                 </p>
-                        );
+                            );
                     }
                 })}
             </div>
             <div className="cat-courses">
                 <h3>Related Courses</h3>
-                <RelatedCoursesCardsGrid catID={catID} />  
+                <RelatedCoursesCardsGrid catID={catID} />
             </div>
             <div className="cut-cat" onClick={() => closeCategory(catID)}>
                 <svg
@@ -64,7 +64,8 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                     height="24px"
                     viewBox="0 -960 960 960"
                     width="24px"
-                    fill="#8724DB">
+                    fill="#8724DB"
+                >
                     <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                 </svg>
             </div>

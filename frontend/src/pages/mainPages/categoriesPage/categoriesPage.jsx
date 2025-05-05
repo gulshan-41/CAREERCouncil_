@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, createContext, useContext } from "r
 import { useParams } from "react-router-dom";
 import "./categoriesPage.scss";
 import CategoriesGrid from "../../../components/cardsGrid/categoriesGrid/categoriesGrid";
-import CategoryDetails from "../../../components/categoryPageComponent/categoryDetail/categoryDetail";
+import CategoryDetails from "../../../components/categoryPageComponent/categoryDetails/categoryDetail";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 
 function CategoriesPage() {

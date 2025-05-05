@@ -1,7 +1,5 @@
 .cat-course-card {
     width: 100%;
-    // min-width: 100px;
-    // min-height: 140px;
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
@@ -14,9 +12,9 @@
     cursor: pointer;
     overflow: hidden;
 
-    &:hover {
+    &.compare-mode {
         .compare-toggle {
-            transform: translateY(25px);
+            transform: translateY(0) !important; // Ensure visibility in compare mode
         }
     }
 }
@@ -26,13 +24,23 @@
     padding: 4px 8px;
     background-color: #D4E4FD;
     border: none;
-    border-radius: 0 8px 0 4px / 0 8px 0 4px;
+    border-radius: 0 8px 0 4px;
     position: absolute;
-    top: -25px;
+    top: 0;
     right: -1px;
-    transform: translateY(0);
-    transition: all 0.4s;
+    transform: translateY(-100%); // Hidden above card
+    transition: transform 0.4s ease-in-out;
     cursor: pointer;
+    z-index: 10;
+
+    &.selected {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    .cat-course-card:hover & {
+        transform: translateY(0); // Show on hover
+    }
 }
 
 .course-full-name {

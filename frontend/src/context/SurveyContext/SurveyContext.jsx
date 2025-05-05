@@ -50,12 +50,9 @@ export function SurveyProvider({ children }) {
     const updateLoginData = (e) => {
         setloginData({ ...loginData, [e.target.name]: e.target.value });
     }
-
     //fetchUser
     const fetchUser = async () => {
-
         try {
-
             const response = await fetch('http://localhost:8800/api/user/getuser', {
                 method: "GET",
                 headers: {
@@ -66,7 +63,6 @@ export function SurveyProvider({ children }) {
 
             console.log(response);
 
-
             if (response.success) {
                 localStorage.setItem("token", JSON.stringify(response.data));
                 setUser(response.data);
@@ -75,14 +71,10 @@ export function SurveyProvider({ children }) {
                 localStorage.removeItem('token');
                 setUser("");
             }
-
         } catch (error) {
             console.log(error);
-
         }
-
     };
-
 
     //Logout
     const handleLogOut = async () => {

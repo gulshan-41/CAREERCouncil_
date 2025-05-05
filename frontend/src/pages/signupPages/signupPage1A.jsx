@@ -19,6 +19,7 @@ function SignupPage1A() {
         <div className="child-container">
             <div className="question-heading">
                 <p className="main-question">What's your name?</p>
+                <p>This is how you will show up in your dashboard!</p>
             </div>
             <div className="labels-inputs">
                 <input
@@ -30,9 +31,6 @@ function SignupPage1A() {
                 />
             </div>
             <div className="navi-buttons">
-                <button className="pre-btn" onClick={() => {navigate('/')}}>
-                    Back to Homepage 
-                </button>
                 <button className="next-btn" onClick={handleNext}>
                     Next
                 </button>

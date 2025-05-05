@@ -54,7 +54,8 @@ function SignupModal() {
             //     alert("You must agree to the processing of personal data.");
             //     return;
             // }
-    
+            console.log(surveyData);
+            
             const response = await fetch('http://localhost:8800/api/user/register', {
                 method: 'POST',
                 headers: {
@@ -87,7 +88,7 @@ function SignupModal() {
                     <form onSubmit={handleSignup}>
                         <label htmlFor="email">Email</label>
                         <input
-                            type="text"
+                            type="email"
                             id="email"
                             placeholder="Email"
                             value={surveyData.email}
