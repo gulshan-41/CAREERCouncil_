@@ -19,28 +19,18 @@ function Introduction({ data }) {
             {/* Map over the text array to render each block */}
             {data.text.map((block, index) => {
                 switch (block.type) {
-                    case "section-intro":
-                        return <p className="sub-section" key={index}>{block.content}</p>;
-                    case "main-focus":
+                    case "heading":
+                        return <h3 key={index}>{block.content}</h3>
+                    case "paragraph":
+                        return <p key={index}>{block.content}</p>
+                    case "list":
                         return (
-                            <div key={index} className="main-focus sub-section">
-                                <h3>{block.content.heading}</h3>
-                                <ul>
-                                    {block.content.items.map((item, itemIndex) => (
-                                        <li key={itemIndex}><p>{item}</p></li>
-                                    ))}
-                                </ul>
-                            </div>
+                            <ul key={index}>
+                                {block.items.map((item, itemIndex) => (
+                                    <li key={itemIndex}><p>{item}</p></li>
+                                ))}
+                            </ul>
                         );
-                    case "overview":
-                        return (
-                            <div key={index} className="overview sub-section">
-                                <h3>{block.content.heading}</h3>
-                                <p>{block.content.paragraph}</p>
-                            </div>
-                        );
-                    case "standard-duration":
-                        return <p className="sub-section" key={index}>{block.content}</p>
                     default:
                         return (
                             <p key={index} className="unsupported">

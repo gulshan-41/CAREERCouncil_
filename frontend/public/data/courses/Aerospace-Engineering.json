@@ -1,12 +1,12 @@
 {
-    "courseID": "Aeronautical-Engineering",
-    "name": "Aeronautical Engineering",
+    "courseID": "Aerospace-Engineering",
+    "name": "Aerospace Engineering",
     "introduction": {
         "text": [
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "A four years UG program, Aeronautical Engineering is an exciting undergraduate course that explores the science and technology of designing, building, and maintaining aircraft. This program equips students with the skills to innovate and create flying machines like airplanes, helicopters, and drones, ensuring they are safe, efficient, and capable of navigating Earth's atmosphere. Combining theoretical knowledge with hands-on practical training, it's perfect for those passionate about aviation and engineering."
+                "content": "A four-year undergraduate program, Aerospace Engineering is a specialized field that focuses on the design, development, testing, and production of both aircraft and spacecraft. Unlike Aeronautical Engineering, which is limited to aircraft within Earth's atmosphere, Aerospace Engineering also encompasses spacecraft and systems that operate in space. This program is ideal for students passionate about aviation, space exploration, and advanced technology, offering a blend of theoretical knowledge and practical skills essential for careers in the aerospace industry, defense, and research organizations like ISRO and NASA."
             },
             {
                 "type": "heading",
@@ -15,11 +15,12 @@
             {
                 "type": "list",
                 "items": [
-                    "Aircraft Design and Aerodynamics: Learning to create efficient aircraft shapes and understand airflow for smooth flights.",
-                    "Propulsion Systems: Studying engines and power systems that propel aircraft.",
-                    "Materials and Structures: Exploring lightweight, strong materials to build durable aircraft components.",
-                    "Avionics and Navigation: Mastering electronic systems for communication, control, and navigation in aircraft.",
-                    "Maintenance and Safety: Ensuring aircraft meet strict safety standards through testing and quality checks."
+                    "Aircraft Design and Aerodynamics: Understanding the principles of flight and designing efficient aircraft shapes.",
+                    "Propulsion Systems: Studying engines and power systems for both aircraft and spacecraft.",
+                    "Materials and Structures: Exploring advanced materials and structures used in aerospace applications.",
+                    "Avionics and Navigation: Mastering electronic systems for communication, control, and navigation in aerospace vehicles.",
+                    "Space Systems: Designing and analyzing systems for spacecraft, including orbital mechanics and space mission design.",
+                    "Maintenance and Safety: Ensuring the reliability and safety of aerospace vehicles through testing and quality control."
                 ]
             },
             {
@@ -28,11 +29,11 @@
             },
             {
                 "type": "paragraph",
-                "content": "Aeronautical Engineering is a specialized branch of engineering focused on the design, development, testing, and maintenance of aircraft that operate within Earth's atmosphere. This undergraduate program is highly sought after by students passionate about aviation and aerospace, offering a blend of theoretical learning and practical training to prepare graduates for careers in industries like aviation, defense, and research organizations such as ISRO and NASA."
+                "content": "Aerospace Engineering is a broader field than Aeronautical Engineering, encompassing both aeronautics (aircraft within Earth's atmosphere) and astronautics (spacecraft beyond Earth's atmosphere). This undergraduate program is highly sought after by students interested in aviation, space exploration, and cutting-edge technology. It combines theoretical learning with practical training, preparing graduates for diverse roles in the aerospace industry, defense, and research organizations."
             },
             {
                 "type": "paragraph",
-                "content": "Standard duration: In India, the undergraduate program in Aeronautical Engineering, typically offered as a Bachelor of Technology (B.Tech) or Bachelor of Engineering (B.E.), is a four-year program. This duration is structured to include eight semesters, with a combination of academic coursework and practical training."
+                "content": "Standard duration: In India, the undergraduate program in Aerospace Engineering, typically offered as a Bachelor of Technology (B.Tech), is a four-year program structured over eight semesters, combining academic coursework and practical training."
             }
         ]
     },
@@ -40,7 +41,7 @@
         "text": [
             {
                 "type": "paragraph",
-                "content": "This comprehensive guide outlines the prerequisites for pursuing Aeronautical Engineering. It covers the required 10-12th subjects, tips for gaining an advantage before enrolling, and admission requirements in India, to help students make informed career decisions."
+                "content": "This section outlines the prerequisites for pursuing Aerospace Engineering, including required subjects in 10th and 12th grades, tips for gaining an upper hand, eligibility criteria, and admission requirements."
             },
             {
                 "type": "heading",
@@ -50,9 +51,9 @@
                 "type": "list",
                 "items": [
                     "10th Standard: Students must have studied Science (including Physics and Chemistry) and Mathematics as compulsory subjects to build a foundational understanding for engineering studies.",
-                    "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, and Mathematics (PCM) as core subjects. Some institutions may accept Physics, Chemistry, and Biology (PCB), but PCM is the standard for engineering programs like Aeronautical Engineering.",
+                    "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, and Mathematics (PCM) as core subjects. Some institutions may accept Physics, Chemistry, and Biology (PCB), but PCM is the standard for engineering programs like Aerospace Engineering.",
                     "Minimum Marks: A minimum aggregate score of 50-60% in PCM is typically required, though top colleges like IITs may demand higher percentages or competitive exam ranks.",
-                    "Visit for more insights: Aeronautical Engineering Eligibility Requirements - AME CET India"
+                    "Visit for more insights: [Aerospace Engineering Eligibility Requirements - AME CET India](https://www.amecet.in/aerospace-engineering-requirements.php)"
                 ]
             },
             {
@@ -61,7 +62,7 @@
             },
             {
                 "type": "paragraph",
-                "content": "For school students interested in Aeronautical Engineering, excelling in core subjects and exploring additional skills can provide a competitive edge before enrolling. These tips are designed to help students prepare early and function smoothly througout the course."
+                "content": "For school students interested in Aerospace Engineering, excelling in core subjects and exploring additional skills can provide a competitive edge before enrolling. These tips are designed to help students prepare early and function smoothly throughout the course."
             },
             {
                 "type": "heading",
@@ -70,9 +71,9 @@
             {
                 "type": "list",
                 "items": [
-                    "Physics: Focus on mechanics, thermodynamics, and electromagnetism, as these are critical for understanding aerodynamics, propulsion, and aircraft structures.",
+                    "Physics: Focus on mechanics, thermodynamics, and electromagnetism, as these are critical for understanding aerodynamics, propulsion, and aerospace structures.",
                     "Mathematics: Build proficiency in calculus, trigonometry, and algebra, which are essential for calculations in aerodynamics and structural analysis.",
-                    "Chemistry: Gain knowledge of materials science and chemical properties of fuels, which are relevant for aircraft materials and propulsion systems."
+                    "Chemistry: Gain knowledge of materials science and chemical properties of fuels, which are relevant for aerospace materials and propulsion systems."
                 ]
             },
             {
@@ -82,8 +83,8 @@
             {
                 "type": "list",
                 "items": [
-                    "Computer Science: Learn basic programming (e.g., Python or C++) to prepare for simulations and design software used in aeronautical engineering.",
-                    "Engineering Drawing: Familiarity with technical drawing or Computer-Aided Design (CAD) tools can help with visualizing and designing aircraft components.",
+                    "Computer Science: Learn basic programming (e.g., Python or C++) to prepare for simulations and design software used in aerospace engineering.",
+                    "Engineering Drawing: Familiarity with technical drawing or Computer-Aided Design (CAD) tools can help with visualizing and designing aerospace components.",
                     "Aerodynamics: Self-study basic aerodynamics concepts (e.g., lift, drag, thrust) through online resources or books to get a head start on core course topics.",
                     "Extracurricular Activities: Join aerospace or aviation clubs, participate in science fairs with flight-related projects, or attend workshops to gain practical insights.",
                     "Summary: Mastering PCM is crucial, but learning programming, engineering drawing, and aerodynamics, along with engaging in aviation-related activities, can set you apart."
@@ -91,31 +92,21 @@
             },
             {
                 "type": "heading",
-                "content": "Eligibility criterias"
+                "content": "Eligibility criteria"
             },
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "Eligibility criterias are based on stream and total percentage aggregated in class 12th. Completion of Class 12 with PCM, achieving a minimum of 50-60% marks, depending on the institution. Alternatively, a 3-year engineering diploma in any stream may be accepted by some colleges."
+                "content": "Eligibility criteria are based on stream and total percentage aggregated in Class 12th. Completion of Class 12 with PCM, achieving a minimum of 50-60% marks, depending on the institution. Alternatively, a 3-year engineering diploma in any stream may be accepted by some colleges."
             },
             {
                 "type": "heading",
-                "content": "Admission requirments"
+                "content": "Admission requirements"
             },
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "Entrance Exams: Admission to top colleges is primarily through national or state-level entrance exams, such as: JEE Main, JEE Advanced, AME CET."
-            },
-            {
-                "type": "list",
-                "items": [
-                    "JEE Main: For NITs, IIITs, and other centrally funded institutions.",
-                    "JEE Advanced: For IITs, requiring qualification through JEE Main.",
-                    "AME CET: For specific aeronautical engineering colleges.",
-                    "Other exams include MET, KCET, COMEDK UGET, or university-specific tests.",
-                    "Merit-Based Admissions: Some private colleges offer admission based on Class 12 marks, often followed by interviews or group discussions."
-                ]
+                "content": "Entrance Exams: Admission to top colleges is primarily through national or state-level entrance exams, such as JEE Main, JEE Advanced, AME CET, MET, KCET, COMEDK UGET, or university-specific tests. Some private colleges offer admission based on Class 12 marks, often followed by interviews or group discussions."
             }
         ]
     },
@@ -124,15 +115,15 @@
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "Core subjects in Aeronautical Engineering program covers, Engineering Mathematics, Aerodynamics, Aircraft structures, Propulsion Systems, Avionics."
+                "content": "Core subjects in Aerospace Engineering program cover Engineering Mathematics, Aerodynamics, Aircraft Structures, Propulsion Systems, Avionics, Flight Mechanics, and Space Systems."
             },
             {
                 "type": "heading",
-                "content": "Core Subjects in Aeronautical Engineering"
+                "content": "Core Subjects in Aerospace Engineering"
             },
             {
                 "type": "paragraph",
-                "content": "This section outlines the core subjects and topics studied in undergraduate Aeronautical Engineering programs in India, such as at the Indian Institutes of Technology (IITs), and at well-known universities abroad, such as MIT and the University of Michigan. These subjects are mandatory to provide students with the essential knowledge and skills for designing, building, and maintaining aircraft."
+                "content": "This section outlines the core subjects and subtopics studied in undergraduate Aerospace Engineering programs in India, such as at the Indian Institutes of Technology (IITs), and at well-known universities abroad, such as MIT and the University of Cambridge. These subjects are mandatory to provide students with the essential knowledge and skills for designing, building, and maintaining aircraft and spacecraft."
             },
             {
                 "type": "heading",
@@ -140,7 +131,7 @@
             },
             {
                 "type": "paragraph",
-                "content": "The following subjects are consistently identified as core components of Aeronautical Engineering curricula across reputable institutions. They form the foundation of the discipline, covering critical aspects of aircraft design, operation, and maintenance."
+                "content": "The following subjects are consistently identified as core components of Aerospace Engineering curricula across reputable institutions. They form the foundation of the discipline, covering critical aspects of aerospace design, operation, and maintenance."
             },
             {
                 "type": "topics-list",
@@ -150,27 +141,27 @@
                             "heading": "Engineering Mathematics",
                             "items": [
                                 "Calculus: Differential and integral calculus for modeling physical systems.",
-                                "Differential Equations: Solving equations for dynamic systems like aircraft motion.",
+                                "Differential Equations: Solving equations for dynamic systems like aircraft and spacecraft motion.",
                                 "Linear Algebra: Matrix operations for structural and control system analysis.",
                                 "Complex Variables: Analyzing oscillatory systems in aerodynamics.",
-                                "Probability and Statistics: Risk assessment and reliability in aircraft design."
+                                "Probability and Statistics: Risk assessment and reliability in aerospace design."
                             ]
                         },
                         {
                             "heading": "Engineering Mechanics",
                             "items": [
                                 "Statics: Forces and moments for structural equilibrium.",
-                                "Dynamics: Kinematics and kinetics of aircraft motion.",
-                                "Mechanics of Materials: Stress, strain, and deformation in aircraft components."
+                                "Dynamics: Kinematics and kinetics of aerospace vehicle motion.",
+                                "Mechanics of Materials: Stress, strain, and deformation in aerospace components."
                             ]
                         },
                         {
-                           "heading": "Thermodynamics",
-                           "items": [
+                            "heading": "Thermodynamics",
+                            "items": [
                                 "Laws of Thermodynamics: Energy conservation in propulsion systems.",
-                                "Heat Transfer: Managing heat in engines and aircraft surfaces.",
+                                "Heat Transfer: Managing heat in engines and aerospace surfaces.",
                                 "Energy Conversion: Efficiency in power generation for flight."
-                           ]
+                            ]
                         },
                         {
                             "heading": "Fluid Mechanics",
@@ -185,8 +176,8 @@
                             "heading": "Aerodynamics",
                             "items": [
                                 "Subsonic to Hypersonic Flows: Airflow behavior at different speeds.",
-                                "Lift, Drag, Thrust: Forces affecting aircraft performance.",
-                                "Boundary Layer Theory: Managing drag on aircraft surfaces.",
+                                "Lift, Drag, Thrust: Forces affecting aerospace vehicle performance.",
+                                "Boundary Layer Theory: Managing drag on aerospace surfaces.",
                                 "Wind Tunnel Testing: Experimental validation of aerodynamic designs."
                             ]
                         },
@@ -196,7 +187,7 @@
                                 "Stress Analysis: Ensuring structural integrity under loads.",
                                 "Structural Dynamics: Vibration and fatigue analysis.",
                                 "Fatigue and Fracture Mechanics: Predicting component lifespan.",
-                                "Composite Materials: Lightweight materials for modern aircraft."
+                                "Composite Materials: Lightweight materials for modern aerospace vehicles."
                             ]
                         },
                         {
@@ -211,7 +202,7 @@
                         {
                             "heading": "Aircraft Design",
                             "items": [
-                                "Conceptual Design: Initial aircraft layout and specifications.",
+                                "Conceptual Design: Initial aerospace vehicle layout and specifications.",
                                 "Preliminary Design: Refining aerodynamics and structures.",
                                 "Detailed Design: Finalizing components and systems.",
                                 "Design Optimization: Balancing performance, cost, and safety."
@@ -220,7 +211,7 @@
                         {
                             "heading": "Flight Mechanics",
                             "items": [
-                                "Equations of Motion: Modeling aircraft trajectories.",
+                                "Equations of Motion: Modeling aerospace vehicle trajectories.",
                                 "Performance Analysis: Range, endurance, climb, and turn capabilities.",
                                 "Stability and Control Derivatives: Ensuring predictable flight behavior."
                             ]
@@ -230,7 +221,7 @@
                             "items": [
                                 "Gas Turbine Engines: Turbojets, turbofans, and turboprops for thrust.",
                                 "Rocket Propulsion: Chemical rockets for high-speed applications.",
-                                "Electric Propulsion: Emerging technologies for sustainable aviation."
+                                "Electric Propulsion: Emerging technologies for sustainable aerospace."
                             ]
                         },
                         {
@@ -272,6 +263,30 @@
                                 "Data Acquisition and Analysis: Collecting and interpreting flight data.",
                                 "Certification Testing: Meeting regulatory requirements for operation."
                             ]
+                        },
+                        {
+                            "heading": "Spacecraft Design",
+                            "items": [
+                                "Orbital Mechanics: Understanding satellite orbits and trajectories.",
+                                "Spacecraft Dynamics: Motion and control of spacecraft in space.",
+                                "Spacecraft Systems: Design of communication, power, and propulsion systems."
+                            ]
+                        },
+                        {
+                            "heading": "Space Propulsion",
+                            "items": [
+                                "Chemical Rockets: Traditional propulsion for space missions.",
+                                "Electric Propulsion: Ion thrusters for long-duration missions.",
+                                "Nuclear Propulsion: Advanced systems for deep space exploration."
+                            ]
+                        },
+                        {
+                            "heading": "Space Systems",
+                            "items": [
+                                "Satellite Design: Building satellites for communication, navigation, and research.",
+                                "Space Mission Design: Planning trajectories and mission objectives.",
+                                "Space Environment: Understanding the challenges of operating in space."
+                            ]
                         }
                     ]
                 }
@@ -282,22 +297,23 @@
         "text": [
             {
                 "type": "paragraph",
-                "content": "Aeronautical Engineering graduates are equipped to take on diverse roles across multiple sectors, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
+                "content": "Aerospace Engineering graduates are equipped to take on diverse roles across multiple sectors, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
             },
             {
                 "type": "heading",
-                "content": "Indian Air Force and Related Defense Sectors"
+                "content": "Government Sector (e.g., ISRO, DRDO, HAL)"
             },
             {
                 "type": "paragraph",
-                "content": "The Indian Air Force and associated defense organizations provide opportunities for aeronautical engineers to contribute to national security through advanced aviation technologies. While direct roles within the Indian Air Force may be limited, the skills acquired are highly applicable in defense research and development. Key job roles include:"
+                "content": "Government organizations like ISRO, DRDO, HAL, and NAL provide opportunities for aerospace engineers to contribute to national security, space exploration, and defense technologies. Key job roles include:"
             },
             {
                 "type": "list",
                 "items": [
-                    "Military Aircraft Maintenance Engineer: Ensures military aircraft are operational by performing maintenance, repairs, and inspections to meet stringent defense standards.",
-                    "Missile Systems Engineer: Designs, develops, and tests missile systems, focusing on aerodynamics and propulsion for defense applications.",
-                    "UAV (Unmanned Aerial Vehicle) Engineer: Specializes in the design, development, and operation of drones used for surveillance and combat."
+                    "Aerospace Engineer: Designing and developing aircraft and spacecraft components.",
+                    "Propulsion Engineer: Specializing in engines and power systems for aerospace vehicles.",
+                    "Avionics Engineer: Focusing on electronic systems for navigation, communication, and control.",
+                    "Structural Engineer: Ensuring the integrity of aerospace structures under various conditions."
                 ]
             },
             {
@@ -307,30 +323,31 @@
             {
                 "type": "list",
                 "items": [
-                    "Defense Research and Development Organization (DRDO): Focuses on developing military aircraft and missile technologies (DRDO Careers).",
-                    "Hindustan Aeronautics Limited (HAL): Engages in aircraft manufacturing and maintenance for defense purposes (HAL Careers).",
-                    "Indian Space Research Organization (ISRO): Applies aeronautical engineering skills to space and aviation projects (ISRO Careers).",
-                    "National Aerospace Laboratories (NAL): Conducts cutting-edge research in aerospace engineering (NAL Careers)."
+                    "Indian Space Research Organization (ISRO): Focuses on space exploration and satellite technology.",
+                    "Defense Research and Development Organization (DRDO): Develops defense-related aerospace technologies.",
+                    "Hindustan Aeronautics Limited (HAL): Engages in aircraft manufacturing and maintenance.",
+                    "National Aerospace Laboratories (NAL): Conducts research in aerospace engineering."
                 ]
             },
             {
                 "type": "paragraph",
-                "content": "Salary Range: Salaries in the defense sector typically range from INR 12 LPA to INR 15 LPA, reflecting the specialized nature of these roles."
+                "content": "Salary Range: Salaries in the government sector typically range from INR 12 LPA to INR 15 LPA, reflecting the specialized nature of these roles."
             },
             {
                 "type": "heading",
-                "content": "Private Organizations (e.g., Indigo)"
+                "content": "Private Sector (e.g., Boeing, Airbus, Tata Advanced Systems)"
             },
             {
                 "type": "paragraph",
-                "content": "Private aviation companies, particularly airlines and maintenance organizations, offer roles focused on ensuring aircraft safety and operational efficiency. For an airline like Indigo, aeronautical engineers play a critical role in maintenance and technical support. Key job roles include:"
+                "content": "Private companies, including aerospace giants like Boeing and Airbus, as well as Indian firms like Tata Advanced Systems and Mahindra Aerospace, offer roles focused on aircraft design, maintenance, and operations. Key job roles include:"
             },
             {
                 "type": "list",
                 "items": [
-                    "Airline Maintenance Engineer: Oversees maintenance, repair, and overhaul (MRO) of aircraft to ensure compliance with safety and performance standards.",
-                    "Airline Systems Engineer: Integrates and maintains aircraft systems, such as avionics and navigation, to support smooth operations.",
-                    "Airline Operations Engineer: Optimizes aircraft operations, including scheduling, fuel efficiency, and safety protocols, often at an entry-level capacity."
+                    "Aircraft Design Engineer: Creating and refining aircraft designs for efficiency and performance.",
+                    "Systems Engineer: Integrating and maintaining aerospace systems, such as avionics and navigation.",
+                    "Maintenance Engineer: Overseeing the repair and upkeep of aircraft to ensure safety and compliance.",
+                    "Operations Engineer: Optimizing aerospace operations, including scheduling and fuel efficiency."
                 ]
             },
             {
@@ -340,13 +357,49 @@
             {
                 "type": "list",
                 "items": [
-                    "Indigo, Air India, SpiceJet, GoAir: Major airlines with engineering departments for MRO and operations (Indigo Careers).",
-                    "MRO Organizations: Companies like Boeing and Airbus have established MRO facilities in India, creating numerous job opportunities (Boeing India)."
+                    "Boeing India: Engages in aircraft manufacturing and maintenance.",
+                    "Airbus India: Focuses on commercial aircraft design and production.",
+                    "Tata Advanced Systems Ltd.: Works on aerospace components and systems.",
+                    "Mahindra Aerospace: Develops aerospace technologies and components."
                 ]
             },
             {
                 "type": "paragraph",
-                "content": "Salary Range: Salaries vary widely, from INR 4 LPA for entry-level roles like Airline Operations Engineer to INR 14.4 LPA for specialized positions like Airline Systems Engineer."
+                "content": "Salary Range: Salaries in the private sector vary widely, from INR 4 LPA for entry-level roles to INR 14.4 LPA for specialized positions."
+            },
+            {
+                "type": "heading",
+                "content": "Abroad Opportunities"
+            },
+            {
+                "type": "paragraph",
+                "content": "International companies like Boeing, Airbus, Lockheed Martin, and Northrop Grumman offer opportunities for aerospace engineers to work on cutting-edge projects in aircraft and spacecraft design. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Aerospace Engineer: Designing and testing aircraft and spacecraft.",
+                    "Flight Test Engineer: Conducting tests to ensure aerospace vehicles meet safety and performance standards.",
+                    "Aircraft Design Engineer: Focusing on conceptualizing and improving aerospace vehicle designs.",
+                    "Propulsion Engineer: Developing advanced propulsion systems for aircraft and spacecraft."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Boeing (USA): A leader in commercial and defense aerospace manufacturing.",
+                    "Airbus (Europe): Specializes in commercial aircraft design and production.",
+                    "Lockheed Martin (USA): Focuses on defense and aerospace systems.",
+                    "Northrop Grumman (USA): Engages in aerospace and defense technology."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Entry-level positions abroad start at approximately USD 60,000–70,000 per year, with mid-level roles exceeding USD 100,000 per year."
             },
             {
                 "type": "heading",
@@ -354,7 +407,7 @@
             },
             {
                 "type": "paragraph",
-                "content": "Completing an Aeronautical Engineering degree equips students with technical expertise, practical skills, and a mindset geared toward innovation and problem-solving. Graduates are likely to envision themselves as professionals making significant contributions to aviation, defense, or space exploration."
+                "content": "Completing an Aerospace Engineering degree equips students with technical expertise, practical skills, and a mindset geared toward innovation and problem-solving. Graduates are likely to envision themselves as professionals making significant contributions to aviation, space exploration, or defense."
             },
             {
                 "type": "heading",
@@ -367,12 +420,12 @@
             {
                 "type": "list",
                 "items": [
-                    "Aircraft Design: Knowledge of conceptualizing and designing aircraft for optimal performance and safety.",
-                    "Aerodynamics: Understanding how air flows around aircraft to enhance efficiency and stability.",
-                    "Propulsion Systems: Expertise in engines and power systems that drive aircraft.",
-                    "Materials Science: Familiarity with lightweight, durable materials used in aircraft construction.",
+                    "Aircraft and Spacecraft Design: Knowledge of conceptualizing and designing aerospace vehicles for optimal performance and safety.",
+                    "Aerodynamics: Understanding how air and space environments affect vehicle performance.",
+                    "Propulsion Systems: Expertise in engines and power systems for both aircraft and spacecraft.",
+                    "Materials Science: Familiarity with advanced materials used in aerospace applications.",
                     "Avionics: Proficiency in electronic systems for communication, navigation, and control.",
-                    "Flight Mechanics: Insight into the principles governing aircraft movement and stability."
+                    "Space Systems: Insight into orbital mechanics, spacecraft dynamics, and space mission design."
                 ]
             },
             {
@@ -381,13 +434,13 @@
             },
             {
                 "type": "paragraph",
-                "content": "Aeronautical Engineering graduates develop a robust skill set, including:"
+                "content": "Aerospace Engineering graduates develop a robust skill set, including:"
             },
             {
                 "type": "list",
                 "items": [
-                    "Engineering Software Proficiency: Expertise in tools like CAD (Computer-Aided Design) for designing and simulating aircraft components.",
-                    "Problem-Solving: Ability to address complex technical challenges, such as improving fuel efficiency or ensuring structural integrity.",
+                    "Engineering Software Proficiency: Expertise in tools like CAD for designing and simulating aerospace components.",
+                    "Problem-Solving: Ability to address complex technical challenges in aerospace systems.",
                     "Project Management: Skills to coordinate multidisciplinary teams on large-scale aerospace projects.",
                     "Critical Thinking: Capability to analyze systems and propose innovative solutions."
                 ]
@@ -398,16 +451,16 @@
             },
             {
                 "type": "paragraph",
-                "content": "The rigorous training in Aeronautical Engineering fosters mental attributes essential for success:"
+                "content": "The rigorous training in Aerospace Engineering fosters mental attributes essential for success:"
             },
             {
                 "type": "list",
                 "items": [
                     "Analytical Mindset: Graduates can break down complex systems into manageable components, identifying solutions with precision.",
-                    "Attention to Detail: Ensuring accuracy in design and maintenance, critical for safety in aviation.",
-                    "Innovation: A drive to develop new technologies, such as more efficient engines or autonomous flight systems.",
+                    "Attention to Detail: Ensuring accuracy in design and maintenance, critical for safety in aerospace.",
+                    "Innovation: A drive to develop new technologies, such as advanced propulsion systems or autonomous flight systems.",
                     "Resilience: The ability to work under pressure, particularly in roles involving safety-critical systems or tight project deadlines.",
-                    "Adaptability: Readiness to embrace new technologies and industry trends, such as sustainable aviation solutions."
+                    "Adaptability: Readiness to embrace new technologies and industry trends, such as sustainable aerospace solutions."
                 ]
             }
         ]

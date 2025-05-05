@@ -1,0 +1,516 @@
+{
+    "courseID": "Industrial-Engineering",
+    "name": "Industrial Engineering",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Spanning four years, the Industrial Engineering undergraduate program equips students with skills to optimize complex systems and processes, enhancing efficiency, productivity, and quality. Blending engineering, mathematics, and business principles, it focuses on designing and managing integrated systems involving people, materials, information, equipment, and energy. Ideal for those passionate about improving operations, this course prepares graduates for diverse roles in manufacturing, healthcare, logistics, and beyond."
+            },
+            {
+                "type": "heading",
+                "content": "What this course mainly focuses on?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "System Optimization: Designing efficient systems to maximize performance.",
+                    "Operations Research: Using mathematical models to solve operational challenges.",
+                    "Quality Management: Ensuring high standards in products and services.",
+                    "Supply Chain Management: Streamlining the flow of goods and services.",
+                    "Human Factors: Creating user-friendly and safe work environments.",
+                    "Lean Manufacturing: Minimizing waste while improving processes.",
+                    "Project Management: Planning and executing projects effectively."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "Industrial Engineering is a versatile branch of engineering that focuses on improving efficiency and productivity across various industries. It integrates technical engineering skills with business and social sciences to design systems that optimize resources. Graduates are well-equipped to tackle challenges in manufacturing, service industries, healthcare, and logistics, making it a highly sought-after program."
+            },
+            {
+                "type": "paragraph",
+                "content": "Standard duration: In India, the undergraduate program, typically offered as a Bachelor of Technology (B.Tech), spans four years across eight semesters, combining rigorous coursework with practical training."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This guide outlines the prerequisites for pursuing Industrial Engineering, including required subjects, preparation tips, eligibility criteria, and admission requirements to help students plan their academic journey."
+            },
+            {
+                "type": "heading",
+                "content": "Required 10th & 12th Subjects"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "10th Standard: Science (Physics, Chemistry) and Mathematics are compulsory to build a strong foundation for engineering studies.",
+                    "11th-12th Standard: Physics, Chemistry, and Mathematics (PCM) are required. Some institutions may accept Physics, Chemistry, and Biology (PCB), but PCM is the standard for engineering programs.",
+                    "Minimum Marks: A minimum aggregate of 50-60% in PCM is typically required, with top colleges like IITs often demanding higher scores or competitive exam ranks.",
+                    "Visit for more insights: [Industrial Engineering Eligibility - Shiksha](https://www.shiksha.com/engineering/industrial-engineering-chp)"
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "*TIPS to get an upper hand before enrolling in the course"
+            },
+            {
+                "type": "paragraph",
+                "content": "Students can gain a competitive edge by excelling in core subjects and developing additional skills before enrolling. These tips aim to prepare students for the demands of the Industrial Engineering program."
+            },
+            {
+                "type": "heading",
+                "content": "Basic Subjects to Master (Schooling)"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Physics: Understand mechanics and energy principles, crucial for system design.",
+                    "Mathematics: Master calculus, algebra, and statistics, essential for operations research.",
+                    "Chemistry: Learn material properties, relevant for manufacturing processes."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Additional Subjects and Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Computer Science: Learn basic programming (e.g., Python, C++) for data analysis and simulation tools.",
+                    "Statistics: Gain familiarity with statistical methods for quality control and process optimization.",
+                    "Management Concepts: Explore basic business and management principles through online courses or books.",
+                    "Extracurricular Activities: Join science clubs, participate in management or engineering projects, or attend workshops on systems thinking.",
+                    "Summary: Excelling in PCM, learning programming, and engaging in relevant activities can prepare students for success."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Eligibility Criteria"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Eligibility is based on completing Class 12 with PCM and achieving a minimum of 50-60% marks, depending on the institution. Some colleges may accept a 3-year engineering diploma for lateral entry."
+            },
+            {
+                "type": "heading",
+                "content": "Admission Requirements"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Admission to top colleges is primarily through national or state-level entrance exams, such as JEE Main, JEE Advanced, KCET, COMEDK UGET, or university-specific tests. Some private colleges offer merit-based admissions based on Class 12 marks, often followed by interviews."
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Core subjects in Industrial Engineering include Engineering Mathematics, Operations Research, Production Systems, Quality Control, Supply Chain Management, Facilities Planning, Human Factors Engineering, Industrial Safety, Project Management, Systems Engineering, Industrial Economics, Simulation and Modeling, Data Analysis, and Organizational Behavior."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects in Industrial Engineering"
+            },
+            {
+                "type": "paragraph",
+                "content": "This section details the core subjects taught in undergraduate Industrial Engineering programs in India, such as at IITs, and at leading universities abroad, like Purdue and MIT. These subjects provide the foundational knowledge and skills needed to optimize systems and processes."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects and Subtopics"
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Engineering Mathematics",
+                            "items": [
+                                "Calculus: Modeling system dynamics and optimization.",
+                                "Probability and Statistics: Analyzing data for quality and reliability.",
+                                "Linear Algebra: Solving system equations for operations research."
+                            ]
+                        },
+                        {
+                            "heading": "Operations Research",
+                            "items": [
+                                "Linear Programming: Optimizing resource allocation.",
+                                "Queuing Theory: Managing wait times in systems.",
+                                "Decision Analysis: Evaluating complex choices."
+                            ]
+                        },
+                        {
+                            "heading": "Production Systems",
+                            "items": [
+                                "Manufacturing Processes: Understanding production techniques.",
+                                "Automation: Implementing robotic and automated systems.",
+                                "Lean Manufacturing: Reducing waste in production."
+                            ]
+                        },
+                        {
+                            "heading": "Quality Control",
+                            "items": [
+                                "Statistical Quality Control: Monitoring process consistency.",
+                                "Six Sigma: Improving quality through defect reduction.",
+                                "Total Quality Management: Ensuring organization-wide quality."
+                            ]
+                        },
+                        {
+                            "heading": "Supply Chain Management",
+                            "items": [
+                                "Logistics: Managing transportation and distribution.",
+                                "Inventory Management: Optimizing stock levels.",
+                                "Procurement: Sourcing materials efficiently."
+                            ]
+                        },
+                        {
+                            "heading": "Facilities Planning",
+                            "items": [
+                                "Layout Design: Optimizing workspace arrangements.",
+                                "Material Handling: Streamlining movement of goods.",
+                                "Capacity Planning: Matching resources to demand."
+                            ]
+                        },
+                        {
+                            "heading": "Human Factors Engineering",
+                            "items": [
+                                "Ergonomics: Designing safe and comfortable workspaces.",
+                                "Workplace Design: Enhancing worker productivity.",
+                                "Human-Machine Interaction: Improving system usability."
+                            ]
+                        },
+                        {
+                            "heading": "Industrial Safety",
+                            "items": [
+                                "Risk Assessment: Identifying and mitigating hazards.",
+                                "Safety Standards: Complying with regulations.",
+                                "Emergency Planning: Preparing for workplace incidents."
+                            ]
+                        },
+                        {
+                            "heading": "Project Management",
+                            "items": [
+                                "Planning and Scheduling: Managing project timelines.",
+                                "Resource Allocation: Optimizing budget and manpower.",
+                                "Risk Management: Addressing project uncertainties."
+                            ]
+                        },
+                        {
+                            "heading": "Systems Engineering",
+                            "items": [
+                                "System Design: Creating integrated systems.",
+                                "System Integration: Combining components effectively.",
+                                "System Analysis: Evaluating performance and efficiency."
+                            ]
+                        },
+                        {
+                            "heading": "Industrial Economics",
+                            "items": [
+                                "Cost Analysis: Evaluating financial impacts.",
+                                "Budgeting: Managing project finances.",
+                                "Economic Decision Making: Choosing cost-effective solutions."
+                            ]
+                        },
+                        {
+                            "heading": "Simulation and Modeling",
+                            "items": [
+                                "Computer Simulation: Testing systems virtually.",
+                                "Discrete Event Simulation: Modeling process flows.",
+                                "System Dynamics: Analyzing long-term system behavior."
+                            ]
+                        },
+                        {
+                            "heading": "Data Analysis",
+                            "items": [
+                                "Statistical Methods: Interpreting process data.",
+                                "Data Mining: Extracting insights from large datasets.",
+                                "Predictive Analytics: Forecasting system performance."
+                            ]
+                        },
+                        {
+                            "heading": "Organizational Behavior",
+                            "items": [
+                                "Team Dynamics: Enhancing group collaboration.",
+                                "Leadership: Guiding teams effectively.",
+                                "Change Management: Implementing process improvements."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "Industrial Engineering graduates are equipped for diverse roles across government, private, and international sectors, leveraging their skills in system optimization and process improvement."
+            },
+            {
+                "type": "heading",
+                "content": "Government Sector (e.g., PSUs, DRDO)"
+            },
+            {
+                "type": "paragraph",
+                "content": "Government organizations like public sector undertakings (PSUs) and defense bodies offer roles focused on improving industrial processes and logistics. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Industrial Engineer: Optimizing manufacturing and operational processes.",
+                    "Process Engineer: Designing efficient production workflows.",
+                    "Quality Engineer: Ensuring compliance with quality standards."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key Organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Bharat Heavy Electricals Limited (BHEL): Focuses on power equipment manufacturing.",
+                    "Steel Authority of India Limited (SAIL): Engages in steel production.",
+                    "Defence Research and Development Organisation (DRDO): Develops defense technologies.",
+                    "Council of Scientific and Industrial Research (CSIR): Conducts industrial research."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries typically range from INR 6-15 LPA, depending on the role and organization."
+            },
+            {
+                "type": "heading",
+                "content": "Private Sector (e.g., Tata, Amazon)"
+            },
+            {
+                "type": "paragraph",
+                "content": "Private companies across manufacturing, consulting, healthcare, and logistics hire industrial engineers to enhance efficiency. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Operations Manager: Overseeing production and operational efficiency.",
+                    "Supply Chain Manager: Managing logistics and inventory.",
+                    "Management Consultant: Advising businesses on process improvements."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key Organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Tata Group: Engages in manufacturing and services.",
+                    "Amazon India: Focuses on e-commerce and logistics.",
+                    "Deloitte India: Offers consulting services.",
+                    "Apollo Hospitals: Manages healthcare operations."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries range from INR 4 LPA for entry-level roles to INR 20 LPA for senior positions."
+            },
+            {
+                "type": "heading",
+                "content": "Abroad Opportunities"
+            },
+            {
+                "type": "paragraph",
+                "content": "International firms and research institutions offer opportunities in advanced industrial engineering roles. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Industrial Engineer: Optimizing global manufacturing processes.",
+                    "Project Manager: Leading international projects.",
+                    "Data Analyst: Using data to drive operational improvements."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key Organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "General Electric (USA): Focuses on industrial manufacturing.",
+                    "Siemens (Germany): Engages in automation and engineering.",
+                    "Toyota (Japan): Specializes in lean manufacturing.",
+                    "MIT Research Labs (USA): Conducts industrial engineering research."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Entry-level salaries start at USD 60,000–80,000 per year, with senior roles exceeding USD 100,000."
+            },
+            {
+                "type": "heading",
+                "content": "How a Student Might See Themselves After Completing the Course"
+            },
+            {
+                "type": "paragraph",
+                "content": "Graduates envision themselves as problem-solvers improving efficiency across industries, equipped with technical and managerial skills."
+            },
+            {
+                "type": "heading",
+                "content": "Knowledge and Expertise"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "System Optimization: Designing efficient processes.",
+                    "Operations Research: Solving complex problems with data.",
+                    "Quality Control: Ensuring product and service excellence.",
+                    "Supply Chain: Managing logistics and resources."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Analytical Skills: Using data to drive decisions.",
+                    "Software Proficiency: Expertise in tools like MATLAB, SAP.",
+                    "Project Management: Leading teams and projects.",
+                    "Problem-Solving: Addressing operational challenges."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Mental Capabilities"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Critical Thinking: Analyzing systems logically.",
+                    "Attention to Detail: Ensuring precision in processes.",
+                    "Adaptability: Embracing new technologies and methods.",
+                    "Leadership: Guiding teams toward efficiency."
+                ]
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Indian Institute of Technology (IIT) Bombay",
+                "location": {
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://www.iitb.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 2,
+                "name": "Indian Institute of Technology (IIT) Delhi",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "2",
+                "visit link": "https://www.iitd.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 3,
+                "name": "Indian Institute of Technology (IIT) Madras",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.iitm.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 4,
+                "name": "Birla Institute of Technology and Science (BITS) Pilani",
+                "location": {
+                    "city": "Pilani",
+                    "state": "Rajasthan",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "4",
+                "visit link": "https://www.bits-pilani.ac.in/",
+                "total charges": "5L per year"
+            },
+            {
+                "id": 5,
+                "name": "Vellore Institute of Technology (VIT) Vellore",
+                "location": {
+                    "city": "Vellore",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "5",
+                "visit link": "https://vit.ac.in/",
+                "total charges": "7L per year"
+            },
+            {
+                "id": 6,
+                "name": "Massachusetts Institute of Technology (MIT)",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "1",
+                "visit link": "https://www.mit.edu/",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 7,
+                "name": "Stanford University",
+                "location": {
+                    "city": "Stanford",
+                    "state": "California",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "2",
+                "visit link": "https://www.stanford.edu/",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 8,
+                "name": "Purdue University",
+                "location": {
+                    "city": "West Lafayette",
+                    "state": "Indiana",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "3",
+                "visit link": "https://www.purdue.edu/",
+                "total charges": "$29K-$30K per year"
+            }
+        ]
+    }
+}

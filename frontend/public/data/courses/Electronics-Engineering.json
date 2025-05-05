@@ -1,0 +1,498 @@
+{
+    "courseID": "Electronics-Engineering",
+    "name": "Electronics Engineering",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Spanning four years, the Electronics Engineering undergraduate program equips students with skills to design, develop, and maintain electronic circuits and systems that power modern devices like smartphones, computers, and medical equipment. This dynamic course blends theoretical learning with hands-on projects, making it ideal for those passionate about technology and innovation. Students learn to create efficient electronic solutions, preparing them for careers in telecommunications, consumer electronics, aerospace, and healthcare."
+            },
+            {
+                "type": "heading",
+                "content": "What this course mainly focuses on?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Circuit Design and Analysis: Creating and optimizing electronic circuits for various applications.",
+                    "Semiconductor Devices: Understanding and designing components like transistors and diodes.",
+                    "Digital and Analog Electronics: Building systems for digital and analog signal processing.",
+                    "Communication Systems: Developing technologies for data transmission and networking.",
+                    "VLSI Design: Designing integrated circuits for advanced electronics.",
+                    "Embedded Systems: Programming and integrating hardware for specific functions.",
+                    "Control Systems: Designing systems to regulate electronic processes."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "Electronics Engineering is a vital field driving technological advancements in everyday devices and industrial systems. It focuses on the study of electron behavior in semiconductors, conductors, and vacuum to create innovative electronic solutions. Graduates contribute to industries like telecommunications, consumer electronics, aerospace, and healthcare, shaping the future of technology."
+            },
+            {
+                "type": "paragraph",
+                "content": "Standard duration: In India, the undergraduate program, typically offered as a Bachelor of Technology (B.Tech), spans four years across eight semesters, combining rigorous coursework with practical training."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This guide outlines the prerequisites for pursuing Electronics Engineering, including required subjects, preparation tips, eligibility criteria, and admission requirements to help students plan their academic journey."
+            },
+            {
+                "type": "heading",
+                "content": "Required 10th & 12th Subjects"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "10th Standard: Science (Physics, Chemistry) and Mathematics are compulsory to build a foundational understanding for engineering studies.",
+                    "11th-12th Standard: Physics, Chemistry, and Mathematics (PCM) are required. For top colleges like IITs, a minimum of 75% marks in PCM is often necessary.",
+                    "Minimum Marks: A minimum aggregate of 50-60% in PCM is typically required, with higher percentages needed for prestigious institutions."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "*TIPS to get an upper hand before enrolling in the course"
+            },
+            {
+                "type": "paragraph",
+                "content": "Students can gain a competitive edge by excelling in core subjects and developing additional skills before enrolling. These tips aim to prepare students for the demands of the Electronics Engineering program."
+            },
+            {
+                "type": "heading",
+                "content": "Basic Subjects to Master (Schooling)"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Physics: Focus on electricity, magnetism, and waves, crucial for understanding electronic principles.",
+                    "Mathematics: Master calculus, algebra, and trigonometry, essential for circuit analysis and system design.",
+                    "Chemistry: Learn about material properties, especially semiconductors, fundamental to electronics."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Additional Subjects and Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Computer Science: Learn basic programming (e.g., C, Python) for digital systems and simulations.",
+                    "Electronics Basics: Familiarize with components like resistors, capacitors, diodes, and transistors through DIY projects or online courses.",
+                    "Extracurricular Activities: Join electronics or robotics clubs, participate in science fairs, or attend workshops to gain practical experience.",
+                    "Summary: Excelling in PCM, learning programming, and engaging in electronics-related activities can prepare students for success."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Eligibility Criteria"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Eligibility is based on completing Class 12 with PCM and achieving a minimum of 50-60% marks, depending on the institution. Some colleges offer lateral entry for students with a 3-year engineering diploma."
+            },
+            {
+                "type": "heading",
+                "content": "Admission Requirements"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Admission to top colleges is primarily through national or state-level entrance exams, such as JEE Main, JEE Advanced, KCET, COMEDK UGET, or university-specific tests. Some private colleges offer merit-based admissions based on Class 12 marks, often followed by interviews."
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Core subjects in Electronics Engineering include Applied Mathematics, Analog Electronics, Digital Electronics, Power Electronics, VLSI Design, Communication Systems, Control Systems, Microprocessors and Microcontrollers, Electromagnetic Fields and Waves, Signal Processing, Computer Networks, and Embedded Systems."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects in Electronics Engineering"
+            },
+            {
+                "type": "paragraph",
+                "content": "This section details the core subjects taught in undergraduate Electronics Engineering programs in India, such as at IITs, and at leading universities abroad, like MIT and Stanford. These subjects provide a comprehensive foundation for designing and developing electronic systems."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects and Subtopics"
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Applied Mathematics",
+                            "items": [
+                                "Calculus: Modeling electronic systems and signals.",
+                                "Differential Equations: Analyzing dynamic circuits.",
+                                "Linear Algebra: Solving system equations for circuit analysis."
+                            ]
+                        },
+                        {
+                            "heading": "Analog Electronics",
+                            "items": [
+                                "Diodes and Transistors: Understanding basic components.",
+                                "Amplifiers: Designing circuits for signal amplification.",
+                                "Oscillators: Creating stable frequency sources."
+                            ]
+                        },
+                        {
+                            "heading": "Digital Electronics",
+                            "items": [
+                                "Logic Gates: Building digital circuits.",
+                                "Combinational and Sequential Circuits: Designing logic and memory systems.",
+                                "Digital System Design: Creating complex digital architectures."
+                            ]
+                        },
+                        {
+                            "heading": "Power Electronics",
+                            "items": [
+                                "Power Converters: Managing AC-DC and DC-DC conversion.",
+                                "Inverters: Generating AC from DC sources.",
+                                "Motor Drives: Controlling electric motors."
+                            ]
+                        },
+                        {
+                            "heading": "VLSI Design",
+                            "items": [
+                                "IC Fabrication: Understanding chip manufacturing processes.",
+                                "Digital Design: Creating integrated circuits.",
+                                "Testing and Verification: Ensuring chip functionality."
+                            ]
+                        },
+                        {
+                            "heading": "Communication Systems",
+                            "items": [
+                                "Modulation Techniques: Enabling signal transmission.",
+                                "Digital Communication: Encoding and decoding data.",
+                                "Wireless Networks: Designing modern communication systems."
+                            ]
+                        },
+                        {
+                            "heading": "Control Systems",
+                            "items": [
+                                "Feedback Control: Designing stable systems.",
+                                "Stability Analysis: Ensuring system reliability.",
+                                "Control Algorithms: Automating electronic processes."
+                            ]
+                        },
+                        {
+                            "heading": "Microprocessors and Microcontrollers",
+                            "items": [
+                                "Architecture: Understanding processor design.",
+                                "Programming: Writing code for microcontrollers.",
+                                "Applications: Integrating microcontrollers in devices."
+                            ]
+                        },
+                        {
+                            "heading": "Electromagnetic Fields and Waves",
+                            "items": [
+                                "Maxwell’s Equations: Understanding electromagnetic theory.",
+                                "Wave Propagation: Analyzing signal transmission.",
+                                "Antenna Design: Creating efficient antennas."
+                            ]
+                        },
+                        {
+                            "heading": "Signal Processing",
+                            "items": [
+                                "Digital Signal Processing: Filtering and analyzing signals.",
+                                "Fourier Analysis: Transforming signals for processing.",
+                                "Applications: Enhancing communication and audio systems."
+                            ]
+                        },
+                        {
+                            "heading": "Computer Networks",
+                            "items": [
+                                "Data Communication: Transmitting data over networks.",
+                                "Network Protocols: Ensuring reliable communication.",
+                                "Network Security: Protecting data integrity."
+                            ]
+                        },
+                        {
+                            "heading": "Embedded Systems",
+                            "items": [
+                                "System Design: Creating hardware-software integrated systems.",
+                                "Real-Time Systems: Managing time-critical applications.",
+                                "Applications: Powering devices like IoT and automotive systems."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "Electronics Engineering graduates are equipped for diverse roles across government, private, and international sectors, leveraging their expertise in electronic systems design and development."
+            },
+            {
+                "type": "heading",
+                "content": "Government Sector (e.g., ISRO, DRDO, BHEL)"
+            },
+            {
+                "type": "paragraph",
+                "content": "Government organizations hire electronics engineers for research, development, and quality assurance in defense, space, and industrial applications. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Electronics Engineer: Designing systems for space and defense applications.",
+                    "Research Scientist: Innovating new electronic technologies.",
+                    "Quality Control Engineer: Ensuring compliance with standards."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key Organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Indian Space Research Organization (ISRO): Develops satellite and space technologies.",
+                    "Defence Research and Development Organisation (DRDO): Focuses on defense electronics.",
+                    "Bharat Heavy Electricals Limited (BHEL): Engages in power equipment manufacturing."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries typically range from INR 6-15 LPA, depending on the role and organization."
+            },
+            {
+                "type": "heading",
+                "content": "Private Sector (e.g., Intel, Samsung, Texas Instruments)"
+            },
+            {
+                "type": "paragraph",
+                "content": "Private companies in telecommunications, consumer electronics, and technology hire electronics engineers for design and development roles. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Design Engineer: Creating new electronic products (INR 6.9 LPA).",
+                    "VLSI Design Engineer: Designing integrated circuits (INR 7.3 LPA).",
+                    "Embedded Systems Engineer: Developing hardware-software systems (INR 7 LPA).",
+                    "Telecommunications Engineer: Managing communication networks (INR 5.7 LPA)."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key Organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Intel India: Focuses on semiconductor design.",
+                    "Samsung India: Develops consumer electronics.",
+                    "Texas Instruments India: Specializes in analog and embedded systems.",
+                    "Tata Consultancy Services (TCS): Offers electronics-based IT solutions."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries range from INR 4 LPA for entry-level roles to INR 12 LPA for specialized positions."
+            },
+            {
+                "type": "heading",
+                "content": "Abroad Opportunities"
+            },
+            {
+                "type": "paragraph",
+                "content": "International firms offer opportunities in advanced electronics roles, particularly in R&D and design. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Electronics Engineer: Designing cutting-edge systems.",
+                    "R&D Engineer: Innovating new technologies.",
+                    "Project Manager: Leading global electronics projects."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key Organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Apple (USA): Develops consumer electronics.",
+                    "Qualcomm (USA): Focuses on wireless communication technologies.",
+                    "Siemens (Germany): Engages in industrial electronics.",
+                    "Sony (Japan): Innovates in consumer electronics."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Entry-level salaries start at USD 60,000–80,000 per year, with senior roles exceeding USD 100,000."
+            },
+            {
+                "type": "heading",
+                "content": "How a Student Might See Themselves After Completing the Course"
+            },
+            {
+                "type": "paragraph",
+                "content": "Graduates envision themselves as innovators shaping the future of technology, designing electronic systems that power everyday devices and industrial applications."
+            },
+            {
+                "type": "heading",
+                "content": "Knowledge and Expertise"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Circuit Design: Creating efficient electronic systems.",
+                    "Semiconductor Devices: Understanding component functionality.",
+                    "Digital and Analog Electronics: Building robust systems.",
+                    "Communication Systems: Enabling data transmission."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Circuit Analysis: Designing and troubleshooting circuits.",
+                    "Programming: Using C, Python, and MATLAB for system control.",
+                    "Problem-Solving: Addressing technical challenges.",
+                    "Project Management: Leading electronics projects."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Mental Capabilities"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Analytical Thinking: Solving complex problems.",
+                    "Creativity: Innovating new electronic solutions.",
+                    "Attention to Detail: Ensuring precision in designs.",
+                    "Adaptability: Keeping pace with technological advancements."
+                ]
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Indian Institute of Technology (IIT) Bombay",
+                "location": {
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://www.iitb.ac.in",
+                "total charges": "2.69L per year"
+            },
+            {
+                "id": 2,
+                "name": "Indian Institute of Technology (IIT) Delhi",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "2",
+                "visit link": "https://www.iitd.ac.in",
+                "total charges": "3L per year"
+            },
+            {
+                "id": 3,
+                "name": "Indian Institute of Technology (IIT) Madras",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.iitm.ac.in",
+                "total charges": "20K per year"
+            },
+            {
+                "id": 4,
+                "name": "Birla Institute of Technology and Science (BITS) Pilani",
+                "location": {
+                    "city": "Pilani",
+                    "state": "Rajasthan",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "4",
+                "visit link": "https://www.bits-pilani.ac.in",
+                "total charges": "20.76L per year"
+            },
+            {
+                "id": 5,
+                "name": "Vellore Institute of Technology (VIT) Vellore",
+                "location": {
+                    "city": "Vellore",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "5",
+                "visit link": "https://vit.ac.in",
+                "total charges": "1L-6.92L per year"
+            },
+            {
+                "id": 6,
+                "name": "Massachusetts Institute of Technology (MIT)",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "1",
+                "visit link": "https://www.mit.edu",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 7,
+                "name": "Stanford University",
+                "location": {
+                    "city": "Stanford",
+                    "state": "California",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "2",
+                "visit link": "https://www.stanford.edu",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 8,
+                "name": "University of Cambridge",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "",
+                    "country": "UK"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.cam.ac.uk",
+                "total charges": "£39K per year"
+            }
+        ]
+    }
+}

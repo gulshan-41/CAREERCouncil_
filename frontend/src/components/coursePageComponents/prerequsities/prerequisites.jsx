@@ -19,34 +19,25 @@ function Subjects({ data }) {
             {/* Map over the text array to render each block */}
             {data.text.map((block, index) => {
                 switch (block.type) {
-                    case "section-intro": 
+                    case "heading":
+                        return <h3 key={index}>{block.content}</h3>
+                    case "paragraph":
                         return <p key={index}>{block.content}</p>
-                    case "tips":
+                    case "list":
                         return (
-                            <div key={index} className="tips">
-                                <h3>{block.content.heading}</h3>
-                                <p>{block.content.paragraph}</p>
-                            </div>
-                        );
-                    case "requirements":
-                        return (
-                            <div key={index} className="requirements">
-                                <h3>{block.content.heading}</h3>
-                                <p>{block.content.paragraph}</p>
-                                <ul>
-                                    {block.content.items.map((item, itemIndex) => (
-                                        <li key={itemIndex}><p>{item}</p></li>
-                                    ))}
-                                </ul>
-                            </div>
+                            <ul key={index}>
+                                {block.items.map((item, itemIndex) => (
+                                    <li key={itemIndex}><p>{item}</p></li>
+                                ))}
+                            </ul>
                         );
                     default:
                         return (
                             <p key={index} className="unsupported">
-                                [Unsupported content type: {block.type}]
+                              [Unsupported content type: {block.type}]
                             </p>
                         ); // Fallback for unknown types
-                }
+                  }
             })}
             </div>
         </section>

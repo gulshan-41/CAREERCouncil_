@@ -27,16 +27,13 @@ function CoreSubjects({ data }) {
             <div className="content-box">
                 {data.text.map((block, index) => {
                     switch(block.type) {
-                        case "section-intro":
+                        case "heading": 
+                            return (
+                                <h3 key={index}>{block.content}</h3>
+                            );
+                        case "paragraph":
                             return (
                                 <p key={index}>{block.content}</p>
-                            );
-                        case "core-subjects": 
-                            return (
-                                <div key={index} className="core-subjects">
-                                    <h3>{block.content.heading}</h3>
-                                    <p>{block.content.paragraph}</p>
-                                </div>
                             );
                         case "topics-list": 
                             return (
@@ -58,6 +55,12 @@ function CoreSubjects({ data }) {
                                     ))}
                                 </div>
                             );
+                        default:
+                            return (
+                                <p key={index} className="unsupported">
+                                    [Unsupported content type: {block.type}]
+                                </p>
+                            ); // Fallback for unknown types
                     }
                 })}
             </div>
