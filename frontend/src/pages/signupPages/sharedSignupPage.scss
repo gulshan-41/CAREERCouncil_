@@ -35,7 +35,7 @@
         display: none;
     }
 
-    span {
+    .option-spans {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,6 +45,20 @@
         font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
+
+        &.selected {
+            outline: 1px solid #1550A8;
+            color: #1550A8;
+            background-color: #D4E4FD;
+            box-sizing: border-box;
+        }
+
+        &.deselected {
+            border: 1px solid black;
+            border-radius: 4px;
+            color: #000;
+            background-color: #fff;
+        }
 
         &:hover {
             outline: 1px solid #1550A8;
@@ -81,7 +95,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     margin-top: auto;
 
     .pre-btn {
@@ -91,15 +105,37 @@
         border: 2px solid #203864;
         box-sizing: border-box;
         border-radius: 5px;
-        padding: 4.4px 16px;
-        background-color: #D4E4FD;
-        color: #203864;
+        padding: 4px 8px;
+        background-color: #203864;
+        color: #fff;
         font-size: 1rem;
         font-weight: 500;
+        position: relative;
+        overflow: hidden;
         cursor: pointer;
+
+        .lft-arrow {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .lft-arrow-move {
+            position: absolute;
+            right: -20px;
+            transform: translate(0);
+            transition: transform 0.2s ease-in-out;
+        }
 
         &:hover {
             background-color: #fff;
+            color: #203864;
+
+            .lft-arrow {
+                transform: translate(-28px);
+            }
+
+            .lft-arrow-move {
+                transform: translate(-28px);
+            }
         }
     }
 
@@ -107,19 +143,41 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 2px;
         border: 2px solid #203864;
         border-radius: 5px;
-        padding: 4.4px 16px;
+        padding: 4px 8px;
         box-sizing: border-box;
         background-color: #203864;
-        color: white;
+        color: #fff;
         font-size: 1rem;
         font-weight: 500;
+        position: relative;
+        overflow: hidden;
         cursor: pointer;
+
+        .rght-arrow {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .rght-arrow-move {
+            position: absolute;
+            left: -20px;
+            transform: translate(0);
+            transition: transform 0.5s ease-in-out;
+        }
 
         &:hover {
             background-color: #fff;
             color: #203864;
+
+            .rght-arrow {
+                transform: translate(28px);
+            }
+
+            .rght-arrow-move {
+                transform: translate(28px);
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState, useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 
 const SurveyContext = createContext();
@@ -22,12 +22,12 @@ export function SurveyProvider({ children }) {
         },
     });
 
-    const [user, setUser] = useState([]);
-
-    const [loginData, setloginData] = useState({
+    const [user, setUser] = useState(null);
+    const [loginData, setLoginData] = useState({
         email: "",
-        password: ""
+        password: "",
     });
+    const hasFetchedUser = useRef(false);
 
     const updateSurveyData = (key, value) => {
         setSurveyData((prev) => {
@@ -48,11 +48,12 @@ export function SurveyProvider({ children }) {
     };
 
     const updateLoginData = (e) => {
-        setloginData({ ...loginData, [e.target.name]: e.target.value });
-    }
-    //fetchUser
+        setLoginData({ ...loginData, [e.target.name]: e.target.value });
+    };
+
     const fetchUser = async () => {
         try {
+            console.log('Fetching user');
             const response = await fetch('http://localhost:8800/api/user/getuser', {
                 method: "GET",
                 headers: {
@@ -61,37 +62,35 @@ export function SurveyProvider({ children }) {
                 credentials: 'include',
             }).then((data) => data.json());
 
-            console.log(response);
-
             if (response.success) {
                 localStorage.setItem("token", JSON.stringify(response.data));
                 setUser(response.data);
-            }
-            else {
+            } else {
                 localStorage.removeItem('token');
-                setUser("");
+                setUser(null);
             }
+            return response;
         } catch (error) {
-            console.log(error);
+            console.error("Fetch user error:", error);
+            localStorage.removeItem('token');
+            setUser(null);
+            throw error;
         }
     };
 
-    //Logout
     const handleLogOut = async () => {
         try {
-
             const resp = await fetch('http://localhost:8800/api/user/logout', {
                 method: "POST",
                 headers: {
-                    "Content-Type": 'applicatioin/json'
+                    "Content-Type": 'application/json'
                 },
                 credentials: 'include'
             }).then((data) => data.json());
 
             if (resp.success) {
-
                 toast.success(resp.msg);
-                setUser("");
+                setUser(null);
                 setSurveyData({
                     name: "",
                     age: "",
@@ -108,31 +107,29 @@ export function SurveyProvider({ children }) {
                         history: null,
                         fields: [],
                     },
-                })
-                setloginData({
+                });
+                setLoginData({
                     email: "",
                     password: ""
-                })
+                });
                 localStorage.removeItem("token");
-            }
-            else {
+            } else {
                 toast.error(resp.msg);
             }
-
         } catch (error) {
-
-            console.log(error);
+            console.error("Logout error:", error);
         }
-    }
+    };
 
     useEffect(() => {
-        if (fetchUser()) {
-            setUser(JSON.parse(localStorage.getItem('token')));
-        }
-    }, [])
+        if (hasFetchedUser.current) return;
+
+        hasFetchedUser.current = true;
+        fetchUser();
+    }, []);
 
     return (
-        <SurveyContext.Provider value={{ surveyData, updateSurveyData, loginData, setloginData, updateLoginData, user, handleLogOut, fetchUser }}>
+        <SurveyContext.Provider value={{ surveyData, updateSurveyData, loginData, setLoginData, updateLoginData, user, setUser, handleLogOut, fetchUser }}>
             {children}
         </SurveyContext.Provider>
     );

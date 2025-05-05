@@ -5,10 +5,10 @@ import X from "/src/assets/images/x.svg";
 import Apple from "/src/assets/images/apple.svg";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
 import { toast } from "react-toastify";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 function SignupModal() {
-    const { surveyData, updateSurveyData, loginData, updateLoginData, fetchUser } = useSurvey();
+    const { surveyData, updateSurveyData, loginData, updateLoginData, setUser } = useSurvey();
     const [isLoginMode, setIsLoginMode] = useState(false);
     const navigate = useNavigate();
 
@@ -16,7 +16,6 @@ function SignupModal() {
         setIsLoginMode((prev) => !prev);
     };
 
-    //login
     const handleLogin = async (e) => {
         e.preventDefault();
         const response = await fetch('http://localhost:8800/api/user/login', {
@@ -28,54 +27,37 @@ function SignupModal() {
             body: JSON.stringify(loginData),
         }).then((data) => data.json());
 
-        console.log(response.success);
+        if (response.success) {
+            toast.success(response.msg);
+            localStorage.setItem("token", JSON.stringify(response.data));
+            setUser(response.data);
+            navigate('/');
+        } else {
+            toast.error(response.msg);
+        }
+    };
 
+    const handleSignup = async (e) => {
+        e.preventDefault();
+        console.log(surveyData);
+        const response = await fetch('http://localhost:8800/api/user/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+            body: JSON.stringify(surveyData),
+        }).then((data) => data.json());
 
         if (response.success) {
             toast.success(response.msg);
-            fetchUser();
-            navigate('/')
-            
-        }
-        else {
+            localStorage.setItem("token", JSON.stringify(response.data));
+            setUser(response.data);
+            navigate('/');
+        } else {
             toast.error(response.msg);
         }
-
     };
-
-     //SignIn
-        const handleSignup = async (e) => {
-            e.preventDefault();
-            // if (!surveyData.signupDetails.email || !surveyData.signupDetails.password) {
-            //     alert("Please fill in all fields.");
-            //     return;
-            // }
-            // if (!surveyData.signupDetails.agreeToDataProcessing) {
-            //     alert("You must agree to the processing of personal data.");
-            //     return;
-            // }
-            console.log(surveyData);
-            
-            const response = await fetch('http://localhost:8800/api/user/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                credentials: 'include',
-                body: JSON.stringify(surveyData),
-            }).then((data) => data.json());
-    
-    
-            if (response.success) {
-                toast.success(response.msg)
-                fetchUser();
-                navigate('/')
-            }
-            else {
-                toast.error(response.msg);
-            }
-    
-        };
 
     return (
         <div className="signup-login-wrapper">
@@ -92,9 +74,7 @@ function SignupModal() {
                             id="email"
                             placeholder="Email"
                             value={surveyData.email}
-                            onChange={(e) =>
-                                updateSurveyData("signupDetails", { email: e.target.value })
-                            }
+                            onChange={(e) => updateSurveyData("email", e.target.value)}
                             required
                         />
                         <label htmlFor="pass">Password</label>
@@ -102,9 +82,7 @@ function SignupModal() {
                             type="password"
                             placeholder="Password"
                             value={surveyData.password}
-                            onChange={(e) =>
-                                updateSurveyData("signupDetails", { password: e.target.value })
-                            }
+                            onChange={(e) => updateSurveyData("password", e.target.value)}
                             required
                         />
                         <div className="agree-personal-data">
@@ -114,9 +92,7 @@ function SignupModal() {
                                 id="personalData"
                                 checked={surveyData.agreeToDataProcessing}
                                 onChange={(e) =>
-                                    updateSurveyData("signupDetails", {
-                                        agreeToDataProcessing: e.target.checked,
-                                    })
+                                    updateSurveyData("agreeToDataProcessing", e.target.checked)
                                 }
                             />
                             <label htmlFor="personalData">

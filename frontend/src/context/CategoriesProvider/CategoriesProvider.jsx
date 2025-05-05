@@ -1,31 +1,33 @@
-import { createContext, useContext, useState, useEffect, useCallback } from "react";
+import { createContext, useContext, useState, useEffect, useCallback, useRef } from "react";
 
 const CategoriesContext = createContext();
 
 export function CategoriesProvider({ children }) {
-    // State for categories.json (list of categories)
     const [categories, setCategories] = useState([]);
     const [categoriesLoading, setCategoriesLoading] = useState(true);
     const [categoriesError, setCategoriesError] = useState(null);
 
-    // State for categoriesData/${catID}.json (cached per catID)
-    const [categoryDetails, setCategoryDetails] = useState({}); // { catID: { relatedCourses, introduction } }
-    const [detailsLoading, setDetailsLoading] = useState({}); // { catID: boolean }
-    const [detailsError, setDetailsError] = useState({}); // { catID: string }
+    const [categoryDetails, setCategoryDetails] = useState({});
+    const [detailsLoading, setDetailsLoading] = useState({});
+    const [detailsError, setDetailsError] = useState({});
 
-    // State for courses (specific course details)
-    const [courseDetails, setCourseDetails] = useState({}); // { courseID: content }
+    const [courseDetails, setCourseDetails] = useState({});
     const [courseLoading, setCourseLoading] = useState(false);
-    const [courseError, setCourseError] = useState({}); // { courseID: error }
+    const [courseError, setCourseError] = useState({});
 
-    // State for trending courses
     const [trendingCourses, setTrendingCourses] = useState([]);
     const [trendingLoading, setTrendingLoading] = useState(true);
     const [trendingError, setTrendingError] = useState(null);
 
-    // Fetch categories.json once on mount
+    const fetchPromises = useRef({});
+    const hasFetchedCategories = useRef(false);
+
     useEffect(() => {
+        if (hasFetchedCategories.current) return;
+
         const fetchCategories = async () => {
+            hasFetchedCategories.current = true;
+            console.log('Fetching categories list');
             try {
                 const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
                     method: 'GET',
@@ -46,48 +48,62 @@ export function CategoriesProvider({ children }) {
             }
         };
         fetchCategories();
+
+        return () => {
+            fetchPromises.current = {};
+        };
     }, []);
 
-    // Function to fetch category details (cached)
     const fetchCategoryDetails = useCallback(async (catID) => {
         if (categoryDetails[catID]) {
-            return; // Already cached, skip fetch
+            return;
+        }
+
+        if (fetchPromises.current[catID]) {
+            return fetchPromises.current[catID];
         }
 
         setDetailsLoading((prev) => ({ ...prev, [catID]: true }));
         setDetailsError((prev) => ({ ...prev, [catID]: null }));
 
-        try {
-            const response = await fetch(`http://localhost:8800/api/categories/getcategoriesdata/${catID}`, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-            }).then((data) => data.json());
+        const promise = fetch(`http://localhost:8800/api/categories/getcategoriesdata/${catID}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then((response) => response.json())
+            .then((response) => {
+                if (!response.success) {
+                    throw new Error(`Failed to fetch data for ${catID}`);
+                }
 
-            if (!response.success) {
-                throw new Error(`Failed to fetch data for ${catID}`);
-            }
+                const data = response.getCategoriesData;
 
-            const data = response.getCategoriesData;
+                setCategoryDetails((prev) => ({
+                    ...prev,
+                    [catID]: {
+                        relatedCourses: data.relatedCourses || [],
+                        introduction: data.introduction || [],
+                    },
+                }));
+                return data;
+            })
+            .catch((err) => {
+                setDetailsError((prev) => ({ ...prev, [catID]: err.message }));
+                throw err;
+            })
+            .finally(() => {
+                setDetailsLoading((prev) => ({ ...prev, [catID]: false }));
+                delete fetchPromises.current[catID];
+            });
 
-            setCategoryDetails((prev) => ({
-                ...prev,
-                [catID]: {
-                    relatedCourses: data.relatedCourses || [],
-                    introduction: data.introduction || [],
-                },
-            }));
-        } catch (err) {
-            setDetailsError((prev) => ({ ...prev, [catID]: err.message }));
-        } finally {
-            setDetailsLoading((prev) => ({ ...prev, [catID]: false }));
-        }
+        fetchPromises.current[catID] = promise;
+        return promise;
     }, [categoryDetails]);
 
-    // Fetch course details by courseID (courses)
     const fetchCourseDetails = async (courseID) => {
-        if (courseDetails[courseID]) return; // Skip if already fetched
+        if (courseDetails[courseID]) return;
         setCourseLoading(true);
         try {
             const response = await fetch(`http://localhost:8800/api/course/getcourse/${courseID}`, {
@@ -112,11 +128,9 @@ export function CategoriesProvider({ children }) {
         }
     };
 
-    // Fetch trending courses on mount, using categories state
     useEffect(() => {
         const fetchTrendingCourses = async () => {
             if (categoriesLoading || categoriesError) {
-                // Wait for categories to load or handle error
                 setTrendingLoading(false);
                 if (categoriesError) {
                     setTrendingError("Cannot fetch trending courses due to categories error");
@@ -125,7 +139,6 @@ export function CategoriesProvider({ children }) {
             }
 
             try {
-                // Limit to Engineering, Medical, and Management
                 const allowedCategories = ["Engineering", "Medical", "Management"];
                 const filteredCategories = categories.filter((category) =>
                     allowedCategories.includes(category.catID)
@@ -133,28 +146,10 @@ export function CategoriesProvider({ children }) {
 
                 const trendingCourses = [];
                 for (const category of filteredCategories) {
-                    try {
-                        const response = await fetch(`http://localhost:8800/api/categories/getcategoriesdata/${category.catID}`, {
-                            method: 'GET',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                        }).then((data) => data.json());
-                        if (!response.success) {
-                            console.warn(`Failed to fetch data for ${category.catID}: ${response.status}`);
-                            continue;
-                        }
-                        let data;
-                        try {
-                            data = response.getCategoriesData;
-                        } catch (jsonErr) {
-                            const responseText = await response.text();
-                            console.error(
-                                `JSON parse error for ${category.catID}: ${jsonErr.message}`,
-                                `Response content: ${responseText.slice(0, 200)}...`
-                            );
-                            continue;
-                        }
+                    await fetchCategoryDetails(category.catID);
+
+                    if (categoryDetails[category.catID] && !detailsError[category.catID]) {
+                        const data = categoryDetails[category.catID];
                         const trending = data.relatedCourses
                             .filter((course) => course.isTrending === "true")
                             .map((course) => ({
@@ -165,16 +160,11 @@ export function CategoriesProvider({ children }) {
                                 categoryId: category.catID,
                             }));
                         trendingCourses.push(...trending);
-                    } catch (err) {
-                        console.warn(`Error fetching ${category.catID}: ${err.message}`);
                     }
                 }
 
-                // trendingCourses.sort((a, b) => a.trendID.localeCompare(b.trendID));
-                // console.log("All Trending Courses:", trendingCourses);
-
                 if (trendingCourses.length === 0) {
-                    console.warn("No trending courses found. Check JSON files or isTrending fields.");
+                    console.warn("No trending courses found.");
                 }
 
                 setTrendingCourses(trendingCourses);
@@ -187,8 +177,7 @@ export function CategoriesProvider({ children }) {
             }
         };
         fetchTrendingCourses();
-    }, [categories, categoriesLoading, categoriesError]);
-
+    }, [categories, categoriesLoading, categoriesError, fetchCategoryDetails, categoryDetails, detailsError]);
 
     const contextValue = {
         categories,
@@ -198,11 +187,11 @@ export function CategoriesProvider({ children }) {
         detailsLoading,
         detailsError,
         fetchCategoryDetails,
-        courseDetails, // { courseID: { introduction, about, subjects } }
+        courseDetails,
         courseLoading,
         courseError,
-        fetchCourseDetails, // Function to fetch course by courseID
-        trendingCourses, // Array of { trendID, courseId, name, specialization, categoryId }
+        fetchCourseDetails,
+        trendingCourses,
         trendingLoading,
         trendingError,
     };
@@ -219,6 +208,5 @@ export function useCategories() {
     if (!context) {
         throw new Error("useCategories must be used within a CategoriesProvider");
     }
-
     return context;
 }
