@@ -1,7 +1,6 @@
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-import 'dotenv/config'
 import { errorMiddleware } from './src/middlewares/error-middleware.js';
 import { dbConnect } from './src/config/dbConnect.js';
 import CategoriesRouter from './src/routes/categories-router.js';
