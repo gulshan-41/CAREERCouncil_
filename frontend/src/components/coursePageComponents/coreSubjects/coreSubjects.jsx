@@ -15,14 +15,14 @@ function CoreSubjects({ data }) {
     // Fallback if data is not provided
     if (!data || !data.text) {
         return (
-            <section className="core-subjects courses-sub-section" id="syllabus">
+            <section className="core-subjects courses-sub-section" id="core-subjects">
                 <h2>Core subjects</h2>
                 <p>Not available.</p>
             </section>
         );
     }
     return (
-        <section className="core-subjects courses-sub-section">
+        <section className="core-subjects courses-sub-section" id="core-subjects">
             <h2>Core subjects</h2>
             <div className="content-box">
                 {data.text.map((block, index) => {

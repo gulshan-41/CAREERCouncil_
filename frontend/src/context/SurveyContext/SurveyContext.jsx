@@ -53,7 +53,7 @@ export function SurveyProvider({ children }) {
 
     const fetchUser = async () => {
         try {
-            console.log('Fetching user');
+            // console.log('Fetching user');
             const response = await fetch('http://localhost:8800/api/user/getuser', {
                 method: "GET",
                 headers: {

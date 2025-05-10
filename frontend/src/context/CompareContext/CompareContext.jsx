@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import { useCategories } from '/src/context/CategoriesProvider/CategoriesProvider';
 
 // Creating context for managing compare toggle visibility and selected courses
@@ -11,41 +11,46 @@ export function CompareProvider({ children }) {
     const [comparisonData, setComparisonData] = useState({});
     const { courseDetails, courseLoading, courseError, fetchCourseDetails } = useCategories();
 
+    // Reset compare state
+    const resetCompareState = () => {
+        setIsCompareMode(false);
+        setSelectedCourses([]);
+        setComparisonData({});
+    };
+
     // Enter compare mode
     const toggleCompareMode = () => {
         if (!isCompareMode) {
-            console.log('Entering compare mode');
             setIsCompareMode(true);
         }
     };
 
     // Exit compare mode and clear selections
     const exitCompareMode = () => {
-        console.log('Exiting compare mode');
-        setIsCompareMode(false);
-        setSelectedCourses([]);
-        setComparisonData({});
+        resetCompareState();
     };
 
     // Add or remove a course from the selected courses list
     const toggleCourseSelection = (courseID, courseData) => {
         setSelectedCourses((prev) => {
             if (prev.some((course) => course.courseID === courseID)) {
-                console.log(`Deselecting course: ${courseID}`);
-                return prev.filter((course) => course.courseID !== courseID);
+                const newCourses = prev.filter((course) => course.courseID !== courseID);
+                if (newCourses.length === 0) {
+                    // console.log('No courses selected, resetting compare state');
+                    resetCompareState();
+                }
+                return newCourses;
             }
             if (prev.length >= 2) {
-                console.log(`Cannot select more than 2 courses: ${courseID}`);
+                // console.log(`Cannot select more than 2 courses: ${courseID}`);
                 return prev; // Limit to 2 courses
             }
-            console.log(`Selecting course: ${courseID}`);
             return [...prev, { courseID, ...courseData }];
         });
     };
 
     // Update comparison data when selectedCourses or courseDetails changes
     useEffect(() => {
-        console.log('Selected courses changed:', selectedCourses);
         const updateComparisonData = async () => {
             const newComparisonData = {};
             for (const course of selectedCourses) {
@@ -53,43 +58,37 @@ export function CompareProvider({ children }) {
 
                 // Fetch course details if not already cached
                 if (!courseDetails[courseID] && !courseError[courseID]) {
-                    console.log(`Fetching details for course: ${courseID}`);
                     await fetchCourseDetails(courseID);
                 }
 
                 // Check for errors or loading state
                 if (courseError[courseID]) {
-                    console.error(`Error for course ${courseID}: ${courseError[courseID]}`);
                     newComparisonData[courseID] = [];
                     continue;
                 }
 
                 if (!courseDetails[courseID]) {
-                    newComparisonData[courseID] = []; // Data not yet loaded
+                    newComparisonData[courseID] = [];
                     continue;
                 }
 
-                // Extract diff-point items from introduction, prerequisites, and subjects
+                // Extract diff-point items from introduction, prerequisites, subjects, and jobRoles
                 try {
                     const data = courseDetails[courseID];
                     const diffPoints = [
-                        ...(data.introduction?.text || []),
-                        ...(data.prerequisites?.text || []),
-                        ...(data.subjects?.text || []),
+                        ...(data.introduction?.[0]?.text || []),
+                        ...(data.prerequisites?.[0]?.text || []),
+                        ...(data.subjects?.[0]?.text || []),
+                        ...(data.jobRoles?.[0]?.text || []),
                     ]
-                        .filter((item) => item.key === 'diff-point')
+                        .filter((item) => item?.key === 'diff-point')
                         .map((item) => ({
-                            point: item.content.substring(
-                                0,
-                                item.content.indexOf(':') !== -1
-                                    ? item.content.indexOf(':')
-                                    : item.content.length
-                            ).trim(),
                             value: item.content,
                         }));
+
                     newComparisonData[courseID] = diffPoints;
                 } catch (error) {
-                    console.error(`Error processing data for course ${courseID}:`, error.message);
+                    // console.error(`Error processing data for course ${courseID}:`, error.message);
                     newComparisonData[courseID] = [];
                 }
             }
@@ -103,19 +102,29 @@ export function CompareProvider({ children }) {
         }
     }, [selectedCourses, courseDetails, courseError, fetchCourseDetails]);
 
+    // Memoize context value to prevent unnecessary re-renders
+    const contextValue = useMemo(() => ({
+        isCompareMode,
+        toggleCompareMode,
+        exitCompareMode,
+        selectedCourses,
+        toggleCourseSelection,
+        comparisonData,
+        courseLoading,
+        courseError,
+    }), [
+        isCompareMode,
+        toggleCompareMode,
+        exitCompareMode,
+        selectedCourses,
+        toggleCourseSelection,
+        comparisonData,
+        courseLoading,
+        courseError,
+    ]);
+
     return (
-        <CompareContext.Provider
-            value={{
-                isCompareMode,
-                toggleCompareMode,
-                exitCompareMode,
-                selectedCourses,
-                toggleCourseSelection,
-                comparisonData,
-                courseLoading, // Added to context
-                courseError,   // Added to context
-            }}
-        >
+        <CompareContext.Provider value={contextValue}>
             {children}
         </CompareContext.Provider>
     );

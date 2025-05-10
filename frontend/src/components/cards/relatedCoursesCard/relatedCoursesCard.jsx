@@ -2,11 +2,11 @@ import "./relatedCoursesCard.scss";
 import { useNavigate } from "react-router-dom";
 import { useCompare } from "/src/context/CompareContext/CompareContext";
 
-function RelatedCoursesCard({ courseID, name, specialization, courseData }) {
+function RelatedCoursesCard({ courseID, name, specialization }) {
     const navigate = useNavigate();
     const { isCompareMode, toggleCompareMode, selectedCourses, toggleCourseSelection } = useCompare();
 
-    const handleNavigate = (e) => {
+    const handleNavigate = () => {
         // Prevent navigation when in compare mode or clicking compare-toggle
         // if (isCompareMode || e.target.classList.contains("compare-toggle")) {
         //     return;

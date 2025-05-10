@@ -19,8 +19,6 @@ import SignupModal from "./pages/signupPages/signupModal";
 import { SurveyProvider } from "./context/SurveyContext/SurveyContext";
 import { CategoriesProvider } from "./context/CategoriesProvider/CategoriesProvider";
 import { CompareProvider } from "./context/CompareContext/CompareContext";
-import CompareCapsule from "./components/categoryPageComponent/compareCapsule/compareCapsule";
-import CompareGrid from "./components/categoryPageComponent/comparisonGrid/comparisonGrid";
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
@@ -59,8 +57,6 @@ function App() {
                             </Route>
                             <Route path="signup-login-modal" element={<SignupModal />} />
                         </Routes>
-                        <CompareCapsule />
-                        <CompareGrid />
                     </Router>
 
                     <ToastContainer

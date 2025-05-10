@@ -5,7 +5,7 @@ function Subjects({ data }) {
     // Fallback if data is not provided
     if (!data || !data.text) {
         return (
-            <section className="prerequisite-subjects" id="subjects">
+            <section className="prerequisite-subjects" id="prerequisitie">
                 <h2>Prerequisites</h2>
                 <p>Not available.</p>
             </section>
@@ -13,7 +13,7 @@ function Subjects({ data }) {
     }
 
     return ( 
-        <section className="prerequisite-subjects courses-sub-section" id="subjects">
+        <section className="prerequisite-subjects courses-sub-section" id="prerequisitie">
             <h2>Prerequisites</h2>
             <div className="content-box">
             {/* Map over the text array to render each block */}

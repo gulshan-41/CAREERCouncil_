@@ -1,0 +1,84 @@
+.trending-courses-grid1,
+.trending-courses-grid2 {
+    max-width: 1536px;
+    width: 100%;
+    height: 223px;
+    margin-inline: auto;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .trending-course-card-wrapper {
+            animation-play-state: paused !important;
+        }
+
+        .trending-course-card-wrapper-rv {
+            animation-play-state: paused !important;
+        }
+    }
+}
+
+.trending-course-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 230px;
+    height: 220px;
+    border: 1px solid #a5a5a5;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(230px * var(--total-cardsONE));
+    animation: cardsScroll 30s linear infinite;
+    animation-delay: calc((30s / var(--total-cardsONE)) * (var(--position) - 1));
+    cursor: pointer;
+}
+
+.trending-course-card-wrapper-rv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 230px;
+    height: 220px;
+    border: 1px solid #a5a5a5;
+    border-radius: 8px;
+    position: absolute;
+    right: calc(230px * var(--total-cardsTWO));
+    animation: RVcardsScroll 30s linear infinite;
+    animation-delay: calc((30s / var(--total-cardsTWO)) * (var(--position) - 1));
+    cursor: pointer;
+}
+
+@keyframes cardsScroll {
+    to {
+        left: -230px;
+    }
+}
+
+@keyframes RVcardsScroll {
+    to {
+        right: -230px;
+    }
+}
+
+.tcourse-name {
+    padding: 20px;
+    box-sizing: border-box;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.tcourse-field {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #203864;
+    border-radius: 7px;
+    transition: bottom 0.4ms;
+
+    .tfield-box {
+        color: #fff;
+        font-size: 0.85rem;
+    }
+}

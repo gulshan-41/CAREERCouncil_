@@ -1,18 +1,20 @@
 import "./categoryDetail.scss";
 import React, { forwardRef } from "react";
-import { useCategoriesContext } from "/src/pages/mainPages/categoriesPage/categoriesPage";
 import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvider";
 import RelatedCoursesCardsGrid from "../../cardsGrid/relatedCoursesCardsGrid/relatedCoursesCardsGrid";
 
+// CategoryDetails component to display details for a specific category
 const CategoryDetails = forwardRef(({ catID }, ref) => {
-    const { closeCategory } = useCategoriesContext();
-    const { categoryDetails, detailsLoading, detailsError } = useCategories();
+    // Access context for category data and closeCategory function
+    const { closeCategory, categoryDetails, detailsLoading, detailsError } = useCategories();
     const categoryData = categoryDetails[catID] || { introduction: [], relatedCourses: [] };
 
+    // Check if catID is provided
     if (!catID) {
         return null;
     }
 
+    // Display loading state
     if (detailsLoading[catID]) {
         return (
             <div className="cat-into-hero">
@@ -23,12 +25,14 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
         );
     }
 
+    // Display error state
     if (detailsError[catID]) {
-        return <div className="error-section">Error: {detailsError[catID]}</div>;
+        return <div className="error-section">Error: ${detailsError[catID]}</div>;
     }
 
+    // Render category details
     return (
-        <section ref={ref} className="cat-info-section">
+        <section id={`category-details-${catID}`} ref={ref} className="cat-info-section">
             <div className="each-cat-intro">
                 {categoryData.introduction.map((block, index) => {
                     switch (block.type) {
@@ -57,7 +61,12 @@ const CategoryDetails = forwardRef(({ catID }, ref) => {
                 <h3>Related Courses</h3>
                 <RelatedCoursesCardsGrid catID={catID} />
             </div>
-            <div className="cut-cat" onClick={() => closeCategory(catID)}>
+            <div
+                className="cut-cat"
+                onClick={() => {
+                    closeCategory(catID);
+                }}
+            >
                 <svg
                     id="hcat-toggle-icon"
                     xmlns="http://www.w3.org/2000/svg"

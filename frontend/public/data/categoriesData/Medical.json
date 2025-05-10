@@ -30,174 +30,237 @@
             "trendID": "MBBS-TID",
             "CO-ID": "MBBS",
             "name": "MBBS",
-            "specialization": "Medicine"
+            "specialization": "Medicine",
+            "description": "The Bachelor of Medicine, Bachelor of Surgery (MBBS) is a five-and-a-half-year undergraduate program, including a one-year internship. It provides comprehensive training in medicine, surgery, and clinical practice, preparing students for careers as licensed doctors in hospitals, clinics, or private practice."
         },
         {
-            "isTrending": "false",
+            "isTrending": "true",
+            "trendID": "BDS-TID",
             "CO-ID": "BDS",
             "name": "BDS",
-            "specialization": "Dentistry"
+            "specialization": "Dentistry",
+            "description": "The Bachelor of Dental Surgery (BDS) is a five-year undergraduate program, including a one-year internship. It focuses on dental care, oral surgery, and patient management, equipping students for careers as dentists in clinics, hospitals, or private practice."
         },
         {
             "isTrending": "false",
             "CO-ID": "BAMS",
             "name": "BAMS",
-            "specialization": "Ayurvedic Medicine"
+            "specialization": "Ayurvedic Medicine",
+            "description": "The Bachelor of Ayurvedic Medicine and Surgery (BAMS) is a five-and-a-half-year program, including a one-year internship. It trains students in traditional Indian Ayurvedic practices, preparing them for careers as Ayurvedic doctors or wellness consultants."
         },
         {
             "isTrending": "false",
             "CO-ID": "BHMS",
             "name": "BHMS",
-            "specialization": "Homeopathic Medicine"
+            "specialization": "Homeopathic Medicine",
+            "description": "The Bachelor of Homeopathic Medicine and Surgery (BHMS) is a five-and-a-half-year program, including a one-year internship. It focuses on homeopathic treatment methods, enabling graduates to practice as homeopathic doctors in clinics or private settings."
         },
         {
             "isTrending": "false",
             "CO-ID": "BUMS",
             "name": "BUMS",
-            "specialization": "Unani Medicine"
+            "specialization": "Unani Medicine",
+            "description": "The Bachelor of Unani Medicine and Surgery (BUMS) is a five-and-a-half-year program, including a one-year internship. It trains students in traditional Unani medicine, preparing them for careers as Unani practitioners in healthcare or wellness centers."
         },
         {
-            "isTrending": "true",
-            "trendID": "BSCNursing-TID",
+            "isTrending": "false",
             "CO-ID": "B.sc-Nursing",
             "name": "B.Sc Nursing",
-            "specialization": "Nursing"
+            "specialization": "Nursing",
+            "description": "The Bachelor of Science in Nursing (B.Sc Nursing) is a four-year undergraduate program combining theoretical and clinical training. It prepares students for patient care roles in hospitals, clinics, or community health, with opportunities for advanced certifications."
         },
         {
             "isTrending": "false",
             "CO-ID": "BPT",
             "name": "BPT",
-            "specialization": "Physiotherapy"
+            "specialization": "Physiotherapy",
+            "description": "The Bachelor of Physiotherapy (BPT) is a four-and-a-half-year program, including a six-month internship. It focuses on physical therapy and rehabilitation, training students for careers as physiotherapists in hospitals, sports facilities, or private clinics."
         },
         {
             "isTrending": "false",
             "CO-ID": "BOT",
             "name": "BOT",
-            "specialization": "Occupational Therapy"
+            "specialization": "Occupational Therapy",
+            "description": "The Bachelor of Occupational Therapy (BOT) is a four-and-a-half-year program, including a six-month internship. It trains students to help individuals achieve independence in daily activities, preparing them for careers in hospitals, rehabilitation centers, or schools."
         },
         {
             "isTrending": "false",
             "CO-ID": "Optometry",
             "name": "B.Optom",
-            "specialization": "Optometry"
+            "specialization": "Optometry",
+            "description": "The Bachelor of Optometry (B.Optom) is a four-year program, including a one-year internship. It focuses on eye care, vision correction, and diagnosing eye disorders, preparing students for careers as optometrists in clinics, hospitals, or optical centers."
         },
         {
             "isTrending": "false",
             "CO-ID": "B.Pharm",
             "name": "B.Pharm",
-            "specialization": "Pharmacy"
+            "specialization": "Pharmacy",
+            "description": "The Bachelor of Pharmacy (B.Pharm) is a four-year undergraduate program focusing on pharmaceutical sciences, drug development, and patient care. It prepares students for careers as pharmacists in hospitals, retail pharmacies, or the pharmaceutical industry."
         },
         {
             "isTrending": "false",
             "CO-ID": "BMLT",
             "name": "BMLT",
-            "specialization": "Medical Laboratory Technology"
+            "specialization": "Medical Laboratory Technology",
+            "description": "The Bachelor of Medical Laboratory Technology (BMLT) is a three-year program training students in laboratory diagnostics and analysis. Graduates work as lab technicians in hospitals, diagnostic centers, or research facilities, ensuring accurate medical testing."
         },
         {
             "isTrending": "false",
             "CO-ID": "B.Sc-Medical-Imaging-Technology",
             "name": "B.Sc Medical Imaging Technology",
-            "specialization": "Diagnostic Imaging"
+            "specialization": "Diagnostic Imaging",
+            "description": "The B.Sc in Medical Imaging Technology is a three-year program focusing on diagnostic imaging techniques like X-ray, CT, and MRI. It prepares students for careers as radiographers or imaging technologists in hospitals and diagnostic centers."
         },
         {
             "isTrending": "false",
             "CO-ID": "Biotechnology",
             "name": "B.Sc Biotechnology",
-            "specialization": "Biotechnology"
+            "specialization": "Biotechnology",
+            "description": "The B.Sc in Biotechnology is a three-year program exploring biological systems for technological advancements. Graduates pursue careers in research, pharmaceuticals, or healthcare, contributing to innovations in medicine and biotechnology."
         },
         {
-            "isTrending": "true",
-            "trendID": "Nutrition-TID",
+            "isTrending": "false",
             "CO-ID": "Nutrition-Dietetics",
             "name": "B.Sc Nutrition and Dietetics",
-            "specialization": "Nutrition"
+            "specialization": "Nutrition",
+            "description": "The B.Sc in Nutrition and Dietetics is a three-year program studying nutrients and their impact on health. Graduates work as dietitians or nutritionists in hospitals, wellness centers, or public health, promoting healthy eating and disease prevention."
         },
         {
             "isTrending": "false",
             "CO-ID": "MD",
             "name": "MD (Doctor of Medicine)",
-            "specialization": "Specialized Medicine"
+            "specialization": "Specialized Medicine",
+            "description": "The Doctor of Medicine (MD) is a three-year postgraduate program offering specialization in fields like cardiology, pediatrics, or radiology. It prepares doctors for advanced clinical practice, research, or teaching in hospitals and medical institutions."
         },
         {
             "isTrending": "false",
             "CO-ID": "MS",
             "name": "MS (Master of Surgery)",
-            "specialization": "Surgical Training"
+            "specialization": "Surgical Training",
+            "description": "The Master of Surgery (MS) is a three-year postgraduate program providing advanced surgical training in specialties like orthopedics or neurosurgery. It equips doctors for careers as surgeons in hospitals or specialized surgical centers."
         },
         {
             "isTrending": "false",
             "CO-ID": "Preproduction-Technology",
             "name": "M.Sc Assisted Reproduction Technology",
-            "specialization": "Embryology"
+            "specialization": "Embryology",
+            "description": "The M.Sc in Assisted Reproduction Technology is a two-year program focusing on embryology and reproductive techniques like IVF. Graduates work as embryologists or fertility specialists in clinics, hospitals, or research institutions."
         },
         {
             "isTrending": "false",
             "CO-ID": "Pharamedical-Technology",
             "name": "M.Sc Paramedical Technology",
-            "specialization": "Paramedical Sciences"
+            "specialization": "Paramedical Sciences",
+            "description": "The M.Sc in Paramedical Technology is a two-year program offering advanced training in paramedical fields like radiology or lab technology. It prepares professionals for specialized roles in hospitals, diagnostic centers, or healthcare education."
         },
         {
             "isTrending": "false",
             "CO-ID": "Laboratory-Technology",
             "name": "Diploma in Medical Laboratory Technology",
-            "specialization": "Lab Technology"
+            "specialization": "Lab Technology",
+            "description": "The Diploma in Medical Laboratory Technology is a two-year program training students in diagnostic testing and lab procedures. Graduates work as lab technicians in hospitals, clinics, or diagnostic labs, supporting medical diagnostics."
         },
         {
             "isTrending": "false",
             "CO-ID": "Dialysis-Technology",
             "name": "Diploma in Dialysis Technology",
-            "specialization": "Renal Care"
+            "specialization": "Renal Care",
+            "description": "The Diploma in Dialysis Technology is a two-year program focusing on operating dialysis machines and caring for kidney patients. Graduates work as dialysis technicians in hospitals or renal care centers, supporting patient treatment."
         },
         {
             "isTrending": "false",
             "CO-ID": "Anaesthesia-Technology",
             "name": "Diploma in Anaesthesia Technology",
-            "specialization": "Anaesthesia"
+            "specialization": "Anaesthesia",
+            "description": "The Diploma in Anaesthesia Technology is a two-year program training students to assist anesthesiologists in administering anesthesia. Graduates work as anesthesia technicians in operating rooms, hospitals, or surgical centers."
         },
         {
             "isTrending": "false",
             "CO-ID": "Clinical-Research",
             "name": "PG Diploma in Clinical Research",
-            "specialization": "Clinical Trials"
+            "specialization": "Clinical Trials",
+            "description": "The PG Diploma in Clinical Research is a one-year program focusing on designing, conducting, and analyzing clinical trials. It prepares professionals for careers in pharmaceutical research, regulatory affairs, or clinical research organizations."
         },
         {
             "isTrending": "false",
             "CO-ID": "Pulmonology",
             "name": "Fellowship in Pulmonology",
-            "specialization": "Pulmonary Care"
+            "specialization": "Pulmonary Care",
+            "description": "The Fellowship in Pulmonology is a one-to-two-year advanced program for doctors specializing in lung diseases. It covers diagnosis, treatment, and procedures like bronchoscopy, preparing specialists for careers in hospitals or respiratory care units."
         },
         {
             "isTrending": "false",
             "CO-ID": "Gastroenterology",
             "name": "Fellowship in Gastroenterology",
-            "specialization": "Gastrointestinal Disorders"
+            "specialization": "Gastrointestinal Disorders",
+            "description": "The Fellowship in Gastroenterology is a one-to-two-year program for doctors specializing in gastrointestinal and liver diseases. It includes training in endoscopy and patient management, preparing specialists for hospital or clinic roles."
         },
         {
             "isTrending": "false",
             "CO-ID": "Clinical-Oncology",
             "name": "Fellowship in Clinical Oncology",
-            "specialization": "Cancer Management"
+            "specialization": "Cancer Management",
+            "description": "The Fellowship in Clinical Oncology is a one-to-two-year program for doctors specializing in cancer diagnosis and treatment. It covers chemotherapy, radiation, and patient care, preparing oncologists for roles in cancer centers or hospitals."
         },
         {
-            "isTrending": "true",
-            "trendID": "HealthInformatics-TID",
+            "isTrending": "false",
             "CO-ID": "Health-Informatics",
             "name": "PG Diploma in Health Informatics",
-            "specialization": "Healthcare IT"
+            "specialization": "Healthcare IT",
+            "description": "The PG Diploma in Health Informatics is a one-year program focusing on healthcare IT, including electronic health records and data management. It prepares professionals to enhance healthcare delivery through technology in hospitals or IT firms."
         },
         {
             "isTrending": "true",
             "trendID": "HealthcareManagement-TID",
             "CO-ID": "Healthcare-Management",
             "name": "Executive MBA in Healthcare Management",
-            "specialization": "Hospital Management"
+            "specialization": "Hospital Management",
+            "description": "The Executive MBA in Healthcare Management is a two-year program for working professionals, blending business and healthcare knowledge. It covers hospital administration, policy, and leadership, preparing graduates for management roles in healthcare organizations."
         },
         {
-            "isTrending": "true",
-            "trendID": "HospitalManagement-TID",
+            "isTrending": "false",
             "CO-ID": "Hospital-Management",
             "name": "PG Diploma in Hospital Management",
-            "specialization": "Healthcare Administration"
+            "specialization": "Healthcare Administration",
+            "description": "The PG Diploma in Hospital Management is a one-year program focusing on hospital operations, finance, and quality assurance. It prepares students for administrative roles in hospitals, clinics, or healthcare organizations, ensuring efficient management."
+        }
+    ],
+    "recommendedCourses": [
+        {
+            "CO-ID": "MBBS",
+            "name": "MBBS",
+            "specialization": "Medicine",
+            "description": "The Bachelor of Medicine, Bachelor of Surgery (MBBS) is a five-and-a-half-year undergraduate program, including a one-year internship. It provides comprehensive training in medicine, surgery, and clinical practice, preparing students for careers as licensed doctors in hospitals, clinics, or private practice."
+        },
+        {
+            "CO-ID": "B.sc-Nursing",
+            "name": "B.Sc Nursing",
+            "specialization": "Nursing",
+            "description": "The Bachelor of Science in Nursing (B.Sc Nursing) is a four-year undergraduate program combining theoretical and clinical training. It prepares students for patient care roles in hospitals, clinics, or community health, with opportunities for advanced certifications."
+        },
+        {
+            "CO-ID": "Nutrition-Dietetics",
+            "name": "B.Sc Nutrition and Dietetics",
+            "specialization": "Nutrition",
+            "description": "The B.Sc in Nutrition and Dietetics is a three-year program studying nutrients and their impact on health. Graduates work as dietitians or nutritionists in hospitals, wellness centers, or public health, promoting healthy eating and disease prevention."
+        },
+        {
+            "CO-ID": "Health-Informatics",
+            "name": "PG Diploma in Health Informatics",
+            "specialization": "Healthcare IT",
+            "description": "The PG Diploma in Health Informatics is a one-year program focusing on healthcare IT, including electronic health records and data management. It prepares professionals to enhance healthcare delivery through technology in hospitals or IT firms."
+        },
+        {
+            "CO-ID": "Healthcare-Management",
+            "name": "Executive MBA in Healthcare Management",
+            "specialization": "Hospital Management",
+            "description": "The Executive MBA in Healthcare Management is a two-year program for working professionals, blending business and healthcare knowledge. It covers hospital administration, policy, and leadership, preparing graduates for management roles in healthcare organizations."
+        },
+        {
+            "CO-ID": "Hospital-Management",
+            "name": "PG Diploma in Hospital Management",
+            "specialization": "Healthcare Administration",
+            "description": "The PG Diploma in Hospital Management is a one-year program focusing on hospital operations, finance, and quality assurance. It prepares students for administrative roles in hospitals, clinics, or healthcare organizations, ensuring efficient management."
         }
     ]
 }

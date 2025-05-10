@@ -1,33 +1,44 @@
 import { createContext, useContext, useState, useEffect, useCallback, useRef } from "react";
 
+// Creating context for categories data
 const CategoriesContext = createContext();
 
+// CategoriesProvider component to manage and provide category-related state and functions
 export function CategoriesProvider({ children }) {
+    // State for categories list and its loading/error status
     const [categories, setCategories] = useState([]);
     const [categoriesLoading, setCategoriesLoading] = useState(true);
     const [categoriesError, setCategoriesError] = useState(null);
 
+    // State for category details and their loading/error status
     const [categoryDetails, setCategoryDetails] = useState({});
     const [detailsLoading, setDetailsLoading] = useState({});
     const [detailsError, setDetailsError] = useState({});
 
+    // State for course details and their loading/error status
     const [courseDetails, setCourseDetails] = useState({});
-    const [courseLoading, setCourseLoading] = useState(false);
+    const [courseLoading, setCourseLoading] = useState({});
     const [courseError, setCourseError] = useState({});
 
+    // State for trending courses and their loading/error status
     const [trendingCourses, setTrendingCourses] = useState([]);
     const [trendingLoading, setTrendingLoading] = useState(true);
     const [trendingError, setTrendingError] = useState(null);
 
+    // State for toggled categories and open dropdowns
+    const [toggledCategories, setToggledCategories] = useState([]);
+    const [openDropdowns, setOpenDropdowns] = useState([]);
+
+    // Ref to track fetch promises and prevent duplicate category fetches
     const fetchPromises = useRef({});
     const hasFetchedCategories = useRef(false);
 
+    // Effect to fetch categories list on component mount
     useEffect(() => {
         if (hasFetchedCategories.current) return;
 
         const fetchCategories = async () => {
             hasFetchedCategories.current = true;
-            console.log('Fetching categories list');
             try {
                 const response = await fetch("http://localhost:8800/api/categories/getcategorieslist", {
                     method: 'GET',
@@ -49,11 +60,13 @@ export function CategoriesProvider({ children }) {
         };
         fetchCategories();
 
+        // Cleanup fetch promises on unmount
         return () => {
             fetchPromises.current = {};
         };
     }, []);
 
+    // Callback to fetch category details by catID
     const fetchCategoryDetails = useCallback(async (catID) => {
         if (categoryDetails[catID]) {
             return;
@@ -102,32 +115,92 @@ export function CategoriesProvider({ children }) {
         return promise;
     }, [categoryDetails]);
 
+    // Function to fetch course details by courseID
     const fetchCourseDetails = async (courseID) => {
-        if (courseDetails[courseID]) return;
-        setCourseLoading(true);
-        try {
-            const response = await fetch(`http://localhost:8800/api/course/getcourse/${courseID}`, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-            }).then((data) => data.json());
-
-            if (!response.success) {
-                throw new Error(`Failed to fetch course ${courseID}`);
-            }
-
-            const data = response.getCourseData;
-
-            setCourseDetails((prev) => ({ ...prev, [courseID]: data }));
-            setCourseError((prev) => ({ ...prev, [courseID]: null }));
-        } catch (error) {
-            setCourseError((prev) => ({ ...prev, [courseID]: error.message }));
-        } finally {
-            setCourseLoading(false);
+        if (courseDetails[courseID]) {
+            return;
         }
+
+        if (fetchPromises.current[courseID]) {
+            return fetchPromises.current[courseID];
+        }
+
+        setCourseLoading((prev) => ({ ...prev, [courseID]: true }));
+        setCourseError((prev) => ({ ...prev, [courseID]: null }));
+
+        const promise = fetch(`http://localhost:8800/api/course/getcourse/${courseID}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then((response) => response.json())
+            .then((response) => {
+                if (!response.success) {
+                    throw new Error(`Failed to fetch course ${courseID}: ${response.message || 'Unknown error'}`);
+                }
+
+                const data = response.getCourseData;
+                setCourseDetails((prev) => ({ ...prev, [courseID]: data }));
+                setCourseError((prev) => ({ ...prev, [courseID]: null }));
+                return data;
+            })
+            .catch((error) => {
+                setCourseError((prev) => ({ ...prev, [courseID]: error.message }));
+                throw error;
+            })
+            .finally(() => {
+                setCourseLoading((prev) => ({ ...prev, [courseID]: false }));
+                delete fetchPromises.current[courseID];
+            });
+
+        fetchPromises.current[courseID] = promise;
+        return promise;
     };
 
+    // Function to toggle a category (add to toggledCategories and openDropdowns)
+    const toggleCategory = (catID) => {
+        setToggledCategories((prev) => {
+            if (prev.includes(catID)) {
+                return prev;
+            }
+            const newToggled = [...prev, catID];
+            fetchCategoryDetails(catID);
+            return newToggled;
+        });
+
+        setOpenDropdowns((prev) => {
+            if (prev.includes(catID)) {
+                return prev;
+            }
+            const newOpen = [...prev, catID];
+            return newOpen;
+        });
+    };
+
+    // Function to close a category (remove from toggledCategories and openDropdowns)
+    const closeCategory = (catID) => {
+        setToggledCategories((prev) => {
+            const newToggled = prev.filter((id) => id !== catID);
+            return newToggled;
+        });
+        setOpenDropdowns((prev) => {
+            const newOpen = prev.filter((id) => id !== catID);
+            return newOpen;
+        });
+    };
+
+    // Function to toggle dropdown state for a category
+    const toggleDropdown = (catID) => {
+        setOpenDropdowns((prev) => {
+            const newOpen = prev.includes(catID)
+                ? prev.filter((id) => id !== catID)
+                : [...prev, catID];
+            return newOpen;
+        });
+    };
+
+    // Effect to fetch trending courses based on specific categories
     useEffect(() => {
         const fetchTrendingCourses = async () => {
             if (categoriesLoading || categoriesError) {
@@ -154,7 +227,7 @@ export function CategoriesProvider({ children }) {
                             .filter((course) => course.isTrending === "true")
                             .map((course) => ({
                                 trendID: course.trendID,
-                                courseId: course["CO-ID"],
+                                courseID: course["CO-ID"],
                                 name: course.name,
                                 specialization: course.specialization,
                                 categoryId: category.catID,
@@ -164,13 +237,12 @@ export function CategoriesProvider({ children }) {
                 }
 
                 if (trendingCourses.length === 0) {
-                    console.warn("No trending courses found.");
+                    // No trending courses found
                 }
 
                 setTrendingCourses(trendingCourses);
                 setTrendingError(null);
             } catch (err) {
-                console.error("Trending courses error:", err.message);
                 setTrendingError(err.message);
             } finally {
                 setTrendingLoading(false);
@@ -179,6 +251,7 @@ export function CategoriesProvider({ children }) {
         fetchTrendingCourses();
     }, [categories, categoriesLoading, categoriesError, fetchCategoryDetails, categoryDetails, detailsError]);
 
+    // Context value containing all state and functions
     const contextValue = {
         categories,
         categoriesLoading,
@@ -194,8 +267,14 @@ export function CategoriesProvider({ children }) {
         trendingCourses,
         trendingLoading,
         trendingError,
+        toggledCategories,
+        openDropdowns,
+        toggleCategory,
+        closeCategory,
+        toggleDropdown,
     };
 
+    // Provide context to children components
     return (
         <CategoriesContext.Provider value={contextValue}>
             {children}
@@ -203,6 +282,7 @@ export function CategoriesProvider({ children }) {
     );
 }
 
+// Hook to access CategoriesContext
 export function useCategories() {
     const context = useContext(CategoriesContext);
     if (!context) {

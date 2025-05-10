@@ -1,0 +1,54 @@
+.compare-grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.compare-grid {
+    height: 86dvh;
+    max-width: 940px;
+    background-color: #fff;
+    border: 1px solid #a5a5a5;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.table-wrapper {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.comparison-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+        .parameters {
+            min-width: 90px;
+        }
+
+        .points {
+            min-width: 220px;
+        }
+    }
+
+    th, td {
+        border: 1px solid #a5a5a5;
+        padding: 8px 16px;
+        text-align: start;
+        vertical-align: top;
+    }
+
+    th {
+        text-align: center;
+    }
+}

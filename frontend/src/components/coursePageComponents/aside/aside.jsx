@@ -29,8 +29,8 @@ function Aside() {
             <nav className={`links-grid-wrapper ${isTableOpen ? "open" : "closed"}`}>
                 <ul className="content-links">
                     <li><a href="#course-introduction">Introduction</a></li>
-                    <li><a href="#subjects">Subjects</a></li>
-                    <li><a href="#prerequisities">Prerequisites</a></li>
+                    <li><a href="#prerequisitie">Prerequisites</a></li>
+                    <li><a href="#core-subjects">Core subjects</a></li>
                     <li><a href="#recommended-colleges">Recommended colleges</a></li>
                     <li><a href="#job-opportunities">Job opportunities</a></li>
                 </ul>

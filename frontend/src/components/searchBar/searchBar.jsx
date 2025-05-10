@@ -20,7 +20,8 @@ function SearchBar() {
     };
 
     const handleCategoryClick = (catID) => {
-        navigate(`/categories/${catID}`);
+        // Navigate to /categories and pass catID in state
+        navigate("/categories", { state: { catID } });
         setToOpenCategories(false); // Close CategoriesGrid on navigation
     };
 

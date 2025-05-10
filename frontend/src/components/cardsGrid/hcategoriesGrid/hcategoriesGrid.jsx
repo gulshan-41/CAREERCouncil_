@@ -2,13 +2,33 @@ import "./hcategoriesGrid.scss";
 import { useState } from "react";
 import HcategoriesCard from "/src/components/cards/hcategoriesCard/HcategoriesCard";
 import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvider";
+import { useNavigate } from "react-router-dom";
 
 function HcategoriesGrid() {
-    const { categories, categoriesLoading, categoriesError } = useCategories();
-    const [areAllcatsOpen, setAllcatsToOpne] = useState(false);
+    const { categories, categoriesLoading, categoriesError, toggleCategory, toggledCategories } = useCategories();
+    
+    const navigate = useNavigate();
+
+    const [areAllcatsOpen, setAllcatsToOpen] = useState(false);
+
+    const handleCategoryClick = (catID) => {
+        if (toggledCategories.includes(catID)) {
+            navigate("/categories");
+            setTimeout(() => {
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                } else {
+                    console.warn(`No element found for category-details-${catID}`);
+                }
+            }, 100);
+        } else {
+            toggleCategory(catID);
+            navigate("/categories");
+        }
+    };
 
     const toggleAllCats = () => {
-        setAllcatsToOpne((prev) => !prev);
+        setAllcatsToOpen((prev) => !prev);
     };
 
     if (categoriesLoading) {
@@ -16,7 +36,7 @@ function HcategoriesGrid() {
     }
 
     if (categoriesError) {
-        return <div className="hcat-grid-error">Error: {categoriesError}</div>;
+        return <div className="hcat-grid-error">Error: ${categoriesError}</div>;
     }
 
     const showCards = categories.slice(0, 6);
@@ -31,6 +51,7 @@ function HcategoriesGrid() {
                         catID={category.catID}
                         text={category.text}
                         description={category.description}
+                        onClick={() => handleCategoryClick(category.catID)}
                     />
                 ))}
             </div>
@@ -42,6 +63,7 @@ function HcategoriesGrid() {
                             catID={category.catID}
                             text={category.text}
                             description={category.description}
+                            onClick={() => handleCategoryClick(category.catID)}
                         />
                     ))}
                 </div>
@@ -54,10 +76,10 @@ function HcategoriesGrid() {
                         height="28px"
                         viewBox="0 -960 960 960"
                         width="28px"
-                        fill="#8724DB">
+                        fill="#8724DB"
+                    >
                         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
                     </svg>
-
                     {areAllcatsOpen ? "close" : "Browse all categories"}
                 </p>
             </div>

@@ -6,7 +6,12 @@
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "A four years UG program, Aeronautical Engineering is an exciting undergraduate course that explores the science and technology of designing, building, and maintaining aircraft. This program equips students with the skills to innovate and create flying machines like airplanes, helicopters, and drones, ensuring they are safe, efficient, and capable of navigating Earth's atmosphere. Combining theoretical knowledge with hands-on practical training, it's perfect for those passionate about aviation and engineering."
+                "content": "A four years UG program, Aeronautical Engineering is an exciting undergraduate course that explores the science and technology of designing, building, and maintaining aircraft."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "This program equips students with the skills to innovate and create flying machines like airplanes, helicopters, and drones, ensuring they are safe, efficient, and capable of navigating Earth's atmosphere. Combining theoretical knowledge with hands-on practical training, it's perfect for those passionate about aviation and engineering."
             },
             {
                 "type": "heading",
@@ -353,6 +358,7 @@
                 "content": "How a Student Might See Themselves After Completing the Course"
             },
             {
+                "key": "diff-point",
                 "type": "paragraph",
                 "content": "Completing an Aeronautical Engineering degree equips students with technical expertise, practical skills, and a mindset geared toward innovation and problem-solving. Graduates are likely to envision themselves as professionals making significant contributions to aviation, defense, or space exploration."
             },

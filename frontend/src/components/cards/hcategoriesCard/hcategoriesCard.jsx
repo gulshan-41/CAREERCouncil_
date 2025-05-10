@@ -1,15 +1,8 @@
 import "./hcategoriesCard.scss";
-import { useNavigate } from "react-router-dom";
 
-function HcategoriesCard({ catID, text, description }) {
-    const navigate = useNavigate();
-
-    const handleNavigate = () => {
-        navigate(`/categories/${catID}`);
-    };
-
+function HcategoriesCard({ catID, text, description, onClick }) {
     return (
-        <div className="hcat-card-wrapper" onClick={handleNavigate}>
+        <div className="hcat-card-wrapper" onClick={onClick}>
             <div className="cat-head">
                 <h3>{text}</h3>
                 <div className="btn-cover">

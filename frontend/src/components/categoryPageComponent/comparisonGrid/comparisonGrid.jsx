@@ -1,8 +1,8 @@
 import "./comparisonGrid.scss";
-import { useCompare } from "/src/context/CompareContext/CompareContext";
+import { useCompare } from "../../../context/CompareContext/CompareContext";
 
 function CompareGrid() {
-    const { selectedCourses, comparisonData, courseLoading, courseError, toggleCourseSelection } = useCompare();
+    const { selectedCourses, comparisonData, courseLoading, courseError } = useCompare();
 
     // Only render when exactly 2 courses are selected
     if (selectedCourses.length !== 2) {
@@ -33,31 +33,30 @@ function CompareGrid() {
                         {courseError[course1ID] ? `Error for ${course1.name}: ${courseError[course1ID]}` : ""}
                         {courseError[course2ID] ? `Error for ${course2.name}: ${courseError[course2ID]}` : ""}
                     </div>
-                    <button className="close-button" onClick={() => toggleCourseSelection(course1ID, course1)}>
-                        Close
-                    </button>
                 </div>
             </div>
         );
     }
 
-    // Get unique diff-point keys
+    // Define parameters (manually set criteria)
+    const parameters = [
+        "Duration",
+        "Eligibility",
+        "Career Prospects",
+        "Course Fee",
+        "Certification"
+    ];
+
+    // Get diff-point values for each course
     const diffPoints1 = comparisonData[course1ID] || [];
     const diffPoints2 = comparisonData[course2ID] || [];
-    const allPoints = [...new Set([
-        ...diffPoints1.map(item => item.point),
-        ...diffPoints2.map(item => item.point)
-    ])];
 
     // Handle empty data
-    if (allPoints.length === 0) {
+    if (diffPoints1.length === 0 && diffPoints2.length === 0) {
         return (
             <div className="compare-grid-overlay">
                 <div className="compare-grid">
                     <div className="no-data">No comparison data available.</div>
-                    <button className="close-button" onClick={() => toggleCourseSelection(course1ID, course1)}>
-                        Close
-                    </button>
                 </div>
             </div>
         );
@@ -66,50 +65,26 @@ function CompareGrid() {
     return (
         <div className="compare-grid-overlay">
             <div className="compare-grid">
-                <button
-                    className="close-button"
-                    onClick={() => toggleCourseSelection(course1ID, course1)} // Close grid by removing one course
-                >
-                    ×
-                </button>
-                <table className="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Criteria</th>
-                            <th>
-                                {course1.name}
-                                <button
-                                    className="remove-course"
-                                    onClick={() => toggleCourseSelection(course1ID, course1)}
-                                >
-                                    Remove
-                                </button>
-                            </th>
-                            <th>
-                                {course2.name}
-                                <button
-                                    className="remove-course"
-                                    onClick={() => toggleCourseSelection(course2ID, course2)}
-                                >
-                                    Remove
-                                </button>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {allPoints.map((point, index) => {
-                            const point1 = diffPoints1.find(item => item.point === point);
-                            const point2 = diffPoints2.find(item => item.point === point);
-                            return (
+                <div className="table-wrapper">
+                    <table className="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Parameters</th>
+                                <th>{course1.name}</th>
+                                <th>{course2.name}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {parameters.map((parameter, index) => (
                                 <tr key={index}>
-                                    <td>{point}</td>
-                                    <td>{point1 ? point1.value : "N/A"}</td>
-                                    <td>{point2 ? point2.value : "N/A"}</td>
+                                    <td className="parameters">{parameter}</td>
+                                    <td className="points">{diffPoints2[index]?.value || "N/A"}</td>
+                                    <td className="points">{diffPoints1[index]?.value || "N/A"}</td>
                                 </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );

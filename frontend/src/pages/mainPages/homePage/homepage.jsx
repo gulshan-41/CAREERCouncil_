@@ -2,7 +2,7 @@ import React from "react";
 import "./homepage.scss";
 import { useNavigate } from "react-router-dom";
 import HcategoriesGrid from "/src/components/cardsGrid/hcategoriesGrid/hcategoriesGrid";
-import TrendingCoursesGrid from "../../../components/cardsGrid/trendingCoursesGrid/trendingCoursesGrid";
+import TrendingCoursesCard from "../../../components/cards/trendingCoursesCard/trendingCoursesCard";
 
 function Homepage() {
     const navigate = useNavigate();
@@ -39,8 +39,10 @@ function Homepage() {
 
             <section className="trending-courses-now">
                 <div className="utility-container">
-                    <h2>Explore trending courses</h2>
-                    <TrendingCoursesGrid/>
+                    <div className="trending-courses-wrapper">
+                        <h2>Explore trending courses</h2>
+                        <TrendingCoursesCard/>
+                    </div>
                 </div>
             </section>
         </div>

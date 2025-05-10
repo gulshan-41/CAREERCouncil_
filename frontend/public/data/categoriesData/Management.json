@@ -31,175 +31,228 @@
     ],
     "relatedCourses": [
         {
-            "isTrending": "true",
-            "trendID": "MBA-TID",
+            "isTrending": "false",
             "CO-ID": "MBA-General",
             "name": "MBA",
-            "specialization": "General Management"
+            "specialization": "General Management",
+            "description": "The Master of Business Administration (MBA) is a prestigious postgraduate degree that offers in-depth knowledge in business administration, leadership, and organizational management. Designed for aspiring business leaders, it covers a wide range of subjects including finance, marketing, human resources, and operations, preparing graduates for high-level executive positions across various industries."
         },
         {
-            "isTrending": "true",
-            "trendID": "PGDM-TID",
+            "isTrending": "false",
             "CO-ID": "PGDM-General",
             "name": "PGDM",
-            "specialization": "General Management"
+            "specialization": "General Management",
+            "description": "The Post Graduate Diploma in Management (PGDM) is a two-year postgraduate program that provides practical and industry-oriented training in business management. Equivalent to an MBA, it focuses on developing skills relevant to current market demands, covering areas like finance, marketing, human resources, and operations, preparing students for managerial roles in diverse sectors."
         },
         {
-            "isTrending": "true",
-            "trendID": "BBA-TID",
+            "isTrending": "false",
             "CO-ID": "BBA",
             "name": "BBA",
-            "specialization": "Business Administration"
+            "specialization": "Business Administration",
+            "description": "The Bachelor of Business Administration (BBA) is a three-year undergraduate program that provides a solid foundation in business principles. It covers core areas such as management, finance, marketing, and human resources, equipping students with the knowledge and skills necessary for entry-level positions in business or further studies in management."
         },
         {
-            "isTrending": "true",
-            "trendID": "Executive-MBA-TID",
+            "isTrending": "false",
             "CO-ID": "Executive-MBA",
             "name": "Executive MBA",
-            "specialization": "Executive Management"
+            "specialization": "Executive Management",
+            "description": "The Executive MBA (EMBA) is an advanced postgraduate program designed for working professionals. It emphasizes leadership, strategic management, and executive decision-making, allowing participants to enhance their management skills while continuing their careers, often through part-time or evening classes."
         },
         {
             "isTrending": "false",
             "CO-ID": "MMS",
             "name": "MMS",
-            "specialization": "Management Studies"
+            "specialization": "Management Studies",
+            "description": "The Master of Management Studies (MMS) is a two-year postgraduate degree equivalent to an MBA, focusing on broad business management topics. It provides comprehensive training in areas like finance, marketing, human resources, and operations, preparing students for managerial roles in various industries."
         },
         {
             "isTrending": "false",
             "CO-ID": "BMS",
             "name": "BMS",
-            "specialization": "Management Studies"
+            "specialization": "Management Studies",
+            "description": "The Bachelor of Management Studies (BMS) is a three-year undergraduate program that offers foundational knowledge in management principles. It covers subjects such as business organization, marketing, human resources, and finance, preparing students for careers in business administration or further studies in management."
         },
         {
             "isTrending": "false",
             "CO-ID": "DBM",
             "name": "DBM",
-            "specialization": "Business Management"
+            "specialization": "Business Management",
+            "description": "The Diploma in Business Management (DBM) is a one to two-year program that provides basic management skills for entry into business fields. It covers essential topics like business communication, marketing, finance, and human resources, ideal for those seeking a quick start in management careers."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Finance",
             "name": "MBA in Finance",
-            "specialization": "Finance"
+            "specialization": "Finance",
+            "description": "The MBA in Finance specialization focuses on advanced financial management, accounting, banking, and investment strategies. It prepares students for roles such as financial analysts, investment bankers, and corporate finance managers, equipping them with the skills to make informed financial decisions and manage organizational finances effectively."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Marketing",
             "name": "MBA in Marketing",
-            "specialization": "Marketing"
+            "specialization": "Marketing",
+            "description": "The MBA in Marketing specialization concentrates on developing marketing strategies, understanding consumer behavior, and mastering advertising techniques. Graduates are prepared for careers as marketing managers, brand managers, or digital marketing specialists, with the ability to create and implement effective marketing campaigns that drive business growth."
         },
         {
-            "isTrending": "false",
+            "isTrending": "true",
+            "trendID": "MBA-HRM-TID",
             "CO-ID": "MBA-HRM",
             "name": "MBA in Human Resource Management",
-            "specialization": "Human Resources"
+            "specialization": "Human Resources",
+            "description": "The MBA in Human Resource Management (HRM) specialization focuses on HR functions like recruitment, training, employee relations, and organizational development. It prepares students for roles such as HR managers, talent acquisition specialists, or organizational development consultants, emphasizing people management and strategic HR practices."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-IB",
             "name": "MBA in International Business",
-            "specialization": "International Business"
+            "specialization": "International Business",
+            "description": "The MBA in International Business specialization covers global business, international trade, and cross-cultural management. It prepares students for careers in multinational corporations, international consulting, or global entrepreneurship, providing skills to navigate the complexities of the international business environment."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Operations",
             "name": "MBA in Operations Management",
-            "specialization": "Operations"
+            "specialization": "Operations",
+            "description": "The MBA in Operations Management specialization manages production and operations processes, ideal for engineering graduates. It covers supply chain management, logistics, and process improvement, preparing students for roles such as operations managers, supply chain analysts, or production planners."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-IT",
             "name": "MBA in Information Technology",
-            "specialization": "IT Management"
+            "specialization": "IT Management",
+            "description": "The MBA in Information Technology (IT) specialization integrates IT with business management for managing IT projects and systems. It covers topics like IT strategy, cybersecurity, and digital transformation, preparing students for roles such as IT managers, CIOs, or digital transformation consultants."
         },
         {
-            "isTrending": "true",
-            "trendID": "MBA-Healthcare-TID",
+            "isTrending": "false",
             "CO-ID": "MBA-Healthcare",
             "name": "MBA in Healthcare Management",
-            "specialization": "Healthcare"
+            "specialization": "Healthcare",
+            "description": "The MBA in Healthcare Management specialization prepares students for managing healthcare organizations, blending medical and business knowledge. It covers healthcare policy, operations, and finance, ideal for careers in hospital administration, health services management, or healthcare consulting."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Retail",
             "name": "MBA in Retail Management",
-            "specialization": "Retail"
+            "specialization": "Retail",
+            "description": "The MBA in Retail Management specialization focuses on managing retail businesses, including supply chain and customer service. It prepares students for roles such as retail managers, merchandisers, or supply chain coordinators, with a focus on retail operations and consumer insights."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Hospitality",
             "name": "MBA in Hospitality Management",
-            "specialization": "Hospitality"
+            "specialization": "Hospitality",
+            "description": "The MBA in Hospitality Management specialization specializes in managing hotels, restaurants, and tourism. It covers hospitality operations, event management, and customer experience, preparing students for careers in hotel management, tourism, or event planning."
         },
         {
             "isTrending": "true",
             "trendID": "MBA-Entrepreneurship-TID",
             "CO-ID": "MBA-Entrepreneurship",
             "name": "MBA in Entrepreneurship",
-            "specialization": "Entrepreneurship"
+            "specialization": "Entrepreneurship",
+            "description": "The MBA in Entrepreneurship specialization teaches starting and managing new businesses, emphasizing innovation and business planning. It prepares students for entrepreneurial ventures or roles in startup ecosystems, providing skills in business development, fundraising, and growth strategies."
         },
         {
-            "isTrending": "true",
-            "trendID": "MBA-SCM-TID",
+            "isTrending": "false",
             "CO-ID": "MBA-SCM",
             "name": "MBA in Supply Chain Management",
-            "specialization": "Supply Chain"
+            "specialization": "Supply Chain",
+            "description": "The MBA in Supply Chain Management specialization manages supply chains, logistics, and operations for efficient business processes. It covers procurement, inventory management, and distribution, preparing students for roles such as supply chain managers, logistics coordinators, or operations analysts."
         },
         {
             "isTrending": "true",
             "trendID": "MBA-BA-TID",
             "CO-ID": "MBA-BA",
             "name": "MBA in Business Analytics",
-            "specialization": "Business Analytics"
+            "specialization": "Business Analytics",
+            "description": "The MBA in Business Analytics specialization uses data analysis and tools for informed business decision-making. It covers data mining, statistical analysis, and predictive modeling, preparing students for careers as business analysts, data scientists, or management consultants."
         },
         {
             "isTrending": "true",
             "trendID": "MBA-Digital-Marketing-TID",
             "CO-ID": "MBA-Digital-Marketing",
             "name": "MBA in Digital Marketing",
-            "specialization": "Digital Marketing"
+            "specialization": "Digital Marketing",
+            "description": "The MBA in Digital Marketing specialization focuses on online marketing strategies, social media, and digital advertising. It prepares students for roles such as digital marketing managers, SEO specialists, or content strategists, with a focus on leveraging digital channels for business growth."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Project-Management",
             "name": "MBA in Project Management",
-            "specialization": "Project Management"
+            "specialization": "Project Management",
+            "description": "The MBA in Project Management specialization teaches planning, executing, and managing projects across industries. It covers project lifecycle management, risk assessment, and team leadership, preparing students for roles such as project managers, program managers, or operations directors."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Public-Policy",
             "name": "MBA in Public Policy",
-            "specialization": "Public Policy"
+            "specialization": "Public Policy",
+            "description": "The MBA in Public Policy specialization combines management with public policy for roles in government and non-profits. It covers policy analysis, public administration, and social entrepreneurship, preparing students for careers in public service, policy consulting, or non-profit management."
         },
         {
             "isTrending": "false",
             "CO-ID": "MBA-Sports",
             "name": "MBA in Sports Management",
-            "specialization": "Sports Management"
+            "specialization": "Sports Management",
+            "description": "The MBA in Sports Management specialization manages sports organizations, events, and athletes. It covers sports marketing, event management, and athlete representation, preparing students for careers in sports administration, team management, or sports media."
         },
         {
             "isTrending": "false",
             "CO-ID": "PGDM-Finance",
             "name": "PGDM in Finance",
-            "specialization": "Finance"
+            "specialization": "Finance",
+            "description": "Similar to MBA in Finance, the PGDM in Finance provides in-depth knowledge of financial management, accounting, and investment, preparing students for finance-related roles with a practical, industry-focused approach."
         },
         {
             "isTrending": "false",
             "CO-ID": "PGDM-Marketing",
             "name": "PGDM in Marketing",
-            "specialization": "Marketing"
+            "specialization": "Marketing",
+            "description": "Similar to MBA in Marketing, the PGDM in Marketing focuses on marketing strategies, consumer behavior, and digital marketing, equipping students with skills for marketing roles through a hands-on, industry-oriented curriculum."
         },
         {
             "isTrending": "false",
             "CO-ID": "PGDM-HR",
             "name": "PGDM in Human Resources",
-            "specialization": "Human Resources"
+            "specialization": "Human Resources",
+            "description": "Similar to MBA in HRM, the PGDM in Human Resources specializes in HR functions, employee management, and organizational behavior, preparing students for HR roles with a focus on practical application and industry relevance."
+        }
+    ],
+    "recommendedCourses": [
+        {
+            "CO-ID": "MBA-Project-Management",
+            "name": "MBA in Project Management",
+            "specialization": "Project Management",
+            "description": "The MBA in Project Management specialization teaches planning, executing, and managing projects across industries. It covers project lifecycle management, risk assessment, and team leadership, preparing students for roles such as project managers, program managers, or operations directors."
         },
         {
-            "isTrending": "false",
-            "CO-ID": "PGDM-IB",
-            "name": "PGDM in International Business",
-            "specialization": "International Business"
+            "CO-ID": "MBA-Entrepreneurship",
+            "name": "MBA in Entrepreneurship",
+            "specialization": "Entrepreneurship",
+            "description": "The MBA in Entrepreneurship specialization teaches starting and managing new businesses, emphasizing innovation and business planning. It prepares students for entrepreneurial ventures or roles in startup ecosystems, providing skills in business development, fundraising, and growth strategies."
+        },
+        {
+            "CO-ID": "MBA-BA",
+            "name": "MBA in Business Analytics",
+            "specialization": "Business Analytics",
+            "description": "The MBA in Business Analytics specialization uses data analysis and tools for informed business decision-making. It covers data mining, statistical analysis, and predictive modeling, preparing students for careers as business analysts, data scientists, or management consultants."
+        },
+        {
+            "CO-ID": "MBA-Entrepreneurship",
+            "name": "MBA in Entrepreneurship",
+            "specialization": "Entrepreneurship",
+            "description": "The MBA in Entrepreneurship specialization teaches starting and managing new businesses, emphasizing innovation and business planning. It prepares students for entrepreneurial ventures or roles in startup ecosystems, providing skills in business development, fundraising, and growth strategies."
+        },
+        {
+            "CO-ID": "MBA-Healthcare",
+            "name": "MBA in Healthcare Management",
+            "specialization": "Healthcare",
+            "description": "The MBA in Healthcare Management specialization prepares students for managing healthcare organizations, blending medical and business knowledge. It covers healthcare policy, operations, and finance, ideal for careers in hospital administration, health services management, or healthcare consulting."
+        },
+        {
+            "CO-ID": "MMS",
+            "name": "MMS",
+            "specialization": "Management Studies",
+            "description": "The Master of Management Studies (MMS) is a two-year postgraduate degree equivalent to an MBA, focusing on broad business management topics. It provides comprehensive training in areas like finance, marketing, human resources, and operations, preparing students for managerial roles in various industries."
         }
     ]
 }

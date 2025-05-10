@@ -2,14 +2,12 @@ import "./coursesPage.scss";
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
+import Aside from "../../../components/coursePageComponents/aside/aside";
 import Introduction from "../../../components/coursePageComponents/courseIntroduction/courseIntroduction";
 import Prerequsities from "../../../components/coursePageComponents/prerequsities/prerequisites";
 import CoreSubjects from "../../../components/coursePageComponents/coreSubjects/coreSubjects";
 import RecommendedColleges from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
 import JobRoles from "../../../components/coursePageComponents/jobRoles/jobRoles";
-import AboutCourse from "../../../components/coursePageComponents/aboutCourse/aboutCourse";
-import Syllabus from "../../../components/coursePageComponents/syllabus/syllabus";
-import Aside from "../../../components/coursePageComponents/aside/aside";
 
 function CoursesPage() {
     // Get the courseID from the URL (e.g., /courses/AI-ML)
@@ -19,11 +17,12 @@ function CoursesPage() {
 
     // Fetch course data when courseID changes
     useEffect(() => {
+        // console.log(`Fetching course data for: ${courseID}`);
         fetchCourseDetails(courseID);
     }, [courseID, fetchCourseDetails]);
 
     // Render loading state
-    if (courseLoading) {
+    if (courseLoading[courseID]) {
         return (
             <div className="">
                 <div className="loading-section">
@@ -58,24 +57,22 @@ function CoursesPage() {
         );
     }
 
-  return (
-    <div className="coursespage courses-utility-section">
-        <div className="courses-limiters">Limiters</div>
-        <div className="coursespage-wrapper">
-            <section className="courses-main-section">
-                <h1>{courseData.name}</h1>
-                <Aside />
-                <Introduction data={courseData.introduction[0]} />
-                <Prerequsities data={courseData.prerequisites[0]} />
-                <CoreSubjects data={courseData.subjects[0]}/>
-                <RecommendedColleges data={courseData.recommendedColleges[0]} />
-                <JobRoles data={courseData.jobRoles[0]}/>
-                {/* <AboutCourse data={courseData.about} /> */}
-                {/* <Syllabus data={courseData.syllabus} /> */}
-            </section>
+    return (
+        <div className="coursespage courses-utility-section">
+            <div className="courses-limiters">Limiters</div>
+            <div className="coursespage-wrapper">
+                <section className="courses-main-section">
+                    <h1>{courseData.name}</h1>
+                    <Aside />
+                    <Introduction data={courseData.introduction[0]} />
+                    <Prerequsities data={courseData.prerequisites[0]} />
+                    <CoreSubjects data={courseData.subjects[0]} />
+                    <RecommendedColleges data={courseData.recommendedColleges[0]} />
+                    <JobRoles data={courseData.jobRoles[0]} />
+                </section>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default CoursesPage;

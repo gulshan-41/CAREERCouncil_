@@ -26,16 +26,17 @@
     ],
     "relatedCourses": [
         {
-            "isTrending": "true",
-            "trendID": "Aeronautical-TID",
+            "isTrending": "false",
             "CO-ID": "Aeronautical-Engineering",
             "name": "Aeronautical Engineering",
+            "description": "Focuses on designing, developing, testing, and producing aircraft for flight within Earth's atmosphere, emphasizing aerodynamics, propulsion, and structural integrity.",
             "specialization": "Aeronautics"
         },
         {
             "isTrending": "false",
             "CO-ID": "Industrial-Engineering",
             "name": "Industrial Engineering",
+            "description": "Optimizes complex systems and processes across industries like manufacturing, healthcare, and transportation by reducing costs, waste, and bottlenecks through efficient design and management.",
             "specialization": "Manufacturing"
         },
         {
@@ -43,37 +44,42 @@
             "trendID": "Aerospace-TID",
             "CO-ID": "Aerospace-Engineering",
             "name": "Aerospace Engineering",
+            "description": "Encompasses the design, development, and production of both aircraft and spacecraft, integrating aeronautical (atmospheric flight) and astronautical (space) engineering principles.",
             "specialization": "Space Technology"
         },   
         {
             "isTrending": "false",
             "CO-ID": "Marine-Engineering",
             "name": "Marine Engineering",
+            "description": "Involves the design, construction, and maintenance of marine vessels and structures like ships, boats, and submarines, often requiring work at sea.",
             "specialization": "Marine Technology"
         },
         {
             "isTrending": "false",
             "CO-ID": "Automobile-Engineering",
             "name": "Automobile Engineering",
+            "description": "Focuses on the design, development, and maintenance of automobiles, integrating mechanical, electrical, software, and safety engineering for efficient and safe vehicles.",
             "specialization": "Automotive Design"
         },
         {
-            "isTrending": "true",
-            "trendID": "Mechanical-TID",
+            "isTrending": "false",
             "CO-ID": "Mechanical-Engineering",
             "name": "Mechanical Engineering",
+            "description": "Deals with the design, development, and maintenance of mechanical systems, including machines, engines, and tools, using principles of physics, materials science, and mathematics.",
             "specialization": "Mechanics"
         },
         {
             "isTrending": "false",
             "CO-ID": "Biomedical-Engineering",
             "name": "Biomedical Engineering",
+            "description": "Applies engineering principles to design, develop, and improve medical devices, equipment, and healthcare systems, enhancing patient care and outcomes.",
             "specialization": "Medical Technology"
         },
         {
             "isTrending": "false",
             "CO-ID": "Mechatronics-Engineering",
             "name": "Mechatronics Engineering",
+            "description": "Combines mechanical, electrical, and computer engineering to design smart systems that integrate mechanical components with electronics and software for automation and control.",
             "specialization": "Automation"
         },
         {
@@ -81,136 +87,181 @@
             "trendID": "Biotechnology-TID",
             "CO-ID": "Biotechnology-Engineering",
             "name": "Biotechnology Engineering",
+            "description": "Applies biological and chemical principles to develop products and technologies for industries like healthcare, agriculture, and environmental conservation, often involving genetic engineering and bioprocesses.",
             "specialization": "Biotechnology"
         },
         {
-            "isTrending": "true",
-            "trendID": "Metallurgical-TID",
+            "isTrending": "false",
             "CO-ID": "Metallurgical-Engineering",
             "name": "Metallurgical Engineering",
+            "description": "Studies the extraction, refining, and processing of metals and their alloys, focusing on their physical and chemical properties for industrial applications.",
             "specialization": "Materials Science"
         },
         {
             "isTrending": "false",
             "CO-ID": "Ceramic-Engineering",
             "name": "Ceramic Engineering",
+            "description": "Involves the design, development, and production of ceramic materials, which are inorganic and non-metallic, valued for their heat resistance, hardness, and chemical stability.",
             "specialization": "Ceramics"
         },
         {
             "isTrending": "false",
             "CO-ID": "Mining-Engineering",
             "name": "Mining Engineering",
+            "description": "Focuses on the extraction and processing of minerals, involving mine planning, geotechnical engineering, and environmental management for sustainable resource utilization.",
             "specialization": "Mining Technology"
         },
         {
-            "isTrending": "true",
-            "trendID": "Chemical-TID",
+            "isTrending": "false",
             "CO-ID": "Chemical-Engineering",
             "name": "Chemical Engineering",
+            "description": "Applies chemical, physical, and biological sciences to convert raw materials into valuable products, such as fuels, medicines, and chemicals, through industrial processes.",
             "specialization": "Chemical Processes"
         },
         {
             "isTrending": "false",
             "CO-ID": "Petroleum-Engineering",
             "name": "Petroleum Engineering",
+            "description": "Involves the exploration, extraction, and production of oil and gas, requiring expertise in reservoir analysis, drilling techniques, and production optimization.",
             "specialization": "Petroleum Extraction"
         },
         {
-            "isTrending": "true",
-            "trendID": "Civil-TID",
+            "isTrending": "false",
             "CO-ID": "Civil-Engineering",
             "name": "Civil Engineering",
+            "description": "Focuses on the design, construction, and maintenance of infrastructure like roads, bridges, buildings, and dams, ensuring safety and sustainability.",
             "specialization": "Infrastructure"
-        },
-        {
-            "isTrending": "true",
-            "trendID": "Power-TID",
-            "CO-ID": "Power-Engineering",
-            "name": "Power Engineering",
-            "specialization": "Power Systems"
         },
         {
             "isTrending": "false",
             "CO-ID": "Communications-Engineering",
             "name": "Communications Engineering",
+            "description": "Designs and implements communication systems for high-speed data transmission and effective communication, often involving telecommunication networks.",
             "specialization": "Telecommunications"
         },
         {
-            "isTrending": "false",
-            "CO-ID": "Production-Engineering",
-            "name": "Production Engineering",
-            "specialization": "Manufacturing"
-        },
-        {
-            "isTrending": "false",
+            "isTrending": "true",
+            "trendID": "CSE-TID",
             "CO-ID": "Computer-Science-Engineering",
             "name": "Computer Science Engineering",
+            "description": "Centers on the design, development, and maintenance of computer software and systems, applying principles of algorithms, data structures, and programming.",
             "specialization": "Computing"
         },
         {
             "isTrending": "false",
             "CO-ID": "Robotics-Engineering",
             "name": "Robotics Engineering",
+            "description": "Involves the design, development, and operation of robots, integrating mechanical, electrical, and computer engineering for automation and intelligent systems.",
             "specialization": "Robotics"
         },
         {
             "isTrending": "false",
             "CO-ID": "Construction-Engineering",
             "name": "Construction Engineering",
+            "description": "Focuses on the planning, design, and management of construction projects, ensuring efficient and safe execution of infrastructure development.",
             "specialization": "Construction Management"
-        },
-        {
-            "isTrending": "false",
-            "CO-ID": "Structural-Engineering",
-            "name": "Structural Engineering",
-            "specialization": "Structural Design"
         },
         {
             "isTrending": "false",
             "CO-ID": "Electrical-Engineering",
             "name": "Electrical Engineering",
+            "description": "Studies and applies electricity, electronics, and electromagnetism for power generation, distribution, and the control of machines and devices.",
             "specialization": "Electronics"
         },
         {
             "isTrending": "false",
             "CO-ID": "Telecom-Engineering",
             "name": "Telecom. Engineering",
+            "description": "Specializes in the design and implementation of telecommunication systems, focusing on high-speed data transmission and network infrastructure.",
             "specialization": "Telecom Systems"
         },
         {
             "isTrending": "false",
             "CO-ID": "Electronics-Communication",
             "name": "Electronics & Communication",
+            "description": "Combines electronics and communication engineering to design systems for signal processing, transmission, and reception, essential for modern communication technologies.",
             "specialization": "Communication Systems"
         },
         {
             "isTrending": "false",
             "CO-ID": "Textile-Engineering",
             "name": "Textile Engineering",
+            "description": "Involves the production and improvement of textile products, working with fibers, fabrics, and yarns for applications in clothing, medical devices, and industrial materials.",
             "specialization": "Textile Technology"
         },
         {
             "isTrending": "false",
             "CO-ID": "Electronics-Engineering",
             "name": "Electronics Engineering",
+            "description": "Focuses on the design and development of electronic circuits and systems, including components like transistors, microchips, and integrated circuits.",
             "specialization": "Electronic Circuits"
         },
         {
             "isTrending": "false",
             "CO-ID": "Tool-Engineering",
             "name": "Tool Engineering",
-            "specialization": "Tool Design" },
-            {
+            "description": "Specializes in the design and development of tools, dies, and molds used in manufacturing processes, ensuring precision and efficiency in production.",
+            "specialization": "Tool Design" 
+        },
+        {
             "isTrending": "false",
             "CO-ID": "Environmental-Engineering",
             "name": "Environmental Engineering",
+            "description": "Applies engineering principles to address environmental issues like pollution, waste management, and sustainable energy, often involving soil science and biology.",
             "specialization": "Environmental Management"
         },
         {
             "isTrending": "false",
             "CO-ID": "Transportation-Engineering",
             "name": "Transportation Engineering",
+            "description": "Designs, constructs, and operates transportation systems (e.g., roads, railways, airports), optimizing traffic flow, safety, and efficiency.",
             "specialization": "Transport Systems"
+        }
+    ],
+    "recommendedCourses": [
+        {
+            "CO-ID": "Aerospace-Engineering",
+            "name": "Aerospace Engineering",
+            "description": "Encompasses the design, development, and production of both aircraft and spacecraft, integrating aeronautical (atmospheric flight) and astronautical (space) engineering principles.",
+            "specialization": "Space Technology"
+        },
+        {
+            "CO-ID": "Telecom-Engineering",
+            "name": "Telecom. Engineering",
+            "description": "Specializes in the design and implementation of telecommunication systems, focusing on high-speed data transmission and network infrastructure.",
+            "specialization": "Telecom Systems"
+        },
+        {
+            "CO-ID": "Robotics-Engineering",
+            "name": "Robotics Engineering",
+            "description": "Involves the design, development, and operation of robots, integrating mechanical, electrical, and computer engineering for automation and intelligent systems.",
+            "specialization": "Robotics"
+        },
+        {
+            "CO-ID": "Computer-Science-Engineering",
+            "name": "Computer Science Engineering",
+            "description": "Centers on the design, development, and maintenance of computer software and systems, applying principles of algorithms, data structures, and programming.",
+            "specialization": "Computing"
+        },
+        {
+            "CO-ID": "Biotechnology-Engineering",
+            "name": "Biotechnology Engineering",
+            "description": "Applies biological and chemical principles to develop products and technologies for industries like healthcare, agriculture, and environmental conservation, often involving genetic engineering and bioprocesses.",
+            "specialization": "Biotechnology"
+        },
+        {
+            "CO-ID": "Mechanical-Engineering",
+            "name": "Mechanical Engineering",
+            "description": "Deals with the design, development, and maintenance of mechanical systems, including machines, engines, and tools, using principles of physics, materials science, and mathematics.",
+            "specialization": "Mechanics"
+        },
+        {
+            "isTrending": "true",
+            "trendID": "Chemical-TID",
+            "CO-ID": "Chemical-Engineering",
+            "name": "Chemical Engineering",
+            "description": "Applies chemical, physical, and biological sciences to convert raw materials into valuable products, such as fuels, medicines, and chemicals, through industrial processes.",
+            "specialization": "Chemical Processes"
         }
     ]    
 }

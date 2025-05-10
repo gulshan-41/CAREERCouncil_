@@ -1,39 +1,77 @@
 import "./trendingCoursesCard.scss";
+import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import { useNavigate } from "react-router-dom";
 
-function TrendingCoursesCard({ courseID, name, specialization }) {
+function TrendingCoursesCard() {
+    const { trendingCourses, trendingLoading, trendingError } = useCategories();
     const navigate = useNavigate();
 
-    const handleNavigate = () => {
-        navigate(`/courses/${courseID}`);
+    const handleNavigate = (courseID) => {
+        if (courseID && courseID !== "null") {
+            navigate(`/courses/${courseID}`);
+        }
     };
 
+    if (trendingLoading) {
+        return <div className="trending-courses-grid">Loading...</div>;
+    }
+
+    if (trendingError) {
+        return <div className="trending-courses-grid">Error: {trendingError}</div>;
+    }
+
+    // Slice categories into two equal arrays
+    const totalCategories = trendingCourses.length;
+    const midpoint = Math.floor(totalCategories / 2);
+    const listone = trendingCourses.slice(0, midpoint);
+    const listtwo = trendingCourses.slice(midpoint);
+
+    const totalCardsListone = listone.length;
+    const totalCardsListtwo = listtwo.length;
+
     return (
-        <div className="trending-course-card-wrapper" onClick={handleNavigate}>
-            <div className="compare-toggle">Compare</div>
-            <div className="course-full-name">
-                <p>{name}</p>
-            </div>
-            <div className="cat-course-vr-ruler"></div>
-            <div className="course-field">
-                <div className="field-box">
-                    <p>Field: </p>
-                    <p>{specialization}</p>
+        <>
+        <div className="trending-courses-grid1" style={{ "--total-cardsONE": totalCardsListone }}>
+            {listone.map((course, index) => (
+                <div
+                    className="trending-course-card-wrapper"
+                    key={course.courseID}
+                    onClick={() => handleNavigate(course.courseID)}
+                    style={{ "--position": index + 1 }}
+                >
+                    <div className="tcourse-name">
+                        <p>{course.name}</p>
+                    </div>
+                    <div className="tcourse-field">
+                        <div className="tfield-box">
+                            <p>Field: </p>
+                            <p>{course.specialization}</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="course-navi">
-                    <svg
-                        id="angle-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        height="24px"
-                        width="24px"
-                        fill="#fff"
-                    >
-                        <path d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
-                    </svg>
-                </div>
-            </div>
+            ))}
         </div>
+        <div className="trending-courses-grid2" style={{ "--total-cardsTWO": totalCardsListtwo }}>
+            {listtwo.map((course, index) => (
+                <div
+                    className="trending-course-card-wrapper-rv"
+                    key={course.courseID}
+                    onClick={() => handleNavigate(course.courseID)}
+                    style={{ "--position": index + 1 }}
+                >
+                    <div className="tcourse-name">
+                        <p>{course.name}</p>
+                    </div>
+                    <div className="tcourse-field">
+                        <div className="tfield-box">
+                            <p>Field: </p>
+                            <p>{course.specialization}</p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+        </>
     );
 }
 

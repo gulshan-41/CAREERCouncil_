@@ -1,17 +1,28 @@
 import "./categoriesGrid.scss";
 import CategoriesCard from "../../cards/categoriesCard/categoriesCard";
-import { useCategoriesContext } from "/src/pages/mainPages/categoriesPage/categoriesPage";
 import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvider";
 
 function CategoriesGrid({ isNavigationOnly = false, onCategoryClick }) {
-    const { categories, categoriesLoading, categoriesError } = useCategories();
-    const context = useCategoriesContext();
-    const { openDropdowns, toggledCategories, toggleCategory, toggleDropdown } = context || {};
+    const { 
+        categories, 
+        categoriesLoading, 
+        categoriesError, 
+        openDropdowns, 
+        toggledCategories, 
+        toggleCategory, 
+        toggleDropdown 
+    } = useCategories();
 
     const handleCardClick = (catID) => {
-        console.log("Category card clicked in CategoriesGrid:", catID);
         if (isNavigationOnly && onCategoryClick) {
             onCategoryClick(catID); // Navigate in SearchBar/SearchDiv
+            toggleCategory(catID);
+        } else if (toggledCategories.includes(catID)) {
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            } else {
+                console.warn(`No element found for category-details-${catID}`);
+            }
         } else if (toggleCategory) {
             toggleCategory(catID); // Interactive in CategoriesPage
         }

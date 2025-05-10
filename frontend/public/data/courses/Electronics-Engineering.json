@@ -6,7 +6,12 @@
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "Spanning four years, the Electronics Engineering undergraduate program equips students with skills to design, develop, and maintain electronic circuits and systems that power modern devices like smartphones, computers, and medical equipment. This dynamic course blends theoretical learning with hands-on projects, making it ideal for those passionate about technology and innovation. Students learn to create efficient electronic solutions, preparing them for careers in telecommunications, consumer electronics, aerospace, and healthcare."
+                "content": "Spanning four years."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "The Electronics Engineering undergraduate program equips students with skills to design, develop, and maintain electronic circuits and systems that power modern devices like smartphones, computers, and medical equipment. This dynamic course blends theoretical learning with hands-on projects, making it ideal for those passionate about technology and innovation. Students learn to create efficient electronic solutions, preparing them for careers in telecommunications, consumer electronics, aerospace, and healthcare."
             },
             {
                 "type": "heading",
@@ -199,7 +204,7 @@
                         {
                             "heading": "Electromagnetic Fields and Waves",
                             "items": [
-                                "Maxwell’s Equations: Understanding electromagnetic theory.",
+                                "Maxwell's Equations: Understanding electromagnetic theory.",
                                 "Wave Propagation: Analyzing signal transmission.",
                                 "Antenna Design: Creating efficient antennas."
                             ]
@@ -336,13 +341,14 @@
             },
             {
                 "type": "paragraph",
-                "content": "Salary Range: Entry-level salaries start at USD 60,000–80,000 per year, with senior roles exceeding USD 100,000."
+                "content": "Salary Range: Entry-level salaries start at USD 60,000-80,000 per year, with senior roles exceeding USD 100,000."
             },
             {
                 "type": "heading",
                 "content": "How a Student Might See Themselves After Completing the Course"
             },
             {
+                "key": "diff-point",
                 "type": "paragraph",
                 "content": "Graduates envision themselves as innovators shaping the future of technology, designing electronic systems that power everyday devices and industrial applications."
             },

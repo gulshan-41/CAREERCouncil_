@@ -70,4 +70,29 @@
         padding: 2rem 0;
     }
 
+    .trending-courses-wrapper {
+        border: 1px solid #a5a5a5;
+        border-radius: 20px;
+        position: relative;
+
+        h2 {
+            background-color: #fff;
+            padding: 0 12px;
+            font-size: 1.4rem;
+            font-weight: lighter;
+            position: absolute;
+            left: 50%;
+            top: -12.8px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .trending-courses-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px;
+        box-sizing: border-box;
+    }
+
 }

@@ -6,7 +6,12 @@
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "A four-year undergraduate program, Aerospace Engineering is a specialized field that focuses on the design, development, testing, and production of both aircraft and spacecraft. Unlike Aeronautical Engineering, which is limited to aircraft within Earth's atmosphere, Aerospace Engineering also encompasses spacecraft and systems that operate in space. This program is ideal for students passionate about aviation, space exploration, and advanced technology, offering a blend of theoretical knowledge and practical skills essential for careers in the aerospace industry, defense, and research organizations like ISRO and NASA."
+                "content": "A four-year undergraduate program."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Aerospace Engineering is a specialized field that focuses on the design, development, testing, and production of both aircraft and spacecraft. Unlike Aeronautical Engineering, which is limited to aircraft within Earth's atmosphere, Aerospace Engineering also encompasses spacecraft and systems that operate in space. This program is ideal for students passionate about aviation, space exploration, and advanced technology, offering a blend of theoretical knowledge and practical skills essential for careers in the aerospace industry, defense, and research organizations like ISRO and NASA."
             },
             {
                 "type": "heading",
@@ -399,13 +404,14 @@
             },
             {
                 "type": "paragraph",
-                "content": "Salary Range: Entry-level positions abroad start at approximately USD 60,000–70,000 per year, with mid-level roles exceeding USD 100,000 per year."
+                "content": "Salary Range: Entry-level positions abroad start at approximately USD 60,000-70,000 per year, with mid-level roles exceeding USD 100,000 per year."
             },
             {
                 "type": "heading",
                 "content": "How a Student Might See Themselves After Completing the Course"
             },
             {
+                "key": "diff-point",
                 "type": "paragraph",
                 "content": "Completing an Aerospace Engineering degree equips students with technical expertise, practical skills, and a mindset geared toward innovation and problem-solving. Graduates are likely to envision themselves as professionals making significant contributions to aviation, space exploration, or defense."
             },

@@ -9,7 +9,7 @@ function SearchDiv({ isOpen, toggleSearch }) {
     if (!isOpen) return null;
 
     const handleCategoryClick = (catID) => {
-        navigate(`/categories/${catID}`);
+        navigate("/categories", { state: { catID } });
         toggleSearch(); // Close SearchDiv on navigation
     };
 

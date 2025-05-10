@@ -6,7 +6,12 @@
             {
                 "key": "diff-point",
                 "type": "paragraph",
-                "content": "Spanning four years, the Industrial Engineering undergraduate program equips students with skills to optimize complex systems and processes, enhancing efficiency, productivity, and quality. Blending engineering, mathematics, and business principles, it focuses on designing and managing integrated systems involving people, materials, information, equipment, and energy. Ideal for those passionate about improving operations, this course prepares graduates for diverse roles in manufacturing, healthcare, logistics, and beyond."
+                "content": "Spanning four years."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "The Industrial Engineering undergraduate program equips students with skills to optimize complex systems and processes, enhancing efficiency, productivity, and quality. Blending engineering, mathematics, and business principles, it focuses on designing and managing integrated systems involving people, materials, information, equipment, and energy. Ideal for those passionate about improving operations, this course prepares graduates for diverse roles in manufacturing, healthcare, logistics, and beyond."
             },
             {
                 "type": "heading",
@@ -361,6 +366,7 @@
                 "content": "How a Student Might See Themselves After Completing the Course"
             },
             {
+                "key": "diff-point",
                 "type": "paragraph",
                 "content": "Graduates envision themselves as problem-solvers improving efficiency across industries, equipped with technical and managerial skills."
             },
