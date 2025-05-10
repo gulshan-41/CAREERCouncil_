@@ -13,6 +13,10 @@ const CategoriesDataSchema = new mongoose.Schema({
     relatedCourses: {
         type: Object,
         required: true
+    },
+    recommendedCourses: {
+        type: Object,
+        required: true
     }
 });
 
