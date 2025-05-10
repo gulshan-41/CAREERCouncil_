@@ -22,7 +22,6 @@ function SignupPage3C() {
 
     const handleNext = () => {
         if (surveyData.interests.fields.length > 0) {
-            console.log("Navigating to /signup-login-modal");
             navigate("/signup-login-modal");
         } else {
             toast.error("Please select at least one career field.");

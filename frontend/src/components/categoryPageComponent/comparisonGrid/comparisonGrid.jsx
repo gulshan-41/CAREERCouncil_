@@ -41,10 +41,11 @@ function CompareGrid() {
     // Define parameters (manually set criteria)
     const parameters = [
         "Duration",
+        "Main Focus",
         "Eligibility",
-        "Career Prospects",
-        "Course Fee",
-        "Certification"
+        "Admission Requirements",
+        "Core subjects (Specialization)",
+        "How students might see themselves afterward?"
     ];
 
     // Get diff-point values for each course

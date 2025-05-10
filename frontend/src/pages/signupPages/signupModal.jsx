@@ -38,7 +38,7 @@ function SignupModal() {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-        // console.log(surveyData);
+        console.log(surveyData);
         const response = await fetch('http://localhost:8800/api/user/register', {
             method: 'POST',
             headers: {
