@@ -5,7 +5,10 @@
 }
 
 @media (max-width: 1536px) {
-    // .categories-page { .cat-utility-section }
+    .categories-page {
+        border-top: 1px solid #a5a5a5;
+        border-bottom: 1px solid #a5a5a5;
+    }
 
     .categories-page-wrapper {
         display: flex;

@@ -5,7 +5,7 @@
 .hcat-show-grid,
 .hcat-subgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 8px;
 }
 
@@ -35,7 +35,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #a5a5a5;
     padding-bottom: 4px;
     box-sizing: border-box;
     position: absolute;

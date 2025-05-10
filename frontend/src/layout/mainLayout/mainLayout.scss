@@ -63,3 +63,40 @@
 }
 
 // @media (max-width: 475px) { }
+
+.cat-utility-section {
+    padding: 0 12rem;
+    box-sizing: border-box;
+}
+
+.utility-container {
+    padding: 2rem 0;
+}
+
+// @media (max-width: 1536px) { }
+
+@media (max-width: 1280px) {
+    .cat-utility-section {
+        padding: 0 8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cat-utility-section {
+        padding: 0 2.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cat-utility-section {
+        padding-right: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .cat-utility-section {
+        padding: 0 1rem;
+    }
+}
+
+// @media (max-width: 475px) { }

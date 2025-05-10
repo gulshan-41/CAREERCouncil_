@@ -58,7 +58,7 @@ function CoursesPage() {
     }
 
     return (
-        <div className="coursespage courses-utility-section">
+        <div className="coursespage cat-utility-section">
             <div className="courses-limiters">Limiters</div>
             <div className="coursespage-wrapper">
                 <section className="courses-main-section">

@@ -22,14 +22,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 230px;
+    width: 200px;
     height: 220px;
     border: 1px solid #a5a5a5;
     border-radius: 8px;
     position: absolute;
-    left: calc(230px * var(--total-cardsONE));
-    animation: cardsScroll 30s linear infinite;
-    animation-delay: calc((30s / var(--total-cardsONE)) * (var(--position) - 1));
+    left: calc(200px * var(--total-cardsONE));
+    animation: cardsScroll 15s linear infinite;
+    animation-delay: calc((15s / var(--total-cardsONE)) * (var(--position) - 1)/1.125);
     cursor: pointer;
 }
 
@@ -37,26 +37,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 230px;
+    width: 200px;
     height: 220px;
     border: 1px solid #a5a5a5;
     border-radius: 8px;
     position: absolute;
-    right: calc(230px * var(--total-cardsTWO));
-    animation: RVcardsScroll 30s linear infinite;
-    animation-delay: calc((30s / var(--total-cardsTWO)) * (var(--position) - 1));
+    right: calc(200px * var(--total-cardsTWO));
+    animation: RVcardsScroll 15s linear infinite;
+    animation-delay: calc((15s / var(--total-cardsTWO)) * (var(--position) - 1) / 1.125);
     cursor: pointer;
 }
 
 @keyframes cardsScroll {
     to {
-        left: -230px;
+        left: -200px;
     }
 }
 
 @keyframes RVcardsScroll {
     to {
-        right: -230px;
+        right: -200px;
     }
 }
 

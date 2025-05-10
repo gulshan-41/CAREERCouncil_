@@ -1,11 +1,4 @@
-.courses-utility-section {
-    width: 100%;
-    padding: 0 12rem;
-    box-sizing: border-box;
-    border-bottom: 1px solid #a5a5a5;
-    border-top: 1px solid #a5a5a5;
-    position: relative;
-}
+
 
 .loading-section {
     width: 100%;
@@ -49,6 +42,10 @@
 
 @media (max-width: 1536px) {
     .coursespage {
+        border-top: 1px solid #a5a5a5;
+        border-bottom: 1px solid #a5a5a5;
+        position: relative;
+        
         .coursespage-wrapper {
             display: flex;
             flex-direction: column;
@@ -134,9 +131,6 @@
 }
 
 @media (max-width: 1280px) {
-    .courses-utility-section {
-        padding: 0 8rem;
-    }
 
     .coursespage {
         .coursespage-wrapper {
