@@ -13,22 +13,23 @@ export const verifyToken = async (req, res, next) => {
                 req.body = verify;
                 next();
             }
-            else {
+            else if(!verify){
                 return res.status(401).json({ success: false, msg: "Not Authenticate!" });
             }
+        }
+        else{
+            
+            return res.status(401).json({ success: false, msg: "Not Authenticate!" });
         }
 
     } catch (err) {
 
-        const status = 401;
-        const message = "Unauthorized Person";
-
         const error = {
-            status,
-            message
+            status :401,
+            msg: "Unauthorized Person"
         }
 
-        next(error)
+        next(error);
 
     }
 };

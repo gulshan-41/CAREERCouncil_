@@ -60,20 +60,18 @@ export function SurveyProvider({ children }) {
                     'Content-Type': 'application/json'
                 },
                 credentials: 'include',
-            }).then((data) => data.json());
-
+            }).then((data) => data.json()).catch((error) => console.log(error));
+            
             if (response.success) {
-                localStorage.setItem("token", JSON.stringify(response.data));
-                setUser(response.data);
+                localStorage.setItem('token', JSON.stringify(response.userData))
+                setUser(response.userData);
+
             } else {
                 localStorage.removeItem('token');
                 setUser(null);
             }
-            return response;
         } catch (error) {
             console.error("Fetch user error:", error);
-            localStorage.removeItem('token');
-            setUser(null);
             throw error;
         }
     };
@@ -90,6 +88,7 @@ export function SurveyProvider({ children }) {
 
             if (resp.success) {
                 toast.success(resp.msg);
+                localStorage.removeItem("token");
                 setUser(null);
                 setSurveyData({
                     name: "",
@@ -112,7 +111,6 @@ export function SurveyProvider({ children }) {
                     email: "",
                     password: ""
                 });
-                localStorage.removeItem("token");
             } else {
                 toast.error(resp.msg);
             }
@@ -123,9 +121,10 @@ export function SurveyProvider({ children }) {
 
     useEffect(() => {
         if (hasFetchedUser.current) return;
-
         hasFetchedUser.current = true;
-        fetchUser();
+        if (fetchUser() ) {
+            setUser(JSON.parse(localStorage.getItem('token')));
+          }
     }, []);
 
     return (

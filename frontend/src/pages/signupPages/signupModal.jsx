@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
 
 function SignupModal() {
-    const { surveyData, updateSurveyData, loginData, updateLoginData, setUser } = useSurvey();
+    const { surveyData, updateSurveyData, loginData, updateLoginData, fetchUser } = useSurvey();
     const [isLoginMode, setIsLoginMode] = useState(false);
     const navigate = useNavigate();
 
@@ -28,10 +28,9 @@ function SignupModal() {
         }).then((data) => data.json());
 
         if (response.success) {
-            toast.success(response.msg);
-            localStorage.setItem("token", JSON.stringify(response.data));
-            setUser(response.data);
+            fetchUser()
             navigate('/');
+            toast.success(response.msg);
         } else {
             toast.error(response.msg);
         }
@@ -50,10 +49,9 @@ function SignupModal() {
         }).then((data) => data.json());
 
         if (response.success) {
-            toast.success(response.msg);
-            localStorage.setItem("token", JSON.stringify(response.data));
-            setUser(response.data);
+            fetchUser()
             navigate('/');
+            toast.success(response.msg);
         } else {
             toast.error(response.msg);
         }

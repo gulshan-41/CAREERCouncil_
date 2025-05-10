@@ -131,8 +131,8 @@ export const getuser = async (req, res, next) => {
         const { userID } = req.body;
 
         const response = await UserModel.findById({ _id: userID },{password: 0, _id: 0});
-
-        res.status(200).json({ success: true, data: response });
+        res.status(200).json({ success: true, userData: response, msg: "Authorized User" });
+        
     } catch (err) {
 
         const error = {
