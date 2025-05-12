@@ -47,6 +47,8 @@ function TrendingCoursesCard() {
                             <p>Field: </p>
                             <p>{course.specialization}</p>
                         </div>
+                        <div className="t-decr">{course.description}</div>
+                        <div className="tcourse-navi">checkout</div>
                     </div>
                 </div>
             ))}
@@ -67,6 +69,8 @@ function TrendingCoursesCard() {
                             <p>Field: </p>
                             <p>{course.specialization}</p>
                         </div>
+                        <div className="t-decr">{course.description}</div>
+                        <div className="tcourse-navi">checkout</div>
                     </div>
                 </div>
             ))}

@@ -27,10 +27,11 @@
     border: 1px solid #a5a5a5;
     border-radius: 8px;
     position: absolute;
-    left: calc(200px * var(--total-cardsONE));
+    left: calc(216px * var(--total-cardsONE));
     animation: cardsScroll 15s linear infinite;
-    animation-delay: calc((15s / var(--total-cardsONE)) * (var(--position) - 1)/1.125);
+    animation-delay: calc((15s / var(--total-cardsONE)) * (var(--position) - 1) / 1.195);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .trending-course-card-wrapper-rv {
@@ -42,10 +43,17 @@
     border: 1px solid #a5a5a5;
     border-radius: 8px;
     position: absolute;
-    right: calc(200px * var(--total-cardsTWO));
+    right: calc(216px * var(--total-cardsTWO));
     animation: RVcardsScroll 15s linear infinite;
-    animation-delay: calc((15s / var(--total-cardsTWO)) * (var(--position) - 1) / 1.125);
+    animation-delay: calc((15s / var(--total-cardsTWO)) * (var(--position) - 1) / 1.195);
     cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        .tcourse-field {
+            transform: translateY(-150px);
+        }
+    }
 }
 
 @keyframes cardsScroll {
@@ -71,6 +79,14 @@
 }
 
 .tcourse-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 165px;
+    width: 100%;
+    height: 230px;
     padding: 12px 20px;
     box-sizing: border-box;
     background-color: #203864;
@@ -78,6 +94,17 @@
     transition: bottom 0.4ms;
 
     .tfield-box {
+        width: 100%;
+        text-align: left;
+        color: #fff;
+        font-size: 0.85rem;
+    }
+
+    .t-decr {
+        height: 80px;
+        text-overflow: ellipsis;
+        // text-wrap: nowrap;
+        overflow: hidden;
         color: #fff;
         font-size: 0.85rem;
     }

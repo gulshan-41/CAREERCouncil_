@@ -11,7 +11,7 @@ function CategoriesPage() {
     const categoryRefs = useRef({});
     const { 
         categoryDetails, 
-        detailsLoading, 
+        detailsLoading,
         detailsError, 
         toggledCategories, 
         openDropdowns 

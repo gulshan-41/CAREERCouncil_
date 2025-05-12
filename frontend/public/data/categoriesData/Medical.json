@@ -98,7 +98,8 @@
             "description": "The Bachelor of Pharmacy (B.Pharm) is a four-year undergraduate program focusing on pharmaceutical sciences, drug development, and patient care. It prepares students for careers as pharmacists in hospitals, retail pharmacies, or the pharmaceutical industry."
         },
         {
-            "isTrending": "false",
+            "isTrending": "true",
+            "trendID": "BMLT-TID",
             "CO-ID": "BMLT",
             "name": "BMLT",
             "specialization": "Medical Laboratory Technology",

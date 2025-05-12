@@ -230,6 +230,7 @@ export function CategoriesProvider({ children }) {
                                 courseID: course["CO-ID"],
                                 name: course.name,
                                 specialization: course.specialization,
+                                description: course.description,
                                 categoryId: category.catID,
                             }));
                         trendingCourses.push(...trending);

@@ -79,8 +79,8 @@ function CompareGrid() {
                             {parameters.map((parameter, index) => (
                                 <tr key={index}>
                                     <td className="parameters">{parameter}</td>
-                                    <td className="points">{diffPoints2[index]?.value || "N/A"}</td>
                                     <td className="points">{diffPoints1[index]?.value || "N/A"}</td>
+                                    <td className="points">{diffPoints2[index]?.value || "N/A"}</td>
                                 </tr>
                             ))}
                         </tbody>

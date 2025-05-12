@@ -112,7 +112,8 @@
             "specialization": "Mining Technology"
         },
         {
-            "isTrending": "false",
+            "isTrending": "true",
+            "trendID": "Chemical-Engg-TID",
             "CO-ID": "Chemical-Engineering",
             "name": "Chemical Engineering",
             "description": "Applies chemical, physical, and biological sciences to convert raw materials into valuable products, such as fuels, medicines, and chemicals, through industrial processes.",

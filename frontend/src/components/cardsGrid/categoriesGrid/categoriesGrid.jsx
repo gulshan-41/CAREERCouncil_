@@ -18,6 +18,7 @@ function CategoriesGrid({ isNavigationOnly = false, onCategoryClick }) {
             onCategoryClick(catID); // Navigate in SearchBar/SearchDiv
             toggleCategory(catID);
         } else if (toggledCategories.includes(catID)) {
+            const element = document.getElementById(`category-details-${catID}`);
             if (element) {
                 element.scrollIntoView({ behavior: "smooth" });
             } else {
@@ -30,7 +31,7 @@ function CategoriesGrid({ isNavigationOnly = false, onCategoryClick }) {
 
     const handleIconClick = (catID) => {
         if (!isNavigationOnly && toggleDropdown) {
-            console.log("Icon clicked for category:", catID);
+            // console.log("Icon clicked for category:", catID);
             toggleDropdown(catID); // Toggle dropdown for this category
         }
     };
