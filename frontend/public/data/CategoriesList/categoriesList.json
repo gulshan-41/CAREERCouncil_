@@ -15,29 +15,9 @@
         "description": "Learn about leadership and business management roles."
     },
     {
-        "catID": "CivilServices",
-        "text": "Civil Services",
-        "description": "Prepare for government and administrative roles."
-    },
-    {
         "catID": "Media",
         "text": "Media",
         "description": "Dive into journalism, file, and digital media careers."
-    },
-    {
-        "catID": "ArmedForces",
-        "text": "Armed Forces",
-        "description": "Serve the nation through military careers."
-    },
-    {
-        "catID": "Jee",
-        "text": "JEE",
-        "description": "Prepare for engineering entrance exams."
-    },
-    {
-        "catID": "Neet",
-        "text": "NEET",
-        "description": "Gear up for medical entrance exams." 
     },
     {
         "catID": "It",
@@ -78,5 +58,25 @@
         "catID": "Law",
         "text": "Law",
         "description": "Pursue justice with a career in law."
+    },
+    {
+        "catID": "CivilServices",
+        "text": "Civil Services",
+        "description": "Prepare for government and administrative roles."
+    },
+    {
+        "catID": "ArmedForces",
+        "text": "Armed Forces",
+        "description": "Serve the nation through military careers."
+    },
+    {
+        "catID": "Jee",
+        "text": "JEE",
+        "description": "Prepare for engineering entrance exams."
+    },
+    {
+        "catID": "Neet",
+        "text": "NEET",
+        "description": "Gear up for medical entrance exams." 
     }
 ]

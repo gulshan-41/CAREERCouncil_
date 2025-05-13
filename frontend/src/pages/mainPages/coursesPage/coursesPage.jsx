@@ -1,5 +1,5 @@
 import "./coursesPage.scss";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import Aside from "../../../components/coursePageComponents/aside/aside";
@@ -8,20 +8,18 @@ import Prerequsities from "../../../components/coursePageComponents/prerequsitie
 import CoreSubjects from "../../../components/coursePageComponents/coreSubjects/coreSubjects";
 import RecommendedColleges from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
 import JobRoles from "../../../components/coursePageComponents/jobRoles/jobRoles";
+import RecommendedCoursesGrid from "../../../components/cardsGrid/recommendedCoursesGrid/recommendedCoursesGrid";
 
 function CoursesPage() {
-    // Get the courseID from the URL (e.g., /courses/AI-ML)
     const { courseID } = useParams();
-    // Access context
     const { fetchCourseDetails, courseDetails, courseLoading, courseError } = useCategories();
 
-    // Fetch course data when courseID changes
     useEffect(() => {
-        // console.log(`Fetching course data for: ${courseID}`);
-        fetchCourseDetails(courseID);
+        if (courseID) {
+            fetchCourseDetails(courseID);
+        }
     }, [courseID, fetchCourseDetails]);
 
-    // Render loading state
     if (courseLoading[courseID]) {
         return (
             <div className="">
@@ -32,7 +30,6 @@ function CoursesPage() {
         );
     }
 
-    // Render error state
     if (courseError[courseID]) {
         return (
             <div className="course">
@@ -43,10 +40,8 @@ function CoursesPage() {
         );
     }
 
-    // Get course data from context
     const courseData = courseDetails[courseID];
 
-    // Render if no course data (optional safeguard)
     if (!courseData) {
         return (
             <div className="course">
@@ -63,6 +58,7 @@ function CoursesPage() {
             <div className="coursespage-wrapper">
                 <section className="courses-main-section">
                     <h1>{courseData.name}</h1>
+                    <RecommendedCoursesGrid currentCourseID={courseID} />
                     <Aside />
                     <Introduction data={courseData.introduction[0]} />
                     <Prerequsities data={courseData.prerequisites[0]} />

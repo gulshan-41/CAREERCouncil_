@@ -24,8 +24,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
-        <CategoriesProvider>
-            <SurveyProvider>
+        <SurveyProvider>
+            <CategoriesProvider>
                 <CompareProvider>
                     <Router>
                         <Routes>
@@ -73,8 +73,8 @@ function App() {
                     />
                     
                 </CompareProvider>
-            </SurveyProvider>
-        </CategoriesProvider>
+            </CategoriesProvider>
+        </SurveyProvider>
     );
 }
 

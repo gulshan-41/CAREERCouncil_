@@ -10,40 +10,20 @@ export function SurveyProvider({ children }) {
         occupation: "",
         email: "",
         password: "",
-        strengths: {
-            mathematics: null,
-            management: null,
-            sports: [],
-        },
-        interests: {
-            science: null,
-            history: null,
-            fields: [],
-        },
+        strengths: { mathematics: null, management: null, sports: [] },
+        interests: { science: null, history: null, fields: [] },
     });
-
     const [user, setUser] = useState(null);
-    const [loginData, setLoginData] = useState({
-        email: "",
-        password: "",
-    });
+    const [loginData, setLoginData] = useState({ email: "", password: "" });
     const hasFetchedUser = useRef(false);
+    const hasFetchedPreferences = useRef(false);
 
     const updateSurveyData = (key, value) => {
         setSurveyData((prev) => {
             if (typeof value === "object" && (key === "strengths" || key === "interests")) {
-                return {
-                    ...prev,
-                    [key]: {
-                        ...prev[key],
-                        ...value,
-                    },
-                };
+                return { ...prev, [key]: { ...prev[key], ...value } };
             }
-            return {
-                ...prev,
-                ...(typeof value === "object" ? value : { [key]: value }),
-            };
+            return { ...prev, ...(typeof value === "object" ? value : { [key]: value }) };
         });
     };
 
@@ -53,18 +33,14 @@ export function SurveyProvider({ children }) {
 
     const fetchUser = async () => {
         try {
-            // console.log('Fetching user');
-            const response = await fetch('http://localhost:8800/api/user/getuser', {
+            const response = await fetch("http://localhost:8800/api/user/getuser", {
                 method: "GET",
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                credentials: 'include',
-            }).then((data) => data.json()).catch((error) => console.log(error));
-            
+                headers: { "Content-Type": "application/json" },
+                credentials: "include",
+            }).then((data) => data.json());
+
             if (response.success) {
                 setUser(response.userData);
-
             } else {
                 setUser(null);
             }
@@ -74,14 +50,51 @@ export function SurveyProvider({ children }) {
         }
     };
 
+    // New function to fetch user preferences
+    const fetchPreferences = async () => {
+        if (hasFetchedPreferences.current) return;
+        hasFetchedPreferences.current = true;
+        try {
+            const response = await fetch("http://localhost:8800/api/user/get-preferences", {
+                method: "GET",
+                headers: { "Content-Type": "application/json" },
+                credentials: "include",
+            }).then((data) => data.json());
+
+            if (response.success && response.preferences) {
+                updateSurveyData("interests", { fields: response.preferences.fields || [] });
+            }
+        } catch (error) {
+            console.error("Fetch preferences error:", error);
+            // toast.error("Failed to load preferences");
+        }
+    };
+
+    // New function to save preferences
+    const savePreferences = async () => {
+        try {
+            const response = await fetch("http://localhost:8800/api/user/save-preferences", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                credentials: "include",
+                body: JSON.stringify({ fields: surveyData.interests.fields }),
+            }).then((data) => data.json());
+
+            if (!response.success) {
+                throw new Error("Failed to save preferences");
+            }
+        } catch (error) {
+            console.error("Save preferences error:", error);
+            // toast.error("Failed to save preferences");
+        }
+    };
+
     const handleLogOut = async () => {
         try {
-            const resp = await fetch('http://localhost:8800/api/user/logout', {
+            const resp = await fetch("http://localhost:8800/api/user/logout", {
                 method: "POST",
-                headers: {
-                    "Content-Type": 'application/json'
-                },
-                credentials: 'include'
+                headers: { "Content-Type": "application/json" },
+                credentials: "include",
             }).then((data) => data.json());
 
             if (resp.success) {
@@ -94,21 +107,10 @@ export function SurveyProvider({ children }) {
                     occupation: "",
                     email: "",
                     password: "",
-                    strengths: {
-                        mathematics: null,
-                        management: null,
-                        sports: [],
-                    },
-                    interests: {
-                        science: null,
-                        history: null,
-                        fields: [],
-                    },
+                    strengths: { mathematics: null, management: null, sports: [] },
+                    interests: { science: null, history: null, fields: [] },
                 });
-                setLoginData({
-                    email: "",
-                    password: ""
-                });
+                setLoginData({ email: "", password: "" });
             } else {
                 toast.error(resp.msg);
             }
@@ -120,13 +122,33 @@ export function SurveyProvider({ children }) {
     useEffect(() => {
         if (hasFetchedUser.current) return;
         hasFetchedUser.current = true;
-        if (fetchUser() ) {
-            setUser(JSON.parse(localStorage.getItem('token')));
-          }
+        fetchUser();
+        fetchPreferences();
     }, []);
 
+    // Save preferences whenever they change
+    useEffect(() => {
+        if (surveyData.interests.fields.length > 0 && user) {
+            savePreferences();
+        }
+    }, [surveyData.interests.fields, user]);
+
     return (
-        <SurveyContext.Provider value={{ surveyData, updateSurveyData, loginData, setLoginData, updateLoginData, user, setUser, handleLogOut, fetchUser }}>
+        <SurveyContext.Provider
+            value={{
+                surveyData,
+                updateSurveyData,
+                loginData,
+                setLoginData,
+                updateLoginData,
+                user,
+                setUser,
+                handleLogOut,
+                fetchUser,
+                fetchPreferences,
+                savePreferences,
+            }}
+        >
             {children}
         </SurveyContext.Provider>
     );
