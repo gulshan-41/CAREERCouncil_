@@ -1,7 +1,6 @@
 import "./sideBar.scss";
-import React from "react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
 
 function SideBar() {
@@ -14,12 +13,13 @@ function SideBar() {
             {sideBarIsOpen && <div className="sidebar-overlay" onClick={() => setSideBarToOpen(false)}></div>}
             <div className={`sidebar ${sideBarIsOpen ? "open" : ""}`}>
                 <div className="toggle-sidebar" onClick={() => setSideBarToOpen(!sideBarIsOpen)}></div>
-                {user ? <>
-                    <p>Email :- {user.email}</p>
-                    <p>User Name :- {user.name}</p>
-                    <p>Age :- {user.age}</p>
-                    <p>Occupation :- {user.occupation}</p>
-                </>
+                {user ? <div className="user-log">
+                    <div className="user-img-circle"></div>
+                    <div className="user-name-mail">
+                        <p>{user.email}</p>
+                        <p>{user.name}</p>
+                    </div>
+                </div>
                     : <div className="registration">
                         <div className="login-signin-wrapper">
                             <button className="side-btns"
@@ -42,37 +42,17 @@ function SideBar() {
                 <div className="links">
                     <nav>
                         <ul>
-                            <li>
-                                <Link to="/">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/council">
-                                    Counceling
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/trend">
-                                    Trending
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/about">
-                                    About us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/more">
-                                    More
-                                </Link>
-                            </li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#councelling">Councelling</a></li>
+                            <li><a href="#categories">Categories</a></li>
+                            <li><a href="#trending-courses">Trending</a></li>
+                            <li><a href="#about-us">About us</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div className="hr-ruler"></div>
                 <div className="controls">
-                    <div className="settings" >Settings</div>
+                    {/* <div className="settings" >Settings</div> */}
                     {user &&
                         <div className="log-out" onClick={handleLogOut}>Logout</div>
                     }

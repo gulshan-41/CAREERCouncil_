@@ -97,7 +97,7 @@ function Homepage() {
                    
                 </section>
 
-                <section className="explore-cat">
+                <section className="explore-cat" id="categories">
                     <div className="utility-container">
                         <h2>Explore career categories</h2>
                         <div className="hero-cat-grid">
@@ -106,7 +106,7 @@ function Homepage() {
                     </div>
                 </section>
 
-                <section className="trending-courses-now">
+                <section className="trending-courses-now" id="trending-courses">
                     <div className="utility-container">
                         <div className="trending-courses-wrapper">
                             <h2>Explore trending courses</h2>

@@ -71,6 +71,10 @@
         }
     }
 
+    .aside-categories-style::-webkit-scrollbar {
+        display: none;
+    }
+
     .categories-main-section {
         margin-top: 32px;
         width: 100%;
