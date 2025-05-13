@@ -4,6 +4,7 @@ import NavBar from "/src/components/NavBar/NavBar";
 import SearchDiv from "/src/components/searchDiv/searchDiv";
 import SideBar from "/src/components/sideBar/sideBar";
 import ArrowAI from "/src/components/arrowAI/arrowAI";
+import HelpBar from "../../components/helpBar/helpBar";
 
 function MainLayout() {
     return (
@@ -15,6 +16,7 @@ function MainLayout() {
                 <Outlet />
             </main>
             <ArrowAI />
+            <HelpBar />
         </div>
     );
 }

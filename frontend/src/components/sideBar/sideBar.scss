@@ -68,11 +68,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+   
     .signin-btn {
         cursor: pointer;
     }
-    
+   
     .side-btns {
         flex-grow: 1;
         margin: 0 2px;
@@ -89,7 +89,7 @@
         font-size: 1.1rem;
         letter-spacing: 2px;
         cursor: pointer;
-    
+   
         &:hover {
             background-color: #2F5597;
             color: white;
@@ -130,7 +130,7 @@
             list-style: none;
             padding: 0 2px;
             box-sizing: border-box;
-    
+   
             li {
                 a {
                     font-size: 1.05rem;
@@ -141,7 +141,7 @@
                     box-sizing: border-box;
                     text-decoration: none;
                     color: black;
-    
+   
                     &:hover {
                         color: white;
                         border-radius: 5px;
@@ -159,7 +159,7 @@
     flex-direction: column;
     padding: 0 2px;
     box-sizing: border-box;
-    
+   
     div {
         display: flex;
         align-items: center;
@@ -169,7 +169,7 @@
         box-sizing: border-box;
         font-size: 1.05rem;
         cursor: pointer;
-    
+   
         &:hover {
             background-color: #D4E4FD;
         }
