@@ -63,11 +63,9 @@ export function SurveyProvider({ children }) {
             }).then((data) => data.json()).catch((error) => console.log(error));
             
             if (response.success) {
-                localStorage.setItem('token', JSON.stringify(response.userData))
                 setUser(response.userData);
 
             } else {
-                localStorage.removeItem('token');
                 setUser(null);
             }
         } catch (error) {
