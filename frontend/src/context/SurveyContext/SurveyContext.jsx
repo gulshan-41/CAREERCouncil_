@@ -40,9 +40,11 @@ export function SurveyProvider({ children }) {
             }).then((data) => data.json());
 
             if (response.success) {
+                localStorage.setItem('userData', JSON.stringify(response.userData));
                 setUser(response.userData);
             } else {
                 setUser(null);
+                localStorage.removeItem('userData')
             }
         } catch (error) {
             console.error("Fetch user error:", error);
@@ -99,7 +101,7 @@ export function SurveyProvider({ children }) {
 
             if (resp.success) {
                 toast.success(resp.msg);
-                localStorage.removeItem("token");
+                localStorage.removeItem("userData");
                 setUser(null);
                 setSurveyData({
                     name: "",
@@ -118,6 +120,10 @@ export function SurveyProvider({ children }) {
             console.error("Logout error:", error);
         }
     };
+
+    const fields = JSON.parse(localStorage.getItem('userData'));
+    console.log(fields.interests.fields);
+    
 
     useEffect(() => {
         if (hasFetchedUser.current) return;
