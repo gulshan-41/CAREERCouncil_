@@ -14,3 +14,9 @@
     padding: 8px 0;
     color: #fff;
 }
+
+@media (max-width: 640px) {
+    .helpbar-main {
+        display: none;
+    }
+}

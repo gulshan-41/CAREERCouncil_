@@ -259,6 +259,14 @@
         top: 126px;
         gap: 13px;
 
+        .tfield-box {
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+            }
+        }
+
         .t-decr {
             max-height: 48px;
         }
