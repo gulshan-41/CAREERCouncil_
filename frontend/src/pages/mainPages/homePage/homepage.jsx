@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./homepage.scss";
 import { useNavigate } from "react-router-dom";
 import HcategoriesGrid from "/src/components/cardsGrid/hcategoriesGrid/hcategoriesGrid";
@@ -9,6 +9,7 @@ import whatsappi from "/src/assets/icons/whatsapp.svg";
 
 function Homepage() {
     const navigate = useNavigate();
+    const wrapperRef = useRef(null);
     // State to track visibility of each toggle-space
     const [toggleStates, setToggleStates] = useState({
         email: false,
@@ -24,10 +25,37 @@ function Homepage() {
         }));
     };
 
+    // Position home-toggles like signup-limiter
+    useEffect(() => {
+        const updateTogglesPosition = () => {
+            const toggles = document.getElementById("home-toggles");
+            if (!toggles) return;
+
+            const viewportWidth = window.innerWidth;
+            const wrapperWidth = wrapperRef.current.offsetWidth; // Actual width of .homepage-wrapper
+            const left = (viewportWidth - wrapperWidth) / 2 - 52;
+
+            if (viewportWidth >= 1024) {
+                toggles.style.left = `${left}px`;
+            } else {
+                toggles.style.left = ""; // Reset to avoid stale values
+            }
+        };
+
+        // Initial position
+        updateTogglesPosition();
+
+        // Update on resize
+        window.addEventListener("resize", updateTogglesPosition);
+
+        // Cleanup
+        return () => window.removeEventListener("resize", updateTogglesPosition);
+    }, []);
+
     return (
         <div className="homepage cat-utility-section">
-            <div className="homepage-wrapper">
-                <div className="home-toggles">
+            <div className="homepage-wrapper" ref={wrapperRef}>
+                <div className="home-toggles" id="home-toggles">
                     <div className="toggle-wrapper">
                         <div
                             id="email"
@@ -97,8 +125,8 @@ function Homepage() {
                    
                 </section>
 
-                <section className="explore-cat" id="categories">
-                    <div className="utility-container">
+                <section id="categories">
+                    <div className="explore-cats utility-container">
                         <h2>Explore career categories</h2>
                         <div className="hero-cat-grid">
                             <HcategoriesGrid />

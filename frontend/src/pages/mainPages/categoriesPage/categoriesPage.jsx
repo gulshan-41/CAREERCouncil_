@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./categoriesPage.scss";
 import CategoriesGrid from "../../../components/cardsGrid/categoriesGrid/categoriesGrid";
 import CategoryDetails from "../../../components/categoryPageComponent/categoryDetails/categoryDetail";
@@ -9,6 +9,7 @@ import { useCompare } from "../../../context/CompareContext/CompareContext";
 
 function CategoriesPage() {
     const categoryRefs = useRef({});
+    const wrapperRef = useRef(null);
     const { 
         categoryDetails,
         detailsLoading,
@@ -25,10 +26,37 @@ function CategoriesPage() {
         }
     }, [toggledCategories]);
 
+    // Position home-toggles like signup-limiter
+    useEffect(() => {
+        const updateTogglesPosition = () => {
+            const toggles = document.getElementById("cat-limiters");
+            if (!toggles || !wrapperRef.current) return;
+
+            const viewportWidth = window.innerWidth;
+            const wrapperWidth = wrapperRef.current.offsetWidth; // Actual width of .homepage-wrapper
+            const right = (viewportWidth - wrapperWidth) / 2 - 51;
+
+            if (viewportWidth >= 1024) {
+                toggles.style.right = `${right}px`;
+            } else {
+                toggles.style.right = ""; // Reset to avoid stale values
+            }
+        };
+
+        // Initial position
+        updateTogglesPosition();
+
+        // Update on resize
+        window.addEventListener("resize", updateTogglesPosition);
+
+        // Cleanup
+        return () => window.removeEventListener("resize", updateTogglesPosition);
+    }, []);
+
     return (
         <div className="categories-page cat-utility-section">
-            <div className="categories-page-wrapper">
-                <div className="cat-limiters">Limiters</div>
+            <div className="categories-page-wrapper" ref={wrapperRef}>
+                <div className="cat-limiters" id="cat-limiters">Limiters</div>
                 <section className="categories-aside">
                     <div className="aside-categories-style">
                         <CategoriesGrid />

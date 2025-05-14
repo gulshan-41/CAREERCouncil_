@@ -1,161 +1,314 @@
-@media (max-width: 1536px) {
-    .homepage-wrapper {
+.utility-container {
+    padding-top: 30px;
+}
+
+.homepage-wrapper {
+    max-width: 1152px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-left: 1px solid #a5a5a5;
+    border-right: 1px solid #a5a5a5;
+    margin: 0 auto;
+}
+
+.homepage {
+    border-top: 1px solid #a5a5a5;
+}
+
+#home-toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: fixed;
+    // left: 140px;
+    top: 170px;
+    z-index: 50;
+    // transition: left 0.3s ease;
+}
+
+.toggle-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    .toggle-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: #2f5597;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .toggle-space {
+        position: absolute;
+        left: 90%;
+        height: 48px;
         padding: 0 20px;
         box-sizing: border-box;
-        border-left: 1px solid #a5a5a5;
-        border-right: 1px solid #a5a5a5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #2f5597;
+        border-radius: 0 4px 4px 0 / 0 4px 4px 0;
+        opacity: 0;
+        visibility: hidden;
     }
 
-    .homepage {
-        border-top: 1px solid #a5a5a5;
+    .toggle-space.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.main-hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background-color: #203864;
+    border-radius: 16px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+
+.intro-div {
+    // max-width: 910px;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1;
+        letter-spacing: -2px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 32px;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    .to-courses {
+        border: 1px solid #203864;
+        border-radius: 4px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        color: #203864;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+
+.tutorial-container {
+    display: flex;
+    // max-width: 392px;
+    width: 100%;
+    height: 477.6px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.explore-cats {
+    h2 {
+        font-size: 2rem;
+        font-weight: lighter;
+        padding-bottom: 10px;
         border-bottom: 1px solid #a5a5a5;
-        position: relative;
     }
+}
 
-    .home-toggles {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        position: fixed;
-        left: 140px;
-        top: 170px;
-        z-index: 50;
+.hero-cat-grid {
+    max-width: 740px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+.trending-courses-now {
+    margin-top: 40px;
+}
+
+.trending-courses-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #a5a5a5;
+    border-radius: 20px;
+    position: relative;
+
+    h2 {
+        background-color: #fff;
+        padding: 0 12px;
+        font-size: 1.4rem;
+        text-wrap: nowrap;
+        font-weight: lighter;
+        position: absolute;
+        left: 50%;
+        top: -12.8px;
+        transform: translateX(-50%);
     }
+}
 
-    .toggle-wrapper {
-        display: flex;
-        flex-direction: row;
-        position: relative;
+// @media (max-width: 1536px) { }
 
-        .toggle-items {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 48px;
-            height: 48px;
-            background-color: #2f5597;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .toggle-space {
-            position: absolute;
-            left: 90%;
-            height: 48px;
-            padding: 0 20px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            background-color: #2f5597;
-            border-radius: 0 4px 4px 0 / 0 4px 4px 0;
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .toggle-space.visible {
-            opacity: 1;
-            visibility: visible;
-        }
+@media (max-width: 1280px) {
+    .homepage-wrapper {
+        max-width: 1024px;
     }
 
     .main-hero-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
-        background-color: #203864;
-        border-radius: 16px;
-        padding: 40px 50px;
-        box-sizing: border-box;
-    }
-
-    .intro-div {
-        // max-width: 910px;
-        // width: 100%;
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        border: none;
-        border-radius: 12px;
-        color: #fff;
-
-        h1 {
-            font-size: 5rem;
-            line-height: 1;
-            letter-spacing: -2px;
-            border-bottom: 1px solid #fff;
-            padding-bottom: 32px;
-        }
-
-        p {
-            margin-top: 20px;
-        }
-
-        .to-courses {
-            border: 1px solid #203864;
-            border-radius: 4px;
-            padding: 8px 12px;
-            box-sizing: border-box;
-            color: #203864;
-            background-color: #fff;
-            cursor: pointer;
-        }
     }
 
     .tutorial-container {
-        display: flex;
-        // max-width: 392px;
-        width: 100%;
-        height: 477.6px;
-        border-radius: 12px;
-        box-sizing: border-box;
-        background-color: #fff;
+        height: 240px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #home-toggles {
+        left: 0 !important;
     }
 
-    .explore-cat {
+    .intro-div {
+        h1 {
+            font-size: 4.8rem;
+        }
+    }
+
+    .explore-cats {
         h2 {
-            font-size: 2rem;
-            font-weight: lighter;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #a5a5a5;
+            font-size: 1.75rem;
         }
     }
 
     .hero-cat-grid {
-        max-width: 740px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 2rem 0;
+        max-width: 620px;
     }
 
     .trending-courses-wrapper {
-        border: 1px solid #a5a5a5;
-        border-radius: 20px;
-        position: relative;
+        gap: 4px;
 
         h2 {
-            background-color: #fff;
-            padding: 0 12px;
             font-size: 1.4rem;
-            font-weight: lighter;
-            position: absolute;
-            left: 50%;
-            top: -12.8px;
-            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-wrapper {
+        padding: 0 12px;
+        border: none;
+    }
+
+    .intro-div {
+        h1 {
+            font-size: 4.6rem;
+            padding-bottom: 28px;
+        }
+    }
+
+    .explore-cats {
+        h2 {
+            padding-bottom: 8px;
+        }
+    }
+
+    .hero-cat-grid {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .homepage-wrapper {
+        padding: 0 8px;
+    }
+
+    .utility-container {
+        padding: 10px 0;
+    }
+
+    .main-hero-wrapper {
+        padding: 25px 35px;
+    }
+
+    .intro-div {
+        h1 {
+            font-size: 3.8rem;
+            padding-bottom: 24px;
+        }
+    }
+
+    .explore-cats {
+        h2 {
+            font-size: 1.4rem;
         }
     }
 
     .trending-courses-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
+        h2 {
+            font-size: 1.35rem;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .toggle-wrapper {
+        .toggle-items {
+            width: 42px;
+            height: 42px;
+        }
+
+        .toggle-space {
+            height: 42px;
+            padding: 0 14px;
+        }
+    }
+    .main-hero-wrapper {
         padding: 20px;
-        box-sizing: border-box;
     }
 
+    .intro-div {
+        h1 {
+            font-size: 2.8rem;
+            padding-bottom: 20px;
+        }
+
+        p {
+            margin-top: 12px;
+            font-size: 0.95rem;
+        }
+    }
+
+    .explore-cats {
+        h2 {
+            font-size: 1.35rem;
+            padding-bottom: 4px;
+        }
+    }
+
+    .hero-cat-grid {
+        padding: 8px 0;
+    }
+
+    .trending-courses-wrapper {
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
 }

@@ -24,7 +24,7 @@ function NavBar() {
     return(
         <header>
             <div className="sticky-header" ref={navRef}>
-                <div className="company-container utility-section">
+                <div className="company-container nav-utility-section">
                     <div className="company-categories">
                         <div className="logo">
                             <span id="career">CAREER </span><span id="council">Council_</span>
@@ -32,7 +32,7 @@ function NavBar() {
                         <SearchBar />
                     </div>
                 </div>
-                <div className="nav-bar utility-section">
+                <div className="nav-bar nav-utility-section">
                     <nav className="breadcrum-nav">
                         <Breadcrum />
                     </nav>

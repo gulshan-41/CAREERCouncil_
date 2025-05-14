@@ -1,41 +1,41 @@
-@media (max-width: 1536px) {
-    .breadcrum {
-        display: flex;
-        align-items: center;
-        list-style: none;
+.breadcrum {
+    display: flex;
+    align-items: center;
+    list-style: none;
 
-        li {
-            display: flex;
-            flex-direction: row;
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 0;
+        box-sizing: border-box !important;
+
+        .separator {
+            display: inline-flex;
             justify-content: center;
             align-items: center;
-            padding: 4px 0;
-            box-sizing: border-box !important;
-    
-            .separator {
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-            }
+        }
+        
+        a {
+            font-size: 1rem;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: white;
+            border: 1px solid #2F5597;
+            text-decoration: none;
             
-            a {
-                font-size: 1rem;
-                display: block;
-                width: 100%;
-                height: 100%;
-                color: white;
-                border: 1px solid #2F5597;
-                text-decoration: none;
-                
-                &:hover {
-                    border-bottom: 1px solid white;
-                }
+            &:hover {
+                border-bottom: 1px solid white;
             }
         }
     }
 }
 
-@media (max-width: 1312px) {
+// @media (max-width: 1536px) { }
+
+@media (max-width: 1280px) {
     .breadcrum {
         li {
             a {
@@ -45,7 +45,7 @@
     }
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1024px) {
     .breadcrum {
         li {
             a {
@@ -55,7 +55,7 @@
     }
 }
 
-// @media (max-width: 864px) { }
+// @media (max-width: 768px) { }
 
 @media (max-width: 640px) {
     .breadcrum {

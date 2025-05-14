@@ -141,3 +141,134 @@
         background-color: #fff;
     }
 }
+
+@media (max-width: 1024px) {
+    .trending-courses-grid1,
+    .trending-courses-grid2 {
+        height: 200px;
+    }
+
+    .trending-course-card-wrapper {
+        height: 190px;
+
+        &:hover {
+            .tcourse-field {
+                transform: translateY(-128px);
+            }
+        }
+    }
+
+    .trending-course-card-wrapper-rv {
+        height: 190px;
+
+        &:hover {
+            .tcourse-field {
+                transform: translateY(-128px);
+            }
+        }
+    }
+
+    .tcourse-field {
+        padding: 8px 16px;
+        height: 190px;
+        top: 142px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 640px) {
+    .trending-course-card-wrapper {
+        width: 180px;
+        left: calc(180px * var(--total-cardsONE));
+        animation: cardsScroll 15s linear infinite;
+        animation-delay: calc((15s / var(--total-cardsONE)) * (var(--position) - 1) / 1.125);
+
+        &:hover {
+            .tcourse-field {
+                transform: translateY(-128px);
+            }
+        }
+    }
+
+    .trending-course-card-wrapper-rv {
+        width: 180px;
+        right: calc(180px * var(--total-cardsTWO));
+        animation: RVcardsScroll 15s linear infinite;
+        animation-delay: calc((15s / var(--total-cardsTWO)) * (var(--position) - 1) / 1.125);
+
+        &:hover {
+            .tcourse-field {
+                transform: translateY(-128px);
+            }
+        }
+    }
+
+    .tcourse-field {
+        padding: 8px 16px;
+        height: 190px;
+        top: 142px;
+        gap: 8px;
+    }
+
+    .tcourse-name {
+        padding: 16px;
+
+        p {
+            font-size: 1.35rem;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .trending-courses-grid1,
+    .trending-courses-grid2 {
+        height: 175px;
+    }
+
+    .trending-course-card-wrapper {
+        height: 175px;
+        width: 160px;
+        left: calc(160px * var(--total-cardsONE));
+        animation: cardsScroll 15s linear infinite;
+        animation-delay: calc((15s / var(--total-cardsONE)) * (var(--position) - 1) / 1.165);
+
+        &:hover {
+            .tcourse-field {
+                transform: translateY(-114px);
+            }
+        }
+    }
+
+    .trending-course-card-wrapper-rv {
+        height: 175px;
+        width: 160px;
+        right: calc(160px * var(--total-cardsTWO));
+        animation: RVcardsScroll 15s linear infinite;
+        animation-delay: calc((15s / var(--total-cardsTWO)) * (var(--position) - 1) / 1.165);
+
+        &:hover {
+            .tcourse-field {
+                transform: translateY(-114px);
+            }
+        }
+    }
+
+    .tcourse-field {
+        padding: 8px 16px;
+        height: 190px;
+        top: 126px;
+        gap: 13px;
+
+        .t-decr {
+            max-height: 48px;
+        }
+    }
+
+    .tcourse-name {
+        padding: 16px;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
