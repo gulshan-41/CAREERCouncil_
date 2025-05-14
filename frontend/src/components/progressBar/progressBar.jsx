@@ -52,7 +52,7 @@ function ProgressBar() {
 
     // Debug pathname and currentStep
     useEffect(() => {
-        console.log("Pathname:", pathname, "Current Step:", currentStep);
+        // console.log("Pathname:", pathname, "Current Step:", currentStep);
     }, [pathname]);
 
     return (

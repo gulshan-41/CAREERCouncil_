@@ -116,8 +116,8 @@ export function SurveyProvider({ children }) {
         }
     };
 
-    const fields = JSON.parse(localStorage.getItem('userData'));
-    console.log(fields.interests.fields);
+    // const fields = JSON.parse(localStorage.getItem('userData'));
+    // console.log(fields.interests.fields);
     
 
     useEffect(() => {
