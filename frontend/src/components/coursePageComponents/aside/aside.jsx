@@ -2,7 +2,7 @@ import "./aside.scss";
 import { useState } from "react";
 
 function Aside() {
-    const [isTableOpen, setTableToOpen] = useState(false);
+    const [isTableOpen, setTableToOpen] = useState(true);
 
     const toggleContent = () => {
         setTableToOpen((prev) => !prev);

@@ -1,5 +1,5 @@
 import "./coursesPage.scss";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import Aside from "../../../components/coursePageComponents/aside/aside";
@@ -13,12 +13,40 @@ import RecommendedCoursesGrid from "../../../components/cardsGrid/recommendedCou
 function CoursesPage() {
     const { courseID } = useParams();
     const { fetchCourseDetails, courseDetails, courseLoading, courseError } = useCategories();
+    const wrapperRef = useRef(null);
 
     useEffect(() => {
         if (courseID) {
             fetchCourseDetails(courseID);
         }
     }, [courseID, fetchCourseDetails]);
+
+    // Position home-toggles like signup-limiter
+    useEffect(() => {
+        const updateTogglesPosition = () => {
+            const toggles = document.getElementById("courses-limiters");
+            if (!toggles) return;
+
+            const viewportWidth = window.innerWidth;
+            const wrapperWidth = wrapperRef.current.offsetWidth; // Actual width of .homepage-wrapper
+            const left = (viewportWidth - wrapperWidth) / 2 - 60;
+
+            if (viewportWidth >= 768) {
+                toggles.style.left = `${left}px`;
+            } else {
+                toggles.style.left = ""; // Reset to avoid stale values
+            }
+        };
+
+        // Initial position
+        updateTogglesPosition();
+
+        // Update on resize
+        window.addEventListener("resize", updateTogglesPosition);
+
+        // Cleanup
+        return () => window.removeEventListener("resize", updateTogglesPosition);
+    }, []);
 
     if (courseLoading[courseID]) {
         return (
@@ -54,8 +82,8 @@ function CoursesPage() {
 
     return (
         <div className="coursespage cat-utility-section">
-            <div className="courses-limiters">Limiters</div>
-            <div className="coursespage-wrapper">
+            <div className="coursespage-wrapper" ref={wrapperRef}>
+                <div className="courses-limiters" id="courses-limiters">Feedback</div>
                 <section className="courses-main-section">
                     <h1>{courseData.name}</h1>
                     <RecommendedCoursesGrid currentCourseID={courseID} />

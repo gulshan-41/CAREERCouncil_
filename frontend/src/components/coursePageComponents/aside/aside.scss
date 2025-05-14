@@ -66,6 +66,12 @@
         grid-template-rows: 1fr;
         opacity: 1;
         border-top: 1px solid #a5a5a5;
+
+        .content-links {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            box-sizing: border-box;
+        }
     }
 
     &.closed {
@@ -78,8 +84,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 8px 40px;
-    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: all ease-in-out 0.4s;
 
     li {
         list-style: circle;
@@ -97,6 +104,24 @@
                 text-decoration: underline solid #203864 1px;
                 color: #203864;
                 background-color: #D4E4FD;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .content-head {
+        .heading-btn {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .content-links {
+        li {
+            a {
+                font-size: 1rem;
             }
         }
     }

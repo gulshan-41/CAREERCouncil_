@@ -1,6 +1,6 @@
 import "./recommendedCoursesGrid.scss";
 import { useCategories } from "/src/context/CategoriesProvider/CategoriesProvider";
-import RelatedCoursesCard from "../../cards/relatedCoursesCard/relatedCoursesCard";
+import RecommendedCoursesCards from "../../cards/recommendedCoursesCards/recommendedCoursesCards";
 
 function RecommendedCoursesGrid({ currentCourseID }) {
     const { recommendedCourses, recommendedLoading, recommendedError } = useCategories();
@@ -33,14 +33,12 @@ function RecommendedCoursesGrid({ currentCourseID }) {
 
     return (
         <div className="recommended-courses-grid">
-            <h2>Recommended Courses</h2>
             {filteredCourses.map((course) => (
-                <RelatedCoursesCard
+                <RecommendedCoursesCards
                     key={course.courseID || course.name}
                     courseID={course.courseID}
                     name={course.name}
                     specialization={course.specialization}
-                    courseData={course}
                 />
             ))}
         </div>

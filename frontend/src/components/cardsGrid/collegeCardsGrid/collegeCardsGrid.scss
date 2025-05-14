@@ -5,6 +5,19 @@
     margin-right: auto;
     display: grid;
     justify-items: start;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 8px;
+}
+
+@media (max-width: 640px) {
+    .college-cards-grid {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 475px) {
+    .college-cards-grid {
+        padding: 0 30px;
+    }
 }
