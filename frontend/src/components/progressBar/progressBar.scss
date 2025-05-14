@@ -108,3 +108,42 @@
         color: #fff;
     }
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 475px) {
+    .progress-container {
+        max-width: 470px;
+        overflow-x: hidden; /* Clip content */
+    }
+
+    .progress-bar {
+        padding: 8px;
+        display: flex;
+        transition: transform 1.4s ease;
+
+        &.step-0 {
+            transform: translateX(0);
+        }
+
+        &.step-1 {
+            transform: translateX(-500px);
+        }
+
+        &.step-2 {
+            transform: translateX(-1000px);
+        }
+    }
+
+    .progress-item {
+        width: 500px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}

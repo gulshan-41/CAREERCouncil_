@@ -14,10 +14,12 @@ class ErrorBoundary extends Component {
         return this.props.children;
     }
 }
+
 ReactDOM.createRoot(document.getElementById('page-wrapper')).render(
     <React.StrictMode>
         <ErrorBoundary>
             <App />
+            <span id="limiter">Limiter</span>
         </ErrorBoundary>
     </React.StrictMode>
 );

@@ -1,4 +1,5 @@
 .signupLayout-body {
+    max-width: 1536px;
     width: 100%;
     height: 100%;
     padding: 0 40px;
@@ -25,7 +26,7 @@
     border-bottom: none;
     rotate: -90deg;
     position: absolute;
-    left: -5.45%;
+    left: -49px;
     top: 100px;
     cursor: pointer;
 }
@@ -55,5 +56,74 @@
 
     .close-btn {
         display: none;
+    }
+}
+
+// @media (max-width: 1280px) { }
+
+@media (max-width: 1024px) {
+    .signupLayout-body {
+        max-width: 1024px;
+        padding: 0 60px;
+    }
+
+    .signupLayout-wrapper {
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .signup-main-section {
+        max-width: 570px;
+    }
+}
+
+@media (max-width: 768px) {
+    // .signupLayout-body {
+    //     max-width: 768px;
+    //     padding: 0 30px;
+    // }
+
+    .signup-main-section {
+        max-width: 470px;
+        height: 380px;
+    }
+
+    .signup-limiter {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .signupLayout-body {
+        max-width: 640px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    .signupLayout-wrapper,
+    .signup-header-section {
+        border: none;
+    }
+
+    .signup-header-section {
+        padding: 12px 5px;
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+
+    .signupLayout-body,
+    .signupLayout-wrapper {
+        padding: 0 8px;
+    }
+
+    .signup-main-section {
+        height: 360px;
+    }
+
+    .progress-container {
+        max-width: 100%;
     }
 }

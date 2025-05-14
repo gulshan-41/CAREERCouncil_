@@ -6,6 +6,7 @@
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 4px;
     overflow-y: auto;
+    scrollbar-width: none;
 
     @container (max-width: 600px) {
         .categories-card-container {

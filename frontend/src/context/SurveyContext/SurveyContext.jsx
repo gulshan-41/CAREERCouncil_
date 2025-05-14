@@ -10,13 +10,20 @@ export function SurveyProvider({ children }) {
         occupation: "",
         email: "",
         password: "",
-        strengths: { mathematics: null, management: null, sports: [] },
-        interests: { science: null, history: null, fields: [] },
+        strengths: { 
+            mathematics: null,
+            management: null,
+            sports: []
+        },
+        interests: {
+            science: null,
+            history: null,
+            fields: []
+        },
     });
     const [user, setUser] = useState(null);
     const [loginData, setLoginData] = useState({ email: "", password: "" });
     const hasFetchedUser = useRef(false);
-    const hasFetchedPreferences = useRef(false);
 
     const updateSurveyData = (key, value) => {
         setSurveyData((prev) => {
@@ -37,68 +44,57 @@ export function SurveyProvider({ children }) {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
-            }).then((data) => data.json());
+            });
 
-            if (response.success) {
-                setUser(response.userData);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const contentType = response.headers.get("content-type");
+            if (!contentType || !contentType.includes("application/json")) {
+                const text = await response.text();
+                throw new Error(`Expected JSON, got ${contentType || "no content-type"}: ${text}`);
+            }
+
+            const data = await response.json();
+            if (data.success) {
+                setUser(data.userData);
+                setSurveyData((prev) => ({
+                    ...prev,
+                    name: data.userData.name || "",
+                    age: data.userData.age || "",
+                    occupation: data.userData.occupation || "",
+                    email: data.userData.email || "",
+                    strengths: data.userData.strengths || prev.strengths,
+                    interests: data.userData.interests || prev.interests,
+                }));
+                localStorage.setItem("token", data.token || data.userData.id || "");
             } else {
                 setUser(null);
+                localStorage.removeItem("token");
             }
         } catch (error) {
             console.error("Fetch user error:", error);
-            throw error;
-        }
-    };
-
-    // New function to fetch user preferences
-    const fetchPreferences = async () => {
-        if (hasFetchedPreferences.current) return;
-        hasFetchedPreferences.current = true;
-        try {
-            const response = await fetch("http://localhost:8800/api/user/get-preferences", {
-                method: "GET",
-                headers: { "Content-Type": "application/json" },
-                credentials: "include",
-            }).then((data) => data.json());
-
-            if (response.success && response.preferences) {
-                updateSurveyData("interests", { fields: response.preferences.fields || [] });
-            }
-        } catch (error) {
-            console.error("Fetch preferences error:", error);
-            // toast.error("Failed to load preferences");
-        }
-    };
-
-    // New function to save preferences
-    const savePreferences = async () => {
-        try {
-            const response = await fetch("http://localhost:8800/api/user/save-preferences", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                credentials: "include",
-                body: JSON.stringify({ fields: surveyData.interests.fields }),
-            }).then((data) => data.json());
-
-            if (!response.success) {
-                throw new Error("Failed to save preferences");
-            }
-        } catch (error) {
-            console.error("Save preferences error:", error);
-            // toast.error("Failed to save preferences");
+            setUser(null);
+            localStorage.removeItem("token");
         }
     };
 
     const handleLogOut = async () => {
         try {
-            const resp = await fetch("http://localhost:8800/api/user/logout", {
+            const response = await fetch("http://localhost:8800/api/user/logout", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
-            }).then((data) => data.json());
+            });
 
-            if (resp.success) {
-                toast.success(resp.msg);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            if (data.success) {
+                toast.success(data.msg);
                 localStorage.removeItem("token");
                 setUser(null);
                 setSurveyData({
@@ -112,10 +108,11 @@ export function SurveyProvider({ children }) {
                 });
                 setLoginData({ email: "", password: "" });
             } else {
-                toast.error(resp.msg);
+                toast.error(data.msg);
             }
         } catch (error) {
             console.error("Logout error:", error);
+            toast.error("Failed to log out");
         }
     };
 
@@ -123,15 +120,7 @@ export function SurveyProvider({ children }) {
         if (hasFetchedUser.current) return;
         hasFetchedUser.current = true;
         fetchUser();
-        fetchPreferences();
     }, []);
-
-    // Save preferences whenever they change
-    useEffect(() => {
-        if (surveyData.interests.fields.length > 0 && user) {
-            savePreferences();
-        }
-    }, [surveyData.interests.fields, user]);
 
     return (
         <SurveyContext.Provider
@@ -145,8 +134,6 @@ export function SurveyProvider({ children }) {
                 setUser,
                 handleLogOut,
                 fetchUser,
-                fetchPreferences,
-                savePreferences,
             }}
         >
             {children}

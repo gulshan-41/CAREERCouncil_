@@ -3,7 +3,6 @@ import "./signupLayout.scss";
 import ProgressBar from "/src/components/progressBar/progressBar";
 
 function SignupLayout({ onClose }) {
-
     return (
         <>
             <div className="signupLayout-body">

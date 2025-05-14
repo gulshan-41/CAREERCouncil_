@@ -15,6 +15,7 @@ function HcategoriesGrid() {
         if (toggledCategories.includes(catID)) {
             navigate("/categories");
             setTimeout(() => {
+                const element = document.getElementById(`category-details-${catID}`);
                 if (element) {
                     element.scrollIntoView({ behavior: "smooth" });
                 } else {

@@ -10,7 +10,7 @@ import { useCompare } from "../../../context/CompareContext/CompareContext";
 function CategoriesPage() {
     const categoryRefs = useRef({});
     const { 
-        categoryDetails, 
+        categoryDetails,
         detailsLoading,
         detailsError, 
         toggledCategories, 

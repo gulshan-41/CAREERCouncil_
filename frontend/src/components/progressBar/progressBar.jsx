@@ -1,10 +1,12 @@
 import "./progressBar.scss";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Tick from "/src/assets/icons/greenTick.svg";
 
 function ProgressBar() {
     const location = useLocation();
     const { pathname } = location; // Destructure for cleaner access
+    const progressBarRef = useRef(null);
 
     // Define steps and their base URLs
     const steps = [
@@ -42,16 +44,20 @@ function ProgressBar() {
     // Determine the current step
     let currentStep = steps.findIndex((step) => step.url === pathname);
     if (currentStep === -1) {
-        // Check if the current path is a sub-page of any step
         currentStep = stepPageMap.findIndex((pages) => pages.includes(pathname));
         if (currentStep === -1) {
-            currentStep = 0; // Default to first step for invalid paths
+            currentStep = 0; // Default to first step
         }
     }
 
+    // Debug pathname and currentStep
+    useEffect(() => {
+        console.log("Pathname:", pathname, "Current Step:", currentStep);
+    }, [pathname]);
+
     return (
         <div className="progress-container">
-            <div className="progress-bar">
+            <div className={`progress-bar step-${currentStep}`}>
                 {steps.map((step, index) => {
                 const isCompleted = index < currentStep;
                 const isCurrent = index === currentStep;

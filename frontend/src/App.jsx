@@ -1,6 +1,6 @@
-import React from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import "/index.scss";
+import "/index.css";
 import MainLayout from "/src/layout/mainLayout/mainLayout";
 import Homepage from "/src/pages/mainPages/homePage/homepage";
 import CategoriesPage from "/src/pages/mainPages/categoriesPage/categoriesPage";
@@ -23,6 +23,33 @@ import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+    useEffect(() => {
+    const updateLimiterPosition = () => {
+        const limiter = document.getElementById('limiter');
+        if (!limiter) return;
+
+        const viewportWidth = window.innerWidth;
+        const pageWrapperWidth = Math.min(viewportWidth, 1536); // #page-wrapper's width
+        const left = (viewportWidth - pageWrapperWidth) / 2 - 50; // Formula: (viewport - 1536) / 2 - 50px
+
+        // Only apply if viewport >= 1696px (matches CSS display: block)
+        if (viewportWidth >= 1696) {
+            limiter.style.left = `${left}px`;
+        } else {
+            limiter.style.left = ''; // Reset to avoid stale values
+        }
+    };
+
+    // Initial position
+    updateLimiterPosition();
+
+    // Update on resize
+    window.addEventListener('resize', updateLimiterPosition);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', updateLimiterPosition);
+}, []);
+
     return (
         <SurveyProvider>
             <CategoriesProvider>

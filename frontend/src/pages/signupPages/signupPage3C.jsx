@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 function SignupPage3C() {
     const navigate = useNavigate();
-    const { surveyData, updateSurveyData, savePreferences } = useSurvey();
+    const { surveyData, updateSurveyData } = useSurvey();
 
     const handleFieldToggle = (field) => {
         if (!updateSurveyData) {
@@ -18,9 +18,10 @@ function SignupPage3C() {
         updateSurveyData("interests", { fields: updatedFields });
     };
 
-    const handleNext = async () => {
+    // console.log("Survey data: ", surveyData);
+
+    const handleNext = () => {
         if (surveyData.interests.fields.length > 0) {
-            await savePreferences(); // Save preferences before navigating
             navigate("/signup-login-modal");
         } else {
             toast.error("Please select at least one career field.");
@@ -57,7 +58,7 @@ function SignupPage3C() {
                             checked={surveyData.interests.fields.includes(field)}
                             onChange={() => handleFieldToggle(field)}
                         />
-                        <span className={`option-spans ${surveyData.interests.fields.includes(field) ? "selected" : "deselected"}`}>{field}</span>
+                        <span className={`option-spans ${surveyData.interests?.fields?.includes(field) ? "selected" : "deselected"}`}>{field}</span>
                     </label>
                 ))}
             </div>
@@ -87,7 +88,7 @@ function SignupPage3C() {
                 </svg>
                 </button>
                 <button className="next-btn" onClick={handleNext}>
-                    <svg
+                <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="22px"
                         height="22px"
