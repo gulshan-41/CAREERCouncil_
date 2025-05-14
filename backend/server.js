@@ -24,7 +24,7 @@ app.use(morgan('tiny'));
 app.use(cookieParser());
 
 //categories data and list api startpoint
-app.use('/api/categories', CategoriesRouter)
+app.use('/api/categories', CategoriesRouter);
 
 //courses api startpoint
 app.use('/api/course', CoursesRouter);
@@ -40,4 +40,4 @@ dbConnect().then(() => {
     app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);
     });
-})
+});

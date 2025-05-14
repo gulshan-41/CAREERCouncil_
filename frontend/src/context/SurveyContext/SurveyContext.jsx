@@ -116,6 +116,10 @@ export function SurveyProvider({ children }) {
         }
     };
 
+    const fields = JSON.parse(localStorage.getItem('userData'));
+    console.log(fields.interests.fields);
+    
+
     useEffect(() => {
         if (hasFetchedUser.current) return;
         hasFetchedUser.current = true;
