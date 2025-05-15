@@ -68,15 +68,12 @@ export function SurveyProvider({ children }) {
                     strengths: data.userData.strengths || prev.strengths,
                     interests: data.userData.interests || prev.interests,
                 }));
-                localStorage.setItem("token", data.token || data.userData.id || "");
             } else {
                 setUser(null);
-                localStorage.removeItem("token");
             }
         } catch (error) {
             console.error("Fetch user error:", error);
             setUser(null);
-            localStorage.removeItem("token");
         }
     };
 
@@ -95,7 +92,6 @@ export function SurveyProvider({ children }) {
             const data = await response.json();
             if (data.success) {
                 toast.success(data.msg);
-                localStorage.removeItem("token");
                 setUser(null);
                 setSurveyData({
                     name: "",
