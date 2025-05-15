@@ -34,3 +34,6 @@ build/
 
 # Personal/project folders not meant for GitHub
 Documents/
+
+#video
+src/assets/video/tutorial.mov

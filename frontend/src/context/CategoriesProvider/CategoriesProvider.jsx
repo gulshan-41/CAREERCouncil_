@@ -202,7 +202,7 @@ export function CategoriesProvider({ children }) {
                 if (categoriesError) {
                     setRecommendedError("Cannot fetch recommended courses due to categories error");
                 } else if (!surveyData.interests.fields.length) {
-                    setRecommendedError("No user preferences selected");
+                    setRecommendedError("No user preferences selected! Signup for this.");
                 }
                 return;
             }
