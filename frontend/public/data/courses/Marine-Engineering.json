@@ -1,0 +1,471 @@
+{
+    "courseID": "Marine-Engineering",
+    "name": "Marine Engineering",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "A four-year undergraduate program, Marine Engineering is an exciting course that explores the science and technology of designing, building, and maintaining marine vessels such as ships, submarines, and offshore platforms."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "This program equips students with the skills to innovate and create marine systems, ensuring they are safe, efficient, and capable of operating in challenging marine environments. Combining theoretical knowledge with hands-on practical training, it's ideal for those passionate about maritime technology and engineering."
+            },
+            {
+                "type": "heading",
+                "content": "What this course mainly focuses on?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Marine Vessel Design: Learning to create efficient ship and submarine structures.",
+                    "Propulsion Systems: Studying engines and power systems that propel marine vessels.",
+                    "Marine Electrical Technology: Understanding electrical systems for marine operations.",
+                    "Ship Structures and Materials: Exploring durable materials for marine construction.",
+                    "Navigation and Safety: Mastering systems for safe marine navigation and operations."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "Marine Engineering is a specialized branch of engineering focused on the design, development, testing, and maintenance of marine vessels and their systems. This undergraduate program is highly sought after by students passionate about maritime engineering, offering a blend of theoretical learning and practical training to prepare graduates for careers in industries like shipping, defense, and offshore energy."
+            },
+            {
+                "type": "paragraph",
+                "content": "Standard duration: In India, the undergraduate program in Marine Engineering, typically offered as a Bachelor of Technology (B.Tech), is a four-year program. This duration is structured to include eight semesters, with a combination of academic coursework and practical training."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This guide outlines the prerequisites for pursuing Marine Engineering. It covers the required 10-12th subjects, tips for gaining an advantage before enrolling, and admission requirements in India to help students make informed career decisions."
+            },
+            {
+                "type": "heading",
+                "content": "Required 10th & 12th subjects"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "10th Standard: Students must have studied Science (including Physics and Chemistry) and Mathematics as compulsory subjects to build a foundational understanding for engineering studies.",
+                    "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, and Mathematics (PCM) as core subjects. PCM is the standard for engineering programs like Marine Engineering.",
+                    "Minimum Marks: A minimum aggregate score of 50-60% in PCM is typically required, though top colleges may demand higher percentages or competitive exam ranks.",
+                    "Visit for more insights: Marine Engineering Eligibility - Shiksha"
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "*TIPS to get an upper hand before enrolling in the course"
+            },
+            {
+                "type": "paragraph",
+                "content": "For school students interested in Marine Engineering, excelling in core subjects and exploring additional skills can provide a competitive edge before enrolling. These tips are designed to help students prepare early and excel throughout the course."
+            },
+            {
+                "type": "heading",
+                "content": "Basic subjects to master (schooling)"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Physics: Focus on mechanics, thermodynamics, and electromagnetism, critical for understanding marine propulsion and fluid dynamics.",
+                    "Mathematics: Build proficiency in calculus, trigonometry, and algebra, essential for calculations in marine engineering.",
+                    "Chemistry: Gain knowledge of materials science and chemical properties of fuels, relevant for marine materials and propulsion systems."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Additional Subjects and Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Computer Science: Learn basic programming (e.g., Python or C++) to prepare for simulations and design software used in marine engineering.",
+                    "Engineering Drawing: Familiarity with technical drawing or Computer-Aided Design (CAD) tools can help with visualizing and designing marine components.",
+                    "Marine Science: Self-study basic oceanography and marine environment concepts through online resources or books to get a head start.",
+                    "Extracurricular Activities: Join maritime or engineering clubs, participate in science fairs with marine projects, or attend workshops for practical insights.",
+                    "Summary: Mastering PCM is crucial, but learning programming, engineering drawing, and marine science, along with engaging in maritime activities, can set you apart."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Eligibility criterias"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Eligibility criteria are based on stream and total percentage aggregated in class 12th. Completion of Class 12 with PCM, achieving a minimum of 50-60% marks, depending on the institution. Alternatively, a 3-year engineering diploma in any stream may be accepted by some colleges."
+            },
+            {
+                "type": "heading",
+                "content": "Admission requirments"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Entrance Exams: Admission to top colleges is primarily through national or state-level entrance exams, such as: JEE Main, AME CET, IMU CET."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "JEE Main: For NITs, IIITs, and other centrally funded institutions.",
+                    "IMU CET: For Indian Maritime University and affiliated colleges.",
+                    "AME CET: For specific marine engineering colleges.",
+                    "Other exams include MET, KCET, or university-specific tests.",
+                    "Merit-Based Admissions: Some private colleges offer admission based on Class 12 marks, often followed by interviews."
+                ]
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Core subjects in Marine Engineering cover Engineering Mathematics, Thermodynamics, Fluid Mechanics, Marine Propulsion, Ship Structures, and Marine Electrical Technology."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects in Marine Engineering"
+            },
+            {
+                "type": "paragraph",
+                "content": "This section outlines the core subjects and topics studied in undergraduate Marine Engineering programs in India, such as at the Indian Maritime University, and at well-known universities abroad, such as Massachusetts Maritime Academy. These subjects are mandatory to provide students with essential knowledge and skills for designing, building, and maintaining marine vessels."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects and Subtopics"
+            },
+            {
+                "type": "paragraph",
+                "content": "The following subjects are consistently identified as core components of Marine Engineering curricula across reputable institutions. They form the foundation of the discipline, covering critical aspects of marine vessel design, operation, and maintenance."
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Engineering Mathematics",
+                            "items": [
+                                "Calculus: Differential and integral calculus for modeling marine systems.",
+                                "Differential Equations: Solving equations for dynamic marine vessel systems.",
+                                "Linear Algebra: Matrix operations for structural and control system analysis.",
+                                "Probability and Statistics: Risk assessment and reliability in marine design."
+                            ]
+                        },
+                        {
+                            "heading": "Thermodynamics",
+                            "items": [
+                                "Laws of Thermodynamics: Energy conservation in marine propulsion systems.",
+                                "Heat Transfer: Managing heat in marine engines and systems.",
+                                "Energy Conversion: Efficiency in power generation for marine vessels."
+                            ]
+                        },
+                        {
+                            "heading": "Fluid Mechanics",
+                            "items": [
+                                "Fluid Properties: Viscosity and density affecting marine operations.",
+                                "Fluid Statics: Pressure distribution in marine environments.",
+                                "Fluid Dynamics: Bernoulli's equation and Navier-Stokes for marine flow analysis.",
+                                "Dimensional Analysis: Scaling models for marine testing."
+                            ]
+                        },
+                        {
+                            "heading": "Marine Propulsion",
+                            "items": [
+                                "Diesel Engines: Main propulsion systems for ships.",
+                                "Gas Turbine Engines: For high-speed marine vessels.",
+                                "Electric Propulsion: Emerging technologies for sustainable marine transport."
+                            ]
+                        },
+                        {
+                            "heading": "Ship Structures",
+                            "items": [
+                                "Stress Analysis: Ensuring structural integrity under marine loads.",
+                                "Structural Dynamics: Vibration and fatigue analysis in marine structures.",
+                                "Fatigue and Fracture Mechanics: Predicting component lifespan in marine environments.",
+                                "Composite Materials: Lightweight materials for modern marine vessels."
+                            ]
+                        },
+                        {
+                            "heading": "Marine Electrical Technology",
+                            "items": [
+                                "Electrical Systems: Power generation and distribution in marine vessels.",
+                                "Automation: Control systems for marine machinery.",
+                                "Communication Systems: Radio and satellite links for marine operations."
+                            ]
+                        },
+                        {
+                            "heading": "Naval Architecture",
+                            "items": [
+                                "Ship Design: Conceptual and detailed design of marine vessels.",
+                                "Hydrodynamics: Study of water flow around ships.",
+                                "Ship Stability: Ensuring stability and safety of marine vessels."
+                            ]
+                        },
+                        {
+                            "heading": "Marine Machinery",
+                            "items": [
+                                "Marine Engines: Design and operation of propulsion engines.",
+                                "Auxiliary Machinery: Systems supporting main engines.",
+                                "Pumps and Compressors: For fluid handling in marine systems."
+                            ]
+                        },
+                        {
+                            "heading": "Ship Stability and Strength",
+                            "items": [
+                                "Stability Analysis: Principles of stability for marine vessels.",
+                                "Structural Strength: Ensuring durability under marine conditions.",
+                                "Load Distribution: Managing weight and balance on ships."
+                            ]
+                        },
+                        {
+                            "heading": "Marine Engineering Drawing",
+                            "items": [
+                                "Technical Drawing: For designing marine components.",
+                                "CAD/CAM: Computer-aided design and manufacturing in marine engineering.",
+                                "Blueprint Reading: Interpreting marine engineering designs."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "Marine Engineering graduates are equipped to take on diverse roles across multiple sectors, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
+            },
+            {
+                "type": "heading",
+                "content": "Shipping Companies and Naval Forces"
+            },
+            {
+                "type": "paragraph",
+                "content": "Shipping companies and naval forces provide opportunities for marine engineers to contribute to maritime operations and national security. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Marine Engineer Officer: Operates and maintains ship propulsion and auxiliary systems.",
+                    "Naval Architect: Designs and oversees the construction of marine vessels.",
+                    "Technical Superintendent: Manages maintenance and repair of marine fleets."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Indian Navy: Employs marine engineers for naval vessel maintenance and design.",
+                    "Shipping Corporation of India (SCI): Engages in ship operations and maintenance.",
+                    "Cochin Shipyard Limited: Focuses on shipbuilding and repair."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries in the shipping and defense sector typically range from INR 6 LPA to INR 12 LPA, reflecting the specialized nature of these roles."
+            },
+            {
+                "type": "heading",
+                "content": "Private Organizations"
+            },
+            {
+                "type": "paragraph",
+                "content": "Private maritime companies offer roles focused on vessel operations, safety, and efficiency. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Marine Consultant: Provides technical expertise for maritime projects.",
+                    "Marine Safety Officer: Ensures compliance with safety regulations.",
+                    "Marine Operations Manager: Oversees vessel operations and logistics."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Maersk: Global shipping company with engineering roles.",
+                    "Adani Ports: Manages port and maritime operations.",
+                    "Essar Shipping: Engages in vessel management and maintenance."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries vary from INR 4 LPA for entry-level roles to INR 10 LPA for specialized positions."
+            },
+            {
+                "type": "heading",
+                "content": "How a Student Might See Themselves After Completing the Course"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Completing a Marine Engineering degree equips students with technical expertise and practical skills. Graduates are likely to envision themselves as professionals contributing to maritime technology, safety, and sustainability."
+            },
+            {
+                "type": "heading",
+                "content": "Knowledge and expertise"
+            },
+            {
+                "type": "paragraph",
+                "content": "Graduates will have a comprehensive understanding of the following key areas:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Marine Vessel Design: Knowledge of designing efficient ships and submarines.",
+                    "Propulsion Systems: Expertise in marine engines and power systems.",
+                    "Marine Electrical Technology: Understanding of electrical systems in marine environments.",
+                    "Ship Structures: Familiarity with materials and structural designs.",
+                    "Navigation and Safety: Proficiency in systems for safe marine operations."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Skills"
+            },
+            {
+                "type": "paragraph",
+                "content": "Marine Engineering graduates develop a robust skill set, including:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Engineering Software Proficiency: Expertise in CAD for designing marine components.",
+                    "Problem-Solving: Addressing technical challenges in marine systems.",
+                    "Project Management: Coordinating teams on maritime projects.",
+                    "Critical Thinking: Analyzing systems and proposing innovative solutions."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Mental capabilities"
+            },
+            {
+                "type": "paragraph",
+                "content": "The rigorous training fosters mental attributes essential for success:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Analytical Mindset: Breaking down complex marine systems.",
+                    "Attention to Detail: Ensuring accuracy in design and maintenance.",
+                    "Innovation: Developing new maritime technologies.",
+                    "Resilience: Working under pressure in safety-critical roles.",
+                    "Adaptability: Embracing new technologies and trends."
+                ]
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Indian Maritime University (IMU) Chennai",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "84",
+                "visit link": "https://www.imu.edu.in/",
+                "total charges": "10L for entire course"
+            },
+            {
+                "id": 2,
+                "name": "Andhra University",
+                "location": {
+                    "city": "Visakhapatnam",
+                    "state": "Andhra Pradesh",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "101-150",
+                "visit link": "https://www.andhrauniversity.edu.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 3,
+                "name": "Vels University",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "64",
+                "visit link": "https://vistas.ac.in/",
+                "total charges": "10L for entire course"
+            },
+            {
+                "id": 4,
+                "name": "AMET University",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "64",
+                "visit link": "https://www.ametuniv.ac.in/",
+                "total charges": "3.85L for entire course"
+            },
+            {
+                "id": 5,
+                "name": "Tolani Maritime Institute",
+                "location": {
+                    "city": "Pune",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "Not specified",
+                "visit link": "https://tmi.tolani.edu/",
+                "total charges": "17.6L for entire course"
+            },
+            {
+                "id": 6,
+                "name": "Massachusetts Maritime Academy",
+                "location": {
+                    "city": "Buzzards Bay",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1045",
+                "visit link": "https://www.maritime.edu/",
+                "total charges": "$14.4K per year"
+            },
+            {
+                "id": 7,
+                "name": "Southampton Solent University",
+                "location": {
+                    "city": "Southampton",
+                    "state": "",
+                    "country": "UK"
+                },
+                "ownership": "Govt.",
+                "Ranking": "123",
+                "visit link": "https://www.solent.ac.uk/",
+                "total charges": "£14K per year"
+            }
+        ]
+    }
+}

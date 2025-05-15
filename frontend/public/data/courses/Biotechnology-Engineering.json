@@ -1,0 +1,468 @@
+{
+    "courseID": "Biotechnology-Engineering",
+    "name": "Biotechnology Engineering",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "A four-year undergraduate program, Biotechnology Engineering is an innovative course that combines biological sciences with engineering principles to develop solutions in healthcare, agriculture, and environmental sectors."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "This program equips students with skills to manipulate living organisms and bioprocesses to create products like medicines, biofuels, and genetically modified crops. Blending theoretical knowledge with practical laboratory training, it's ideal for those passionate about advancing science and technology for societal benefits."
+            },
+            {
+                "type": "heading",
+                "content": "What this course mainly focuses on?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Genetic Engineering: Modifying organisms' DNA for applications like gene therapy and crop improvement.",
+                    "Bioprocess Engineering: Designing processes to produce bioproducts like vaccines and enzymes.",
+                    "Bioinformatics: Using computational tools to analyze biological data.",
+                    "Biochemistry: Studying chemical processes in living organisms for drug development.",
+                    "Environmental Biotechnology: Developing solutions for waste treatment and sustainable practices."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "Biotechnology Engineering is a multidisciplinary field that integrates biology, chemistry, and engineering to innovate products and processes using living organisms. This undergraduate program is highly sought after by students interested in research and development, offering a mix of theoretical learning and hands-on laboratory work to prepare graduates for careers in industries like pharmaceuticals, agriculture, and environmental management."
+            },
+            {
+                "type": "paragraph",
+                "content": "Standard duration: In India, the undergraduate program in Biotechnology Engineering, typically offered as a Bachelor of Technology (B.Tech), is a four-year program. This duration is structured to include eight semesters, combining academic coursework with practical training."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This guide outlines the prerequisites for pursuing Biotechnology Engineering. It covers required 10th & 12th subjects, tips for gaining an advantage before enrolling, and admission requirements in India to help students make informed career decisions."
+            },
+            {
+                "type": "heading",
+                "content": "Required 10th & 12th subjects"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "10th Standard: Students must have studied Science (including Physics and Chemistry) and Mathematics as compulsory subjects to build a foundational understanding for engineering studies.",
+                    "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, and Biology or Mathematics (PCB/PCM) as core subjects. Many top colleges prefer PCM, but PCB is accepted by some institutions.",
+                    "Minimum Marks: A minimum aggregate score of 50-60% in PCB/PCM is typically required, though top colleges like IITs may demand higher percentages or competitive exam ranks.",
+                    "Visit for more insights: Biotechnology Engineering Eligibility - Shiksha"
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "*TIPS to get an upper hand before enrolling in the course"
+            },
+            {
+                "type": "paragraph",
+                "content": "For school students interested in Biotechnology Engineering, excelling in core subjects and exploring additional skills can provide a competitive edge before enrolling. These tips are designed to help students prepare early and excel throughout the course."
+            },
+            {
+                "type": "heading",
+                "content": "Basic subjects to master (schooling)"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Biology: Focus on genetics, cell biology, and microbiology, critical for understanding biotechnological processes.",
+                    "Chemistry: Build proficiency in organic and biochemistry, essential for drug development and bioprocessing.",
+                    "Mathematics: Master calculus and statistics, useful for bioinformatics and process modeling."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Additional Subjects and Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Computer Science: Learn basic programming (e.g., Python or R) to prepare for bioinformatics and data analysis.",
+                    "Physics: Understand mechanics and thermodynamics, relevant for bioprocess engineering equipment.",
+                    "Laboratory Skills: Gain experience through school labs or workshops to handle biotechnological experiments.",
+                    "Extracurricular Activities: Join science clubs, participate in biology Olympiads, or attend biotech workshops for practical insights.",
+                    "Summary: Mastering PCB/PCM is crucial, but learning programming, physics, and lab skills, along with engaging in biotech-related activities, can set you apart."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Eligibility criterias"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Eligibility criteria are based on stream and total percentage aggregated in class 12th. Completion of Class 12 with PCB/PCM, achieving a minimum of 50-60% marks, depending on the institution. Alternatively, a 3-year diploma in biotechnology or related fields may be accepted by some colleges."
+            },
+            {
+                "type": "heading",
+                "content": "Admission requirments"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Entrance Exams: Admission to top colleges is primarily through national or state-level entrance exams, such as: JEE Main, JEE Advanced, CUET, MHT CET."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "JEE Main: For NITs, IIITs, and other centrally funded institutions.",
+                    "JEE Advanced: For IITs, requiring qualification through JEE Main.",
+                    "CUET: For central universities offering biotechnology programs.",
+                    "Other exams include MHT CET, KCET, COMEDK UGET, or university-specific tests.",
+                    "Merit-Based Admissions: Some private colleges offer admission based on Class 12 marks, often followed by interviews."
+                ]
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Core subjects in Biotechnology Engineering cover Biochemistry, Genetics, Bioprocess Engineering, Bioinformatics, and Molecular Biology."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects in Biotechnology Engineering"
+            },
+            {
+                "type": "paragraph",
+                "content": "This section outlines the core subjects and topics studied in undergraduate Biotechnology Engineering programs in India, such as at IIT Delhi and VIT Vellore, and at well-known universities abroad, such as MIT. These subjects are mandatory to provide students with essential knowledge and skills for developing biotechnological solutions."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects and Subtopics"
+            },
+            {
+                "type": "paragraph",
+                "content": "The following subjects are consistently identified as core components of Biotechnology Engineering curricula across reputable institutions. They form the foundation of the discipline, covering critical aspects of biological and engineering applications."
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Biochemistry",
+                            "items": [
+                                "Metabolism: Understanding chemical reactions in living organisms.",
+                                "Enzyme Kinetics: Studying enzyme functions for industrial applications.",
+                                "Protein Structure: Analyzing proteins for drug design."
+                            ]
+                        },
+                        {
+                            "heading": "Genetics",
+                            "items": [
+                                "Mendelian Genetics: Principles of inheritance.",
+                                "Molecular Genetics: DNA replication and gene expression.",
+                                "Genetic Engineering: Techniques like CRISPR for gene editing."
+                            ]
+                        },
+                        {
+                            "heading": "Bioprocess Engineering",
+                            "items": [
+                                "Fermentation Technology: Producing bioproducts like antibiotics.",
+                                "Bioreactor Design: Optimizing systems for microbial growth.",
+                                "Downstream Processing: Purifying bioproducts."
+                            ]
+                        },
+                        {
+                            "heading": "Bioinformatics",
+                            "items": [
+                                "Sequence Analysis: Studying DNA and protein sequences.",
+                                "Structural Bioinformatics: Predicting protein structures.",
+                                "Data Mining: Analyzing large biological datasets."
+                            ]
+                        },
+                        {
+                            "heading": "Molecular Biology",
+                            "items": [
+                                "Gene Regulation: Understanding gene expression control.",
+                                "Recombinant DNA Technology: Cloning and gene manipulation.",
+                                "PCR Techniques: Amplifying DNA for research."
+                            ]
+                        },
+                        {
+                            "heading": "Microbiology",
+                            "items": [
+                                "Microbial Physiology: Studying microbial growth and metabolism.",
+                                "Industrial Microbiology: Using microbes for product synthesis.",
+                                "Pathogenic Microbiology: Understanding disease-causing microbes."
+                            ]
+                        },
+                        {
+                            "heading": "Cell Biology",
+                            "items": [
+                                "Cell Structure: Understanding cellular components.",
+                                "Cell Signaling: Studying communication between cells.",
+                                "Cell Culture Techniques: Growing cells for research."
+                            ]
+                        },
+                        {
+                            "heading": "Immunology",
+                            "items": [
+                                "Immune System: Understanding defense mechanisms.",
+                                "Vaccine Development: Designing vaccines.",
+                                "Monoclonal Antibodies: Producing antibodies for therapies."
+                            ]
+                        },
+                        {
+                            "heading": "Chemical Engineering Principles",
+                            "items": [
+                                "Mass Transfer: Managing material flow in bioprocesses.",
+                                "Thermodynamics: Applying energy principles in bioreactors.",
+                                "Process Control: Optimizing bioprocess efficiency."
+                            ]
+                        },
+                        {
+                            "heading": "Environmental Biotechnology",
+                            "items": [
+                                "Bioremediation: Using microbes to clean pollutants.",
+                                "Waste Treatment: Managing industrial waste.",
+                                "Bioenergy: Producing biofuels from biomass."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "Biotechnology Engineering graduates are equipped to take on diverse roles across multiple sectors, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
+            },
+            {
+                "type": "heading",
+                "content": "Pharmaceutical and Healthcare Sectors"
+            },
+            {
+                "type": "paragraph",
+                "content": "The pharmaceutical and healthcare industries offer opportunities for biotechnology engineers to contribute to drug development and medical research. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Biotechnology Researcher: Conducts experiments to develop new drugs and therapies.",
+                    "Bioprocess Engineer: Designs and optimizes processes for producing biologics like vaccines.",
+                    "Quality Controller: Ensures bioproducts meet regulatory standards."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Biocon: Focuses on biopharmaceuticals and biosimilars.",
+                    "Dr. Reddy’s Laboratories: Engages in drug development and manufacturing.",
+                    "CSIR: Conducts research in biotechnology and related fields."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries in the pharmaceutical sector typically range from INR 5 LPA to INR 10 LPA, reflecting the specialized nature of these roles."
+            },
+            {
+                "type": "heading",
+                "content": "Private Organizations (e.g., Agriculture and Food Industry)"
+            },
+            {
+                "type": "paragraph",
+                "content": "Private companies in agriculture and food industries offer roles focused on improving crop yields and food safety. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Genetic Engineer: Develops genetically modified crops for higher yields.",
+                    "Food Safety Specialist: Ensures food products meet safety standards.",
+                    "Bioinformatics Analyst: Analyzes biological data for agricultural applications."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Monsanto India: Focuses on agricultural biotechnology.",
+                    "Nestlé India: Engages in food safety and product development.",
+                    "Bayer Crop Science: Develops biotech solutions for agriculture."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries vary from INR 4 LPA for entry-level roles to INR 8 LPA for specialized positions."
+            },
+            {
+                "type": "heading",
+                "content": "How a Student Might See Themselves After Completing the Course"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Completing a Biotechnology Engineering degree equips students with technical expertise and problem-solving skills. Graduates are likely to envision themselves as innovators contributing to healthcare, agriculture, or environmental sustainability."
+            },
+            {
+                "type": "heading",
+                "content": "Knowledge and expertise"
+            },
+            {
+                "type": "paragraph",
+                "content": "Graduates will have a comprehensive understanding of the following key areas:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Genetic Engineering: Knowledge of manipulating DNA for various applications.",
+                    "Bioprocess Engineering: Expertise in producing bioproducts efficiently.",
+                    "Bioinformatics: Skills in analyzing biological data.",
+                    "Biochemistry: Understanding chemical processes in organisms.",
+                    "Environmental Biotechnology: Solutions for sustainable practices."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Skills"
+            },
+            {
+                "type": "paragraph",
+                "content": "Biotechnology Engineering graduates develop a robust skill set, including:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Laboratory Techniques: Proficiency in handling biotechnological experiments.",
+                    "Data Analysis: Expertise in bioinformatics tools for biological data.",
+                    "Problem-Solving: Addressing challenges in product development.",
+                    "Project Management: Coordinating research and development projects."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Mental capabilities"
+            },
+            {
+                "type": "paragraph",
+                "content": "The rigorous training fosters mental attributes essential for success:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Analytical Mindset: Breaking down complex biological systems.",
+                    "Attention to Detail: Ensuring precision in experiments and processes.",
+                    "Innovation: Developing novel biotechnological solutions.",
+                    "Resilience: Managing challenges in research and development.",
+                    "Adaptability: Embracing new technologies and industry trends."
+                ]
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Indian Institute of Technology (IIT) Delhi",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://home.iitd.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 2,
+                "name": "Indian Institute of Technology (IIT) Madras",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "2",
+                "visit link": "https://www.iitm.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 3,
+                "name": "Vellore Institute of Technology (VIT)",
+                "location": {
+                    "city": "Vellore",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "11",
+                "visit link": "https://vit.ac.in/",
+                "total charges": "2L per year"
+            },
+            {
+                "id": 4,
+                "name": "Birla Institute of Technology and Science (BITS) Pilani",
+                "location": {
+                    "city": "Pilani",
+                    "state": "Rajasthan",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "25",
+                "visit link": "https://www.bits-pilani.ac.in/",
+                "total charges": "2.5L per year"
+            },
+            {
+                "id": 5,
+                "name": "SRM Institute of Science and Technology",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "14",
+                "visit link": "https://www.srmist.edu.in/",
+                "total charges": "2.5L per year"
+            },
+            {
+                "id": 6,
+                "name": "Massachusetts Institute of Technology (MIT)",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "1",
+                "visit link": "https://www.mit.edu/",
+                "total charges": "$55K-$60K per year"
+            },
+            {
+                "id": 7,
+                "name": "University of Cambridge",
+                "location": {
+                    "city": "Cambridge",
+                    "state": "",
+                    "country": "UK"
+                },
+                "ownership": "Govt.",
+                "Ranking": "3",
+                "visit link": "https://www.cam.ac.uk/",
+                "total charges": "£39K per year"
+            }
+        ]
+    }
+}

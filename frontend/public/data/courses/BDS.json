@@ -1,0 +1,514 @@
+{
+    "courseID": "BDS",
+    "name": "Bachelor of Dental Surgery (BDS)",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "A five-year undergraduate program, Bachelor of Dental Surgery (BDS) is a professional medical course that trains students to become qualified dentists, focusing on oral health and dental care."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "This program equips students with the knowledge and skills to diagnose, treat, and prevent dental and oral diseases, preparing them for careers in dental practice and healthcare. It includes four years of academic and clinical training followed by a one-year mandatory internship, ideal for those passionate about dentistry and patient care."
+            },
+            {
+                "type": "heading",
+                "content": "What this course mainly focuses on?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Dental Anatomy and Histology: Understanding the structure and development of teeth and oral tissues.",
+                    "Oral Pathology: Diagnosing diseases affecting the oral cavity.",
+                    "Clinical Dentistry: Performing procedures like fillings, extractions, and prosthodontics.",
+                    "Preventive Dentistry: Promoting oral health and preventing dental diseases.",
+                    "Clinical Training: Hands-on experience in dental clinics to develop practical skills."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "BDS is a professional dental degree focused on preparing students to become competent dentists. The program integrates dental sciences with clinical practice, enabling graduates to work in dental clinics, hospitals, or research institutions. It is highly sought after by students dedicated to oral healthcare, offering a rigorous curriculum and extensive clinical training."
+            },
+            {
+                "type": "paragraph",
+                "content": "Standard duration: In India, the BDS program is five years, including four years of academic and clinical training across eight semesters and a one-year compulsory internship. The curriculum is regulated by the Dental Council of India (DCI)."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This guide outlines the prerequisites for pursuing BDS. It covers required 10th & 12th subjects, tips for gaining an advantage before enrolling, and admission requirements in India to help students make informed career decisions."
+            },
+            {
+                "type": "heading",
+                "content": "Required 10th & 12th subjects"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "10th Standard: Students must have studied Science (including Physics, Chemistry, and Biology) as compulsory subjects to build a foundational understanding for dental studies.",
+                    "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, Biology (PCB), and English as core subjects.",
+                    "Minimum Marks: A minimum aggregate score of 50% in PCB for general category students (40% for reserved categories) is typically required, though top colleges may demand higher percentages or competitive exam ranks.",
+                    "Visit for more insights: BDS Eligibility - Dental Council of India"
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "*TIPS to get an upper hand before enrolling in the course"
+            },
+            {
+                "type": "paragraph",
+                "content": "For school students interested in BDS, excelling in core subjects and gaining additional exposure can provide a competitive edge before enrolling. These tips are designed to help students prepare early and succeed in the rigorous dental curriculum."
+            },
+            {
+                "type": "heading",
+                "content": "Basic subjects to master (schooling)"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Biology: Focus on human anatomy, physiology, and microbiology, critical for dental sciences.",
+                    "Chemistry: Build proficiency in organic and biochemistry, essential for understanding dental materials and pharmacology.",
+                    "Physics: Understand mechanics and optics, relevant for dental equipment and diagnostics."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Additional Subjects and Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "English: Develop strong communication skills for patient interaction and academic writing.",
+                    "Manual Dexterity: Practice fine motor skills through activities like drawing or crafting, crucial for dental procedures.",
+                    "Volunteering: Gain exposure through dental camps or health clinics to understand oral healthcare settings.",
+                    "Extracurricular Activities: Participate in science fairs, biology Olympiads, or dental workshops to enhance practical knowledge.",
+                    "Summary: Mastering PCB is crucial, but improving communication, developing manual dexterity, and gaining dental exposure can set you apart."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Eligibility criterias"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Eligibility criteria are based on stream and total percentage aggregated in class 12th. Completion of Class 12 with PCB and English, achieving a minimum of 50% marks (40% for reserved categories), depending on the institution. Candidates must also be at least 17 years old by December 31 of the admission year."
+            },
+            {
+                "type": "heading",
+                "content": "Admission requirments"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Entrance Exams: Admission to BDS programs in India is primarily through the National Eligibility cum Entrance Test (NEET-UG)."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "NEET-UG: Mandatory for admission to government and private dental colleges in India.",
+                    "Other exams: Some private universities may conduct additional tests or interviews.",
+                    "Merit-Based Admissions: Rare, but some private colleges may consider Class 12 marks alongside NEET scores, followed by counseling."
+                ]
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Core subjects in BDS cover Dental Anatomy, Oral Pathology, General Medicine, Prosthodontics, Orthodontics, and Periodontology."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects in BDS"
+            },
+            {
+                "type": "paragraph",
+                "content": "This section outlines the core subjects and topics studied in BDS programs in India, such as at Manipal College of Dental Sciences and Maulana Azad Institute of Dental Sciences, and at well-known universities abroad, such as University of Melbourne. These subjects are mandatory to provide students with essential dental knowledge and clinical skills."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects and Subtopics"
+            },
+            {
+                "type": "paragraph",
+                "content": "The following subjects are consistently identified as core components of BDS curricula across reputable institutions. They form the foundation of dental education, covering pre-clinical, clinical, and allied medical disciplines."
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Dental Anatomy and Histology",
+                            "items": [
+                                "Tooth Morphology: Structure and types of teeth.",
+                                "Oral Histology: Microscopic study of oral tissues.",
+                                "Embryology: Development of oral and facial structures."
+                            ]
+                        },
+                        {
+                            "heading": "Oral Pathology",
+                            "items": [
+                                "Oral Diseases: Diagnosis of conditions like oral cancer and ulcers.",
+                                "Microbial Infections: Bacterial and viral infections of the oral cavity.",
+                                "Biopsy Techniques: Examining oral tissues for pathology."
+                            ]
+                        },
+                        {
+                            "heading": "General Human Anatomy",
+                            "items": [
+                                "Head and Neck Anatomy: Muscles, nerves, and bones relevant to dentistry.",
+                                "Systemic Anatomy: Overview of body systems.",
+                                "Gross Dissection: Practical study of anatomical structures."
+                            ]
+                        },
+                        {
+                            "heading": "General Human Physiology",
+                            "items": [
+                                "Cranial Nerves: Functions related to oral health.",
+                                "Salivary Glands: Physiology of saliva production.",
+                                "Systemic Physiology: Cardiovascular and respiratory systems."
+                            ]
+                        },
+                        {
+                            "heading": "Biochemistry",
+                            "items": [
+                                "Metabolism: Chemical processes in oral tissues.",
+                                "Enzymes: Role in oral health and disease.",
+                                "Nutritional Biochemistry: Impact of diet on dental health."
+                            ]
+                        },
+                        {
+                            "heading": "Dental Materials",
+                            "items": [
+                                "Restorative Materials: Amalgams, composites, and ceramics.",
+                                "Prosthetic Materials: Denture bases and alloys.",
+                                "Adhesives: Bonding agents for dental restorations."
+                            ]
+                        },
+                        {
+                            "heading": "General Pathology",
+                            "items": [
+                                "Inflammation: Tissue response to injury in oral health.",
+                                "Neoplasia: Understanding tumors in the oral cavity.",
+                                "Hematology: Blood disorders affecting oral tissues."
+                            ]
+                        },
+                        {
+                            "heading": "Microbiology",
+                            "items": [
+                                "Oral Microbiology: Bacteria causing dental caries and periodontal disease.",
+                                "Sterilization: Infection control in dental practice.",
+                                "Immunology: Immune responses in oral health."
+                            ]
+                        },
+                        {
+                            "heading": "Pharmacology",
+                            "items": [
+                                "Analgesics: Pain management in dental procedures.",
+                                "Antibiotics: Treatment of oral infections.",
+                                "Local Anesthesia: Techniques for dental surgeries."
+                            ]
+                        },
+                        {
+                            "heading": "Prosthodontics",
+                            "items": [
+                                "Complete Dentures: Designing full dental replacements.",
+                                "Fixed Prosthesis: Crowns and bridges.",
+                                "Implantology: Dental implants for tooth replacement."
+                            ]
+                        },
+                        {
+                            "heading": "Orthodontics",
+                            "items": [
+                                "Malocclusion: Diagnosis and correction of misaligned teeth.",
+                                "Braces and Aligners: Orthodontic appliances.",
+                                "Growth Modification: Managing jaw development in children."
+                            ]
+                        },
+                        {
+                            "heading": "Periodontology",
+                            "items": [
+                                "Gingival Diseases: Treatment of gum infections.",
+                                "Periodontal Surgery: Procedures like scaling and flap surgery.",
+                                "Periodontal Maintenance: Long-term care of gums."
+                            ]
+                        },
+                        {
+                            "heading": "Oral and Maxillofacial Surgery",
+                            "items": [
+                                "Tooth Extraction: Simple and surgical extractions.",
+                                "Facial Trauma: Management of jaw fractures.",
+                                "Oral Tumors: Surgical treatment of oral cancers."
+                            ]
+                        },
+                        {
+                            "heading": "Conservative Dentistry and Endodontics",
+                            "items": [
+                                "Restorations: Fillings for decayed teeth.",
+                                "Root Canal Therapy: Treatment of infected tooth pulp.",
+                                "Esthetic Dentistry: Cosmetic procedures like veneers."
+                            ]
+                        },
+                        {
+                            "heading": "Pediatric Dentistry",
+                            "items": [
+                                "Child Dental Care: Managing dental issues in children.",
+                                "Preventive Measures: Sealants and fluoride treatments.",
+                                "Behavior Management: Techniques for pediatric patients."
+                            ]
+                        },
+                        {
+                            "heading": "Public Health Dentistry",
+                            "items": [
+                                "Community Oral Health: Programs for dental disease prevention.",
+                                "Epidemiology: Studying oral health trends.",
+                                "Health Education: Promoting oral hygiene practices."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "BDS graduates are equipped to take on diverse roles in oral healthcare, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
+            },
+            {
+                "type": "heading",
+                "content": "Government and Public Health Sectors"
+            },
+            {
+                "type": "paragraph",
+                "content": "Government dental hospitals and public health organizations provide opportunities for BDS graduates to serve communities and contribute to oral health initiatives. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Dental Officer: Provides dental care in government hospitals or health centers.",
+                    "Public Health Dentist: Designs and implements oral health programs.",
+                    "Junior Resident: Works in government dental colleges under senior supervision."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Ministry of Health and Family Welfare: Oversees national oral health programs.",
+                    "Government Dental Colleges: Institutions like Maulana Azad Institute of Dental Sciences.",
+                    "NHM (National Health Mission): Focuses on rural dental healthcare delivery."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries in the government sector typically range from INR 5 LPA to INR 10 LPA, depending on the role and location."
+            },
+            {
+                "type": "heading",
+                "content": "Private Healthcare Organizations"
+            },
+            {
+                "type": "paragraph",
+                "content": "Private dental clinics and hospitals offer roles focused on advanced dental care and patient management. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "General Dentist: Diagnoses and treats dental conditions in private clinics.",
+                    "Specialist Dentist: Practices in areas like orthodontics or endodontics.",
+                    "Dental Surgeon: Performs surgical procedures like implants and extractions."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Clove Dental: Leading chain of dental clinics in India.",
+                    "Apollo White Dental: Offers advanced dental care services.",
+                    "Dental Care India: Network of private dental practices."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries vary from INR 4 LPA for entry-level roles to INR 12 LPA for specialized dentists."
+            },
+            {
+                "type": "heading",
+                "content": "How a Student Might See Themselves After Completing the Course"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Completing a BDS degree equips students with dental expertise and clinical skills. Graduates are likely to envision themselves as compassionate dentists improving patients’ oral health and quality of life."
+            },
+            {
+                "type": "heading",
+                "content": "Knowledge and expertise"
+            },
+            {
+                "type": "paragraph",
+                "content": "Graduates will have a comprehensive understanding of the following key areas:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Dental Sciences: Knowledge of dental anatomy, pathology, and materials.",
+                    "Clinical Diagnosis: Expertise in identifying and treating oral diseases.",
+                    "Dental Procedures: Skills in restorative, surgical, and cosmetic dentistry.",
+                    "Preventive Dentistry: Strategies for oral health promotion.",
+                    "Public Health Dentistry: Community-based oral health initiatives."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Skills"
+            },
+            {
+                "type": "paragraph",
+                "content": "BDS graduates develop a robust skill set, including:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Clinical Skills: Proficiency in dental examinations and procedures.",
+                    "Manual Dexterity: Precision in performing intricate dental treatments.",
+                    "Communication: Effective interaction with patients and healthcare teams.",
+                    "Problem-Solving: Addressing complex dental cases."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Mental capabilities"
+            },
+            {
+                "type": "paragraph",
+                "content": "The rigorous training fosters mental attributes essential for success:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Analytical Mindset: Diagnosing oral conditions based on clinical findings.",
+                    "Empathy: Understanding and addressing patient concerns.",
+                    "Resilience: Managing stress in demanding clinical environments.",
+                    "Attention to Detail: Ensuring precision in dental procedures.",
+                    "Adaptability: Keeping up with advancements in dental technology."
+                ]
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Maulana Azad Institute of Dental Sciences (MAIDS) New Delhi",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://www.maids.ac.in/",
+                "total charges": "0.1L per year"
+            },
+            {
+                "id": 2,
+                "name": "Manipal College of Dental Sciences (MCODS) Manipal",
+                "location": {
+                    "city": "Manipal",
+                    "state": "Karnataka",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "2",
+                "visit link": "https://manipal.edu/mcods-manipal.html",
+                "total charges": "7L per year"
+            },
+            {
+                "id": 3,
+                "name": "Dr. R. Ahmed Dental College and Hospital Kolkata",
+                "location": {
+                    "city": "Kolkata",
+                    "state": "West Bengal",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "4",
+                "visit link": "https://www.radc.in/",
+                "total charges": "0.1L per year"
+            },
+            {
+                "id": 4,
+                "name": "Government Dental College and Hospital Mumbai",
+                "location": {
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "7",
+                "visit link": "https://www.gdcmumbai.org/",
+                "total charges": "0.1L per year"
+            },
+            {
+                "id": 5,
+                "name": "SRM Dental College Chennai",
+                "location": {
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "13",
+                "visit link": "https://www.srmist.edu.in/dental/",
+                "total charges": "6L per year"
+            },
+            {
+                "id": 6,
+                "name": "University of Melbourne Dental School",
+                "location": {
+                    "city": "Melbourne",
+                    "state": "Victoria",
+                    "country": "Australia"
+                },
+                "ownership": "Govt.",
+                "Ranking": "26",
+                "visit link": "https://dent.unimelb.edu.au/",
+                "total charges": "AUD 70K per year"
+            },
+            {
+                "id": 7,
+                "name": "King's College London Dental Institute",
+                "location": {
+                    "city": "London",
+                    "state": "",
+                    "country": "UK"
+                },
+                "ownership": "Govt.",
+                "Ranking": "9",
+                "visit link": "https://www.kcl.ac.uk/dentistry",
+                "total charges": "£43K per year"
+            }
+        ]
+    }
+}

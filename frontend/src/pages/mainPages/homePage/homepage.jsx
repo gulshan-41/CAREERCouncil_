@@ -6,6 +6,7 @@ import TrendingCoursesCard from "../../../components/cards/trendingCoursesCard/t
 import calli from "/src/assets/icons/call.svg";
 import emaili from "/src/assets/icons/mail.svg";
 import whatsappi from "/src/assets/icons/whatsapp.svg";
+import tutorial from "/src/assets/video/tutorial.mov";
 
 function Homepage() {
     const navigate = useNavigate();
@@ -118,7 +119,16 @@ function Homepage() {
                                 </button>
                             </div>
                             <div className="tutorial-container">
-                                <div className="tutorial-wrapper"></div>
+                                <div className="tutorial-wrapper">
+                                    <video 
+                                        className="tutorial-video"
+                                        src={tutorial}
+                                        autoPlay
+                                        muted
+                                        loop
+                                    >
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>

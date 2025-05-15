@@ -120,6 +120,18 @@
     background-color: #fff;
 }
 
+.tutorial-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tutorial-video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .explore-cats {
     h2 {
         font-size: 2rem;

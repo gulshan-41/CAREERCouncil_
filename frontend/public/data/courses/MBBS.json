@@ -1,0 +1,491 @@
+{
+    "courseID": "MBBS",
+    "name": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+    "introduction": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "A five-and-a-half-year undergraduate program, MBBS is a comprehensive medical course that trains students to become qualified doctors, combining theoretical medical sciences with extensive clinical practice."
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "This program equips students with the knowledge and skills to diagnose, treat, and prevent diseases, preparing them for careers in healthcare. It includes four and a half years of academic and clinical training followed by a one-year mandatory internship, ideal for those passionate about medicine and patient care."
+            },
+            {
+                "type": "heading",
+                "content": "What this course mainly focuses on?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Pre-Clinical Sciences: Understanding human anatomy, physiology, and biochemistry.",
+                    "Para-Clinical Sciences: Studying pathology, microbiology, and pharmacology.",
+                    "Clinical Medicine: Diagnosing and treating patients in specialties like internal medicine and surgery.",
+                    "Preventive Medicine: Promoting public health and disease prevention.",
+                    "Clinical Training: Hands-on experience in hospitals to develop practical skills."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Overview"
+            },
+            {
+                "type": "paragraph",
+                "content": "MBBS is a professional medical degree focused on preparing students to become competent physicians. The program integrates basic medical sciences with clinical practice, enabling graduates to work in hospitals, clinics, or research institutions. It is highly sought after by students dedicated to healthcare, offering a rigorous curriculum and practical training."
+            },
+            {
+                "type": "paragraph",
+                "content": "Standard duration: In India, the MBBS program is five and a half years, including four and a half years of academic and clinical training across nine semesters and a one-year compulsory rotating internship. The curriculum is regulated by the National Medical Commission (NMC)."
+            }
+        ]
+    },
+    "prerequisites": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "This guide outlines the prerequisites for pursuing MBBS. It covers required 10th & 12th subjects, tips for gaining an advantage before enrolling, and admission requirements in India to help students make informed career decisions."
+            },
+            {
+                "type": "heading",
+                "content": "Required 10th & 12th subjects"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "10th Standard: Students must have studied Science (including Physics, Chemistry, and Biology) as compulsory subjects to build a foundational understanding for medical studies.",
+                    "11th-12th Standard: The minimum eligibility criteria require completion of Class 12 with Physics, Chemistry, and Biology (PCB) as core subjects, along with English. Some institutions may require a minimum percentage in these subjects.",
+                    "Minimum Marks: A minimum aggregate score of 50% in PCB for general category students (40% for reserved categories) is typically required, though top colleges may demand higher percentages or competitive exam ranks.",
+                    "Visit for more insights: MBBS Eligibility - National Medical Commission"
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "*TIPS to get an upper hand before enrolling in the course"
+            },
+            {
+                "type": "paragraph",
+                "content": "For school students interested in MBBS, excelling in core subjects and gaining additional exposure can provide a competitive edge before enrolling. These tips are designed to help students prepare early and succeed in the rigorous medical curriculum."
+            },
+            {
+                "type": "heading",
+                "content": "Basic subjects to master (schooling)"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Biology: Focus on human physiology, genetics, and microbiology, critical for medical sciences.",
+                    "Chemistry: Build proficiency in organic and biochemistry, essential for understanding pharmacology and metabolism.",
+                    "Physics: Understand mechanics and optics, relevant for medical equipment and diagnostics."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Additional Subjects and Skills"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "English: Develop strong communication skills for patient interaction and academic writing.",
+                    "Basic Computer Skills: Familiarity with tools for research and medical record management.",
+                    "Volunteering: Gain exposure through hospital volunteering or health camps to understand healthcare settings.",
+                    "Extracurricular Activities: Participate in science fairs, biology Olympiads, or medical workshops to enhance practical knowledge.",
+                    "Summary: Mastering PCB is crucial, but improving communication, gaining healthcare exposure, and engaging in medical-related activities can set you apart."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Eligibility criterias"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Eligibility criteria are based on stream and total percentage aggregated in class 12th. Completion of Class 12 with PCB and English, achieving a minimum of 50% marks (40% for reserved categories), depending on the institution. Candidates must also be at least 17 years old by December 31 of the admission year."
+            },
+            {
+                "type": "heading",
+                "content": "Admission requirments"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Entrance Exams: Admission to MBBS programs in India is primarily through the National Eligibility cum Entrance Test (NEET-UG)."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "NEET-UG: Mandatory for admission to government and private medical colleges in India.",
+                    "AIIMS MBBS Entrance (discontinued): Previously for AIIMS, now merged with NEET-UG.",
+                    "Other exams: Some private universities may conduct additional tests or interviews.",
+                    "Merit-Based Admissions: Rare, but some private colleges may consider Class 12 marks alongside NEET scores, followed by counseling."
+                ]
+            }
+        ]
+    },
+    "subjects": {
+        "text": [
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Core subjects in MBBS cover Anatomy, Physiology, Biochemistry, Pathology, Pharmacology, Microbiology, and Clinical Medicine."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects in MBBS"
+            },
+            {
+                "type": "paragraph",
+                "content": "This section outlines the core subjects and topics studied in MBBS programs in India, such as at AIIMS New Delhi and CMC Vellore, and at well-known universities abroad, such as Harvard Medical School. These subjects are mandatory to provide students with essential medical knowledge and clinical skills."
+            },
+            {
+                "type": "heading",
+                "content": "Core Subjects and Subtopics"
+            },
+            {
+                "type": "paragraph",
+                "content": "The following subjects are consistently identified as core components of MBBS curricula across reputable institutions. They form the foundation of medical education, covering pre-clinical, para-clinical, and clinical disciplines."
+            },
+            {
+                "type": "topics-list",
+                "content": {
+                    "data": [
+                        {
+                            "heading": "Anatomy",
+                            "items": [
+                                "Gross Anatomy: Structure of the human body, including organs and systems.",
+                                "Histology: Microscopic study of tissues.",
+                                "Embryology: Development of the human embryo."
+                            ]
+                        },
+                        {
+                            "heading": "Physiology",
+                            "items": [
+                                "Organ Systems: Functions of cardiovascular, respiratory, and nervous systems.",
+                                "Homeostasis: Mechanisms maintaining body balance.",
+                                "Neurophysiology: Brain and nerve functions."
+                            ]
+                        },
+                        {
+                            "heading": "Biochemistry",
+                            "items": [
+                                "Metabolism: Chemical processes in the body.",
+                                "Enzymes: Role in biochemical reactions.",
+                                "Molecular Biology: DNA, RNA, and protein synthesis."
+                            ]
+                        },
+                        {
+                            "heading": "Pathology",
+                            "items": [
+                                "General Pathology: Disease mechanisms like inflammation and neoplasia.",
+                                "Systemic Pathology: Diseases affecting specific organs.",
+                                "Histopathology: Microscopic examination of diseased tissues."
+                            ]
+                        },
+                        {
+                            "heading": "Pharmacology",
+                            "items": [
+                                "Pharmacodynamics: Drug actions on the body.",
+                                "Pharmacokinetics: Drug absorption, distribution, and elimination.",
+                                "Therapeutics: Drug use in disease management."
+                            ]
+                        },
+                        {
+                            "heading": "Microbiology",
+                            "items": [
+                                "Bacteriology: Study of bacteria causing infections.",
+                                "Virology: Viruses and their diseases.",
+                                "Immunology: Immune system and its disorders."
+                            ]
+                        },
+                        {
+                            "heading": "Forensic Medicine and Toxicology",
+                            "items": [
+                                "Autopsy: Post-mortem examination techniques.",
+                                "Medico-Legal Cases: Legal aspects of medical practice.",
+                                "Toxicology: Study of poisons and their effects."
+                            ]
+                        },
+                        {
+                            "heading": "Community Medicine",
+                            "items": [
+                                "Epidemiology: Study of disease patterns in populations.",
+                                "Public Health: Strategies for disease prevention.",
+                                "Health Programs: National health policies and initiatives."
+                            ]
+                        },
+                        {
+                            "heading": "Clinical Medicine",
+                            "items": [
+                                "Internal Medicine: Diagnosis and treatment of adult diseases.",
+                                "Pediatrics: Medical care for children.",
+                                "Psychiatry: Mental health disorders and treatments."
+                            ]
+                        },
+                        {
+                            "heading": "Surgery",
+                            "items": [
+                                "General Surgery: Common surgical procedures.",
+                                "Orthopedics: Management of musculoskeletal disorders.",
+                                "Anesthesiology: Techniques for pain management during surgery."
+                            ]
+                        },
+                        {
+                            "heading": "Obstetrics and Gynecology",
+                            "items": [
+                                "Pregnancy Care: Antenatal and postnatal management.",
+                                "Gynecological Disorders: Diagnosis and treatment.",
+                                "Reproductive Health: Family planning and fertility."
+                            ]
+                        },
+                        {
+                            "heading": "Ophthalmology",
+                            "items": [
+                                "Eye Anatomy: Structure and function of the eye.",
+                                "Eye Diseases: Conditions like cataracts and glaucoma.",
+                                "Ophthalmic Surgery: Procedures like LASIK."
+                            ]
+                        },
+                        {
+                            "heading": "Otorhinolaryngology (ENT)",
+                            "items": [
+                                "Ear Disorders: Hearing loss and infections.",
+                                "Nasal Conditions: Sinusitis and allergies.",
+                                "Throat Diseases: Tonsillitis and laryngeal disorders."
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jobRoles": {
+        "text": [
+            {
+                "type": "paragraph",
+                "content": "MBBS graduates are equipped to take on diverse roles in healthcare, each offering unique challenges and opportunities. Below is a detailed breakdown of job roles in the specified areas."
+            },
+            {
+                "type": "heading",
+                "content": "Government and Public Health Sectors"
+            },
+            {
+                "type": "paragraph",
+                "content": "Government hospitals and public health organizations provide opportunities for MBBS graduates to serve communities and contribute to national health initiatives. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Medical Officer: Provides primary healthcare in government hospitals or health centers.",
+                    "Public Health Specialist: Designs and implements disease prevention programs.",
+                    "Resident Doctor: Works in government hospitals under senior supervision."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Ministry of Health and Family Welfare: Oversees national health programs.",
+                    "AIIMS (All India Institute of Medical Sciences): Premier medical institutions for patient care and research.",
+                    "NHM (National Health Mission): Focuses on rural and urban healthcare delivery."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries in the government sector typically range from INR 6 LPA to INR 12 LPA, depending on the role and location."
+            },
+            {
+                "type": "heading",
+                "content": "Private Healthcare Organizations"
+            },
+            {
+                "type": "paragraph",
+                "content": "Private hospitals and clinics offer roles focused on advanced medical care and patient management. Key job roles include:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Consultant Physician: Diagnoses and treats patients in specialties like cardiology or neurology.",
+                    "Surgeon: Performs surgical procedures in private hospitals.",
+                    "Junior Doctor: Assists senior doctors in patient care and surgeries."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Key organizations"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Apollo Hospitals: Leading private healthcare provider in India.",
+                    "Fortis Healthcare: Offers advanced medical care across specialties.",
+                    "Max Healthcare: Known for high-quality patient care and facilities."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Salary Range: Salaries vary from INR 8 LPA for entry-level roles to INR 20 LPA for specialized consultants."
+            },
+            {
+                "type": "heading",
+                "content": "How a Student Might See Themselves After Completing the Course"
+            },
+            {
+                "key": "diff-point",
+                "type": "paragraph",
+                "content": "Completing an MBBS degree equips students with medical expertise and clinical skills. Graduates are likely to envision themselves as compassionate doctors making a significant impact on patient lives and public health."
+            },
+            {
+                "type": "heading",
+                "content": "Knowledge and expertise"
+            },
+            {
+                "type": "paragraph",
+                "content": "Graduates will have a comprehensive understanding of the following key areas:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Medical Sciences: Knowledge of anatomy, physiology, and pathology.",
+                    "Clinical Diagnosis: Expertise in identifying and treating diseases.",
+                    "Pharmacology: Understanding drug therapies and their applications.",
+                    "Surgery: Skills in performing surgical procedures.",
+                    "Public Health: Strategies for disease prevention and health promotion."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Skills"
+            },
+            {
+                "type": "paragraph",
+                "content": "MBBS graduates develop a robust skill set, including:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Clinical Skills: Proficiency in patient examination and diagnosis.",
+                    "Communication: Effective interaction with patients and healthcare teams.",
+                    "Problem-Solving: Addressing complex medical cases.",
+                    "Time Management: Handling high-pressure clinical environments."
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Mental capabilities"
+            },
+            {
+                "type": "paragraph",
+                "content": "The rigorous training fosters mental attributes essential for success:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Analytical Mindset: Diagnosing conditions based on symptoms and tests.",
+                    "Empathy: Understanding and addressing patient needs.",
+                    "Resilience: Managing stress in critical medical situations.",
+                    "Decision-Making: Making quick, informed choices in emergencies.",
+                    "Adaptability: Keeping up with medical advancements and technologies."
+                ]
+            }
+        ]
+    },
+    "recommendedColleges": {
+        "data": [
+            {
+                "id": 1,
+                "name": "All India Institute of Medical Sciences (AIIMS) New Delhi",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "1",
+                "visit link": "https://www.aiims.edu/",
+                "total charges": "0.1L per year"
+            },
+            {
+                "id": 2,
+                "name": "Christian Medical College (CMC) Vellore",
+                "location": {
+                    "city": "Vellore",
+                    "state": "Tamil Nadu",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "3",
+                "visit link": "https://www.cmch-vellore.edu/",
+                "total charges": "0.5L per year"
+            },
+            {
+                "id": 3,
+                "name": "Armed Forces Medical College (AFMC) Pune",
+                "location": {
+                    "city": "Pune",
+                    "state": "Maharashtra",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "12",
+                "visit link": "https://www.afmc.nic.in/",
+                "total charges": "0.1L per year"
+            },
+            {
+                "id": 4,
+                "name": "Maulana Azad Medical College (MAMC) Delhi",
+                "location": {
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "India"
+                },
+                "ownership": "Govt.",
+                "Ranking": "5",
+                "visit link": "https://www.mamc.ac.in/",
+                "total charges": "0.1L per year"
+            },
+            {
+                "id": 5,
+                "name": "Kasturba Medical College (KMC) Manipal",
+                "location": {
+                    "city": "Manipal",
+                    "state": "Karnataka",
+                    "country": "India"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "10",
+                "visit link": "https://manipal.edu/kmc-manipal.html",
+                "total charges": "15L per year"
+            },
+            {
+                "id": 6,
+                "name": "Harvard Medical School",
+                "location": {
+                    "city": "Boston",
+                    "state": "Massachusetts",
+                    "country": "USA"
+                },
+                "ownership": "Pvt.",
+                "Ranking": "1",
+                "visit link": "https://hms.harvard.edu/",
+                "total charges": "$65K-$70K per year"
+            },
+            {
+                "id": 7,
+                "name": "University of Oxford Medical School",
+                "location": {
+                    "city": "Oxford",
+                    "state": "",
+                    "country": "UK"
+                },
+                "ownership": "Govt.",
+                "Ranking": "2",
+                "visit link": "https://www.medsci.ox.ac.uk/",
+                "total charges": "£40K per year"
+            }
+        ]
+    }
+}
