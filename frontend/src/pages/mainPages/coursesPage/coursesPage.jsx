@@ -16,37 +16,52 @@ function CoursesPage() {
     const wrapperRef = useRef(null);
 
     useEffect(() => {
-        if (courseID) {
-            fetchCourseDetails(courseID);
-        }
-    }, [courseID, fetchCourseDetails]);
+        let resizeTimeout;
 
-    // Position home-toggles like signup-limiter
-    useEffect(() => {
+        // Position courses-limiters
         const updateTogglesPosition = () => {
             const toggles = document.getElementById("courses-limiters");
-            if (!toggles) return;
+            if (!toggles || !wrapperRef.current) return;
 
             const viewportWidth = window.innerWidth;
-            const wrapperWidth = wrapperRef.current.offsetWidth; // Actual width of .homepage-wrapper
+            const wrapperWidth = wrapperRef.current.offsetWidth;
             const left = (viewportWidth - wrapperWidth) / 2 - 60;
 
             if (viewportWidth >= 768) {
                 toggles.style.left = `${left}px`;
             } else {
-                toggles.style.left = ""; // Reset to avoid stale values
+                toggles.style.left = "";
             }
         };
 
-        // Initial position
-        updateTogglesPosition();
+        // Debounced resize handler
+        const handleResize = () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(updateTogglesPosition, 10);
+        };
+
+        // Initial positioning after DOM render
+        const initialPosition = () => {
+            requestAnimationFrame(updateTogglesPosition);
+        };
+
+        // Fetch course details and position
+        if (courseID) {
+            fetchCourseDetails(courseID);
+        }
+
+        // Position after mount and data load
+        initialPosition();
 
         // Update on resize
-        window.addEventListener("resize", updateTogglesPosition);
+        window.addEventListener("resize", handleResize);
 
         // Cleanup
-        return () => window.removeEventListener("resize", updateTogglesPosition);
-    }, []);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            clearTimeout(resizeTimeout);
+        };
+    }, [courseID, fetchCourseDetails, courseDetails, courseLoading]);
 
     if (courseLoading[courseID]) {
         return (

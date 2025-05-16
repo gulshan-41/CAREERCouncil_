@@ -30,7 +30,7 @@ function Homepage() {
     useEffect(() => {
         const updateTogglesPosition = () => {
             const toggles = document.getElementById("home-toggles");
-            if (!toggles) return;
+            if (!toggles || !wrapperRef.current) return;
 
             const viewportWidth = window.innerWidth;
             const wrapperWidth = wrapperRef.current.offsetWidth; // Actual width of .homepage-wrapper
