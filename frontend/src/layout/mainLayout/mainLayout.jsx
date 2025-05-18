@@ -5,14 +5,17 @@ import SearchDiv from "/src/components/searchDiv/searchDiv";
 import SideBar from "/src/components/sideBar/sideBar";
 // import ArrowAI from "/src/components/arrowAI/arrowAI";
 import HelpBar from "../../components/helpBar/helpBar";
+import { useRef } from "react";
 
 function MainLayout() {
+    const mainSectionRef = useRef(null);
+
     return (
         <div className="mainlayout">
             <NavBar />
             <SearchDiv />
-            <SideBar />
-            <main className="mainLayout-main-section">
+            <SideBar mainSectionRef={mainSectionRef} />
+            <main className="mainLayout-main-section" ref={mainSectionRef} >
                 <Outlet />
             </main>
             {/* <ArrowAI /> */}

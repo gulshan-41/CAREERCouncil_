@@ -32,8 +32,8 @@ function App() {
         const pageWrapperWidth = Math.min(viewportWidth, 1536); // #page-wrapper's width
         const left = (viewportWidth - pageWrapperWidth) / 2 - 50; // Formula: (viewport - 1536) / 2 - 50px
 
-        // Only apply if viewport >= 1696px (matches CSS display: block)
-        if (viewportWidth >= 1696) {
+        // Only apply if viewport >= 1536px (matches CSS display: block)
+        if (viewportWidth >= 1536) {
             limiter.style.left = `${left}px`;
         } else {
             limiter.style.left = ''; // Reset to avoid stale values
