@@ -1,0 +1,51 @@
+.alert-container {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.alert {
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.95rem;
+    color: #fff;
+    max-width: 300px;
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert-error {
+    background-color: #900303; /* Red for errors */
+}
+
+.alert-success {
+    background-color: #078e39; /* Green for successes */
+}
+
+.alert.removing {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

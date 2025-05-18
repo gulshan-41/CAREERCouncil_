@@ -4,13 +4,15 @@ import Google from "/src/assets/images/google.svg";
 import X from "/src/assets/images/x.svg";
 import Apple from "/src/assets/images/apple.svg";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+import { useAlert } from "../../context/alertContext/alertContext";
 import { useNavigate } from "react-router-dom";
 
 function SignupModal() {
     const { surveyData, updateSurveyData, loginData, updateLoginData, fetchUser } = useSurvey();
     const [isLoginMode, setIsLoginMode] = useState(false);
     const navigate = useNavigate();
+    const { showAlert } = useAlert();
 
     const handleToggle = () => {
         setIsLoginMode((prev) => !prev);
@@ -28,16 +30,16 @@ function SignupModal() {
         if (response.success) {
             await fetchUser();
             navigate("/");
-            toast.success(response.msg);
+            showAlert(response.msg, "success");
         } else {
-            toast.error(response.msg);
+            showAlert(response.msg, "error");
         }
     };
 
     const handleSignup = async (e) => {
         e.preventDefault();
         if (!surveyData.agreeToDataProcessing) {
-            toast.error("You must agree to the processing of personal data.");
+            showAlert("You must agree to the processing of personal data.", "error");
             return;
         }
         const response = await fetch("http://localhost:8800/api/user/register", {
@@ -50,9 +52,9 @@ function SignupModal() {
         if (response.success) {
             await fetchUser();
             navigate("/");
-            toast.success(response.msg);
+            showAlert(response.msg, "success");
         } else {
-            toast.error(response.msg);
+            showAlert(response.msg, "error");
         }
     };
 

@@ -1,17 +1,19 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+import { useAlert } from "../../context/alertContext/alertContext"
 
 function SignupPage1B() {
     const navigate = useNavigate();
     const { surveyData, updateSurveyData } = useSurvey();
+    const { showAlert } = useAlert();
 
     const handleNext = () => {
         if (surveyData.age && surveyData.age > 0) {
             navigate("/signup/basic-details/occupation");
         } else {
-            toast.error("Please enter a valid age.");
+            showAlert("Enter a valid age number!");
         }
     };
 

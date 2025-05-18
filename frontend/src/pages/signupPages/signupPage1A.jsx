@@ -1,17 +1,18 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
-import { toast } from "react-toastify";
+import { useAlert } from "../../context/alertContext/alertContext";
 
 function SignupPage1A() {
     const navigate = useNavigate();
     const { surveyData, updateSurveyData } = useSurvey();
+    const { showAlert } = useAlert();
 
     const handleNext = () => {
         if (surveyData.name) {
             navigate("/signup/basic-details/age");
         } else {
-            toast.error("Please enter your name.");
+            showAlert("Please enter your name!", "error");
         }
     };
 
