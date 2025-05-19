@@ -1,17 +1,19 @@
 import "./sharedSignupPage.scss";
 import { useNavigate } from "react-router-dom";
 import { useSurvey } from "../../context/SurveyContext/SurveyContext";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+import { useAlert } from "../../context/alertContext/alertContext"
 
 function SignupPage2A() {
     const navigate = useNavigate();
     const { surveyData, updateSurveyData } = useSurvey();
+    const { showAlert } = useAlert();
 
     const handleNext = () => {
         if (surveyData.strengths.mathematics !== null) {
             navigate("/signup/strengths/management");
         } else {
-            toast.error("Please select an option.");
+            showAlert("Please select an option!");
         }
     };
 

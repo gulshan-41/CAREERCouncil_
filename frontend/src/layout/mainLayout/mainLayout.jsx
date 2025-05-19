@@ -5,6 +5,7 @@ import SearchDiv from "/src/components/searchDiv/searchDiv";
 import SideBar from "/src/components/sideBar/sideBar";
 // import ArrowAI from "/src/components/arrowAI/arrowAI";
 import HelpBar from "../../components/helpBar/helpBar";
+import MainFooter from "../../components/footers/mainFooter/mainFooter";
 import { useRef } from "react";
 
 function MainLayout() {
@@ -20,6 +21,7 @@ function MainLayout() {
             </main>
             {/* <ArrowAI /> */}
             <HelpBar />
+            <MainFooter />
         </div>
     );
 }

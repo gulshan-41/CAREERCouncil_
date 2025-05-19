@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useRef } from "react";
-import { toast } from "react-toastify";
+import { useAlert } from "../alertContext/alertContext";
 
 const SurveyContext = createContext();
 
@@ -10,20 +10,21 @@ export function SurveyProvider({ children }) {
         occupation: "",
         email: "",
         password: "",
-        strengths: { 
+        strengths: {
             mathematics: null,
             management: null,
-            sports: []
+            sports: [],
         },
         interests: {
             science: null,
             history: null,
-            fields: []
+            fields: [],
         },
     });
     const [user, setUser] = useState(null);
     const [loginData, setLoginData] = useState({ email: "", password: "" });
     const hasFetchedUser = useRef(false);
+    const { showAlert } = useAlert();
 
     const updateSurveyData = (key, value) => {
         setSurveyData((prev) => {
@@ -70,10 +71,12 @@ export function SurveyProvider({ children }) {
                 }));
             } else {
                 setUser(null);
+                showAlert(data.msg || "Failed to fetch user", "error");
             }
         } catch (error) {
             console.error("Fetch user error:", error);
             setUser(null);
+            showAlert("Failed to fetch user", "error");
         }
     };
 
@@ -91,7 +94,7 @@ export function SurveyProvider({ children }) {
 
             const data = await response.json();
             if (data.success) {
-                toast.success(data.msg);
+                showAlert(data.msg, "success");
                 setUser(null);
                 setSurveyData({
                     name: "",
@@ -104,17 +107,13 @@ export function SurveyProvider({ children }) {
                 });
                 setLoginData({ email: "", password: "" });
             } else {
-                toast.error(data.msg);
+                showAlert(data.msg, "error");
             }
         } catch (error) {
             console.error("Logout error:", error);
-            toast.error("Failed to log out");
+            showAlert("Failed to log out", "error");
         }
     };
-
-    // const fields = JSON.parse(localStorage.getItem('userData'));
-    // console.log(fields.interests.fields);
-    
 
     useEffect(() => {
         if (hasFetchedUser.current) return;
