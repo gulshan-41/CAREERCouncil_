@@ -1,11 +1,6 @@
 $company-text: 2.2rem;
 $company-text-weight: 800;
 
-.nav-utility-section {
-    padding: 0 112px;
-    box-sizing: border-box;
-}
-
 .sticky-header {
     max-width: 1536px;
     width: 100%;
@@ -50,11 +45,7 @@ $company-text-weight: 800;
 
 // @media (max-width: 1536px) { }
 
-@media (max-width: 1280px) {
-    .nav-utility-section {
-        padding: 0 48px;
-    }
-}
+// @media (max-width: 1280px) { }
 
 @media (max-width: 1024px) {
     .logo {
@@ -62,10 +53,6 @@ $company-text-weight: 800;
         #council {
             font-size: calc($company-text * 0.85);
         }
-    }
-
-    .nav-utility-section {
-        padding: 0 40px;
     }
 }
 
@@ -97,10 +84,6 @@ $company-text-weight: 800;
             letter-spacing: 5.5px;
             margin-top: -5px;
         }
-    }
-
-    .nav-utility-section {
-        padding: 0 16px;
     }
 }
 
