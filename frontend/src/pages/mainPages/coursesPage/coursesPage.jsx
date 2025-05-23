@@ -98,16 +98,36 @@ function CoursesPage() {
     return (
         <div className="coursespage cat-utility-section">
             <div className="coursespage-wrapper" ref={wrapperRef}>
-                <div className="courses-limiters" id="courses-limiters">Feedback</div>
+                <div className="courses-limiters" id="courses-limiters">
+                    <div className="feedback-wrapper">
+                        <p>Feedback</p>
+                        <div className="feedback-form-wrapper">
+                            <div className="form-wrapper">
+                                <h2>Feedback form</h2>
+                                <form action="">
+                                    <input type="email" placeholder="Enter your email?" required/>
+                                    <label htmlFor="">Write your query</label>
+                                    <input type="text" name="" id="" placeholder="Anything..."/>
+                                    <ul>
+                                        <li>Ask for any point you want us to include. Like: Job roles, Summarized syllabus, anything you want.</li>
+                                        <li>Mention any correction needs to done.</li>
+                                        <li>Any suggestions from your side would be valuable.</li>
+                                    </ul>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <section className="courses-main-section">
                     <h1>{courseData.name}</h1>
-                    <RecommendedCoursesGrid currentCourseID={courseID} />
-                    <Aside />
-                    <Introduction data={courseData.introduction[0]} />
-                    <Prerequsities data={courseData.prerequisites[0]} />
-                    <CoreSubjects data={courseData.subjects[0]} />
-                    <RecommendedColleges data={courseData.recommendedColleges[0]} />
-                    <JobRoles data={courseData.jobRoles[0]} />
+                        <RecommendedCoursesGrid currentCourseID={courseID} />
+                        <Aside />
+                        <Introduction data={courseData.introduction[0]} />
+                        <Prerequsities data={courseData.prerequisites[0]} />
+                        <CoreSubjects data={courseData.subjects[0]} />
+                        <RecommendedColleges data={courseData.recommendedColleges[0]} />
+                        <JobRoles data={courseData.jobRoles[0]} />
                 </section>
             </div>
         </div>
