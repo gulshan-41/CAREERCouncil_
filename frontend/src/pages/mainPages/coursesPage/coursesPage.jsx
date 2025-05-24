@@ -1,5 +1,5 @@
 import "./coursesPage.scss";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useCategories } from "../../../context/CategoriesProvider/CategoriesProvider";
 import Aside from "../../../components/coursePageComponents/aside/aside";
@@ -9,11 +9,18 @@ import CoreSubjects from "../../../components/coursePageComponents/coreSubjects/
 import RecommendedColleges from "../../../components/coursePageComponents/recommendedColleges/recommendedColleges";
 import JobRoles from "../../../components/coursePageComponents/jobRoles/jobRoles";
 import RecommendedCoursesGrid from "../../../components/cardsGrid/recommendedCoursesGrid/recommendedCoursesGrid";
+import FeedbackForm from "../../../components/Forms/feedbackForm/feedbackForm";
 
 function CoursesPage() {
     const { courseID } = useParams();
     const { fetchCourseDetails, courseDetails, courseLoading, courseError } = useCategories();
     const wrapperRef = useRef(null);
+
+    const [isFeedbackOpen, setFeedbackToOpen] = useState(false);
+
+    const handleFeedback = () => {
+        setFeedbackToOpen((prev) => !prev);
+    }
 
     useEffect(() => {
         let resizeTimeout;
@@ -99,25 +106,10 @@ function CoursesPage() {
         <div className="coursespage cat-utility-section">
             <div className="coursespage-wrapper" ref={wrapperRef}>
                 <div className="courses-limiters" id="courses-limiters">
-                    <div className="feedback-wrapper">
+                    <div className="feedback-wrapper" onClick={handleFeedback}>
                         <p>Feedback</p>
-                        <div className="feedback-form-wrapper">
-                            <div className="form-wrapper">
-                                <h2>Feedback form</h2>
-                                <form action="">
-                                    <input type="email" placeholder="Enter your email?" required/>
-                                    <label htmlFor="">Write your query</label>
-                                    <input type="text" name="" id="" placeholder="Anything..."/>
-                                    <ul>
-                                        <li>Ask for any point you want us to include. Like: Job roles, Summarized syllabus, anything you want.</li>
-                                        <li>Mention any correction needs to done.</li>
-                                        <li>Any suggestions from your side would be valuable.</li>
-                                    </ul>
-                                    
-                                </form>
-                            </div>
-                        </div>
                     </div>
+                    {isFeedbackOpen && <FeedbackForm handleFeedbackOpening={handleFeedback} />}
                 </div>
                 <section className="courses-main-section">
                     <h1>{courseData.name}</h1>

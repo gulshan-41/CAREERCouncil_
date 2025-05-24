@@ -237,12 +237,6 @@
             "description": "The MBA in Business Analytics specialization uses data analysis and tools for informed business decision-making. It covers data mining, statistical analysis, and predictive modeling, preparing students for careers as business analysts, data scientists, or management consultants."
         },
         {
-            "CO-ID": "MBA-Entrepreneurship",
-            "name": "MBA in Entrepreneurship",
-            "specialization": "Entrepreneurship",
-            "description": "The MBA in Entrepreneurship specialization teaches starting and managing new businesses, emphasizing innovation and business planning. It prepares students for entrepreneurial ventures or roles in startup ecosystems, providing skills in business development, fundraising, and growth strategies."
-        },
-        {
             "CO-ID": "MBA-Healthcare",
             "name": "MBA in Healthcare Management",
             "specialization": "Healthcare",
